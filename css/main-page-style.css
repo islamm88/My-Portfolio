@@ -1006,7 +1006,7 @@
       & .content-photo {
         text-align: center;
         & img {
-          max-width: 300px;
+          max-width: 200px;
           border-radius: 50%;
         }
       }
