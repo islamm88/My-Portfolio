@@ -172,7 +172,7 @@
             text-decoration: none;
             font-size: 30px;
             text-align: right;
-            width: 100%;
+            width: fit-content;
           "
           >Header</a
         >
@@ -232,26 +232,19 @@
             </tr>
           </tbody>
         </table>
-
         <h3>Waht we need ?</h3>
         <ul>
           <li>HTML Prerequisites : Basic Computer & Internet Familiarity</li>
           <li>
             Download Editor
-            <i
-              class="fa-solid fa-hand-pointer"
-              style="color: var(--color5)"
-            ></i>
+          	&#128071
             <a href="https://code.visualstudio.com/download" target="_blank"
               >Vs code <img src="./img/VScode.png" alt="VScode" width="30"
             /></a>
           </li>
           <li>
             Download Google chrome
-            <i
-              class="fa-solid fa-hand-pointer"
-              style="color: var(--color5)"
-            ></i>
+      	&#128071
             <a
               href="https://www.google.com/intl/en_uk/chrome/dr/download/"
               target="_blank"
@@ -268,7 +261,10 @@
           </li>
           <li>
             The first page of a website is typically named:
-            <span>index.html</span>
+            <span>index.html</span> [ index.html - home.html - default.html -
+            main.html ... ] index.html is mostly used <br />
+            becouse it is the default file that web servers look for when
+            opening a folder or domain.
           </li>
           <li>
             Opent file with extention .html by VS code and build structure HTML
@@ -278,14 +274,20 @@
             Shortcut feature in VS Code using the Emmet abbreviation system.
           </li>
           <li>
-            Click on : <span>shift + 1 -> ! and click Enter or tab</span> in VS code
-            to build structure html page or <span>doc + tab </span>or
+            Click on : <span>shift + 1 -> ! and click Enter or tab</span> in VS
+            code to build structure html page or <span>doc + tab </span>or
             <span>html:5 + tab .</span>
           </li>
         </ul>
-        <h3>HTML Page structure</h3>
-        <div class="container">
-          <img src="./img/structure-drow.png" alt="" width="800" />
+        <h3>HTML DOM Tree & Page structure</h3>
+        <p>
+          DOM stands for <span>Document Object Model</span>, It is a tree-like
+          structure that represents all elements of an HTML document in a
+          hierarchical way.
+        </p>
+        <p>Every tag (element) in your HTML becomes a node in the DOM tree.</p>
+        <div class="container flex">
+          <img src="./img/Dom Tree.png" alt="" width="500" />
         </div>
         <div class="containt">
           <img src="./img/page-structur.png" alt="" />
@@ -323,23 +325,37 @@
             </ul>
           </div>
         </div>
-        <h3>
-          HTML (HyperText Markup Language) depends primarily on
-          <span>tags</span> to structure content on the web.
-        </h3>
-        <br />
+        <ul>
+          <li>
+            HTML (HyperText Markup Language) depends primarily on
+            <span>tags</span> to structure content on the web.
+          </li>
+          <li>
+            Indentation in HTML means adding spaces (usually 2 or 4) at the
+            beginning of lines to show the nested structure of elements. This
+            doesn’t affect how the page looks but makes the code easier to read
+            and maintain.
+          </li>
+        </ul>
         <h2>HTML Validation</h2>
-        <br />
+        <h3>HTML and Errors</h3>
         <p>
-          You must use proper HTML , CSS3 and JavaScript syntax to ensure that
-          browsers process your documents properly.
+          Note : HTML is not strict like a programming language, but syntax
+          errors can still cause problems.
         </p>
         <p>
-          Use : <span>http://validator.w3.org/</span> to validate your HTML5
-          code
+          If you type <span>&lt;h7&gt;text&lt;/h7&gt;</span> HTML don't tell you
+          syntax errors and <span>text</span> will appear on browser
+        </p>
+        <p>
+          You must use proper HTML5 , CSS3 syntax to ensure that browsers
+          process your documents properly.
+        </p>
+        <p>
+          Use : <span>http://validator.w3.org/</span> to validate your HTML5 &
+          CSS3 code
         </p>
         <img src="./img/valedate-HTML.png" alt="valedate-html" />
-        <br />
         <p style="font-size: 30px">
           <i class="fa-solid fa-hand-pointer" style="color: var(--color5)"></i>
           <a href="https://www.youtube.com/watch?v=Gb9ElvxZYZ8" target="_blank"
@@ -353,7 +369,7 @@
             text-decoration: none;
             font-size: 30px;
             text-align: right;
-            width: 100%;
+            width: fit-content;
           "
           >Header</a
         >
@@ -422,7 +438,7 @@
             text-decoration: none;
             font-size: 30px;
             text-align: right;
-            width: 100%;
+            width: fit-content;
           "
           >Header</a
         >
@@ -437,7 +453,7 @@
         </h3>
         <p>Six levels : (h1 , h2 , h3 , h4 , h5 , h6) for title inside page</p>
         <ul>
-          <li>Use &lt;h1&gt; once per page for the main title.</li>
+          <li>Use &lt;h1&gt; <span>once per page </span>for the main title.</li>
           <li>
             Search engines use headings to understand your page structure
             (important for SEO).
@@ -512,7 +528,7 @@
             text-decoration: none;
             font-size: 30px;
             text-align: right;
-            width: 100%;
+            width: fit-content;
           "
           >Header</a
         >
@@ -531,14 +547,14 @@
             text-decoration: none;
             font-size: 30px;
             text-align: right;
-            width: 100%;
+            width: fit-content;
           "
           >Header</a
         >
       </div>
     </section>
 
-    <header>
+    <footer>
       <div class="container">
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
@@ -555,6 +571,6 @@
           <li><a href="#heading_p_pre">heading_p_pre</a></li>
         </ul>
       </div>
-    </header>
+    </footer>
   </body>
 </html>
