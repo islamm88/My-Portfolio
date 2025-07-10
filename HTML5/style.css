@@ -29,6 +29,12 @@ body {
   border: 1px solid red;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
 a {
   color: blue;
   text-decoration: none;
@@ -250,5 +256,17 @@ section {
         }
       }
     }
+  }
+}
+
+#ol, #ul , #dl {
+  width: 30%;
+  height: 250px;
+  background-color: #f1a5a5;
+  border-radius: 22px;
+  padding: 10px;
+
+  & h3 {
+    text-align: center;
   }
 }
