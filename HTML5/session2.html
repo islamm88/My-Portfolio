@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <style>
+  
+    </style>
   </head>
   <body>
     <header id="header">
@@ -27,7 +30,7 @@
           <li><a href="#Anchor">Anchor</a></li>
           <li><a href="#format">Formatting</a></li>
           <li><a href="#list">List</a></li>
-          <li><a href="">Image</a></li>
+          <li><a href="#image">Image</a></li>
           <li><a href="">Table</a></li>
           <li><a href="">Span & Div</a></li>
         </ul>
@@ -65,7 +68,13 @@
         <ul>
           <li>Link to Another Website  &#128073 <span>&lt;a href="<u>https://www.google.com</u>"&gt;<span style="color: black;"> Google</span> &lt;/a&gt; </span> Note : Type <span><a href="./session1.html#url" target="_blank"> URL <i class="fa-solid fa-hand-pointer" style="color: black"></i></a></span> </li>
           <li>Link to Another Page in Same Website &#128073 <span>&lt;a href="about.html"&gt;<span style="color: black;"> About Us</span> &lt;/a&gt; </span> </li>
-          <li>Link to a File (e.g., PDF, Image)  &#128073  <span>&lt;a href="files/resume.pdf"&gt;<span style="color: black;"> Download Resume </span> &lt;/a&gt;</span></li>
+          <li>Link to a File by img (e.g., PDF, Image) &#128073 <a href="../assets/VSCodeUserSetup-x64-1.102.1.exe" download=""><img src="../HTML5/img/VScode.png" alt="VS Code" width="30"></a>
+            <ul>
+              <li>You can add img inside anchor rather than text </li>
+              <li>&lt;a href="../assets/VSCodeUserSetup-x64-1.102.1.exe" download=""&gt;&lt;img src="../HTML5/img/VScode.png" alt="VS Code" width="30"&gt;&lt;/a&gt;&lt;/li&gt;
+            </ul>
+          </li>
+          
           <li>Link to a Section in the Same Page &#128073  <ul>
             <li><span>&lt;h2 <span style="color: green;">id="contact"</span> &gt;Contact Us&lt;/h2&gt;</span></li>
             <li><span>&lt;a <span style="color: green;">href="#contact"</span> &gt;Go to Contact&lt;/a&gt;</span></li>
@@ -236,6 +245,37 @@
                 </dl>
             </div>
         </div>
+
+        <div id ="ul" style="width: 100%; padding: 20px;">
+          <p>Usually used  UL tag in header part to create a navigation bar  </p>
+          <div style="text-align: center;">
+            <img src="./img/Ex header.png" alt="" style="width: 90%;">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id = "image">
+      <div class="container">
+        <h2>Image</h2>
+        <p>The <img> tag in HTML is used to display an image on a webpage.</p>
+        <div class="flex">
+          <div>
+            <ul>
+              <li>Inline element</li>
+              <li>Self closing tag</li>
+              <li>type tag <span>&lt;img src="" alt="" width = "" height = "" &gt; Loading ="lazy"</span></li>
+              <li><span>SRC</span> (source) attribute in the <img> tag is used to specify the path or URL of the image you want to display.</li>
+              <li><span>Alt</span> used if the image cannot be displayed. <span>Important</span> for <span>accessibility</span> and <span>SEO</span>.  </li>
+              <li>In <span>CSS</span> you can Alternate image by background-image</li>
+              <li>you can give image <span>width</span> and <span>height</span> without px or %</li>
+              <li><span>Loading = "lazy"</span> This helps improve page speed and performance, especially when you have many images.</li>
+            </ul>
+          </div>
+          <div>
+              <img class = "im" src="./img/robot.jpg" alt="robot" width="300" height="300" loading="lazy" style="border-radius: 22px;">
+          </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -249,10 +289,10 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="">Anchor</a></li>
-          <li><a href="">Formatting</a></li>
-          <li><a href="">List</a></li>
-          <li><a href="">Image</a></li>
+          <li><a href="#Anchor">Anchor</a></li>
+          <li><a href="#format">Formatting</a></li>
+          <li><a href="#list">List</a></li>
+          <li><a href="#image">Image</a></li>
           <li><a href="">Table</a></li>
           <li><a href="">Span & Div</a></li>
         </ul>

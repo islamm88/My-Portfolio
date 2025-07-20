@@ -5,6 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -49,7 +52,8 @@ a:hover {
   cursor: pointer;
 }
 
-header , footer {
+header,
+footer {
   & .container {
     & h1 {
       text-align: center;
@@ -262,7 +266,9 @@ section {
 .containt {
   flex-wrap: wrap;
 }
-#ol, #ul , #dl {
+#ol,
+#ul,
+#dl {
   width: 32%;
   background-color: #f1a5a5;
   border-radius: 22px;
@@ -273,7 +279,9 @@ section {
     text-align: center;
   }
 }
-#ol2, #ul2 , #dl2 {
+#ol2,
+#ul2,
+#dl2 {
   width: 32%;
   background-color: #f1a5a5;
   border-radius: 22px;
@@ -286,4 +294,12 @@ section {
   & h3 {
     text-align: center;
   }
+}
+
+.im {
+  background-image: url("./img/questionmark.png");
+  background-size: cover;
+  background-position: center;
+  display: block;
+  
 }
