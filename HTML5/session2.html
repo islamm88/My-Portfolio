@@ -9,9 +9,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <style>
-  
-    </style>
   </head>
   <body>
     <header id="header">
@@ -27,16 +24,16 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="#Anchor">Anchor</a></li>
-          <li><a href="#format">Formatting</a></li>
-          <li><a href="#list">List</a></li>
-          <li><a href="#image">Image</a></li>
-          <li><a href="">Table</a></li>
-          <li><a href="">Span & Div</a></li>
+          <li><a href="#Sec2-Anchor">Anchor</a></li>
+          <li><a href="#Sec2-format">Formatting</a></li>
+          <li><a href="#Sec2-list">List</a></li>
+          <li><a href="#Sec2-image">Image</a></li>
+          <li><a href="#Sec2-table">Table</a></li>
+          <li><a href="#Sec2-divspan">Span & Div</a></li>
         </ul>
       </div>
     </header>
-    <section id ="Anchor">
+    <section id ="Sec2-Anchor">
       <div class="container">
         <h2>Anchor</h2>
         <p>
@@ -68,7 +65,7 @@
         <ul>
           <li>Link to Another Website  &#128073 <span>&lt;a href="<u>https://www.google.com</u>"&gt;<span style="color: black;"> Google</span> &lt;/a&gt; </span> Note : Type <span><a href="./session1.html#url" target="_blank"> URL <i class="fa-solid fa-hand-pointer" style="color: black"></i></a></span> </li>
           <li>Link to Another Page in Same Website &#128073 <span>&lt;a href="about.html"&gt;<span style="color: black;"> About Us</span> &lt;/a&gt; </span> </li>
-          <li>Link to a File by img (e.g., PDF, Image) &#128073 <a href="https://code.visualstudio.com/docs/?dv=win64user"   download=""><img src="../HTML5/img/VScode.png" alt="VS Code" width="30"></a>
+          <li>Link to a File by img (e.g., PDF, Image) &#128073 <a href="https://code.visualstudio.com/docs/?dv=win64user" target="_blank"  download=""><img src="../HTML5/img/VScode.png" alt="VS Code" width="30"></a>
             <ul>
               <li>You can add img inside anchor rather than text </li>
               <li>&lt;a href="../assets/VSCodeUserSetup-x64-1.102.1.exe" <span>download</span> &gt;&lt;img src="../HTML5/img/VScode.png" alt="VS Code" width="30"&gt;&lt;/a&gt;&lt;/li&gt;
@@ -89,7 +86,7 @@
         </ul>
       </div>
     </section>
-    <section id = "format">
+    <section id = "Sec2-format">
       <div class="container">
         <h2>Text Formatting</h2>
         <table>
@@ -162,7 +159,7 @@
         </ul>
       </div>
     </section>
-    <section id ="list">
+    <section id ="Sec2-list">
       <div class="container">
         <h2>List</h2>
         <h3>List is a block element </h3>
@@ -223,27 +220,27 @@
               </span>
             </pre>
           </div>
-            <div id="ol2">
+          <div id ="ol2">
               <ol>
                 <li>list item1</li>
                 <li>list item2</li>
                 <li>list item3</li>
               </ol>
-            </div>
-            <div id="ul2">
+          </div>
+          <div id ="ul2">
               <ul style="margin: 0px;">
                 <li>list item1</li>
                 <li>list item2</li>
                 <li>list item3</li>
               </ul>
-            </div>
-            <div id="dl2">
+          </div>
+          <div id ="dl2">
                 <dl style="margin: 0px;">
                 <dt>list item1</dt>
                 <dt>list item2</dt>
                 <dt>list item3</dt>
                 </dl>
-            </div>
+          </div>
         </div>
 
         <div id ="ul" style="width: 100%; padding: 20px;">
@@ -255,27 +252,192 @@
         </div>
       </div>
     </section>
-    <section id = "image">
+    <section id = "Sec2-image">
       <div class="container">
         <h2>Image</h2>
         <p>The <img> tag in HTML is used to display an image on a webpage.</p>
-        <div class="flex">
-          <div>
+        <div class="containt flex">
+          <div class = "con1 ">
             <ul>
               <li>Inline element</li>
               <li>Self closing tag</li>
               <li>type tag <span>&lt;img src="" alt="" width = "" height = "" &gt; Loading ="lazy"</span></li>
-              <li><span>SRC</span> (source) attribute in the <img> tag is used to specify the path or URL of the image you want to display.</li>
+              <li><span>SRC</span> (source) attribute in the &lt;img&gt; tag is used to specify the path or URL of the image you want to display.</li>
               <li><span>Alt</span> used if the image cannot be displayed. <span>Important</span> for <span>accessibility</span> and <span>SEO</span>.  </li>
               <li>In <span>CSS</span> you can Alternate image by background-image</li>
               <li>you can give image <span>width</span> and <span>height</span> without px or %</li>
               <li><span>Loading = "lazy"</span> This helps improve page speed and performance, especially when you have many images.</li>
             </ul>
           </div>
-          <div>
-              <img class = "im" src="./img/robot.jpg" alt="robot" width="300" height="300" loading="lazy" style="border-radius: 22px;">
+          <div class = "con2 ">
+              <img class = "im" src="./img/robot.jpg" alt="robot" loading="lazy">
           </div>
         </div>
+      </div>
+    </section>
+    <section id="Sec2-table">
+      <div class="container">
+        <h2>Table</h2>
+        <p style="text-align: center;">In HTML, the &lt;table&gt; element is used to create a table for displaying tabular data (data arranged in rows and columns).</p>
+        <h3>Explanation:</h3>
+        <br>
+        <ul>
+          <li>&lt;table&gt;: The table container.</li>
+          <li>&lt;thead&gt;: (optional) Defines the header section of the table.</li>
+          <li>&lt;tr&gt;: Table row (used inside &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt;).</li>
+          <li>&lt;th&gt;: Table header cell (bold and centered by default).</li>
+          <li>&lt;td&gt;: Table data cell (used for regular data).</li>
+          <li>&lt;td&gt;: Table data cell (used for regular data).</li>
+          <li>&lt;tbody&gt;: (optional) Contains the body of the table.</li>
+          <li>&lt;tfoot&gt;: (optional) Defines the footer section of the table.</li>
+          <li>border="1": Adds a simple border (for demonstration; CSS is preferred for styling).</li>
+        </ul>
+        <div class = "containt flex ">
+          <div class="con1">
+            <pre style="font-size: 15px; font-weight: bold;">
+              &lt;table border="1"&gt;
+
+                  <span>&lt;thead&gt;</span>
+                    &lt;tr&gt;
+                      &lt;th&gt;Header 1&lt;/th&gt;
+                      &lt;th&gt;Header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                  <span>&lt;/thead&gt;</span>
+
+                  <span>&lt;tbody&gt;</span>
+                    &lt;tr&gt;
+                      &lt;td&gt;Data 1&lt;/td&gt;
+                      &lt;td&gt;Data 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Data 3&lt;/td&gt;
+                      &lt;td&gt;Data 4&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Data 5&lt;/td&gt;
+                      &lt;td&gt;Data 6&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                      &lt;td&gt;Data 7&lt;/td&gt;
+                      &lt;td&gt;Data 8&lt;/td&gt;
+                    &lt;/tr&gt;
+                  <span>&lt;/tbody&gt;</span>
+
+                  <span>&lt;tfoot&gt;</span>
+                      &lt;tr&gt;
+                        &lt;td&gt;foot1&lt;/td&gt;
+                        &lt;td&gt;foot2&lt;/td&gt;
+                      &lt;/tr&gt;
+                  <span>&lt;/tfoot&gt;</span>
+              &lt;/table&gt;
+            </pre>
+          </div>
+          <div class = "con2  flex">
+              <table border="1" style="width: 100%;">
+                <thead>
+                  <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                  </tr>
+                  <tr>
+                    <td>Data 3</td>
+                    <td>Data 4</td>
+                  </tr>
+                  <tr>
+                    <td>Data 5</td>
+                    <td>Data 6</td>
+                  </tr>
+                  <tr>
+                    <td>Data 7</td>
+                    <td>Data 8</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td>foot1</td>
+                    <td>foot2</td>
+                  </tr>
+                </tfoot>
+            </table>
+          </div>    
+        </div>
+        <h3>To merge cells in an HTML &lt;table&gt;, you use: </h3>
+        <ul>
+          <li><span>colspan</span>colspan Merge columns (cells horizontally)</li>
+          <li><span>rowspan</span> Merge rows (cells vertically)</li>
+        </ul>
+        <div class ="containt"  style="background-color: #eee;">
+          <div class = "con1">
+            <pre>
+            &lt;table border="1"&gt;
+              &lt;tr&gt;
+                &lt;th <span>colspan="3"</span>&gt;Merged Column Header&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Cell 1&lt;/td&gt;
+                &lt;td&gt;Cell 2&lt;/td&gt;
+                &lt;td&gt;Cell 3&lt;/td&gt;
+              &lt;/tr&gt;
+            &lt;/table&gt;
+            </pre>
+          </div>
+          <div class = "con2">
+                <table border="1">
+            <tr>
+              <th colspan="3">Merged Column Header</th>
+            </tr>
+            <tr>
+              <td>Cell 1</td>
+              <td>Cell 2</td>
+              <td>Cell 3</td>
+            </tr>
+          </table>
+          </div>
+      
+        </div>
+      </div>
+    </section>
+    <section id="Sec2-divspan">
+      <div class="container">
+          <h2>DIV & SPAN</h2>
+          <h3>&lt;div&gt; in HTML</h3>
+          <br>
+          <p>The &lt;div&gt; tag stands for "division" and is a block-level container element used to group other HTML elements together for styling or layout purposes.</p>
+          <ul>
+            <li>Opening and Closing Tag <span>&lt;div&gt;&lt;/div&gt;</span></li>
+            <li>Block Element</li>
+          </ul>
+        
+        <div class="containt">
+          <div class = "div-test1 ">
+            <h3>Frontend Courses :</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+          </div>
+          <div class = "div-test2">
+            <pre>
+
+
+                <span>&lt;div class = "test"&gt;</span>
+                  &lt;h3&gt;Frontend Courses :&lt;/h3&gt;
+                    &lt;ul&gt;
+                      &lt;li&gt;HTML&lt;/li&gt;
+                      &lt;li&gt;CSS&lt;/li&gt;
+                      &lt;li&gt;JS&lt;/li&gt;
+                    &lt;/ul&gt;
+                <span>&lt;/div&gt;</span>
+            </pre>
+          </div>
+
       </div>
     </section>
     <footer>
@@ -289,12 +451,12 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="#Anchor">Anchor</a></li>
-          <li><a href="#format">Formatting</a></li>
-          <li><a href="#list">List</a></li>
-          <li><a href="#image">Image</a></li>
-          <li><a href="">Table</a></li>
-          <li><a href="">Span & Div</a></li>
+          <li><a href="#Sec2-Anchor">Anchor</a></li>
+          <li><a href="#Sec2-format">Formatting</a></li>
+          <li><a href="#Sec2-list">List</a></li>
+          <li><a href="#Sec2-image">Image</a></li>
+          <li><a href="#Sec2-table">Table</a></li>
+          <li><a href="#Sec2-divspan">Span & Div</a></li>
         </ul>
       </div>
     </footer>
