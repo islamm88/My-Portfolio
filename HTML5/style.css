@@ -167,6 +167,27 @@ section {
   }
 }
 
+.entities {
+  padding: 20px;
+  background-color: var(--color3);
+  border-radius: 22px;
+  margin:20px ;
+  & .entitie {
+    display: inline-block;
+    background-color:#eee ;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right:10px ;
+    transition: all 0.7s ease;
+  }
+  & .entitie:hover {
+    color: black;
+    transform: scale(1.05);
+    background-color: #ddd;
+    
+  }
+}
+
 header,
 footer {
   & .container {

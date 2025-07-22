@@ -4,31 +4,100 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
 }
-
 :root {
   --color1: #eee;
   --color2: #ddd;
   --color3: #f1a5a5;
+  --color4: rgb(201, 235, 179);
+  --color5: rgb(77, 74, 74);
 }
 
 body {
-  background-color: var(--body-background-color);
+  background-color: var(--color1);
 }
 
 .container {
   width: 80%;
   margin: auto;
+  padding: 50px;
+  margin-block: 20px;
+  background-color: #ddd;
+  border-radius: 22px;
+  & .containt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .border {
   border: 1px solid red;
 }
 
-header {
+.flex {
+  display: flex;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color3);
+}
+
+.img {
+  background-image: url("./img/questionmark.png");
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+section {
+  & span {
+    font-weight: 500;
+    color: blue;
+  }
+  & h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 40px;
+  }
+  & h3 {
+    margin-top: 20px;
+  }
+
+  & p {
+    margin: 20px 0px 20px;
+    font-size: 15px;
+    padding-left: 20px;
+  }
+
+  & ul,
+  ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+    & li {
+      padding-block: 5px;
+    }
+    & span {
+      font-weight: 500;
+      color: blue;
+    }
+  }
+}
+
+header,
+footer {
   & .container {
+    background-color: var(--color1);
+    width: 100%;
     & h1 {
       text-align: center;
       margin-block: 20px;
@@ -59,7 +128,7 @@ header {
           color: rgb(252, 252, 252);
         }
         & a:hover {
-          color: rgb(201, 235, 179);
+          color: var(--color4);
         }
       }
     }
@@ -83,109 +152,6 @@ header {
         }
         & a:hover {
           color: #fff;
-        }
-      }
-    }
-  }
-}
-
-section {
-  & .container {
-    padding: 30px;
-    margin-block: 20px;
-    background-color: #ddd;
-    border-radius: 22px;
-
-    & span {
-      font-weight: 500;
-      color: blue;
-    }
-    & h2 {
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 50px;
-      font-size: 40px;
-    }
-    & h3 {
-      margin-top: 20px;
-    }
-
-    & p {
-      margin: 20px 0px 20px;
-      font-size: 15px;
-      padding-left: 20px;
-    }
-
-    & ul {
-      margin-left: 100px;
-      margin-bottom: 50px;
-      & li {
-        padding-block: 5px;
-      }
-      & span {
-        font-weight: 500;
-        color: blue;
-      }
-    }
-
-    & .div-img {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      & img {
-        width: 100px;
-        display: inline-block;
-        margin-inline: 10px;
-      }
-      & :nth-child(4) {
-        width: 450px;
-      }
-      & :nth-child(1) {
-        width: 80px;
-      }
-      & :nth-child(2) {
-        width: 80px;
-      }
-    }
-
-    & table {
-      margin-left: 60px;
-      border: 1px solid rgb(161, 158, 158);
-      background-color: #eee;
-      border-radius: 22px;
-      padding: 10px;
-      & thead tr td {
-        text-align: center;
-        font-size: 15px;
-        font-weight: 500;
-        background-color: #ddd;
-      }
-      & tr:nth-child(odd) {
-        background-color: #f1a5a5;
-      }
-      & tr td {
-        border-bottom: 1px solid black;
-        padding: 10px;
-      }
-    }
-
-    & .iden {
-      color: blue;
-      font-weight: 600;
-    }
-
-    & .containt {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      & img {
-        width: 45%;
-        height: 340px;
-      }
-      & .info {
-        width: 45%;
-        & ul {
-          margin-left: 20px;
         }
       }
     }

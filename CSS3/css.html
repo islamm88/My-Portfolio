@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header>
       <div class="container">
         <h1>CSS 3</h1>
@@ -20,14 +21,14 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="#Webintro">part1</a></li>
+          <li><a href="#introduction">Introduction</a></li>
           <li><a href="#HtmlIntor">part2</a></li>
           <li><a href="#HtmlTagElement">part3</a></li>
         </ul>
       </div>
     </header>
 
-    <section>
+    <section id = "introduction">
       <div class="container">
         <h2>Introduction</h2>
         <ul>
@@ -42,31 +43,85 @@
           <li>Internet Browser (Google Chrome , Firefox)</li>
         </ul>
         <p><span>Extention file .css like main.css</span></p>
-        <h3>Where can i create CSS Code</h3>
+        <h3>Where can I create CSS Code ?</h3>
+        <div class = "containt">
         <ul>
-          <li>External file 
-          <li>internal</li> 	
-              <ul>
-                <li>in file  inside &lt;head&gt;  &lt;style&gt;&lt;/style&gt;   &lt;/head&gt;</li>
-                <li>in line  inside the "opent tage" what you want style it like &lt;p&gt; tage</li>
-              </ul>	
+            <li>External file  
+            <li>internal</li> 	
+                <ul>
+                  <li>in file  inside &lt;head&gt;  <span>&lt;style&gt;&lt;/style&gt;</span>   &lt;/head&gt;</li>
+                  <li>inline  inside the "opening tage" what you want style it like &lt;p&gt; tage</li>
+                </ul>	
           </li>
         </ul>
+        <img src="./img/css-places.png" alt="Css-places" loading="lazy" width="500">
+        </div>
+  
         <h3>Full Priority Order (Simplified)</h3>
-        <ul>
+        <br>
+        <ol>
           <li>Inline styles with !important</li>
           <li>Internal/External styles with !important</li>
           <li>Inline styles</li>
           <li>Internal styles between tag &lt;style&gt;&lt;/style&gt;</li>
           <li>External styles</li>
           <li>Browser default styles (lowest)</li>
-        </ul>
+        </ol>
         
       </div>
     </section>
 
     <section>
-      <div class="container"></div>
+      <div class="container">
+        <h2>Selector & Comment</h2>
+        <div class="containt">
+          <div>
+            <h3> in CSS, comments are often used to:</h3>
+            <ul>
+              <li>Explain the code - for documentation</li>
+              <li>Sometimes using to ignor code to test or debug</li>
+            </ul>
+            <h3>Type of Comment : </h3>
+            <ul>
+              <li>Single Line  /*   ....    * /</li>
+              <li>Multiple Line</li>
+            </ul>
+          </div>
+        <img src="./img/comment.png" alt="commant" loading="lazy" width="300">
+        </div>
+        <h3>Some Types of Selector :</h3>
+        <div class="containt">
+          
+          <ul>
+            <li>Universal Selector</li>
+            <li>Type Selector (Element Selector)</li>
+            <li>Class Selector</li>
+            <li>ID Selector</li>
+            <li>Group Selector</li>
+            <li>Descendant Selector</li>
+          </ul>
+        </div>
+        <ul>
+
+      </div>
     </section>
+
+    <footer>
+      <div class="container">
+        <ul class="nav-site">
+          <li><a href="">Session 1</a></li>
+          <li><a href="">Session 2</a></li>
+          <li><a href="">Session 3</a></li>
+          <li><a href="">Session 4</a></li>
+          <li><a href="">Session 5</a></li>
+          <li><a href="">Test your self</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#HtmlIntor">part2</a></li>
+          <li><a href="#HtmlTagElement">part3</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
