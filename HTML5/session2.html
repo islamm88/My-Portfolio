@@ -14,11 +14,11 @@
     <header id="header">
       <div class="container">
         <h1>HTML5</h1>
-        <h2>SESSION 2</h2>
+        <h2>SESSION 2 <a href="../assets/HTML5-Session2.pdf" target="_blank"><img src="../imge/pdf.png" width="20"  alt="session1"></a></h2>
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
           <li><a href="./session2.html">Session 2</a></li>
-          <li><a href="">Session 3</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
           <li><a href="">Session 4</a></li>
           <li><a href="">Session 5</a></li>
           <li><a href="">Test your self</a></li>
@@ -30,6 +30,7 @@
           <li><a href="#Sec2-image">Image</a></li>
           <li><a href="#Sec2-table">Table</a></li>
           <li><a href="#Sec2-divspan">Span & Div</a></li>
+          <li><a href="#Sec2-Assignment">Assignment</a></li>
         </ul>
       </div>
     </header>
@@ -372,7 +373,7 @@
           <li><span>colspan</span>colspan Merge columns (cells horizontally)</li>
           <li><span>rowspan</span> Merge rows (cells vertically)</li>
         </ul>
-        <div class ="containt"  style="background-color: #eee;">
+        <div class ="containt"  style="background-color: #eee; padding-block:50px ;">
           <div class = "con1">
             <pre>
             &lt;table border="1"&gt;
@@ -425,8 +426,6 @@
           </div>
           <div class = "div-test2">
             <pre>
-
-
                 <span>&lt;div class = "test"&gt;</span>
                   &lt;h3&gt;Frontend Courses :&lt;/h3&gt;
                     &lt;ul&gt;
@@ -437,15 +436,52 @@
                 <span>&lt;/div&gt;</span>
             </pre>
           </div>
-
       </div>
+      <h3>&lt;span&gt; in HTML</h3>
+      <p>In HTML, the &lt;span&gt; tag is an inline container used to mark up a part of a text 
+        or a document. It does not have any visual effect by default, but it's commonly used with 
+        CSS or JavaScript to apply styles or manipulate parts of the content.</p>
+
+        <ul>
+          <li>Inline element</li>
+        </ul>
+      <div class="containt">
+        <div class = "div-test1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. acilis amet vitae illo eveniet. 
+              Excepturi dolore <span>&lt;span id = "x" &gt;</span> <span style = "color:red">dicta aliquid vitae minus</span><span>&lt;/span&gt;</span>  ea temporibus 
+              pariatur culpa molestiae ex? <span>&lt;span id = "y" &gt;</span><span style="color: green;">Explicabo </span><span>&lt;/span&gt;</span>, maiores consectetur.</p>
+        </div>
+        <div class = "div-test2">
+          <pre>
+            #x {
+              color : red;
+            }
+
+            #y {
+              color : green;
+            }
+          </pre>
+        </div>
+      </div>
+      <p>Note : If you apply a CSS rule targeting the <span>&lt;span&gt;</span> tag directly (without a class or ID), it will affect all <span>&lt;span&gt;</span> elements on the page. </p>
+    </section>
+    <section id = "Sec2-Assignment">
+      <div class="container" style="justify-content: space-between; display: flex; flex-wrap: wrap; flex-direction: column;">
+        <h2>Assignment</h2>
+        <br>
+        <img src="./img/assignmentsec2-1.png" alt="ul-assignment" loading="" width="250" height="250"><br>
+        <img src="./img/assignmentsec2-2.png" alt="ul-assignment" loading="" width="450" height="250"><br>
+        <img src="./img/assignmentsec2-3.png" alt="ul-assignment" loading="" width="350" height="250"><br>
+        <img src="./img/assignmentsec2-4.png" alt="ul-assignment" loading="" width="550" height="50">
+      </div>
+      
     </section>
     <footer>
       <div class="container">
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
           <li><a href="./session2.html">Session 2</a></li>
-          <li><a href="">Session 3</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
           <li><a href="">Session 4</a></li>
           <li><a href="">Session 5</a></li>
           <li><a href="">Test your self</a></li>
@@ -457,6 +493,7 @@
           <li><a href="#Sec2-image">Image</a></li>
           <li><a href="#Sec2-table">Table</a></li>
           <li><a href="#Sec2-divspan">Span & Div</a></li>
+          <li><a href="#Sec2-Assignment">Assignment</a></li>
         </ul>
       </div>
     </footer>
