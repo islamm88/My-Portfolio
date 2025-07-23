@@ -7,6 +7,7 @@
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
 }
+
 :root {
   --color1: #eee;
   --color2: #ddd;
@@ -17,6 +18,7 @@
 
 body {
   background-color: var(--color1);
+
 }
 
 .container {
@@ -27,10 +29,10 @@ body {
   background-color: #ddd;
   border-radius: 22px;
   & .containt {
+    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 }
 
@@ -80,9 +82,9 @@ section {
   }
 
   & ul,
-  ol {
+  ol,dl {
     margin-left: 50px;
-    margin-bottom: 20px;
+    margin: 20px;
     & li {
       padding-block: 5px;
     }
@@ -90,8 +92,30 @@ section {
       font-weight: 500;
       color: blue;
     }
+
+    
   }
 }
+
+#colorhunt {
+  border-radius: 22px;
+  box-shadow: 0 0 15px gray;
+  transition: all 0.7s ease;
+}
+
+#colorhunt:hover {
+  border-radius: 22px;
+  transform: scale(1.05);
+}
+
+#hr1 {
+  width: 70%;
+  height: 5px;
+  background-color: black;
+  margin-inline: auto;
+  margin-block: 40px;
+}
+
 
 header,
 footer {
@@ -157,3 +181,4 @@ footer {
     }
   }
 }
+
