@@ -21,6 +21,7 @@ body {
 
 }
 
+
 .container {
   width: 80%;
   margin: auto;
@@ -115,7 +116,6 @@ section {
   margin-inline: auto;
   margin-block: 40px;
 }
-
 
 header,
 footer {

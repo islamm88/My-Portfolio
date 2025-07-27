@@ -12,9 +12,14 @@
   </head>
   <body>
     <header id="header">
-      <div class="container" style="box-shadow: none;">
+      <div class="container" style="box-shadow: none">
         <h1>HTML5</h1>
-        <h2>SESSION 1 <a href="../assets/HTML5-Session1.pdf" target="_blank"><img src="../imge/pdf.png" width="20"  alt="session1"></a></h2>
+        <h2>
+          SESSION 1
+          <a href="../assets/HTML5-Session1.pdf" target="_blank"
+            ><img src="../imge/pdf.png" width="20" alt="session1"
+          /></a>
+        </h2>
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
           <li><a href="./session2.html">Session 2</a></li>
@@ -24,18 +29,18 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="#Webintro">Web Introduction</a></li>
-          <li><a href="#HtmlIntor">HTML Introduction</a></li>
-          <li><a href="#HtmlTagElement">HTML Tag&Element</a></li>
-          <li><a href="#heading_p_pre">heading_p_pre</a></li>
-          <li><a href="#assignment">Assignment</a></li>
+          <li><a href="#Sec1-Webintro">Web Introduction</a></li>
+          <li><a href="#Sec1-HtmlIntor">HTML Introduction</a></li>
+          <li><a href="#Sec1-HtmlTagElement">HTML Tag&Element</a></li>
+          <li><a href="#Sec1-heading_p_pre">heading_p_pre</a></li>
+          <li><a href="#Sec1-assignment">Assignment</a></li>
         </ul>
       </div>
     </header>
 
-    <section>
+    <section id="Sec1-Webintro">
       <div class="container">
-        <h2 id="Webintro">WEB Intoduction</h2>
+        <h2>WEB Intoduction</h2>
         <h3>
           What happens when you use a web browser to navigate to a web page ?
         </h3>
@@ -179,9 +184,9 @@
       </div>
     </section>
 
-    <section>
+    <section id="Sec1-HtmlIntor">
       <div class="container">
-        <h2 id="HtmlIntor">HTML5 Intoduction</h2>
+        <h2>HTML5 Intoduction</h2>
         <h3><span>HTML5 (HyperText Markup Language)</span></h3>
         <br />
         <h4><u>History of HTML</u></h4>
@@ -227,20 +232,20 @@
             </tr>
           </tbody>
         </table>
-        
+
         <h3>Waht we need ?</h3>
         <ul>
           <li>HTML Prerequisites : Basic Computer & Internet Familiarity</li>
           <li>
             Download Editor
-          	&#128071
+            <!-- &#128071 -->
             <a href="https://code.visualstudio.com/download" target="_blank"
-              >Vs code </a><img src="./img/VScode.png" alt="VScode" width="30"
-            />
+              >Vs code </a
+            ><img src="./img/VScode.png" alt="VScode" width="30" />
           </li>
           <li>
             Download Google chrome
-      	&#128071
+            <!-- &#128071 -->
             <a
               href="https://www.google.com/intl/en_uk/chrome/dr/download/"
               target="_blank"
@@ -249,6 +254,13 @@
             <img src="./img/Chrome.png" alt="VScode" width="50" />
           </li>
         </ul>
+        <p>
+          Note : you can use VS Code online
+          <a href="https://vscode.dev/" target="_blank">
+            <!--&#128073-->
+            VS Code</a
+          >
+        </p>
         <h3>Creating first Page</h3>
         <ul>
           <li>
@@ -283,7 +295,7 @@
         </p>
         <p>Every tag (element) in your HTML becomes a node in the DOM tree.</p>
         <div class="container flex">
-          <img src="./img/Dom Tree.png" alt="" width="500" />
+          <img src="./img/Dom-Tree.png" alt="Dom Tree" width="500" />
         </div>
         <div class="containt">
           <img src="./img/page-structur.png" alt="" />
@@ -333,6 +345,7 @@
             and maintain.
           </li>
         </ul>
+        <hr>
         <h2>HTML Validation</h2>
         <h3>HTML and Errors</h3>
         <p>
@@ -348,8 +361,10 @@
           process your documents properly.
         </p>
         <p>
-          Use : <span>http://validator.w3.org/</span> &#128073 <a href="http://validator.w3.org/"><span>W3C</span></a> to validate your HTML5 &
-          CSS3 code
+          Use : <span>http://validator.w3.org/</span>
+          <!--&#128073-->
+          <a href="http://validator.w3.org/"><span>W3C</span></a> to validate
+          your HTML5 & CSS3 code
         </p>
         <img src="./img/valedate-HTML.png" alt="valedate-html" />
         <p style="font-size: 30px">
@@ -372,7 +387,7 @@
       </div>
     </section>
 
-    <section id="HtmlTagElement">
+    <section id="Sec1-HtmlTagElement">
       <div class="container">
         <h2>Tags & elements</h2>
 
@@ -441,12 +456,10 @@
       </div>
     </section>
 
-    <section id="heading_p_pre">
+    <section id="Sec1-heading_p_pre">
       <div class="container">
         <h2>Heading - P - Pre</h2>
-        <h3>
-          <span><u>Heading :</u></span>
-        </h3>
+        <h3>Heading</h3>
         <p>Six levels : (h1 , h2 , h3 , h4 , h5 , h6) for title inside page</p>
         <ul>
           <li>Use &lt;h1&gt; <span>once per page </span>for the main title.</li>
@@ -457,26 +470,10 @@
           <li>it's block element and has style .</li>
         </ul>
         <div class="containt">
-          <div>
-            <p><span>&lt;h1&gt;</span>Welcome<span>&lt;/h1&gt;</span></p>
-            <p><span>&lt;h2&gt;</span>Welcome<span>&lt;/h2&gt;</span></p>
-            <p><span>&lt;h3&gt;</span>Welcome<span>&lt;/h3&gt;</span></p>
-            <p><span>&lt;h4&gt;</span>Welcome<span>&lt;/h4&gt;</span></p>
-            <p><span>&lt;h5&gt;</span>Welcome<span>&lt;/h5&gt;</span></p>
-            <p><span>&lt;h6&gt;</span>Welcome<span>&lt;/h6&gt;</span></p>
-          </div>
-          <div>
-            <h1>Welcome</h1>
-            <h2>Welcome</h2>
-            <h3>Welcome</h3>
-            <h4>Welcome</h4>
-            <h5>Welcome</h5>
-            <h6>Welcome</h6>
-          </div>
+          <img src="./img/Heading.png" alt="heading" loading="lazy" />
         </div>
-        <h3>
-          <span><u>Paragraph :</u></span>
-        </h3>
+        <hr />
+        <h3>Paragraph</h3>
         <p>HTML stands for paragraph. It's used to define blocks of text.</p>
         <ul>
           <li>Block element</li>
@@ -497,10 +494,8 @@
           fugit saepe nulla unde sit earum doloremque cupiditate totam optio
           laborum ipsum.<span>&lt;/p&gt;</span>
         </p>
-        <br />
-        <h3>
-          <span><u>Preformatted text :</u></span>
-        </h3>
+        <hr />
+        <h3>Preformatted text</h3>
         <p>HTML stands for "preformatted text". It tells the browser to:</p>
         <ul>
           <li>Preserve spaces</li>
@@ -531,9 +526,9 @@
       </div>
     </section>
 
-    <section>
-      <div class="container" id="assignment">
-        <br />
+    <section id="Sec1-assignment">
+      <div class="container">
+        <h2>Assignment</h2>
         <img src="./img/Assignment.png" alt="assignment" />
         <br />
         <a
@@ -561,10 +556,11 @@
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
-          <li><a href="#Webintro">Web Introduction</a></li>
-          <li><a href="#HtmlIntor">HTML Introduction</a></li>
-          <li><a href="#HtmlTagElement">HTML Tag&Element</a></li>
-          <li><a href="#heading_p_pre">heading_p_pre</a></li>
+          <li><a href="#Sec1-Webintro">Web Introduction</a></li>
+          <li><a href="#Sec1-HtmlIntor">HTML Introduction</a></li>
+          <li><a href="#Sec1-HtmlTagElement">HTML Tag&Element</a></li>
+          <li><a href="#Sec1-heading_p_pre">heading_p_pre</a></li>
+          <li><a href="#Sec1-assignment">Assignment</a></li>
         </ul>
       </div>
     </footer>

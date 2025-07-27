@@ -19,6 +19,14 @@ body {
   background-color: var(--color1);
 }
 
+hr {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #444242;
+  height: 3px;
+  margin-block: 40px;
+}
+
 .container {
   width: 80%;
   margin: auto;
