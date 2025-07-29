@@ -179,20 +179,19 @@ section {
   padding: 20px;
   background-color: var(--color3);
   border-radius: 22px;
-  margin:20px ;
+  margin: 20px;
   & .entitie {
     display: inline-block;
-    background-color:#eee ;
+    background-color: #eee;
     padding: 15px;
     border-radius: 10px;
-    margin-right:10px ;
+    margin-right: 10px;
     transition: all 0.7s ease;
   }
   & .entitie:hover {
     color: black;
     transform: scale(1.05);
     background-color: #ddd;
-    
   }
 }
 
@@ -422,6 +421,34 @@ footer {
         width: 45%;
         align-items: center;
       }
+    }
+    & #id-class {
+      background-color: var(--color3);
+      padding: 20px;
+      border-radius: 22px;
+      & p {
+        font-size: 20px;
+      }  
+    }
+  }
+}
+
+#Sec3-Semantic {
+  & .container {
+    & .content {
+      background-color: var(--color3);
+      padding: 15px;
+      border-radius: 22px;
+    }
+  }
+}
+
+#Sec-assignment {
+& .container {
+    & .containt {
+      background-color: black;
+      color: #fff;
+      padding: 15px;
     }
   }
 }

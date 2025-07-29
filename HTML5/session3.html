@@ -31,11 +31,10 @@
         <ul class="nav-page">
           <li><a href="#Sec3-attributes">Attributes</a></li>
           <li><a href="#Sec3-entitie">Entitie</a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#Sec3-Semantic">Semantic</a></li>
+          <li><a href="#Sec3-AudioVideo">Audio&Video</a></li>
+          <li><a href="#Sec-assignment">Assignment</a></li>
+
         </ul>
       </div>
     </header>
@@ -83,7 +82,6 @@
                   <td>Provides alternate text for an image</td>
                 </tr>
               </tbody>
-              
               <tr></tr>
             </table>
           </div>
@@ -113,7 +111,6 @@
                   <td>Assigns one or more class names for styling or JS</td>
                 </tr>
               </tbody>
-              
               <tr></tr>
             </table>
           </div>
@@ -124,6 +121,9 @@
           <li>The id attribute is used to uniquely identify a <span>single element</span> on a page</li>
           <li>the class attribute is used to <span>group multiple elements</span>group multiple elements together</li>
         </ul>
+        <div id = "id-class">
+          <p>If you use the same id on multiple elements, the HTML is invalid and may lead to <span>unexpected behavior</span>.</p>
+        </div>
     </section>
     <section id="Sec3-entitie">
       <div class="container">
@@ -162,21 +162,126 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id = "Sec3-Semantic">
       <div class="container">
           <h2>Semantic Elements</h2>
           <p>Semantic elements are HTML tags that clearly describe their meaning — both to the browser and to developers. They improve readability, accessibility, and SEO.</p>
-        <div class="containt">
+          <p><span>Note: Block Element</span></p>
+        <div class="containt" id = "Sec3-Semantic">
           <table>
+              <tr><th>Tags</th></tr>
               <tr><td>&lt;header&gt;&lt;/header&gt; </td></tr> 
-              <tr><td>&lt;main&gt;&lt;/main&gt; </td></tr>
+              <tr><td>&lt;main&gt;&lt;/main&gt;  </td></tr>
               <tr><td>&lt;footer&gt;&lt;/footer&gt; </td></tr>
               <tr><td>&lt;aside&gt;&lt;/aside&gt; </td></tr>
               <tr><td>&lt;nav&gt;&lt;/nav&gt; </td></tr>
-              
+              <tr><td>&lt;section&gt;&lt;/section&gt; </td></tr>
+              <tr><td>&lt;article&gt;&lt;/article&gt; </td></tr>
+              <tr><td>&lt;summary&gt;&lt;/summary&gt; </td></tr>    
             </tr>
           </table>
-        
+          <img src="./img/Sementic-Elements.png" alt="Semantic" loading="lazy">
+        </div>
+        <h3>They tell you what the element is for, rather than how it looks. This improves:</h3>
+        <ul>
+          <li>Accessibility (screen readers, assistive tech)</li>
+          <li>SEO (search engines understand your layout better)</li>
+          <li>Maintainability (code is easier to read and structure)</li>
+        </ul>
+      </div>
+    </section>
+    <section id = "Sec3-AudioVideo">
+      <div class="container">
+        <div class="containet">
+          <h2>Audio & Video</h2>
+          <h3>Audio</h3>
+          <p> <span>&lt;audio&gt;&lt;/audio&gt;</span></p>
+          <audio controls="" src="./Assets/Audio1.mp3" type="audio/mpeg"></audio>
+          <p>Two different way to type </p>
+            <ul>
+            <li><span>&lt;audio controls src="Audio1.mp3" type="audio/mpeg"&gt;&lt;/audio&gt;</span></li>
+            <li><span>&lt;audio controls&gt;<br>
+                &lt;source src="Audio1.mp3" type="audio/mpeg"&gt;<br>
+                  Your browser does not support the audio element. <br>
+                &lt;/audio&gt;</span></li>
+            </ul>
+            <p>Properties : </p>
+            <ul>
+            <li><span>inline-block</span></li>
+            <li>Opening and Closing Tag</li>
+            <li>controls : displays the audio player</li>
+            <li>src : allows you to specify the audio file and its type. </li>
+            <li>type : Helps the browser decide whether it can play the file before downloading it.</li>
+          </ul>
+          <h3>Video</h3>
+          <p><span>&lt;video&gt;&lt;/viedo&gt;</span></p>
+          <video controls="" src="./Assets/Video1.mp4" type="video/mp4" width="500" poster="./Assets/poster.jpg"></video>
+          <p>Two different way to type </p>
+          <ul>
+            <li><span>&lt;video controls src="Video1.mp4" type="video/mp4" width="500" poster="poster.jpg"&gt;&lt;/video&gt;</span></li>
+            <li><span>&lt;video width="400" controls&gt;<br>
+                      &lt;source src="video.mp4" type="video/mp4"&gt;<br>
+                        Your browser does not support the video tag. <br>
+                      &lt;/video&gt;</span></li>
+          </ul>
+          <p>Properties : </p>
+          <ul>
+            <li><span>inline-block</span></li>
+            <li>Opening and Closing Tag</li>
+            <li>controls : displays the audio player</li>
+            <li>src : allows you to specify the video file and its type.</li>
+            <li>type : Helps the browser decide whether it can play the file before downloading it.</li>
+            <li>width : Sets the width of the video player in pixels.</li>
+            <li>poster : Defines an image to show before the video plays.</li>
+          </ul>
+          <ul>
+          </ul>
+          <h3>Comparison between Inline , Block and Inline Block</h3>  
+          <br>
+          <table>
+            <thead>
+              <tr>
+                <th>display</th>
+                <th>Starts on New Line?</th>
+                <th>Can Set Width/Height?</th>
+                <th>Behaves Like</th>
+                <th>Common Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>inline</td>
+                <td>No</td>
+                <td>No</td>
+                <td>Like text</td>
+                <td>&lt;span&gt;, &lt;a&gt;&lt;/a&gt;</td>
+              </tr>
+              <tr>
+                <td>block</td>
+                <td>Yes</td>
+                <td>Yes</td>
+                <td>Like a box</td>
+                <td>&lt;div&gt;, &lt;p&gt;&lt;/p&gt;</td>
+              </tr>
+              <tr>
+                <td>inline-block</td>
+                <td>No</td>
+                <td>Yes</td>
+                <td>Mix of both</td>
+                <td>&lt;img&gt; &lt;button&gt; &lt;/button&gt;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id = "Sec-assignment">
+      <div class="container">
+        <div class="containt">
+          <h2>Assignment</h2>
+          <p>Write a code of a real website as a blog which contains a header and nav links, two sections each one includes 3 articles, 
+            don't forget the aside and finally the footer including copyright symbol</p>
+            <p>Add audio & Video</p>
         </div>
       </div>
     </section>
@@ -193,11 +298,9 @@
         <ul class="nav-page">
           <li><a href="#Sec3-attributes">Attributes</a></li>
           <li><a href="#Sec3-entitie">Entitie</a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+          <li><a href="#Sec3-Semantic">Semantic</a></li>
+          <li><a href="#Sec3-AudioVideo">Audio&Video</a></li>
+          <li><a href="#Sec-assignment">Assignment</a></li>
         </ul>
       </div>
     </footer>
