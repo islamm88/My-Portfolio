@@ -443,7 +443,20 @@ footer {
   }
 }
 
-#Sec-assignment {
+#Sec3-name-convetion {
+  & .container {
+    & .containt {
+      & .part {
+        background-color: var(--color3);
+        padding: 20px;
+        border-radius: 22px;
+        height: 250px;
+      }
+    }
+  }
+}
+
+#Sec3-assignment {
 & .container {
     & .containt {
       background-color: black;
