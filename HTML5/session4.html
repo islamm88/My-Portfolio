@@ -76,6 +76,14 @@
               </li>
               <li>Input is self closing tag .</li>
               <li><span>&lt;input type="text"&gt;</span></li>
+              <li>
+                required : make a field mandatory — the user must fill it out
+                before submitting the form.
+              </li>
+              <li>
+                you can add attributes like <span>class</span> or
+                <span>id</span>
+              </li>
             </ul>
           </div>
           <div id="part2">
@@ -109,8 +117,52 @@
             </form>
           </div>
         </div>
+        <hr />
+        <h3>label :</h3>
+        <div class="containt" id="desc-label">
+          <div id="part1">
+            <p>
+              In HTML, the <span>&lt;label&gt;</span> element is used to define
+              a label for an input element, helping users understand what the
+              input is for. It also improves accessibility and usability,
+              especially for screen readers.
+            </p>
+            <ul>
+              <li><span>for</span> : to associate the label with a specific form control (like &lt;input&gt;select>, etc.). 
+                This improves accessibility and usability.</li>
+              <li>for linked with input id  ->  <span>for</span>="username" → matches the <span>id</span>="username" of the input element.</li>
+            </ul>
+          </div>
+          <div id="part2">
+            <form action="">
+              <label for="user-name">
+                <span>User Name:</span>
+                <input type="text" name="name" id="user-name" required />
+                </label>
+                <br>
+                <br>
+                <label for="pass-w">
+                <span>password :</span>
+                <input type="password" name="password" id="pass-w" required />
+                </label>
+            </form>
+            <hr>
+            <p>  &lt;label for="user-name"&gt; <br>
+              &lt;span&gt;User Name:&lt;/span&gt; <br>
+              &lt;input type="text" name="name" id="user-name" required /&gt; <br>
+            &lt;/label&gt; <br>
+
+            &lt;label for="pass-w"&gt; <br>
+              &lt;span&gt;password :&lt;/span&gt; <br>
+              &lt;input type="password" name="password" id="pass-w" required /&gt; <br>
+            &lt;/label&gt;</p>
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
     <footer>
       <div class="container">
         <ul class="nav-site">

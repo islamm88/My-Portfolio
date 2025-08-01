@@ -478,21 +478,30 @@ footer {
       }
     }
 
-    & #desc-input {
+    & #desc-input,
+    & #desc-label {
       & div {
-        width: 50%;
+        width: 45%;
       }
 
       & #part1 {
         flex-direction: column;
-        justify-content: flex-start; /* not just 'start' */
+        justify-content: flex-start;
         align-items: center;
       }
 
       & #part2 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        & table {
+          width: 100%;
+          margin: 0px;
+        }
+      }
+    }
+    & #desc-label {
+      & #part2 {
+        background-color: var(--color3);
+        padding: 25px;
+        border-radius: 22px;
       }
     }
   }
