@@ -63,7 +63,7 @@
         <br />
         <h3>Input :</h3>
         <div class="containt" id="desc-input">
-          <div id="part1">
+          <div class ="part1">
             <p>
               The<span>&lt;input&gt;</span> element in HTML is used to create
               interactive controls in web forms to accept data from the user.
@@ -86,7 +86,7 @@
               </li>
             </ul>
           </div>
-          <div id="part2">
+          <div class ="part2">
             <form>
               <table>
                 <tr>
@@ -112,6 +112,10 @@
                 <tr>
                   <td><label for="">type = "radio"</label></td>
                   <td><input type="radio" /></td>
+                </tr>
+                <tr>
+                  <td><label for="">type = "button"</label></td>
+                  <td><input type="button" value=" login "/></td>
                 </tr>
               </table>
             </form>
@@ -147,22 +151,82 @@
                 </label>
             </form>
             <hr>
-            <p>  &lt;label for="user-name"&gt; <br>
-              &lt;span&gt;User Name:&lt;/span&gt; <br>
-              &lt;input type="text" name="name" id="user-name" required /&gt; <br>
+            <p>  &lt;label for="user-name"&gt; User Name:<br>
+              &lt;input type="text" name="name" id="user-name" /&gt; <br>
             &lt;/label&gt; <br>
 
-            &lt;label for="pass-w"&gt; <br>
-              &lt;span&gt;password :&lt;/span&gt; <br>
-              &lt;input type="password" name="password" id="pass-w" required /&gt; <br>
+            &lt;label for="pass-w"&gt; password : <br>
+              &lt;input type="password" name="password" id="pass-w" /&gt; <br>
             &lt;/label&gt;</p>
 
             </div>
-          </div>
         </div>
+        <hr>
+        <h2>Input Attributes</h2>
+        <h3><span>Placeholder - Hidden - disabled - Value - Required - autofocus:</span> </h3>
+        <br>
+        <div class="containt">
+          <table>
+            <tr>
+              <td>&lt;input type="text" <span>placeholder</span> ="Add Your UserName" &gt;</td>
+              <td><input type="text" name=" " id=" " placeholder="Add Your UserName"></td>
+            </tr>
+            <tr>
+              <td>&lt;input type="text" name="" id="" <span>hidden</span>&gt;</td>
+              <td><input type="text" name=" " id=" " hidden></td>
+            </tr>
+            <tr>
+              <td>&lt;input type="text" <span>value</span> = "xxxxxx" name=" " id=" "  <span>disabled</span>  &gt;</td>
+              <td><input type="text" name=" " id=" " disabled value = "xxxxxx"></td>
+            </tr>
+            <tr>
+              <td>&lt;input type="text" name="" id="" <span>required</span> &gt;</td>
+              <td><input type="text" name=" " id=" " required ></td>
+            </tr>
+            <tr>
+              <td>&lt;input type="text" name=" " id=" " <span>autofocus</span> &gt;</td>
+              <td><input type="text" name=" " id=" " autofocus ></td>
+            </tr>
+          </table>
+        </div>
+        <p>Placeholder : to display a short hint or example text inside the field.</p>
+        <p>Hidden : used to hide an element from the page. </p>
+        <p>disabled : used to make form elements uneditable and unclickable. </p>
+        <p>Value : used to specify the initial value of a form element like &lt;input&gt;, &lt;button&gt;.</p>
+        <p>Required : used to make form fields mandatory. </p>
+        <p>autofocus : used to automatically place the cursor inside a specific form field as soon as the page loads.</p>
+        <hr>
+        <h2>Submeit & Reset</h2>
+        <p>The <span>submit</span>  type is used with the <span>&lt;input&gt;</span> element to send the form data to the server.</p>
+        <p>A <span>reset</span> type is used to clear all the input fields in a form and return them to their default values.</p>
+        <div class="containt">
+          <table>
+            <tr>
+              <td>&lt;input <span>type="submit"</span> name = "" id =""&gt;</td>
+              <td><input type="submit" name="" id=""></td>
+            </tr>
+            <tr>
+              <td>&lt;input <span>type="reset"</span> name="" id=""&gt;</td>
+              <td><input type="reset" name="" id=""></td>
+            </tr>
+          </table>
+        </div>
+        <hr>
+        <h2>Form Attributes</h2>
+        <div class="containt">
+          <table>
+          <tr>
+            <td>&lt;form <span>action=""</span> &gt;</form></td>
+            <td>Specifies the URL where the form data will be sent after submission.</td>
+          </tr>
+        </table>
+        </div>
+        
+      </div>
+
+
       </div>
     </section>
-
     <footer>
       <div class="container">
         <ul class="nav-site">
