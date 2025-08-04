@@ -513,3 +513,13 @@ footer {
     }
   }
 }
+
+#sec4-hidding-disabel {
+  & .container {
+    & .containt {
+      & img {
+        width: 80%;
+      }
+    }
+  }
+}

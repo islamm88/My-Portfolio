@@ -33,7 +33,9 @@
           <li><a href="#sec4-input-attributes">input-attributes</a></li>
           <li><a href="#sec4-submeit-reset-button">submeit-reset-button</a></li>
           <li><a href="#sec4-form-attributes">form attributes</a></li>
+          <li><a href="#sec4-hidding-disabel">hidding-disabel</a></li>
           <li><a href="#sec4-example">example</a></li>
+          <li><a href="#sec4-assignment">assignment</a></li>
         </ul>
       </div>
     </header>
@@ -115,6 +117,18 @@
                   <td><label for="">type = "button"</label></td>
                   <td><input type="button" value=" login "/></td>
                 </tr>
+                <tr>
+                  <td><label for="">type = "color"</label></td>
+                  <td><input type = "color"></td>
+                </tr>
+                <tr>
+                  <td><label for="">type = "date"</label></td>
+                  <td><input type = "date"></td>
+                </tr>
+                <tr>
+                  <td><label for="">type = "email"</label></td>
+                  <td><form action=""><input type = "email"><input type="submit"></form></td>
+                </tr>
               </table>
             </form>
           </div>
@@ -165,13 +179,15 @@
     <section id = "sec4-input-attributes">
           <div class="container">
             <h2>Input Attributes</h2>
-            <h3><span>Placeholder - Hidden - disabled - Value - Required - autofocus:</span></h3>
+            <h3><span>Placeholder - Hidden - Disabled - Value - Required - Autofocus - Maxlength - Minlength:</span></h3>
               <p>Placeholder : to display a short hint or example text inside the field.</p>
               <p>Hidden : used to hide an element from the page. </p>
-              <p>disabled : used to make form elements uneditable and unclickable. </p>
+              <p>Disabled : used to make form elements uneditable and unclickable. </p>
               <p>Value : used to specify the initial value of a form element like &lt;input&gt;, &lt;button&gt;.</p>
               <p>Required : used to make form fields mandatory. </p>
-              <p>autofocus : used to automatically place the cursor inside a specific form field as soon as the page loads.</p>
+              <p>Autofocus : used to automatically place the cursor inside a specific form field as soon as the page loads.</p>
+              <p>Maxlength : used to set the maximum number of characters a user can enter in an &lt;input&gt; or &lt;textarea&gt; field.</p>
+              <p>Minlength : used to set the minimum number of characters that the user must enter in an &lt;input&gt; or &lt;textarea&gt; field before the form can be submitted.</p>
             <div class="containt">
               <table>
                 <tr>
@@ -193,6 +209,19 @@
                 <tr>
                   <td>&lt;input type="text" name=" " id=" " <span>autofocus</span> &gt;</td>
                   <td><input type="text" name=" " id=" " autofocus ></td>
+                </tr>
+                <tr>
+                  <td>&lt;input type="text" name=" " id=" " <span>maxlength = "10" </span> &gt;</td>
+                  <td><input type="text" name=" " id=" " maxlength="10"></td>
+                </tr>
+                <tr>
+                  <td>&lt;input type="text" name=" " id=" " <span>minlength = "8" </span> &gt;</td>
+                  <td>
+                    <form action="">
+                    <input type="text" name=" " id=" " minlength ="8">
+                    <input type="submit">
+                  </form>
+                </td>
                 </tr>
               </table>
             </div>
@@ -232,11 +261,14 @@
     <section id = "sec4-form-attributes">
       <div class="container">
           <h2>Form Attributes</h2>
-          <ul>
-            <li><span>get</span> Data is visible in the URL</li>
-            <li><span>post</span> Data is hidden from the URL</li>
-          </ul>
-        <div class="containt">
+          <h3>Action & Methode</h3>
+          <p>Action : Specifies the URL where the form data will be sent after submission.</p>
+          <p>Methode : Defines the HTTP method for sending data.</p>
+            <ul>
+              <li><span>get</span> Data is visible in the URL</li>
+              <li><span>post</span> Data is hidden from the URL</li>
+            </ul>
+          <div class="containt">
           <table>
           <tr>
             <td>&lt;form <span>action=" "</span> &gt;</form></td>
@@ -249,21 +281,32 @@
           </tr>
         </table>
         </div>
+        
+    
       </div>
     </section>    
 
+    <section id = "sec4-hidding-disabel">
+      <div class="container">
+        <h2>Hidden & diable</h2>
+        <div class="containt">
+          <img class = "Hidden-disabel" src="./img/hidden-disabel.png" alt="hidden-disabel" loading="lazy">
+        </div>
+      </div>
+    </section>
+
     <section id = "sec4-example">
       <div class="container">
-        <h2>Example</h2>
+      <h2>Example</h2>
       <div class="containt">
           <div class="part1">
             <form action="" method = "post">
               <label for="username">Username : </label>
-              <input type="text" name="username" id="username" required placeholder="Add Your Name">
+              <input type="text" name="username" id="username" required placeholder="Add Your Name" maxlength="30">
               <br>
               <br>
               <label for="password">Password :</label>
-              <input type="password" name="password" id="password" required placeholder="Add Your Password">
+              <input type="password" name="password" id="password" required placeholder="Add Your Password" maxlength="15" minlength="8">
               <br>
               <br>
               <button> Login </button>
@@ -272,11 +315,11 @@
           <div class="part2">    
               &lt;form action="" method = "post"&gt; <br>
                 &lt;label for="username"&gt;Username : &lt;/label&gt; <br>
-                &lt;input type="text" name="username" id="username" required placeholder="Add Your Name"&gt; <br>
+                &lt;input type="text" name="username" id="username" required placeholder="Add Your Name" maxlength="30"&gt; <br>
                 &lt;br&gt; <br>
                 &lt;br&gt; <br>
                 &lt;label for="password"&gt;Password :&lt;/label&gt; <br>
-                &lt;input type="password" name="password" id="password" required placeholder="Add Your Password" &gt; <br>
+                &lt;input type="password" name="password" id="password" required placeholder="Add Your Password" maxlength="15" minlength="8" &gt; <br>
                 &lt;br&gt; <br>
                 &lt;br&gt; <br>
                 &lt;button&gt;Login&lt;/button&gt; <br>
@@ -284,6 +327,17 @@
           </div>
         </div>
         <p><span>Note :  Chang Methode to get and see URL</span></p>
+        </div>
+      </div>
+
+    </section>
+
+    <section id = "sec4-assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <div class="containt">
+          <img src="./img/reg1-form.png" alt="regestration form" loading="lazy">
+        </div>
       </div>
     </section>
 
@@ -302,7 +356,9 @@
           <li><a href="#sec4-input-attributes">input-attributes</a></li>
           <li><a href="#sec4-submeit-reset-button">submeit-reset-button</a></li>
           <li><a href="#sec4-form-attributes">form attributes</a></li>
+          <li><a href="#sec4-hidding-disabel">hidding-disabel</a></li>
           <li><a href="#sec4-example">example</a></li>
+          <li><a href="#sec4-assignment">assignment</a></li>
         </ul>
       </div>
     </footer>
