@@ -27,6 +27,13 @@ hr {
   margin-block: 40px;
 }
 
+form {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 22px;
+  border: 2px solid black;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -484,13 +491,13 @@ footer {
         width: 45%;
       }
 
-      & #part1 {
+      & .part1 {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
       }
 
-      & #part2 {
+      & .part2 {
         & table {
           width: 100%;
           margin: 0px;
