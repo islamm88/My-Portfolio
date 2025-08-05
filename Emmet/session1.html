@@ -85,10 +85,10 @@
               </td>
             </tr>
             <tr>
-              <td>To Create header <span>including</span> logo div</td>
               <td>
-                using <span>&gt;</span> greater than sign 
+                Child: <span>&gt;</span>
               </td>
+              <td>You can use <span>&gt;</span> operator to nest elements inside each other:</td>
             </tr>
             <tr>
               <td colspan="2">
@@ -97,8 +97,8 @@
               </td>
             </tr>
             <tr>
-              <td>Add insid header (logo + nav)</td>
-              <td>Using + </td>
+              <td>Sibling: +</td>
+              <td>Use <span>+</span> operator to place elements near each other, on the same level: </td>
             </tr>
             <tr>
               <td colspan="2">
@@ -107,13 +107,23 @@
               </td>
             </tr>
             <tr>
-              <td>To create <span>header(logo + nav (ul (li * 5 )))</span></td>
-              <td>use * to create number of elements</td>
+              <td>Multiplication: *</span></td>
+              <td>With * operator you can define how many times element should be outputted:</td>
             </tr>
             <tr>
               <td colspan="2">
                 header>.logo+nav>ul>li*5 <br>
                 <img id = "img-4" src="./img/header-.logo+nav-ul-li5.png" alt="nisted" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>Climb-up: ^</td>
+              <td>With ^ operator, you can climb one level up the tree and change context where following elements should appear:</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                div+div>p>span+em^img <br>
+                <img id = "uplevel" src="./img/go to up leve.png" alt="up level" loading="lazy">
               </td>
             </tr>
             <tr>
@@ -128,16 +138,7 @@
                 <img id = "img-5" src="./img/with text in anchor.png" alt="add text" loading="lazy">
               </td>
             </tr>
-            <tr>
-              <td>go to up level</td>
-              <td>using ^ symbol</td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                div+div>p>span+em^img <br>
-                <img id = "uplevel" src="./img/go to up leve.png" alt="up level" loading="lazy">
-              </td>
-            </tr>
+
           </table>
       </div>
     </section>
