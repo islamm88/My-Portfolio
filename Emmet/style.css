@@ -223,6 +223,10 @@ section {
 #img-5 {
   height: 270px;
 }
+#img-6 {
+  height: 100px;
+  width: 500px;
+}
 
 header,
 footer {

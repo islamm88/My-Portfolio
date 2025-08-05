@@ -79,8 +79,8 @@
             </tr>
             <tr>
               <td colspan="2">
-                p.header <br>
-                p#header <br>
+                p.pr1 <br>
+                p#pr2 <br>
                 <img id = "p" src="./img/p.png" alt="paragraph" loading="lazy">
               </td>
             </tr>
@@ -127,15 +127,24 @@
               </td>
             </tr>
             <tr>
-              <td>create header(logo+nav(ul(li*5(a{link$}))))</td>
-              <td>$ symbol is used to insert incrementing numbers <br>
-                  curly braces {} are used to insert text content inside HTML elements.
-              </td>
+              <td>Grouping: ()</td>
+              <td>Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</td>
             </tr>
             <tr>
               <td colspan="2">
-                header>.logo+nav>ul>li*5>a{link$} <br>
-                <img id = "img-5" src="./img/with text in anchor.png" alt="add text" loading="lazy">
+                div>(header>ul>li*2>a)+footer>p <br>
+                <img id = "img-5" src="./img/().png" alt="add text" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>ID and CLASS</td>
+              <td>In CSS, you use elem#id and elem.class notation to reach the elements with specified id or class attributes. In Emmet, 
+                you can use the very same syntax to add these attributes to specified element:</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                div#header+div.page+div#footer.class1.class2.class3 <br>
+                <img id = "img-6" src="./img/id&class.png" alt="id and class" loading="lazy">
               </td>
             </tr>
 
