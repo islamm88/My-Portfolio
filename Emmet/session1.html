@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emmet-HTML-Session1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container" style="box-shadow: none">
+        <h1>EMMET HTML</h1>
+        <h2>
+          SESSION 1
+          <a href="" target="_blank"
+            ><img src="../imge/pdf.png" width="20" alt="session1"
+          /></a>
+        </h2>
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#Sec1-introduction">Introduction</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="Sec1-introduction">
+      <div class="container">
+        <h2>Introduction</h2>
+        <div class="containet">
+          <p>
+            Emmet is a powerful code snippet tool that helps web developers
+            write HTML and CSS faster by using abbreviations that automatically
+            expand into full code.
+          </p>
+          <br />
+          <h3>What Emmet Does in HTML:</h3>
+          <p>
+            Instead of writing long lines of HTML manually, Emmet lets you type
+            short expressions and expand them into complete HTML tags.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Example</h2>
+        <div class="containt">
+          <table>
+            <tr>
+              <td>To Create <span>div</span>   by <span>class</span> or <span>id</span></td>
+              <td>
+                .class name <span>using dot</span>
+                <br> 
+                #id name <span>using hash</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                .header <br>
+                #header <br>
+                <img id = "img-1" src="./img/div-id-class.png" alt="div by class or id" loading="lazy">
+                
+              </td>
+            </tr>
+            <tr>
+              <td>To Create <span>element</span>   by <span>class</span> or <span>id</span></td>
+              <td>
+                p.class name <span>using dot</span>
+                <br> 
+                p#id name <span>using hash</span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                p.header <br>
+                p#header <br>
+                <img id = "p" src="./img/p.png" alt="paragraph" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>To Create header <span>including</span> logo div</td>
+              <td>
+                using <span>&gt;</span> greater than sign 
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <span>header>.logo </span><br>
+                <img id = "img-2" src="./img/div-insid-div.png" alt="div inside div" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>Add insid header (logo + nav)</td>
+              <td>Using + </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                header>.logo+nav <br>
+                <img id="img-3" src="./img/header(logo+nav).png" alt="header (logo + nav)" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>To create <span>header(logo + nav (ul (li * 5 )))</span></td>
+              <td>use * to create number of elements</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                header>.logo+nav>ul>li*5 <br>
+                <img id = "img-4" src="./img/header-.logo+nav-ul-li5.png" alt="nisted" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>create header(logo+nav(ul(li*5(a{link$}))))</td>
+              <td>$ symbol is used to insert incrementing numbers <br>
+                  curly braces {} are used to insert text content inside HTML elements.
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                header>.logo+nav>ul>li*5>a{link$} <br>
+                <img id = "img-5" src="./img/with text in anchor.png" alt="add text" loading="lazy">
+              </td>
+            </tr>
+            <tr>
+              <td>go to up level</td>
+              <td>using ^ symbol</td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                div+div>p>span+em^img <br>
+                <img id = "uplevel" src="./img/go to up leve.png" alt="up level" loading="lazy">
+              </td>
+            </tr>
+          </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2>Try it yourself</h2>
+        <div class="containt">
+           <table>
+            <tr>
+              <td>div>ul>li</td>
+            </tr>
+            <tr>
+              <td>div+p</td>
+            </tr>
+            <tr>
+              <td>div+div>p>span+em </td>
+            </tr>
+            <tr>
+              <td>div+div>p>span+em^img</td>
+            </tr>
+            <tr>
+              <td>div+div>p>span+em^^^img</td>
+            </tr>
+            <tr>
+              <td>ul>li*5</td>
+            </tr>
+            <tr>
+              <td>div>(header>ul>li*2>a)+footer>p</td>
+            </tr>
+            <tr>
+              <td>(div>dl>(dt+dd)*3)+footer>p</td>
+            </tr>
+            <tr>
+              <td>div#header+div.page+div#footer.class1.class2.class3</td>
+            </tr>
+            <tr>
+              <td>td[title="Hello world!" colspan=3]</td>
+            </tr>
+           </table>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#Sec1-introduction">Introduction</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
