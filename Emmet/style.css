@@ -209,7 +209,9 @@ section {
 #img-3 ,
 #img-4 ,
 #img-5 ,
-#uplevel {
+#uplevel ,
+#img-7 ,
+#img-8 {
   width: 300px;
   height: 100px;
 }
@@ -217,15 +219,27 @@ section {
 #img-3 {
   height: 150px;
 }
+
 #img-4 {
   height: 220px;
 }
+
 #img-5 {
   height: 270px;
 }
+
 #img-6 {
   height: 100px;
   width: 500px;
+}
+
+#img-7 {
+  height: 150px;
+  width: 250px;
+}
+#img-8 {
+  height: 50px;
+  width: 250px;
 }
 
 header,
