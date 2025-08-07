@@ -1,67 +1,128 @@
 <!-- https://www.youtube.com/watch?v=JtrFzoL1joI&list=WL&index=39 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Player</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <!-- Start navbar -->
+        <nav>
+          <button class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
 
-</head>
-<body>
-  <div class="container">
-    <div class="music-player">
-      <nav>
-        <div class="circle">
-          <i class="fa-solid fa-angle-left"></i>
+          <input
+            type="file"
+            id="fileInput"
+            accept="audio/*"
+            onchange="playPause(this)"
+          />
+
+          <button class="circle" onclick="selectFile()">
+            <i class="fa-solid fa-folder-open"></i>
+          </button>
+        </nav>
+        <!-- End navbar -->
+        <!-- ******************************************** -->
+
+        <!-- Start Music info  -->
+        <img
+          src="./media/main-img.png"
+          alt="medis-photo"
+          loading="lazy"
+          class="song-img"
+        />
+        <h1>Song Title</h1>
+        <p>musican Name</p>
+        <p id="fileName"></p>
+        <!-- End Music info  -->
+        <!-- ******************************************** -->
+
+        <!-- Start audio part  -->
+        <audio id="song">
+          <source type="audio/mpeg" />
+        </audio>
+        <!-- End audio part  -->
+        <!-- ******************************************** -->
+
+        <!-- Start Progresspar  -->
+        <input type="range" value="0" id="progress" />
+        <!-- End Progresspar  -->
+        <!-- ******************************************** -->
+
+        <!-- controlbar -->
+        <div class="controls">
+          <button><i class="fa-solid fa-backward"></i></button>
+          <button onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlicon"></i>
+          </button>
+          <button><i class="fa-solid fa-forward-fast"></i></button>
         </div>
-        <div class="circle">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-      </nav>
-      
-      <img src="./media/main-img.png" alt="medis-photo" loading="lazy" class = "song-img">
-      <h1>Song Title</h1>
-      <p>musican Name </p>
-      <audio controls id = "song" hidden>
-        <source src = "./media/music1.mp3" type="audio/mpeg">
-      </audio>
-      <input type="range" value="0" id = "progress">
-      <div class="controls">
-        <div><i class="fa-solid fa-backward"></i></div>
-        <div onclick="playPause()"><i class="fa-solid fa-play" id = "ctrlicon"></i></div>
-        <div><i class="fa-solid fa-forward-fast"></i></div>
-        
       </div>
     </div>
-  </div>
 
+    <script>
+      let progress = document.getElementById("progress");
+      let song = document.getElementById("song");
+      let ctrlicon = document.getElementById("ctrlicon");
 
-  <script>
-    
-    let progress = document.getElementById("progress");
-    let song = document.getElementById("song");
-    let ctrlicon = document.getElementById("ctrlicon");
-  
-    // song.onloadedmetadata = function () {
-    //   progress.max = song.duration ;
-    //   progress.value = song.currentTime ;
-    // }
+      /*
+      select file
+      */
 
-    function playPause() {
-      if (ctrlicon.classList.contains("fa-pause")){
-        song.pause();
-        ctrlicon.classList.remove("fa-pause");
-        ctrlicon.classList.add("fa-play");
+      function selectFile() {
+        document.getElementById("fileInput").click();
       }
-      else {
-        song.play ();
+
+      function playPause(input) {
+        if (ctrlicon.classList.contains("fa-pause")) {
+          song.pause();
+          ctrlicon.classList.remove("fa-pause");
+          ctrlicon.classList.add("fa-play");
+        } else {
+          const file = input.files[0];
+          const fileNameDisplay = document.getElementById("fileName");
+          const audioPlayer = document.getElementById("song");
+
+          if (file) {
+            fileNameDisplay.textContent = "Now Playing: " + file.name;
+            const audioURL = URL.createObjectURL(file);
+            song.src = audioURL;
+            song.play().then(() => {
+              setInterval(() => {
+                progress.value = song.currentTime;
+              }, 500);
+            });
+
+            ctrlicon.classList.remove("fa-play");
+            ctrlicon.classList.add("fa-pause");
+          }
+        }
+      }
+      /*
+      progress
+      */
+
+      song.onloadedmetadata = function () {
+        progress.max = song.duration;
+        progress.value = song.currentTime;
+      };
+
+      progress.onchange = function () {
+        song.play();
+        song.currentTime = progress.value;
         ctrlicon.classList.remove("fa-play");
         ctrlicon.classList.add("fa-pause");
-      }
-    }
-
-  </script>
-</body>
+      };
+    </script>
+  </body>
 </html>
