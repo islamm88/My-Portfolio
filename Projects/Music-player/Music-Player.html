@@ -73,10 +73,6 @@
       let song = document.getElementById("song");
       let ctrlicon = document.getElementById("ctrlicon");
 
-      /*
-      select file
-      */
-
       function selectFile() {
         document.getElementById("fileInput").click();
       }
@@ -85,6 +81,8 @@
         const file = input.files[0];
         const fileNameDisplay = document.getElementById("fileName");
         const song = document.getElementById("song");
+        const ctrlicon = document.getElementById("ctrlicon"); // تأكد من تعريفه
+
         fileNameDisplay.textContent = "Now Playing: " + file.name;
         const audioURL = URL.createObjectURL(file);
         song.src = audioURL;
@@ -94,32 +92,37 @@
       }
 
       function playPause() {
-        if (ctrlicon.classList.contains("fa-play")) {
-          song.play();
-          ctrlicon.classList.remove("fa-play");
-          ctrlicon.classList.add("fa-pause");
-        } else {
-          song.pause();
-          ctrlicon.classList.remove("fa-pause");
-          ctrlicon.classList.add("fa-play");
+        const song = document.getElementById("song");
+        const ctrlicon = document.getElementById("ctrlicon");
+
+        if (song.src) {
+          if (ctrlicon.classList.contains("fa-play")) {
+            song.play();
+            ctrlicon.classList.remove("fa-play");
+            ctrlicon.classList.add("fa-pause");
+          } else {
+            song.pause();
+            ctrlicon.classList.remove("fa-pause");
+            ctrlicon.classList.add("fa-play");
+          }
         }
       }
 
-      /*
-      progress
-      */
-
       song.onloadedmetadata = function () {
         progress.max = song.duration;
+      };
+
+      // Update progress bar while audio is playing
+      song.ontimeupdate = function () {
         progress.value = song.currentTime;
       };
 
+      // Seek when user clicks on progress bar
       progress.onchange = function () {
-        song.play();
         song.currentTime = progress.value;
-        ctrlicon.classList.remove("fa-play");
-        ctrlicon.classList.add("fa-pause");
       };
+
+
     </script>
   </body>
 </html>
