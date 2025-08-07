@@ -24,7 +24,7 @@
             type="file"
             id="fileInput"
             accept="audio/*"
-            onchange="playPause(this)"
+            onchange="Loading(this)"
           />
 
           <button class="circle" onclick="selectFile()">
@@ -41,8 +41,6 @@
           loading="lazy"
           class="song-img"
         />
-        <h1>Song Title</h1>
-        <p>musican Name</p>
         <p id="fileName"></p>
         <!-- End Music info  -->
         <!-- ******************************************** -->
@@ -83,31 +81,30 @@
         document.getElementById("fileInput").click();
       }
 
-      function playPause(input) {
-        if (ctrlicon.classList.contains("fa-pause")) {
+      function Loading(input) {
+        const file = input.files[0];
+        const fileNameDisplay = document.getElementById("fileName");
+        const song = document.getElementById("song");
+        fileNameDisplay.textContent = "Now Playing: " + file.name;
+        const audioURL = URL.createObjectURL(file);
+        song.src = audioURL;
+        song.play();
+        ctrlicon.classList.remove("fa-play");
+        ctrlicon.classList.add("fa-pause");
+      }
+
+      function playPause() {
+        if (ctrlicon.classList.contains("fa-play")) {
+          song.play();
+          ctrlicon.classList.remove("fa-play");
+          ctrlicon.classList.add("fa-pause");
+        } else {
           song.pause();
           ctrlicon.classList.remove("fa-pause");
           ctrlicon.classList.add("fa-play");
-        } else {
-          const file = input.files[0];
-          const fileNameDisplay = document.getElementById("fileName");
-          const audioPlayer = document.getElementById("song");
-
-          if (file) {
-            fileNameDisplay.textContent = "Now Playing: " + file.name;
-            const audioURL = URL.createObjectURL(file);
-            song.src = audioURL;
-            song.play().then(() => {
-              setInterval(() => {
-                progress.value = song.currentTime;
-              }, 500);
-            });
-
-            ctrlicon.classList.remove("fa-play");
-            ctrlicon.classList.add("fa-pause");
-          }
         }
       }
+
       /*
       progress
       */
