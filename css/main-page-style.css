@@ -331,35 +331,60 @@
     place-items: center;
 
     & .item {
+      padding: 10px;
       width: 100%;
-      height: 250px;
+      height: 300px;
       display: flex;
       flex-direction: column;
       transition: all 0.5s ease;
-      background-color: #fff;
+      background-color: #eee;
       border-radius: 5px;
       border: 1px solid rgba(128, 128, 128, 0.253);
-      & img {
-        border-radius: 5px 5px 0 0;
-        display: inline-block;
+
+      & .img-div {
         width: 100%;
-        height: 150px;
-        border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+        height: 60%;
+        margin-top: 0px;
+        text-align: center;
+        padding: 10px;
+
+        & img {
+          height: 100%;
+          border-radius: 5px 5px 0 0;
+          display: inline-block;
+          width: fit-content;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.404);
+        }
       }
 
       & .item-content {
         padding: 10px;
+        text-align: center;
         & h3 {
-          margin-block: 10px;
+          margin-block: 5px;
           font-size: 20px;
           color: var(--primary-color);
           font-weight: 600;
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--gray);
+          font-weight: 600;
+          margin-bottom: 15px;
         }
 
         & a {
           font-size: 14px;
           color: var(--secandry-color);
           font-weight: 500;
+          transform: scale(1.2);
+        }
+        & a:hover {
+          font-size: 16px;
+          color: green;
+          font-weight: 500;
+          transition: all 0.7s ease;
         }
       }
     }
@@ -849,7 +874,7 @@
       grid-template-columns: repeat(1, 1fr);
       column-gap: 2rem;
       & img {
-      min-width: 200px;
+        min-width: 200px;
         margin: auto;
       }
 
@@ -884,11 +909,11 @@
   }
 
   #footer {
-  background-color: #222;
-  color: #fff;
-  padding-block: 2rem;
-  text-align: center;
-}
+    background-color: #222;
+    color: #fff;
+    padding-block: 2rem;
+    text-align: center;
+  }
 }
 @media (max-width: 390px) {
   #section-home {
@@ -909,7 +934,6 @@
         justify-content: space-between;
         align-items: center;
         padding: 0.5rem 1rem;
-        
 
         & #logo {
           color: var(--primary-color);
@@ -1209,7 +1233,7 @@
       & .item:hover {
         transform: scale(1.05);
         box-shadow: 3px 3px 3px rgba(5, 197, 231, 0.336);
-      } 
+      }
     }
   }
 
@@ -1339,9 +1363,9 @@
   }
 
   #footer {
-  background-color: #222;
-  color: #fff;
-  padding-block: 1rem;
-  text-align: center;
-}
+    background-color: #222;
+    color: #fff;
+    padding-block: 1rem;
+    text-align: center;
+  }
 }
