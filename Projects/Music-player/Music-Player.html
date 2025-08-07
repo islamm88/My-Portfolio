@@ -1,0 +1,67 @@
+<!-- https://www.youtube.com/watch?v=JtrFzoL1joI&list=WL&index=39 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      
+      <img src="./media/main-img.png" alt="medis-photo" loading="lazy" class = "song-img">
+      <h1>Song Title</h1>
+      <p>musican Name </p>
+      <audio controls id = "song" hidden>
+        <source src = "./media/music1.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id = "progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id = "ctrlicon"></i></div>
+        <div><i class="fa-solid fa-forward-fast"></i></div>
+        
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    
+    let progress = document.getElementById("progress");
+    let song = document.getElementById("song");
+    let ctrlicon = document.getElementById("ctrlicon");
+  
+    // song.onloadedmetadata = function () {
+    //   progress.max = song.duration ;
+    //   progress.value = song.currentTime ;
+    // }
+
+    function playPause() {
+      if (ctrlicon.classList.contains("fa-pause")){
+        song.pause();
+        ctrlicon.classList.remove("fa-pause");
+        ctrlicon.classList.add("fa-play");
+      }
+      else {
+        song.play ();
+        ctrlicon.classList.remove("fa-play");
+        ctrlicon.classList.add("fa-pause");
+      }
+    }
+
+  </script>
+</body>
+</html>
