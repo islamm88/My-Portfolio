@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <!-- Start navbar -->
+        <nav>
+          <input
+            type="file"
+            id="fileInput"
+            accept="audio/*"
+            onchange="Loading(this)"
+          />
+
+          <button class="circle" onclick="selectFile()">
+            <i class="fa-solid fa-folder-open"></i>
+          </button>
+          <button class="circle">
+            <i class="fa-solid fa-angle-left" onclick="display_aside()"></i>
+          </button>
+        </nav>
+        <!-- End navbar -->
+        <!-- ******************************************** -->
+
+        <!-- Start Music info  -->
+        <img
+          src="./img/main-img.png"
+          alt="medis-photo"
+          loading="lazy"
+          class="song-img"
+        />
+
+        <p id="fileName">Media Name:--------------</p>
+        <div>
+          <span id="currentTime">0:00</span> <span>/</span>
+          <span id="totalTime">0:00</span>
+        </div>
+
+        <!-- End Music info  -->
+        <!-- ******************************************** -->
+
+        <!-- Start audio part  -->
+        <audio id="song">
+          <source type="audio/mpeg" />
+        </audio>
+        <!-- End audio part  -->
+        <!-- ******************************************** -->
+
+        <!-- Start Progresspar  -->
+        <input
+          type="range"
+          value="0"
+          id="progress"
+          max="100"
+          style="width: 300px"
+        />
+        <!-- <progress id="progress" value="0" max="100" style="width: 300px;"></progress> -->
+        <!-- End Progresspar  -->
+        <!-- ******************************************** -->
+
+        <!-- controlbar -->
+        <div class="controls">
+          <button><i class="fa-solid fa-backward"></i></button>
+          <button onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlicon"></i>
+          </button>
+          <button><i class="fa-solid fa-forward-fast"></i></button>
+        </div>
+      </div>
+
+      <aside id = "aside_bar">
+          <button class="circle">
+            <i class="fa-solid fa-angle-right" onclick="Hide_aside()"></i>
+          </button>
+      </aside>
+    </div>
+
+    <script>
+      let progress = document.getElementById("progress");
+      let song = document.getElementById("song");
+      let ctrlicon = document.getElementById("ctrlicon");
+
+      // Function to open file input dialog
+      function selectFile() {
+        document.getElementById("fileInput").click();
+      }
+
+      // Function to handle file selection and play the audio
+      function Loading(input) {
+        const file = input.files[0];
+        const fileNameDisplay = document.getElementById("fileName");
+        const song = document.getElementById("song");
+        const ctrlicon = document.getElementById("ctrlicon");
+        const currentTimeDisplay = document.getElementById("currentTime");
+        const totalTimeDisplay = document.getElementById("totalTime");
+
+        fileNameDisplay.textContent = "Media Name: " + file.name;
+        const audioURL = URL.createObjectURL(file);
+        song.src = audioURL;
+        song.play();
+        ctrlicon.classList.remove("fa-play");
+        ctrlicon.classList.add("fa-pause");
+
+        song.onended = function () {
+          ctrlicon.classList.remove("fa-pause");
+          ctrlicon.classList.add("fa-play");
+          progress.value = 0;
+          currentTimeDisplay.textContent = "0:00:00";
+        };
+      }
+
+      // Function to play or pause the audio
+      function playPause() {
+        const song = document.getElementById("song");
+        const ctrlicon = document.getElementById("ctrlicon");
+
+        if (!song.src) {
+          alert("Please select an audio file first.");
+          return;
+        }
+
+        if (ctrlicon.classList.contains("fa-play")) {
+          song.play();
+          ctrlicon.classList.remove("fa-play");
+          ctrlicon.classList.add("fa-pause");
+        } else {
+          song.pause();
+          ctrlicon.classList.remove("fa-pause");
+          ctrlicon.classList.add("fa-play");
+        }
+      }
+
+      function formatTime(seconds) {
+        const hrs = Math.floor(seconds / 3600);
+        const mins = Math.floor((seconds % 3600) / 60);
+        const secs = Math.floor(seconds % 60);
+
+        const formattedHrs = hrs; // no leading zero for hours
+        const formattedMins = mins < 10 ? "0" + mins : mins;
+        const formattedSecs = secs < 10 ? "0" + secs : secs;
+
+        return formattedHrs + ":" + formattedMins + ":" + formattedSecs;
+      }
+      // Set initial values for current time and total time
+      song.onloadedmetadata = function () {
+        progress.max = song.duration;
+        document.getElementById("totalTime").innerText = formatTime(
+          song.duration
+        );
+      };
+      // Update progress bar and current time display
+      song.ontimeupdate = function () {
+        progress.value = song.currentTime;
+        document.getElementById("currentTime").innerText = formatTime(
+          song.currentTime
+        );
+      };
+      // Seek when user clicks on progress bar
+      progress.onchange = function () {
+        song.currentTime = progress.value;
+      };
+    
+      function display_aside() {
+        let aside = document.getElementById("aside_bar") ;
+        aside.style.left = "0" ;
+        aside.style.transition = "all 0.7s ease";
+      }
+      function Hide_aside() {
+        let aside = document.getElementById("aside_bar") ;
+        aside.style.left = "100%" ;
+        aside.style.transition = "all 0.7s ease";
+      }
+    </script>
+  </body>
+</html>
