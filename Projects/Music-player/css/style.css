@@ -26,6 +26,7 @@ header {
 }
 
 .music-player {
+  position: relative;
   background: linear-gradient(#00ff08, #48883f);
   width: 400px;
   padding: 25px 35px;
@@ -72,6 +73,28 @@ p {
   font-weight: 400;
   color: #fff;
   margin-top: 20px;
+}
+
+aside {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffd2;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+  color: rgb(13, 115, 13);
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 span {
@@ -160,7 +183,6 @@ span {
   p,
   span {
     font-size: 12px;
-    
   }
 
   .controls button {
@@ -196,14 +218,14 @@ span {
   }
 
   .circle {
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background-color: #fff;
-  color: rgb(13, 115, 13);
-  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
-  margin-top: 20px;
-  margin-left: 20px;
-}
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fff;
+    color: rgb(13, 115, 13);
+    box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
