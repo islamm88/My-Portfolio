@@ -7,24 +7,18 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  margin: auto;
 }
 .border {
   border: 1px solid red;
 }
 
 @media (max-width: 600px) {
-  & .container {
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     & .music-player {
       position: relative;
       background: linear-gradient(#00ff08b0, #47883fd8);
       width: auto;
-      height: auto;
+      height: 100vh;
       padding: 10px;
       display: flex;
       flex-direction: column;
@@ -174,17 +168,8 @@
       }
     }
   }
-}
 
 @media (min-width: 993px) {
-  & .container {
-    width: 100%;
-    height: 100vh;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     & .music-player {
       position: relative;
       background: linear-gradient(#00ff08b0, #47883fd8);
@@ -334,4 +319,4 @@
       }
     }
   }
-}
+
