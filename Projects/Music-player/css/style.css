@@ -33,11 +33,9 @@
       justify-content: center;
 
       & aside {
-        display: none !important;
         position: absolute;
         top: 0;
-        left: 100%;
-        width: 100%;
+        width: 0%;
         height: 100%;
         background-color: #ffffffd2;
         display: flex;
@@ -57,6 +55,7 @@
           background-color: #fff;
           color: rgb(13, 115, 13);
           box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+          display: none;
         }
       }
 
