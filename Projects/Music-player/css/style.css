@@ -27,6 +27,10 @@
     width: 100%;
     height: 100vh;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     & aside {
       display: none;
@@ -181,7 +185,6 @@
     background-color: #333;
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   .music-player {
     position: relative;
@@ -192,6 +195,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     & aside {
       display: none;
