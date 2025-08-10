@@ -12,13 +12,15 @@
   </head>
   <body>
     <div class="container">
-      <div class="music-player border">
+      <div class="music-player">
         <aside id="aside_bar">
           <button class="circle" onclick="Hide_aside()">
             <i class="fa-solid fa-angle-right"></i>
           </button>
+          <div class="containt">
+            <div class="soura_name"></div>
+          </div>
         </aside>
-        <!-- Start navbar -->
         <nav>
           <input
             type="file"
@@ -26,7 +28,6 @@
             accept="audio/*"
             onchange="Loading(this)"
           />
-
           <button class="circle" onclick="selectFile()">
             <i class="fa-solid fa-folder-open"></i>
           </button>
@@ -34,46 +35,30 @@
             <i class="fa-solid fa-angle-left"></i>
           </button>
         </nav>
-        <!-- End navbar -->
-        <!-- ******************************************** -->
-
-        <!-- Start Music info  -->
         <img
           src="./img/main-img.png"
           alt="medis-photo"
           loading="lazy"
           class="song-img"
         />
-
         <p id="fileName">Media Name:--------------</p>
         <div>
           <span id="currentTime">0:00</span> <span>/</span>
           <span id="totalTime">0:00</span>
         </div>
-
-        <!-- End Music info  -->
-        <!-- ******************************************** -->
-
-        <!-- Start audio part  -->
         <audio id="song">
           <source type="audio/mpeg" />
         </audio>
-        <!-- End audio part  -->
-        <!-- ******************************************** -->
+        <div class="prog">
+          <input
+            type="range"
+            value="0"
+            id="progress"
+            max="100"
+            style="width: 300px"
+          />
+        </div>
 
-        <!-- Start Progresspar  -->
-        <input
-          type="range"
-          value="0"
-          id="progress"
-          max="100"
-          style="width: 300px"
-        />
-        <!-- <progress id="progress" value="0" max="100" style="width: 300px;"></progress> -->
-        <!-- End Progresspar  -->
-        <!-- ******************************************** -->
-
-        <!-- controlbar -->
         <div class="controls">
           <button><i class="fa-solid fa-backward"></i></button>
           <button onclick="playPause()">
@@ -83,7 +68,6 @@
         </div>
       </div>
     </div>
-
     <script>
       let progress = document.getElementById("progress");
       let song = document.getElementById("song");
@@ -173,13 +157,13 @@
         let aside = document.getElementById("aside_bar");
         aside.style.left = "0";
         aside.style.transition = "all 0.7s ease";
-        aside.style.display = "block" ;
+        aside.style.display = "block";
       }
       function Hide_aside() {
         let aside = document.getElementById("aside_bar");
         aside.style.left = "100%";
         aside.style.transition = "all 0.7s ease";
-        aside.style.display = "none" ;
+        aside.style.display = "none";
       }
     </script>
   </body>
