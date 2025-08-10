@@ -20,10 +20,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     & .music-player {
       position: relative;
-      background: linear-gradient(#00ff08, #48883f);
+      background: linear-gradient(#00ff08b0, #47883fd8);
       width: auto;
       height: auto;
       padding: 10px;
@@ -31,7 +30,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
       & aside {
         position: absolute;
         top: 0;
@@ -189,7 +187,7 @@
 
     & .music-player {
       position: relative;
-      background: linear-gradient(#00ff08, #48883f);
+      background: linear-gradient(#00ff08b0, #47883fd8);
       max-width: 400px;
       height: 100vh;
       padding: 10px;
@@ -198,14 +196,15 @@
       align-items: center;
       justify-content: center;
 
-      & aside {
-        display: none;
+        & aside {
         position: absolute;
         top: 0;
-        left: 100%;
-        width: 100%;
+        width: 0%;
         height: 100%;
         background-color: #ffffffd2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         & .circle {
           position: absolute;
@@ -220,6 +219,7 @@
           background-color: #fff;
           color: rgb(13, 115, 13);
           box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+          display: none;
         }
       }
 
@@ -240,6 +240,7 @@
           background-color: #fff;
           color: rgb(13, 115, 13);
           box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+          cursor: pointer;
         }
       }
 
