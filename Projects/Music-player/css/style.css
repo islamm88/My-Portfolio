@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     & aside {
       position: absolute;
       top: 0;
@@ -29,15 +30,14 @@
       height: 100%;
       background-color: #ffffffd2;
       display: flex;
-      flex-direction: column;
       align-items: center;
 
       & .circle {
+        display: none;
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
+        transform: translate(-50%);
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -45,10 +45,26 @@
         background-color: #fff;
         color: rgb(13, 115, 13);
         box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+        transition: all 0.3s ease;
+      }
+
+      & .circl:active {
+        transform: scale(0.95);
+      }
+
+      & #sours-containt {
         display: none;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        & span {
+          color: brown;
+          font-size: 10px;
+          margin-inline: 5px;
+          margin-block: 2.5px;
+        }
       }
     }
-
     & nav {
       width: 100%;
       padding-inline: 10px;
@@ -56,25 +72,32 @@
       margin-top: 20px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      flex: end;
 
       & .circle {
         border-radius: 50%;
+        border: 1px solid #fff;
         width: 40px;
         height: 40px;
         line-height: 40px;
         background-color: #fff;
         color: rgb(13, 115, 13);
-        box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+        box-shadow: 5px 5px 10px rgba(255, 26, 26, 0.22);
         font-size: 20px;
+        margin-left: auto;
+        transition: all 0.3s ease;
+      }
+
+      & .circle:active {
+        transform: scale(0.95);
       }
     }
 
     & .song-img {
       border-radius: 50%;
       width: 150px;
-      border: 8px solid#fff;
-      box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+      border: 8px solid#ffffffdc;
+      box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
     }
 
     & #fileInput {
@@ -194,8 +217,7 @@
         position: absolute;
         top: 10px;
         left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
+        transform: translate(-50%);
         border-radius: 50%;
         width: 40px;
         height: 40px;
@@ -204,6 +226,17 @@
         color: rgb(13, 115, 13);
         box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
         display: none;
+      }
+
+      & #sours-containt {
+        display: none;
+        flex-wrap: wrap;
+        & p {
+          color: brown;
+          font-size: 15px;
+          margin: 10px;
+          cursor: pointer;
+        }
       }
     }
 
@@ -225,6 +258,7 @@
         color: rgb(13, 115, 13);
         box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
         cursor: pointer;
+        margin-left: auto;
       }
     }
 
