@@ -57,11 +57,11 @@
         flex-wrap: wrap;
         margin-top: 40px;
 
-        & span {
+        & p {
           color: brown;
-          font-size: 10px;
+          font-size: 13px;
           margin-inline: 5px;
-          margin-block: 2.5px;
+          margin-block: 4px;
         }
       }
     }
