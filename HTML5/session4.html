@@ -16,8 +16,8 @@
         <h1>HTML5</h1>
         <h2>
           SESSION 4
-          <a href="../assets/HTML5-Session1.pdf" target="_blank"
-            ><img src="../imge/pdf.png" width="20" alt="session1"
+          <a href="../assets/HTML5-Session4.pdf" target="_blank"
+            ><img src="../imge/pdf.png" alt="session4"
           /></a>
         </h2>
         <ul class="nav-site">
@@ -25,7 +25,7 @@
           <li><a href="./session2.html">Session 2</a></li>
           <li><a href="./session3.html">Session 3</a></li>
           <li><a href="./session4.html">Session 4</a></li>
-          <li><a href="">Session 5</a></li>
+          <li><a href="./session5.html">Session 5</a></li>
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
@@ -44,7 +44,7 @@
         <div class="container">
         <h2>Form </h2>
         <p>
-          The &ltform&gt; tag is a container for various input elements that
+          The &lt;form&gt; tag is a container for various input elements that
           allow users to enter and submit data to a server. It's one of the most
           important elements in HTML for creating interactive web pages.
         </p>
@@ -60,7 +60,8 @@
             <img src="./img/login.png" alt="login" loading="lazy" />
           </div>
         </div>
-        <br />
+        
+        <hr>
         <h3>Input & Label</h3>
         <h3>Input :</h3>
         <div class="containt" id="desc-input">
@@ -87,47 +88,46 @@
             </ul>
           </div>
           <div class ="part2">
-            <form>
               <table>
                 <tr>
-                  <td><label for="">type = "text"</label></td>
-                  <td><input type="text" /></td>
+                  <td>type = "text"</td>
+                  <td><form><label for="text">Name : </label><input type="text" id="text"/></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "password"</label></td>
-                  <td><input type="password" /></td>
+                  <td>type = "password"</td>
+                  <td><form><label for="pass">Password : </label><input type="password" id = "pass"/></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "email"</label></td>
-                  <td><form action=""><input type = "email"><input type="submit"></form></td>
+                  <td>type = "email"</td>
+                  <td><form><label for="email">Email : </label><input type = "email" id = "email">
+                    <br><input type="submit"></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "number"</label></td>
-                  <td><input type="number" /></td>
+                  <td>type = "number"</td>
+                  <td><form> <label for="age">Age : </label> <input type="number" id = "age"/></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "checkbox"</label></td>
-                  <td><input type="checkbox" /></td>
+                  <td>type = "checkbox"</td>
+                  <td><form><input type="checkbox" id = "html" /><label for="html">HTML</label></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "radio"</label></td>
-                  <td><input type="radio" /></td>
+                  <td>type = "radio"</td>
+                  <td><form><input type="radio" id = "male"/><label for="male">Male</label></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "button"</label></td>
-                  <td><input type="button" value=" login "/></td>
+                  <td>type = "button"</td>
+                  <td><form><input type="button" value=" login "/></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "color"</label></td>
-                  <td><input type = "color"></td>
+                  <td><label>type = "color"</label></td>
+                  <td><form><input type = "color"></form></td>
                 </tr>
                 <tr>
-                  <td><label for="">type = "date"</label></td>
-                  <td><input type = "date"></td>
+                  <td><label>type = "date"</label></td>
+                  <td><form> <label for="Bithe-date">Bithe-date : </label> <input type = "date" id = "Bithe-date"></form></td>
                 </tr>
                 
               </table>
-            </form>
           </div>
         </div>
         <h3>label :</h3>
@@ -148,7 +148,7 @@
             </ul>
           </div>
           <div id="part2">
-            <form action="">
+            <form>
               <label for="user-name">
                 <span>User Name:</span>
                 <input type="text" name="name" id="user-name" required />
@@ -169,7 +169,8 @@
               &lt;input type="password" name="password" id="pass-w" /&gt; <br>
             &lt;/label&gt;</p>
 
-            </div>
+          </div>
+        </div>  
         </div>
     </section>
 
@@ -185,40 +186,49 @@
               <p>Autofocus : used to automatically place the cursor inside a specific form field as soon as the page loads.</p>
               <p>Maxlength : used to set the maximum number of characters a user can enter in an &lt;input&gt; or &lt;textarea&gt; field.</p>
               <p>Minlength : used to set the minimum number of characters that the user must enter in an &lt;input&gt; or &lt;textarea&gt; field before the form can be submitted.</p>
+              <p>readonly : you can add to most input types to make them non-editable while still allowing the user to focus and copy the text.</p>
             <div class="containt">
               <table>
                 <tr>
-                  <td>&lt;input type="text" <span>placeholder</span> ="Add Your UserName" &gt;</td>
-                  <td><input type="text" name=" " id=" " placeholder="Add Your UserName"></td>
+                  <td>&lt;input type="text" placeholder ="Add Your UserName" &gt;</td>
+                  <td><form><input type="text"  placeholder="Add Your UserName"></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" name="" id="" <span>hidden</span>&gt;</td>
-                  <td><input type="text" name=" " id=" " hidden></td>
+                  <td>&lt;input type="text" name="" id="" hidden &gt;</td>
+                  <td><form><input type="text" hidden></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" <span>value</span> = "xxxxxx" name=" " id=" "  <span>disabled</span>  &gt;</td>
-                  <td><input type="text" name=" " id=" " disabled value = "xxxxxx"></td>
+                  <td>&lt;input type="text" value = "xxxxxx" name=" " id=" "  disabled  &gt;</td>
+                  <td><form><input type="text"  disabled value = "xxxxxx"></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" name="" id="" <span>required</span>&gt;</td>
-                  <td><input type="text" name=" " id=" " required ></td>
+                  <td>&lt;input type="text" name="" id="" required &gt;</td>
+                  <td><form><input type="text"  required ></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" name=" " id=" " <span>autofocus</span> &gt;</td>
-                  <td><input type="text" name=" " id=" " autofocus  ></td>
+                  <td>&lt;input type="text" name=" " id=" " autofocus &gt;</td>
+                  <td><form><input type="text"  autofocus  ></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" name=" " id=" " <span>maxlength = "10" </span> &gt;</td>
-                  <td><input type="text" name=" " id=" " maxlength="10"></td>
+                  <td>&lt;input type="text" name=" " id=" " maxlength = "10"  &gt;</td>
+                  <td><form><input type="text"  maxlength="10"></form></td>
                 </tr>
                 <tr>
-                  <td>&lt;input type="text" name=" " id=" " <span>minlength = "8" </span> &gt;</td>
+                  <td>&lt;input type="text" name=" " id=" " minlength = "8" &gt;</td>
                   <td>
-                    <form action="">
-                    <input type="text" name=" " id=" " minlength ="8">
+                    <form>
+                    <input type="text"  minlength ="8">
                     <input type="submit">
                   </form>
                 </td>
+                </tr>
+                <tr>
+                  <td>&lt;input type="text" name="" id="" value = "465$7WE%&FG" readonly &gt;</td>
+                  <td>
+                  <form action="">
+                    <input type="text" name="" id="" value = "465$7WE%&FG" readonly></td>
+                  </form>
+                  </td>
                 </tr>
               </table>
             </div>
@@ -228,17 +238,17 @@
     <section id = "sec4-submeit-reset-button" >
       <div class="container">
         <h2>Submeit - Reset - button </h2>
-        <p>The <span>submit</span>  type is used with the <span>&lt;input&gt;</span> element to send the form data to the server.</p>
-        <p>A <span>reset</span> type is used to clear all the input fields in a form and return them to their default values.</p>
+        <p>The submit  type is used with the &lt;input&gt; element to send the form data to the server.</p>
+        <p>A reset type is used to clear all the input fields in a form and return them to their default values.</p>
             <div class="containt">
           <table>
             <tr>
-              <td>&lt;input <span>type="submit"</span> name = "" id =""&gt;</td>
-              <td><input type="submit" name="" id=""></td>
+              <td>&lt;input type="submit" name = "" id =""&gt;</td>
+              <td><form><input type="submit"></form></td>
             </tr>
             <tr>
-              <td>&lt;input <span>type="reset"</span> name="" id=""&gt;</td>
-              <td><input type="reset" name="" id=""></td>
+              <td>&lt;input type="reset" name="" id=""&gt;</td>
+              <td><form><input type="reset"></form></td>
             </tr>
             <tr>
               <td>&lt;button onclick="alert('Hello!')"&gt;Click Me&lt;/button&gt;</td>
@@ -250,7 +260,7 @@
         <ul>
           <li>Openeing and Closing Tag</li>
           <li>Inline Element</li>
-          <li>The <span>onclick</span> attribute is used to run JavaScript code when the user clicks an element, like a button.</li>
+          <li>The onclick attribute is used to run JavaScript code when the user clicks an element, like a button.</li>
         </ul>
       </div>
     </section>
@@ -268,11 +278,11 @@
           <div class="containt">
           <table>
           <tr>
-            <td>&lt;form <span>action=" "</span> &gt;</form></td>
+            <td>&lt;form action="" &lt;/form&gt;</td>
             <td>Specifies the URL where the form data will be sent after submission.</td>
           </tr>
           <tr>
-            <td>&lt;form <span>method =" "</span> &gt;</form></td>
+            <td>&lt;form method =" " &gt;&lt;/form&gt;</td>
             <td>Defines the HTTP method for sending data.
             </td>
           </tr>
@@ -297,7 +307,7 @@
       <h2>Example</h2>
       <div class="containt">
           <div class="part1">
-            <form action="" method = "post">
+            <form method = "post">
               <label for="username">Username : </label>
               <input type="text" name="username" id="username" required placeholder="Add Your Name" maxlength="30">
               <br>
@@ -325,8 +335,6 @@
         </div>
         <p><span>Note :  Chang Methode to get and see URL</span></p>
         </div>
-      </div>
-
     </section>
 
     <section id = "sec4-assignment" >
@@ -345,7 +353,7 @@
           <li><a href="./session2.html">Session 2</a></li>
           <li><a href="./session3.html">Session 3</a></li>
           <li><a href="./session4.html">Session 4</a></li>
-          <li><a href="">Session 5</a></li>
+          <li><a href="./session5.html">Session 5</a></li>
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
