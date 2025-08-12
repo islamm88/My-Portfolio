@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5-Session5</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container" style="box-shadow: none">
+        <h1>HTML5</h1>
+        <h2>
+          SESSION 4
+          <a href="../assets/HTML5-Session4.pdf" target="_blank"
+            ><img src="../imge/pdf.png" alt="session4"
+          /></a>
+        </h2>
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+          <li><a href="./session2.html">Session 2</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
+          <li><a href="./session4.html">Session 4</a></li>
+          <li><a href="./session5.html">Session 5</a></li>
+          <li><a href="">Test your self</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#sec5-che-rad">Checkbox & Radio</a></li>
+          <li><a href="#sec5-sel-txt">Select & Textarea</a></li>
+          <li><a href="#sec5-Another-Inputs">Another Inputs</a></li>
+          <li><a href="#sec5-Assignment">Assignment</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="sec5-che-rad">
+      <div class="container">
+        <h2>Checkbox & Radio</h2>
+        
+        <h3>Checkbox :</h3>
+        <ul>
+          <li>Inline element</li>
+          <li>Self Closing Tag</li>
+          <li>label after input</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <form action="">
+              <p>Frontend Corses :</p>
+              <input
+                type="checkbox"
+                name="feCorse[]"
+                id="html"
+                value="html"
+                checked
+              />
+              <label for="html"> HTML</label>
+              <input
+                type="checkbox"
+                name="feCorse[]"
+                id="css"
+                value="css"
+              /><label for="css"> CSS</label>
+              <input
+                type="checkbox"
+                name="feCorse[]"
+                id="js"
+                value="js"
+              /><label for="js"> JS</label>
+            </form>
+            <form action="">
+              <p>Backend Corses :</p>
+              <input
+                type="checkbox"
+                name="bkCorse[]"
+                id="php"
+                value="php"
+              /><label for="php"> PHP</label>
+              <input
+                type="checkbox"
+                name="bkCorse[]"
+                id="mysql"
+                value="mysql"
+                checked
+              /><label for="mysql"> MySQL</label>
+              <input
+                type="checkbox"
+                name="bkCorse[]"
+                id="nodejs"
+                value="nodeja"
+              /><label for="nodejs"> nodejs</label>
+            </form>
+          </div>
+          <div class="part2">
+            <pre>
+                &lt;form action=""&gt;
+                  &lt;p&gt;Frontend Corses :&lt;/p&gt;
+                  &lt;input type="checkbox" name="feCorse[]" id="html" value="html" checked /&gt;
+                  &lt;label for="html"&gt; HTML&lt;/label&gt;
+                  &lt;input type="checkbox" name="feCorse[]" id="css" value="css" /&gt;
+                  &lt;label for="css"&gt; CSS&lt;/label&gt;
+                  &lt;input type="checkbox" name="feCorse[]" id="js" value="js" /&gt;
+                  &lt;label for="js" &gt; JS&lt;/label&gt;
+                &lt;/form&gt;
+            </pre>
+            <pre>
+              &lt;form action=""&gt;
+                &lt;p&gt;Backend Corses :&lt;/p&gt;
+                &lt;input type="checkbox" name="bkCorse[]" id="php" value="php" /&gt;
+                &lt;label for="php"&gt; PHP&lt;/label&gt;
+                &lt;input type="checkbox" name="bkCorse[]" id="mysql" value="mysql" checked /&gt;
+                &lt;label for="mysql"&gt; MySQL&lt;/label&gt;
+                &lt;input type="checkbox" name="bkCorse[]" id="nodejs" value="nodeja" /&gt;
+                &lt;label for="nodejs"&gt; nodejs&lt;/label&gt;
+             &lt;/form&gt;
+            </pre>
+          </div>
+        </div>
+        <h3>Radio :</h3>
+        <ul>
+          <li>Inline element</li>
+          <li>Self Closing Tag</li>
+          <li>label after input</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <form action="">
+              <p>your birthday :</p>
+              <input
+                type="radio"
+                name="birthday"
+                id="1999"
+                value="1999"
+              /><label for="1999"> 1999</label>
+              <input
+                type="radio"
+                name="birthday"
+                id="2020"
+                value="2020"
+              /><label for="2020"> 2020</label>
+              <input
+                type="radio"
+                name="birthday"
+                id="2002"
+                value="2002"
+                checked
+              /><label for="2002"> 2002</label>
+            </form>
+            <form action="">
+              <p>your gender :</p>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                checked
+              /><label for="male"> Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female"
+              /><label for="female"> Female</label>
+            </form>
+          </div>
+          <div class="part2">
+            <pre>
+            &lt;form action=""&gt;
+              &lt;p&gt;your birthday :&lt;/p&gt;
+              &lt;input type="radio" name="birthday" id="1999" value = "1999" /&gt;
+              &lt;label for="1999"&gt;1999&lt;/label&gt;
+              &lt;input type="radio" name="birthday" id="2020" value = "2020" /&gt;
+              &lt;label for="2020"&gt;2020&lt;/label&gt;
+              &lt;input type="radio" name="birthday" id="2002" value = "2002" checked/&gt;
+              &lt;label for="2002"&gt;2002&lt;/label&gt;
+            &lt;/form&gt;
+            &lt;form action=""&gt;
+              &lt;p&gt;your gender :&lt;/p&gt;
+              &lt;input type="radio" name="gender" id="male" value = "male" checked /&gt;
+              &lt;label for="male"&gt;Male&lt;/label&gt;
+              &lt;input type="radio" name="gender" id="female" value = "female" /&gt;
+              &lt;label for="female"&gt;Female&lt;/label&gt;
+            &lt;/form&gt;
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sec5-sel-txt">
+      <div class="container">
+        <h2>Select & Textarea</h2>
+        <h3>Select :</h3>
+        <ul>
+          <li>Inline Element</li>
+          <li>Openinig and Closing</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <label for="book">Choose Book :</label>
+            <select name="book" id="book">
+              <optgroup label="Frontend">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+              </optgroup>
+              <optgroup label="Backend">
+                <option value="PHP" selected>PHP</option>
+                <option value="MySQL">MySQL</option>
+                <option value="Laravel">Laravel</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="part2">
+            <pre>
+            &lt;label for="book"&gt;Choose Book&lt;/label&gt; 
+            &lt;select name="book" id="book"&gt; 
+            &lt;optgroup label="Frontend"&gt;
+            &lt;option value="HTML"&gt;HTML&lt;/option&gt; 
+            &lt;option value="CSS"&gt;CSS&lt;/option&gt; 
+            &lt;option value="JS"&gt;JS&lt;/option&gt; 
+            &lt;/optgroup&gt; 
+            &lt;optgroup label="Backend"&gt; 
+            &lt;option value="PHP" selected&gt;PHP&lt;/option&gt; 
+            &lt;option value="MySQL"&gt;MySQL&lt;/option&gt; 
+            &lt;option value="Laravel"&gt;Laravel&lt;/option&gt; 
+            &lt;/optgroup&gt;
+            &lt;/select&gt;
+            </pre>
+          </div>
+        </div>
+        <div>
+          <h3>Textarea :</h3>
+          <ul>
+            <li>Inline Element</li>
+            <li>Openinig and Closing</li>
+          </ul>
+          <div class="containt">
+            <div class="part1">
+              <label for="info">Information :</label>
+              <br />
+              <textarea name="info" id="info" cols="50" rows="15" placeholder=" Insert your information "></textarea> 
+            </div>
+            <div class="part2">
+              &lt;textarea name="info" id="info" cols="50"
+              rows="15"&gt;&lt;/textarea&gt;
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id = "sec5-Another-Inputs">
+      <div class="container">
+        <h2>Another inputs</h2>
+        <h2>Time & URL & SEARCH & FILE</h2>
+        <div class="containt">
+          <table>
+            <tr>
+              <td>Time</td>
+              <td> used to represent  times </td>
+              <td><input type="time" name="" id=""></td>
+              <td>&lt;input type="time"&gt;</td>
+            </tr>
+            <tr>
+              <td>url</td>
+              <td>used to add URLs.</td>
+              <td><form action=""><input type="url" name="" id=""><input type="submit"></form></td>
+              <td>&lt;input type="url"&gt;</td>
+            </tr>
+            <tr>
+              <td>search</td>
+              <td>it’s used for search .</td>
+              <td><input type="search" name="" id=""></td>
+              <td>&lt;input type="search"&gt;</td>
+            </tr>
+            <tr>
+              <td>readonly </td>
+              <td>used to let the user select file from their device so they can be uploaded.</td>
+              <td><input type="file" name="" id=""></td>
+              <td>&lt;input type="file"&gt;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id = "sec5-Assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <div class="containt">
+          <img src="./img/reg2-form.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+          <li><a href="./session2.html">Session 2</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
+          <li><a href="./session4.html">Session 4</a></li>
+          <li><a href="./session5.html">Session 5</a></li>
+          <li><a href="">Test your self</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#sec5-che-rad">Checkbox & Radio</a></li>
+          <li><a href="#sec5-sel-txt">Select & Textarea</a></li>
+          <li><a href="#sec5-Another-Inputs">Another Inputs</a></li>
+          <li><a href="#sec5-Assignment">Assignment</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -8,11 +8,17 @@
   font-family: "Roboto", sans-serif;
 }
 :root {
-  --color1: #eee;
-  --color2: #ddd;
-  --color3: #f1a5a5;
-  --color4: rgb(201, 235, 179);
-  --color5: rgb(77, 74, 74);
+
+  
+
+
+
+
+  --color3:#F5CBCB;
+  --color1:#FFEAEA;
+  --color2:#ddd;
+  --color4:black;
+
 }
 
 body {
@@ -218,13 +224,16 @@ footer {
       margin-block: 20px;
       font-size: 25px;
       color: rgb(56, 56, 185);
+      & img {
+        width: 20px;
+      }
     }
     & .nav-page {
       display: flex;
       justify-content: space-around;
       list-style: none;
       border: 1px solid rgb(243, 248, 243);
-      background-color: rgb(132, 133, 132);
+      background-color: rgb(69, 70, 69);
       border-radius: 22px;
       padding-block: 10px;
       margin-top: 10px;
@@ -238,7 +247,7 @@ footer {
           color: rgb(252, 252, 252);
         }
         & a:hover {
-          color: var(--color4);
+          color: rgb(81, 192, 100);
         }
       }
     }
@@ -286,22 +295,29 @@ footer {
         }
       }
 
-      #ol2,
-      #ul2,
-      #dl2 {
+      & #ol2,
+      & #ul2,
+      & #dl2 {
         width: 32%;
         background-color: #f1a5a5;
         border-radius: 22px;
         padding: 5px;
         margin-block: 10px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
 
         & h3 {
           text-align: center;
         }
+
+        & p {
+          margin-block: 5px;
+        }
       }
+
+
     }
   }
 }
@@ -514,6 +530,13 @@ footer {
   }
 }
 
+#sec4-assignment {
+  & .container {
+    background-color: black;
+    color: #fff;
+  }
+}
+
 #sec4-hidding-disabel {
   & .container {
     & .containt {
@@ -521,5 +544,11 @@ footer {
         width: 80%;
       }
     }
+  }
+}
+
+#sec5-che-rad {
+  form {
+    margin: 10px;
   }
 }
