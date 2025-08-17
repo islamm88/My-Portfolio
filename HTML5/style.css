@@ -8,17 +8,10 @@
   font-family: "Roboto", sans-serif;
 }
 :root {
-
-  
-
-
-
-
   --color3:#F5CBCB;
   --color1:#FFEAEA;
   --color2:#ddd;
   --color4:black;
-
 }
 
 body {
@@ -552,3 +545,5 @@ footer {
     margin: 10px;
   }
 }
+
+
