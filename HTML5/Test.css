@@ -18,11 +18,11 @@ section {
   & p {
     width: 90%;
     margin-inline: auto;
-    margin-block: 50px; 
-    font-size: 20px; 
-    font-weight: 500; 
-    color: #222; 
-    line-height: 1.6; 
+    margin-block: 50px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+    line-height: 1.6;
   }
   & .qu-box {
     min-width: 70%;
@@ -51,8 +51,11 @@ section {
       padding: 30px;
 
       & .qu-set {
-        & :nth-child(2) {
+        & .ch1 {
           margin-top: 40px;
+        }
+        & :nth-child(5) {
+          margin-bottom: 40px;
         }
       }
 
@@ -63,6 +66,53 @@ section {
         border-radius: 22px;
         & label {
           margin-left: 15px;
+        }
+      }
+
+      & .qu-ans {
+        display: flex;
+        align-items: center;
+        padding-inline: 30px;
+        margin-bottom: 40px;
+        & p {
+          margin-block: 5px;
+          font-size: 15px;
+          font-weight: 800;
+          color: green;
+        }
+
+        button {
+          width: 200px;
+          height: 40px;
+          background: linear-gradient(
+            45deg,
+            rgba(92, 92, 160, 0.8),
+            rgba(21, 21, 218, 0.8)
+          );
+          color: #fff;
+          font-size: 15px;
+          font-weight: 600;
+          border: none;
+          border-radius: 22px;
+          cursor: pointer;
+          transition: all 0.5s ease-in-out;
+        }
+
+        /* تأثير عند المرور بالماوس */
+        button:hover {
+          background: linear-gradient(
+            45deg,
+            rgba(21, 21, 218, 0.9),
+            rgba(92, 92, 160, 0.9)
+          );
+          transform: scale(1.03);
+          box-shadow: 0 4px 12px rgba(21, 21, 218, 0.3);
+        }
+
+        /* تأثير عند الضغط */
+        button:active {
+          transform: scale(0.98);
+          box-shadow: 0 2px 6px rgba(21, 21, 218, 0.4);
         }
       }
     }
