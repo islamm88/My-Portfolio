@@ -7,11 +7,25 @@
 section {
   /* height: 100vh; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, rgb(235, 235, 240), rgb(80, 80, 223));
+  background: linear-gradient(
+    45deg,
+    rgba(255, 94, 97, 0.404),
+    rgba(255, 153, 0, 0.473)
+  );
+  & p {
+    width: 90%;
+    margin-inline: auto;
+    margin-block: 50px; 
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #222; 
+    line-height: 1.6; 
+  }
   & .qu-box {
-    min-width: 50%;
+    min-width: 70%;
     border: 1px solid #ddd;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     border-radius: 22px;
