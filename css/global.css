@@ -10,9 +10,9 @@
 
 :root {
   --primary-color: #034e23;
-  --secandry-color: #20c997;
+  --secondary-color: #20c997;
   --gray: #4a4a4d;
-  --bg-priamry: #ecf0f3;
+  --bg-primary: #ecf0f3;
 }
 
 h1,
@@ -35,5 +35,5 @@ a {
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 0px 2rem;
+  padding: 0rem 2rem;
 }
