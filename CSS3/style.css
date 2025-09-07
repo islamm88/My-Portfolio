@@ -18,9 +18,7 @@
 
 body {
   background-color: var(--color1);
-
 }
-
 
 .container {
   width: 80%;
@@ -83,7 +81,8 @@ section {
   }
 
   & ul,
-  ol,dl {
+  ol,
+  dl {
     margin-left: 50px;
     margin: 20px;
     & li {
@@ -93,8 +92,6 @@ section {
       font-weight: 500;
       color: blue;
     }
-
-    
   }
 }
 
@@ -109,6 +106,14 @@ section {
   transform: scale(1.05);
 }
 
+hr {
+  width: 80%;
+  margin-inline: auto;
+  background-color: #444242;
+  height: 3px;
+  margin-block: 40px;
+}
+
 #hr1 {
   width: 70%;
   height: 5px;
@@ -120,14 +125,13 @@ section {
 #sec2-dispaly {
   .container {
     & .containt {
-      & .part-dispaly{
+      & .part-dispaly {
         background-color: var(--color3);
         border-radius: 22px;
         border: 1px solid black;
         margin: 10px;
         padding: 15px;
         height: 250px;
-
       }
       & .part1 {
         background-color: var(--color3);
@@ -214,3 +218,70 @@ footer {
   }
 }
 
+.disc-img img {
+  width: 400px;
+}
+
+.parent-margin-negative1 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--color3);
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-radius: 22px;
+  & .child {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color5);
+    margin: -30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: larger;
+  }
+}
+.parent-margin-negative2 {
+  width: 200px;
+  height: 200px;
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 22px;
+  & .child {
+    width: 60px;
+    height: 90px;
+    background-color: var(--color5);
+    margin-left: -30px;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: larger;
+  }
+}
+
+#negative-margin {
+  justify-content: space-around;
+}
+
+#margin-auto-parent {
+  width: 400px;
+  height: 100px;
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  border-radius: 22px;
+
+  & div {
+    width: 50px;
+    height: 50px;
+    background: var(--color2);
+    margin: auto;
+    border-radius: 5px;
+  }
+}

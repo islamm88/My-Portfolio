@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css3-Session2</title>
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -26,6 +30,117 @@
         </ul>
       </div>
     </header>
+    <section>
+      <div class="container">
+        <h2>Margin & Padding & Border</h2>
+        <div class="containt">
+          <div class="disc">
+            <h3>What is margin?</h3>
+            <ul>
+              <li>margin is the space outside an element’s border.</li>
+              <li>
+                It creates distance between the element and its neighbors.
+              </li>
+            </ul>
+          </div>
+          <div class="disc-img">
+            <img src="./img/margin.png" alt="margin" loading="lazy" />
+          </div>
+        </div>
+        <h3>Example :</h3>
+        <div class="containt">
+          <ul>
+            <li>margin: 10px; <span>/* all sides = 10px */</span></li>
+            <li>
+              margin: 10px 20px;
+              <span>/* top/bottom = 10px, left/right = 20px */</span>
+            </li>
+            <li>
+              margin: 10px 20px 30px;
+              <span>/* top = 10px, left/right = 20px, bottom = 30px */</span>
+            </li>
+            <li>
+              margin: 10px 15px 20px 25px;
+              <span>/* top=10, right=15, bottom=20, left=25 */</span>
+            </li>
+          </ul>
+        </div>
+        <h3>Note : Margin can take a <span> negative value</span></h3>
+
+        <div id="negative-margin" class="containt">
+          <div class="parent-margin-negative1">
+            <div class="child">
+              <i class="fa-solid fa-thumbtack-slash"></i>
+            </div>
+          </div>
+          <div class="parent-margin-negative2">
+            <div class="child">
+              <i class="fa-solid fa-angles-right"></i>
+            </div>
+          </div>
+        </div>
+        <h3>
+          Note : <span>Margin :auto</span> tells the browser to automatically
+          calculate the margin space.
+        </h3>
+        <div class="containt">
+          <div id = "margin-auto-parent">
+            <div></div>
+          </div>
+        </div>
+        <hr />
+        <div class="containt">
+          <div class="disc">
+            <h3>What is padding?</h3>
+            <ul>
+              <li>
+                padding is the space inside an element’s border, between the
+                content (like text or an image) and the border.
+              </li>
+              <li>
+                Think of it as inner spacing, while margin is outer spacing.
+              </li>
+            </ul>
+          </div>
+          <div class="disc-img">
+            <img src="./img/padding.png" alt="padding" loading="lazy" />
+          </div>
+        </div>
+        <h3>Note : Padding can't take a <span> negative value</span></h3>
+        <h3>Example :</h3>
+        <div class="containt">
+          <ul>
+            <li>padding: 10px; <span>/* all sides = 10px */</span></li>
+            <li>
+              padding: 10px 20px;
+              <span>/* top/bottom = 10px, left/right = 20px */</span>
+            </li>
+            <li>
+              padding: 10px 20px 30px;
+              <span>/* top = 10px, left/right = 20px, bottom = 30px */</span>
+            </li>
+            <li>
+              padding: 10px 15px 20px 25px;
+              <span>/* top=10, right=15, bottom=20, left=25 */</span>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <h3>Quick Comparison (Margin vs Padding)</h3>
+        <div class="containt">
+          <ul>
+            <li>Margin → space outside the border.</li>
+            <li>Padding → space inside the border, around the content.</li>
+          </ul>
+
+          <img
+            src="./img/Margin&padding.png"
+            alt="margin and padding"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
     <section id="sec2-dispaly">
       <div class="container">
         <h2>Display - (Block), (Inline Block), (Inline)</h2>
@@ -71,7 +186,7 @@
             <br />
 
             <pre>
-                          div {
+              div {
               background-color: red;
               width: 200px;
               height: 100px;
@@ -138,14 +253,16 @@
         </div>
       </div>
     </section>
-    <section id = "sec2-dispaly-visibility">
+    <section id="sec2-dispaly-visibility">
       <div class="container">
         <h2>Dispaly & Visibility</h2>
         <h3>
-          You can appear or disappear element by <span>display</span> property <span>None </span>, <span>Block</span> or
-          by <span>Visibility</span> property <span>hidden</span>, <span>visible</span>
+          You can appear or disappear element by <span>display</span> property
+          <span>None </span>, <span>Block</span> or by
+          <span>Visibility</span> property <span>hidden</span>,
+          <span>visible</span>
         </h3>
-        <br>
+        <br />
         <div>
           <pre>
           Example 
@@ -160,7 +277,7 @@
           </pre>
         </div>
         <div>
-          <img src="./img/dispaly-visibility.png" alt="display visibility">
+          <img src="./img/dispaly-visibility.png" alt="display visibility" />
         </div>
 
         <div class="containt"></div>

@@ -33,9 +33,10 @@
       <div class="container">
         <h2>Introduction</h2>
         <ul>
-          <li>Version CSS3</li>
+          <li>CSS3 (early 2000s): instead of one big spec, it was split into modules (Selectors, Flexbox, Grid, Transitions, Animations, etc.). <br>
+              <span>Modern CSS (today):</span> no CSS4 or “final version” — CSS is evolving continuously. Each module has its own level (Selectors Level 4, Media Queries Level 5, Grid Level 2, etc.).</li>
           <li>CSS => Cascade Style Sheet " For Presentation And Visuals "</li>
-          <li>Prerequisite to CSS is HTML</li>
+          <li>Prerequisite to CSS is <span>HTML</span></li>
         </ul>
 
         <h3>What we need ?</h3>
@@ -43,18 +44,18 @@
           <li>Text Editor (VS Code)</li>
           <li>Internet Browser (Google Chrome , Firefox)</li>
         </ul>
-        <p><span>Extention file .css like main.css</span></p>
+        <p>Extention file <span>.css</span> like main.css</p>
         <h3>Where can I create CSS Code ?</h3>
         <div class = "containt">
-        <ul>
+        <ol>
             <li>External file  
             <li>internal</li> 	
                 <ul>
                   <li>in file  inside &lt;head&gt;  <span>&lt;style&gt;&lt;/style&gt;</span>   &lt;/head&gt;</li>
-                  <li>inline  inside the "opening tage" what you want style it like &lt;p&gt; tage</li>
+                  <li>inline  inside the <span>opening tage</span> what you want style it like &lt;p&gt; tage</li>
                 </ul>	
           </li>
-        </ul>
+        </ol>
         <img src="./img/css-places.png" alt="Css-places" loading="lazy" width="500">
         </div>
   
@@ -98,7 +99,7 @@
             <li>Class Selector : Example <span>.note { font-size: 14px; }</span>  Selects all elements with a given class.</li>
             <li>ID Selector : Example: <span>#header { background: blue; }</span> Selects the single element with a specific id.</li>
             <li>Group Selector : Example: <span>h1, p, div { margin: 0; }</span> Applies the same style to multiple selectors.</li>
-            <li>Descendant Selector : Example: <span>div p { color: green; }</span> Selects all &lt;p&gt; elements inside a <div>.</li>
+            <li>Descendant Selector : Example: <span>div p { color: green; }</span> Selects all &lt;p&gt; elements inside a .</li>
           </ul>
         </div>
         <ul>
@@ -124,8 +125,8 @@
         </div>
             <ol>
               <li>You can type color by hexadecimal like <span>#eee , #1f1f1f</span></li>
-              <li>rgba : r -> Red <span style="color: red;">color</span> g -> Green <span style="color: green;">color</span>  b -> Blur <span style="color: blue;">color</span></li>
-              <li>The alpha value must be a number between <span>(0 and 1) or (0.5 and 1)</span>, not a percentage.</li>
+              <li>rgba : r -> Red <span style="color: red;">color</span> g -> Green <span style="color: green;">color</span>  b -> Blur <span style="color: blue;">color</span> a -> Alpha</li>
+              <li>The alpha value must be a number between <span>(0 and 1)</span>, not a percentage.</li>
             </ol>
         <div class="containt">
               <p>There are many great websites for discovering and generating beautiful color palettes for your designs</p>
@@ -165,14 +166,15 @@
         <h3>background-attachment</h3>
         <ul>
            <li>background-attachment: scroll;   => default</li>
-           <li>background-size:contain;  	fully visible</li>
-           <li>background-size: cover;	stretch and cut</li>
+           <li>background-attachment: fixed;</li>
+           
+           
         </ul>
         <h3>background-size</h3>
         <ul>
            <li>background-size: auto;     => default</li>
-           <li>background-attachment: fixed;</li>
-           <li>background-size: cover;	stretch and cut</li>
+           <li>background-size: cover;<span>stretch and cut</span></li>
+           <li>background-size:contain;<span>fully visible</span></li>
            <li>background-size: 100px 200px ;    W H </li>
            <li>background-size: 50% 80% ;</li>
         </ul>
