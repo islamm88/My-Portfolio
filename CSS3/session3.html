@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css3-Session3</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CSS 3</h1>
+        <h2>SESSION 3</h2>
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+          <li><a href="./session2.html">Session 2</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
+          <li><a href="">Session 4</a></li>
+          <li><a href="">Session 5</a></li>
+          <li><a href="">Test your self</a></li>
+        </ul>
+        <ul class="nav-page"></ul>
+      </div>
+    </header>
+    <section id="sec3-dispaly">
+      <div class="container">
+        <h2>Display - (Block), (Inline Block), (Inline)</h2>
+        <div class="containt">
+          <div class="part-dispaly">
+            <h3><span>Block :</span></h3>
+            <ul>
+              <li>take full width if no width</li>
+              <li>add line brack</li>
+              <li>respect (padding - margin - width - height )</li>
+            </ul>
+          </div>
+          <div class="part-dispaly">
+            <h3><span>Inline :</span></h3>
+            <ul>
+              <li>don't add line breack</li>
+              <li>don't respect (width - height )</li>
+              <li>respect (padding - margin ) just left & right</li>
+            </ul>
+          </div>
+          <div class="part-dispaly">
+            <h3 style="color: red">Inline block</h3>
+            <ul>
+              <li>display element like in line element</li>
+              <li>respect (padding - margin - width - height )</li>
+            </ul>
+          </div>
+        </div>
+        <div class="containt">
+          <div class="part1">
+            <h3>Example :</h3>
+            <pre>
+              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
+              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
+              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
+
+              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
+              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
+              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
+              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
+            </pre>
+
+            <br />
+
+            <pre>
+              div {
+              background-color: red;
+              width: 200px;
+              height: 100px;
+              padding: 10px;
+              margin: 10px;
+            } 
+
+            span {
+              background-color: rgb(4, 24, 204);
+              width: 200px;
+              height: 100px;
+              padding: 20px;
+              margin: 10px;
+            } 
+
+            span {
+              display: inline-block;
+              background-color: rgb(4, 24, 204);
+              width: 200px;
+              height: 100px;
+              padding: 20px;
+              margin: 10px;
+            }
+            </pre>
+          </div>
+          <div class="part2">
+            <img
+              src="./img/block-inline-inlineblock.png"
+              alt="display"
+              loading="lazy"
+            />
+          </div>
+        </div>
+
+        <div class="containt">
+          <div class="part1">
+            <ul>
+              <li>
+                Block element can Contain <span>Block</span> or
+                <span>inline</span> element
+              </li>
+              <li>Inline element can Contain <span>inline</span> element</li>
+            </ul>
+            <p>You Can Convert from any case to another by display property</p>
+            <pre>
+                a {
+                    display: block;
+                  }
+                p {
+                  display: inline;
+                }
+                p {
+                  display: inline-block;
+                }
+            </pre>
+          </div>
+          <div class="part2">
+            <img
+              src="./img/inline&block.png"
+              alt="inline-block"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sec3-dispaly-visibility">
+      <div class="container">
+        <h2>Dispaly & Visibility</h2>
+        <h3>
+          You can appear or disappear element by <span>display</span> property
+          <span>None </span>, <span>Block</span> or by
+          <span>Visibility</span> property <span>hidden</span>,
+          <span>visible</span>
+        </h3>
+        <br />
+        <div>
+          <pre>
+          Example 
+            .one {
+              display: block;
+              display: none;
+              } 
+            .two {
+              visibility: visible;
+              visibility: hidden;
+            } 
+          </pre>
+        </div>
+        <div>
+          <img src="./img/dispaly-visibility.png" alt="display visibility" />
+        </div>
+
+        <div class="containt"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <ul class="nav-site">
+          <li><a href="./session1.html">Session 1</a></li>
+          <li><a href="./session2.html">Session 2</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
+          <li><a href="">Session 4</a></li>
+          <li><a href="">Session 5</a></li>
+          <li><a href="">Test your self</a></li>
+        </ul>
+        <ul class="nav-page"></ul>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -269,6 +269,29 @@ footer {
   justify-content: space-around;
 }
 
+#margin-auto-parentx {
+  width: 200px;
+  height: 180px;
+  background-color: var(--color3);
+  align-items: center;
+  border-radius: 22px;
+  padding: 20px;
+
+  & div {
+    width: 50px;
+    height: 50px;
+    background: var(--color2);
+    margin: auto;
+    border-radius: 5px;
+  }
+
+  & #dt {
+    margin-bottom: 20px;
+  }
+  & #db {
+    margin-top: 40px;
+  }
+}
 #margin-auto-parent {
   width: 400px;
   height: 100px;
@@ -284,4 +307,70 @@ footer {
     margin: auto;
     border-radius: 5px;
   }
+
+  & #dl {
+    margin-right: 20px;
+  }
+  & #dr {
+    margin-left: 40px;
+  }
+}
+
+#border-dis {
+  width: 600px;
+  height: 200px;
+  border-top-width: 2px;
+  border-right-width: 5px;
+  border-bottom-width: 3px;
+  border-left-width: 2px;
+
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: double;
+  border-left-style: dashed;
+
+  border-top-color: red;
+  border-right-color: green;
+  border-bottom-color: blue;
+  border-left-color: yellow;
+
+}
+
+#circle {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color3);
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#design {
+  width: 300px;
+  height: 300px;
+  background-color: var(--color3);
+  border-radius: 20px 0px 20px 0px;
+  border-top-right-radius: 50% 50% ;
+  border-bottom-left-radius: 50% 50% ;
+}
+
+.Challenge {
+  background-color: #eee;
+  padding: 10px;
+  & * {
+      margin: 30px;
+  }
+}
+
+#example-Shadowbox {
+  width: 200px;
+  height: 200px;
+  background-color: var(--color3);
+  border-radius:22px ;
+  box-shadow: -5px -5px 5px 5px rgba(114, 114, 114, 0.493) ;
+}
+
+#desc {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 5px;
 }

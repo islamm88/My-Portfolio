@@ -18,21 +18,37 @@
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
           <li><a href="./session2.html">Session 2</a></li>
-          <li><a href="">Session 3</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
           <li><a href="">Session 4</a></li>
           <li><a href="">Session 5</a></li>
           <li><a href="">Test your self</a></li>
         </ul>
         <ul class="nav-page">
+          <li>
+            <a href="#sec2-margin">Margin</a>
+          </li>
+          <li>
+            <a href="#sec2-padding">Padding</a>
+          </li>
+          <li>
+            <a href="#sec2-border">Border</a>
+          </li>
+          <li>
+            <a href="#sec2-boxsizeing">Box-Sizeing</a>
+          </li>
+          <li>
+            <a href="#sec2-boxshadow">Box-Shadow</a>
+          </li>
+
           <li><a href="#sec2-dispaly">dispaly</a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
         </ul>
       </div>
     </header>
-    <section>
+    <section id="sec2-margin">
       <div class="container">
-        <h2>Margin & Padding & Border</h2>
+      
+        <h2>Margin</h2>
+        <h4>Note : <span>We will take a &lt;div&gt; as example to implement</span></h4>
         <div class="containt">
           <div class="disc">
             <h3>What is margin?</h3>
@@ -84,11 +100,45 @@
           calculate the margin space.
         </h3>
         <div class="containt">
-          <div id = "margin-auto-parent">
+          <div id="margin-auto-parent">
             <div></div>
           </div>
         </div>
-        <hr />
+        <h3>
+          Note :
+          <span>Horizontal margin (left/right): we add them together </span>
+        </h3>
+        <div class="containt">
+          <div id="margin-auto-parent">
+            <div id="dl"></div>
+            <div id="dr"></div>
+          </div>
+        </div>
+        <h3>Note : <span>Vertical margin (top/bottom): they collapse</span></h3>
+        <div class="containt">
+          <div id="margin-auto-parentx">
+            <div id="dt"></div>
+            <div id="db"></div>
+          </div>
+        </div>
+        <h3>Quick Comparison (Margin vs Padding)</h3>
+        <div class="containt">
+          <ul>
+            <li>Margin → space outside the border.</li>
+            <li>Padding → space inside the border, around the content.</li>
+          </ul>
+
+          <img
+            src="./img/Margin&padding.png"
+            alt="margin and padding"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="sec2-padding">
+      <div class="container">
+        <h2>Padding</h2>
         <div class="containt">
           <div class="disc">
             <h3>What is padding?</h3>
@@ -106,7 +156,10 @@
             <img src="./img/padding.png" alt="padding" loading="lazy" />
           </div>
         </div>
-        <h3>Note : Padding can't take a <span> negative value</span></h3>
+        <h3>
+          Note : Padding can't take a
+          <span> negative value & auto value</span>
+        </h3>
         <h3>Example :</h3>
         <div class="containt">
           <ul>
@@ -125,162 +178,130 @@
             </li>
           </ul>
         </div>
-        <hr />
-        <h3>Quick Comparison (Margin vs Padding)</h3>
-        <div class="containt">
-          <ul>
-            <li>Margin → space outside the border.</li>
-            <li>Padding → space inside the border, around the content.</li>
-          </ul>
+      </div>
+    </section>
+    <section id="sec2-border">
+      <div class="container">
+        <h2>Border</h2>
 
-          <img
-            src="./img/Margin&padding.png"
-            alt="margin and padding"
-            loading="lazy"
-          />
+        <h3>What is Border ?</h3>
+        <p>
+          In CSS, the border is the line that goes around the padding and
+          content of an element. <span>It’s part of the box model</span>.
+        </p>
+        <p>
+          <span>border-top - border-right - border-bottom - border-left</span>
+        </p>
+        <h3>Each border has 3 main parts:</h3>
+        <ul>
+          <li>size</li>
+          <li>style</li>
+          <li>color</li>
+        </ul>
+
+        <div class="containt">
+          <div>
+            <h3>border-width:</h3>
+            <p>border-top-width:2px ;</p>
+            <p>border-right-width:5px ;</p>
+            <p>border-bottom-width:3px ;</p>
+            <p>border-left-width:1px ;</p>
+            <p>border-width : 5px 3px ;</p>
+            <p>border-width : 5px ;</p>
+            <h3>border-style</h3>
+            <p>border-top-style:dotted ;</p>
+            <p>border-right-style:solid ;</p>
+            <p>border-bottom-style:double ;</p>
+            <p>border-left-style:dashed ;</p>
+            <p>border-style: dotted solid ;</p>
+            <p>border-style: solid ;</p>
+            <h3>border-color</h3>
+            <p>border-top-color:red ;</p>
+            <p>border-right-color:green ;</p>
+            <p>border-bottom-color:blue ;</p>
+            <p>border-left-color:yellow ;</p>
+            <p>border-color: red blue ;</p>
+            <p>border-color: blue ;</p>
+            <h3>Shortcut</h3>
+            <p>border : 1px solid red ;</p>
+          </div>
+          <div id="border-dis"></div>
+        </div>
+        <div class="containt">
+          <div>
+            <h3>border-radius</h3>
+            <p>border-top-left-radius: 5px ;</p>
+            <p>border-top-right-radius: 5px ;</p>
+            <p>border-bottom-left-radius: 5px ;</p>
+            <p>border-bottom-right-radius: 5px ;</p>
+            <p>border-radius: 5px 5px 0px 0px ;</p>
+            <h3>
+              <span
+                >Note : To create Circle must make width = height and
+                border-radius = 50%</span
+              >
+            </h3>
+          </div>
+          <div>
+            <div id="circle"></div>
+          </div>
+        </div>
+        <div id="Challenge" class="containt Challenge">
+          <h2>Challenge</h2>
+          <div id="design"></div>
         </div>
       </div>
     </section>
-    <section id="sec2-dispaly">
+    <section id="sec2-boxsizeing">
       <div class="container">
-        <h2>Display - (Block), (Inline Block), (Inline)</h2>
-        <div class="containt">
-          <div class="part-dispaly">
-            <h3><span>Block :</span></h3>
-            <ul>
-              <li>take full width if no width</li>
-              <li>add line brack</li>
-              <li>respect (padding - margin - width - height )</li>
-            </ul>
-          </div>
-          <div class="part-dispaly">
-            <h3><span>Inline :</span></h3>
-            <ul>
-              <li>don't add line breack</li>
-              <li>don't respect (width - height )</li>
-              <li>respect (padding - margin ) just left & right</li>
-            </ul>
-          </div>
-          <div class="part-dispaly">
-            <h3 style="color: red">Inline block</h3>
-            <ul>
-              <li>display element like in line element</li>
-              <li>respect (padding - margin - width - height )</li>
-            </ul>
-          </div>
+        <h2>Box-Sizing</h2>
+        <p>
+          The box-sizing property in CSS defines how the browser calculates the
+          width and height of an element.
+        </p>
+          <h3>Box-Sizing</h3>
+          <p>box-sizing : content-box ;</p>
+          <p>box-sizing : border-box ;</p>
+            <p>
+              Note : add border-box in universal selector
+              <span>* { box-sizing : border-box ; } </span>it changes how the
+              browser calculates the width and height of an element.
+            </p>
+
         </div>
+      </div>
+    </section>
+    <section id="sec2-boxshadow">
+      <div class="container">
+        <h2>Box-Shadow</h2>
+        <p>The box-shadow property adds shadow effects around an element’s box. You can set the <span>[Horizontal - Vertical - Blur - Spread - Color - Inset]</span>.</p>
         <div class="containt">
-          <div class="part1">
-            <h3>Example :</h3>
+          <div id = "desc">
             <pre>
-              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
-              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
-              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
-
-              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
-              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
-              &lt;span&gt;Span =&gt; inline&lt;/span&gt;
-              &lt;div&gt;Div =&gt; Block&lt;/div&gt;
-            </pre>
-
-            <br />
-
-            <pre>
-              div {
-              background-color: red;
-              width: 200px;
-              height: 100px;
-              padding: 10px;
-              margin: 10px;
-            } 
-
-            span {
-              background-color: rgb(4, 24, 204);
-              width: 200px;
-              height: 100px;
-              padding: 20px;
-              margin: 10px;
-            } 
-
-            span {
-              display: inline-block;
-              background-color: rgb(4, 24, 204);
-              width: 200px;
-              height: 100px;
-              padding: 20px;
-              margin: 10px;
-            }
+                width: 200px;
+                height: 200px;
+                background-color: violet;
+                border-radius:22px ;
+                <span>box-shadow: -5px -5px 5px 5px rgba(114, 114, 114, 0.493) ;</span>
             </pre>
           </div>
-          <div class="part2">
-            <img
-              src="./img/block-inline-inlineblock.png"
-              alt="display"
-              loading="lazy"
-            />
+          <div>
+            <p></p>
+            <img src="./img/box-shadow.png" alt="">
           </div>
-        </div>
-
-        <div class="containt">
-          <div class="part1">
-            <ul>
-              <li>
-                Block element can Contain <span>Block</span> or
-                <span>inline</span> element
-              </li>
-              <li>Inline element can Contain <span>inline</span> element</li>
-            </ul>
-            <p>You Can Convert from any case to another by display property</p>
-            <pre>
-                a {
-                    display: block;
-                  }
-                p {
-                  display: inline;
-                }
-                p {
-                  display: inline-block;
-                }
-            </pre>
-          </div>
-          <div class="part2">
-            <img
-              src="./img/inline&block.png"
-              alt="inline-block"
-              loading="lazy"
-            />
+          <div>
+            <div id = "example-Shadowbox"></div>
           </div>
         </div>
       </div>
     </section>
-    <section id="sec2-dispaly-visibility">
+    <section id="assignment">
       <div class="container">
-        <h2>Dispaly & Visibility</h2>
-        <h3>
-          You can appear or disappear element by <span>display</span> property
-          <span>None </span>, <span>Block</span> or by
-          <span>Visibility</span> property <span>hidden</span>,
-          <span>visible</span>
-        </h3>
-        <br />
-        <div>
-          <pre>
-          Example 
-            .one {
-              display: block;
-              display: none;
-              } 
-            .two {
-              visibility: visible;
-              visibility: hidden;
-            } 
-          </pre>
+        <h2>Challenge</h2>
+        <div class="containt">
+          <h3>Create two cards margin between them 20px and padding insed card 10px</h3>
+          <img src="./img/sec2-assignment.png" alt="">
         </div>
-        <div>
-          <img src="./img/dispaly-visibility.png" alt="display visibility" />
-        </div>
-
-        <div class="containt"></div>
       </div>
     </section>
     <footer>
@@ -288,15 +309,29 @@
         <ul class="nav-site">
           <li><a href="./session1.html">Session 1</a></li>
           <li><a href="./session2.html">Session 2</a></li>
-          <li><a href="">Session 3</a></li>
+          <li><a href="./session3.html">Session 3</a></li>
           <li><a href="">Session 4</a></li>
           <li><a href="">Session 5</a></li>
           <li><a href="">Test your self</a></li>
         </ul>
-        <ul class="nav-page">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+            <ul class="nav-page">
+          <li>
+            <a href="#sec2-margin">Margin</a>
+          </li>
+          <li>
+            <a href="#sec2-padding">Padding</a>
+          </li>
+          <li>
+            <a href="#sec2-border">Border</a>
+          </li>
+          <li>
+            <a href="#sec2-boxsizeing">Box-Sizeing</a>
+          </li>
+          <li>
+            <a href="#sec2-boxshadow">Box-Shadow</a>
+          </li>
+
+          <li><a href="#sec2-dispaly">dispaly</a></li>
         </ul>
       </div>
     </footer>
