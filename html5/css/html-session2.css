@@ -1,0 +1,1235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --color3: #f5cbcb;
+  --color1: #ffeaea;
+  --color2: #ddd;
+  --color4: black;
+}
+
+body {
+  background-color: var(--color1);
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    margin-block: 8px;
+    background-color: #ddd;
+    border-radius: 15px;
+    & .containt {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  header,
+  footer {
+    & .container {
+      background-color: var(--color1);
+      & a {
+        & img {
+          width: 10px;
+        }
+      }
+      & h1 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 1.2rem;
+      }
+      & h2 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 1rem;
+        color: rgb(56, 56, 185);
+        & img {
+          width: 15px;
+        }
+      }
+      & .nav-page {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid rgb(243, 248, 243);
+        background-color: rgb(69, 70, 69);
+        border-radius: 8px;
+        padding-block: 8px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: rgb(252, 252, 252);
+          }
+          & a:hover {
+            color: rgb(81, 192, 100);
+          }
+        }
+      }
+      & .nav-site {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid var(--color1);
+        background-color: var(--color3);
+        border-radius: 8px;
+        padding-block: 8px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgb(56, 56, 185);
+          }
+          & a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 391px) and (max-width: 767px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    margin-block: 8px;
+    background-color: #ddd;
+    border-radius: 15px;
+    & .containt {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    & hr {
+      width: 90%;
+      height: 5px;
+      background: linear-gradient(
+        to right,
+        rgb(32, 32, 32),
+        rgb(187, 183, 183)
+      );
+      border-radius: 22px;
+      margin: auto;
+      margin-block: 30px;
+    }
+  }
+
+  header,
+  footer {
+    & .container {
+      background-color: var(--color1);
+
+      & h1 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 1.2rem;
+      }
+      & h2 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 1rem;
+        color: rgb(56, 56, 185);
+        & img {
+          width: 18px;
+        }
+      }
+      & .nav-page {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid rgb(243, 248, 243);
+        background-color: rgb(69, 70, 69);
+        border-radius: 8px;
+        padding-block: 8px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: rgb(252, 252, 252);
+          }
+          & a:hover {
+            color: rgb(81, 192, 100);
+          }
+        }
+      }
+      & .nav-site {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid var(--color1);
+        background-color: var(--color3);
+        border-radius: 8px;
+        padding-block: 8px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgb(56, 56, 185);
+          }
+          & a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  #session2-anchor {
+    & .container {
+      padding: 10px;
+      & span {
+        font-weight: 400;
+        color: blue;
+        font-size: 10px;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & p {
+        margin: 20px 0px 20px;
+        font-size: 10px;
+        padding-left: 10px;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 10px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  #session2-format {
+    & .container {
+      & .containt {
+        & table {
+          margin-left: 60px;
+          margin-bottom: 60px;
+          border: 1px solid rgb(161, 158, 158);
+          background-color: #eee;
+          border-radius: 22px;
+          padding: 10px;
+          & thead tr td {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: #ddd;
+          }
+          & tr:nth-child(odd) {
+            background-color: #f1a5a5;
+          }
+          & tr td {
+            border-bottom: 1px solid black;
+            padding: 10px;
+          }
+        }
+      }
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & p {
+        margin: 20px 0px 20px;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & table {
+        margin-left: 60px;
+        margin-block: 20px;
+        border: 1px solid rgb(161, 158, 158);
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 10px;
+        & thead tr td {
+          text-align: center;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: #ddd;
+        }
+        & tr:nth-child(odd) {
+          background-color: #f1a5a5;
+        }
+        & tr td {
+          border-bottom: 1px solid black;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  #session2-list {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & ol {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & .containt {
+        margin-block: 20px;
+        flex-wrap: wrap;
+        #ol,
+        #ul,
+        #dl {
+          width: 32%;
+          background-color: #f1a5a5;
+          border-radius: 22px;
+          padding: 5px;
+          margin-block: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          & h3 {
+            text-align: center;
+            margin-block: 20px;
+          }
+          & pre {
+            margin-top: 10px;
+          }
+        }
+
+        & #ol2,
+        & #ul2,
+        & #dl2 {
+          width: 32%;
+          background-color: #f1a5a5;
+          border-radius: 22px;
+          padding: 5px;
+          margin-block: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          & h3 {
+            text-align: center;
+          }
+
+          & p {
+            margin-block: 5px;
+          }
+        }
+      }
+      & #div-img {
+        & img {
+          display: block;
+          margin-block: 20px;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        }
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  #session2-image {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & .containt {
+        & .con1 {
+          width: 45%;
+          display: flex;
+          padding-top: 30px;
+
+          & ul {
+            margin-left: 20px;
+          }
+        }
+        & .con2 {
+          width: fit-content;
+          & img {
+            width: 300px;
+            border-radius: 22px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+
+  #session2-table {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      .containt {
+        padding-top: 15px;
+        border-radius: 22px;
+        background-color: #eee;
+        justify-content: space-around;
+
+        & .con1 {
+          width: 45%;
+        }
+        & .con2 {
+          width: 45%;
+          align-items: center;
+          padding: 10px;
+          & table {
+            border: 1px solid rgb(161, 158, 158);
+            background-color: #eee;
+            border-radius: 22px;
+            padding: 10px;
+            & thead tr td {
+              text-align: center;
+              font-size: 15px;
+              font-weight: 500;
+              background-color: #ddd;
+            }
+            & tr:nth-child(odd) {
+              background-color: #f1a5a5;
+            }
+            & tr td {
+              border-bottom: 1px solid black;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #session2-divspan {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & .containt {
+        align-items: start;
+        & .div-test1 {
+          width: 45%;
+          padding: 30px;
+          background-color: var(--color3);
+          border-radius: 22px;
+          margin-left: 50px;
+          & ul {
+            margin-left: 30px;
+            margin-top: 10px;
+          }
+        }
+        & .div-test2 {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  #session2-assignment {
+    & .container {
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+
+      & #div-imgs {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .div-img {
+          width: 20%;
+          height: 200px;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+        & :nth-child(1) {
+          width: 15%;
+        }
+        & :nth-child(2) {
+          height: 150px;
+        }
+        & :nth-child(4) {
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 95%;
+    margin: auto;
+    padding: 30px;
+    padding-left: 50px;
+    margin-block: 8px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    & .containt {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    & hr {
+      width: 90%;
+      height: 5px;
+      background: linear-gradient(
+        to right,
+        rgb(32, 32, 32),
+        rgb(187, 183, 183)
+      );
+      border-radius: 22px;
+      margin: auto;
+      margin-block: 30px;
+    }
+  }
+
+  header,
+  footer {
+    & .container {
+      padding: 0px;
+      background-color: var(--color1);
+      box-shadow: none;
+      & h1 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 2.5rem;
+      }
+      & h2 {
+        text-align: center;
+        margin-block: 20px;
+        font-size: 1.5rem;
+        color: rgb(56, 56, 185);
+        & img {
+          width: 20px;
+        }
+      }
+      & .nav-page {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid rgb(243, 248, 243);
+        background-color: rgb(69, 70, 69);
+        border-radius: 10px;
+        padding-block: 8px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            text-transform: capitalize;
+            color: rgb(252, 252, 252);
+          }
+          & a:hover {
+            color: rgb(81, 192, 100);
+          }
+        }
+      }
+      & .nav-site {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        border: 1px solid var(--color1);
+        background-color: var(--color3);
+        border-radius: 10px;
+        padding-block: 8px;
+        margin-top: 40px;
+        margin-bottom: 5px;
+
+        & li {
+          & a {
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgb(56, 56, 185);
+          }
+          & a:hover {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  #session2-anchor {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+        font-size: 15px;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & p {
+        margin: 20px 0px 20px;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+    }
+  }
+
+  #session2-format {
+    & .container {
+      & .containt {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & table {
+          border: 1px solid rgb(161, 158, 158);
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          background-color: #eee;
+          border-radius: 22px;
+          padding: 10px;
+          margin-left:0px ;
+          & thead tr td {
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: #ddd;
+          }
+          & tr:nth-child(odd) {
+            background-color: #f1a5a5;
+          }
+          & tr td {
+            border-bottom: 1px solid black;
+            padding: 10px;
+          }
+        }
+      }
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & p {
+        margin: 20px 0px 20px;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & table {
+        margin-left: 60px;
+        margin-block: 20px;
+        border: 1px solid rgb(161, 158, 158);
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 10px;
+        & thead tr td {
+          text-align: center;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: #ddd;
+        }
+        & tr:nth-child(odd) {
+          background-color: #f1a5a5;
+        }
+        & tr td {
+          border-bottom: 1px solid black;
+          padding: 10px;
+        }
+      }
+    }
+  }
+
+  #session2-list {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & #type-lis {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & .containt {
+        margin-block: 20px;
+        flex-wrap: wrap;
+        display: flex;
+        align-items: flex-start;
+        #ol,
+        #ul,
+        #dl {
+          width: 32%;
+          background-color: #f1a5a5;
+          border-radius: 22px;
+          padding: 5px;
+          margin-block: 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+
+          & h3 {
+            text-align: center;
+            margin-block: 20px;
+          }
+          & pre {
+            margin-top: 10px;
+          }
+        }
+        & #ol2,
+        & #ul2,
+        & #dl2 {
+          width: 32%;
+          background-color: #f1a5a5;
+          border-radius: 22px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding-block: 10px;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+
+          & h3 {
+            text-align: center;
+          }
+
+          & p {
+            margin-block: 5px;
+          }
+        }
+        & #dl2 {
+          line-height: 10px;
+        }
+      }
+      & #div-img {
+        & img {
+          display: block;
+          margin-block: 20px;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        }
+        display: flex;
+        justify-content: center;
+      }
+      & .containt-sublist {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        & .col1,
+        & .col2 {
+          width: 25%;
+          padding: 10px;
+          
+          min-height: 100%;
+          & ul {
+            margin-left: 20px;
+          }
+        }
+
+        & .col2 {
+          background-color: #f1a5a5;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          border-radius: 10px;
+          height: fit-content;
+        }
+      }
+    }
+  }
+
+  #session2-image {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-top: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & .containt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .con1 {
+          width: 45%;
+          display: flex;
+          padding-top: 30px;
+          
+
+          & ul {
+            margin-left: 20px;
+          }
+        }
+        & .con2 {
+          width: fit-content;
+          & img {
+            width: 300px;
+            border-radius: 22px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+
+  #session2-table {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      .containt {
+        padding-top: 15px;
+        border-radius: 22px;
+        background-color: #eee;
+        justify-content: space-around;
+        margin: 10px;
+        & .con1 {
+          width: 45%;
+
+        }
+        & .con2 {
+          width: 45%;
+          align-items: center;
+          & table {
+            border: 1px solid rgb(161, 158, 158);
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            background-color: #eee;
+            border-radius: 22px;
+            padding: 10px;
+            margin-left: auto;
+            & thead tr td {
+              text-align: center;
+              font-size: 15px;
+              font-weight: 500;
+              background-color: #ddd;
+            }
+            & tr:nth-child(odd) {
+              background-color: #f1a5a5;
+            }
+            & tr td {
+              border-bottom: 1px solid black;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #session2-divspan {
+    & .container {
+      & span {
+        font-weight: 400;
+        color: blue;
+      }
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+      & h3 {
+        margin-block: 15px;
+        font-size: 25px;
+        font-weight: 400;
+      }
+      & h4 {
+        margin-top: 15px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      & ul {
+        margin-left: 40px;
+        margin-bottom: 50px;
+
+        & li {
+          padding-block: 5px;
+          font-size: 15px;
+        }
+        & span {
+          font-weight: 400;
+          color: blue;
+        }
+      }
+      & .containt {
+        margin-block: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .div-test1 {
+          width: 25%;
+          padding: 15px;
+          background-color: var(--color3);
+          border-radius: 22px;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          & ul {
+            margin-left: 25px;
+            margin-bottom: 5px;
+          }
+        }
+        & .div-test2 {
+          display: flex;
+          align-items: center;
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  #session2-assignment {
+    & .container {
+      & h2 {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-family: "Oleo Script", system-ui;
+      }
+
+      & #div-imgs {
+        background-color: black;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .div-img {
+          width: 20%;
+          height: 200px;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+        & :nth-child(1) {
+          width: 15%;
+        }
+        & :nth-child(2) {
+          height: 150px;
+        }
+        & :nth-child(4) {
+          height: 50px;
+        }
+      }
+    }
+  }
+}

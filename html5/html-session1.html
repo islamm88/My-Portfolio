@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5-Session1</title>
+    <link rel="stylesheet" href="./css/html-session1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <h1>HTML5</h1>
+        <h2>
+          SESSION 1
+          <a href="../assets/HTML5-Session1.pdf" target="_blank"
+            ><img src="../imge/pdf.png" alt="session1"
+          /></a>
+        </h2>
+        <ul class="nav-site">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#session1-webintro">Web Introduction</a></li>
+          <li><a href="#session1-htmlIntor">HTML Introduction</a></li>
+          <li><a href="#session1-htmltagelement">HTML Tag&Element</a></li>
+          <li><a href="#session1-heading-p-pre">heading_p_pre</a></li>
+          <li><a href="#session1-assignment">Assignment</a></li>
+        </ul>
+      </div>
+    </header>
+    <section id="session1-webintro">
+      <div class="container">
+        <h2>WEB Intoduction</h2>
+        <h3>
+          What happens when you use a web browser to navigate to a web page ?
+        </h3>
+        <p>
+          Computers connected to the internet are called <u>clients</u> and
+          <u>servers</u>. A simplified diagram of how they interact might look
+          like this:
+        </p>
+        <ul>
+          <li>
+            <span>Clients:</span> are the typical web user's internet-connected
+            devices like (your PC , phone)
+          </li>
+          <li>
+            <span>Servers:</span> are computers that store webpages, sites, or
+            apps.
+          </li>
+          <li>
+            <span>Browser:</span> another name "User-Agent" it's app for browes
+            websites on internet
+          </li>
+          <li>
+            <span>internet:</span> is a global network of interconnected
+            computers and devices.
+          </li>
+          <li>
+            <span>internet connection:</span> Allows you to send and receive
+            data on the internet
+          </li>
+          <li>
+            <span>Web (World Wide Web) WWW. :</span> is a service that runs on
+            the Internet .
+          </li>
+          <li>
+            <span id="url">URL:</span> Uniform Resource Locator. (
+            https://www.google.com/ ) [ <u>Protocol</u> + <u>Domain name</u> ]
+          </li>
+          <li>
+            <span>Domain name:</span> is the human-readable address used to
+            access websites like ( www.google.com/) .
+          </li>
+          <li>
+            <span>HTTPS:</span> Hypertext Transfer Protocol Secure (HTTPS) is a
+            protocol that defines a language for clients and servers to speak to
+            each other.
+          </li>
+          <li>
+            <span>IP:</span> (Internet Protocol) address is a unique string of
+            numbers
+          </li>
+        </ul>
+        <div class="div-img">
+          <img src="./img/browser.png" alt="browser" />
+          <img src="./img/user.png" alt="user" />
+          <img src="./img/client.webp" alt="client" />
+          <img src="./img/requests-responses.png" alt="rr" />
+          <img src="./img/server.png" alt="server" />
+          <img src="./img/websit-folders.png" alt="wf" />
+        </div>
+        <h3>You must know that</h3>
+        <p>Domain name = IP</p>
+        <p>
+          every device on the internet is identified by an IP address, and you
+          can use IP instead of a domain name
+        </p>
+        <p>
+          <u
+            ><a href="https://www.google.com" target="_blank"
+              >https://www.google.com</a
+            ></u
+          >=
+          <u
+            ><a href="https://142.250.187.196" target="_blank"
+              >https://142.250.187.196</a
+            ></u
+          >
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <td>Doamin name</td>
+              <td>IP Address</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>www.google.com</td>
+              <td>142.250.187.196</td>
+            </tr>
+            <tr>
+              <td>www.youtube.com</td>
+              <td>142.250.151.91</td>
+            </tr>
+            <tr>
+              <td>www.facebook.com</td>
+              <td>163.70.147.35</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3><u>ICANN & IANA & Hosting</u></h3>
+        <p>
+          <span class="iden">ICANN :</span> Internet Corporation for Assigned
+          Names and Numbers responsible for coordinating and managing key
+          elements of the Internet’s global infrastructure.
+        </p>
+        <p>
+          <span class="iden">IANA :</span> Internet Assigned Numbers Authority
+          is a department within ICANN. - Doamin name => www.Google.com - IP
+          Address => 142.250.200.196
+        </p>
+        <p>
+          <span class="iden">Hosting :</span> Service that allows you to store
+          your website's files (HTML, CSS, images, databases, etc.) on a web
+          server, so people can access your website through the Internet.
+        </p>
+        <h3>What is a web development ?</h3>
+        <p>
+          Web development is the work involved in developing a website for the
+          Internet. Web development can range from developing a simple single
+          static page of plain text to complex web applications, electronic
+          businesses, and social network services.
+        </p>
+        <h3>For creating website</h3>
+        <br />
+        <ul>
+          <li>Design (UI/UX)</li>
+          <li>Frontend: HTML, CSS, JavaScript (for UI)</li>
+          <li>Backend: PHP, Node.js, MySQL</li>
+        </ul>
+      </div>
+    </section>
+    <section id="session1-htmlIntor">
+      <div class="container">
+        <h2>HTML5 Intoduction</h2>
+        <h3><span>HTML5 (HyperText Markup Language)</span></h3>
+        <h4><u>History of HTML</u></h4>
+        <table>
+          <thead>
+            <tr>
+              <td>Version</td>
+              <td>Year</td>
+              <td>Key Features</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML 1.0</td>
+              <td>1991</td>
+              <td>Basic structure, 18 tags</td>
+            </tr>
+            <tr>
+              <td>HTML 2.0</td>
+              <td>1995</td>
+              <td>Standardization of early HTML</td>
+            </tr>
+            <tr>
+              <td>HTML 3.2</td>
+              <td>1997</td>
+              <td>Tables, scripting, font styling</td>
+            </tr>
+            <tr>
+              <td>HTML 4.01</td>
+              <td>1999</td>
+              <td>Forms, CSS support, document structure</td>
+            </tr>
+            <tr>
+              <td>XHTML</td>
+              <td>2000</td>
+              <td>HTML + XML rules</td>
+            </tr>
+            <tr>
+              <td>HTML5</td>
+              <td>2014</td>
+              <td>Multimedia, semantic tags, canvas, forms</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Waht we need ?</h3>
+        <ul>
+          <li>HTML Prerequisites : Basic Computer & Internet Familiarity</li>
+          <li>
+            Download Editor
+            <a href="https://code.visualstudio.com/download" target="_blank"
+              >Vs code </a
+            ><img src="./img/VScode.png" alt="VScode" width="20" />
+          </li>
+          <li>
+            Download Google chrome
+            <a
+              href="https://www.google.com/intl/en_uk/chrome/dr/download/"
+              target="_blank"
+              >Google chrome
+            </a>
+            <img src="./img/Chrome.png" alt="VScode" width="40" />
+          </li>
+        </ul>
+        <p>
+          Note : you can use VS Code online
+          <a href="https://vscode.dev/" target="_blank"> VS Code</a>
+        </p>
+        <h3>Creating first Page</h3>
+        <ul>
+          <li>
+            To create first page in HTML create new text file with extension
+            <span>.html</span> or <span>.htm</span>.
+          </li>
+          <li>
+            The first page of a website is typically named:
+            <span>index.html</span> [ index.html - home.html - default.html -
+            main.html ... ] index.html is mostly used <br />
+            becouse it is the default file that web servers look for when
+            opening a folder or domain.
+          </li>
+          <li>
+            Opent file with extention .html by VS code and build structure HTML
+            page.
+          </li>
+          <li>
+            Shortcut feature in VS Code using the Emmet abbreviation system.
+          </li>
+          <li>
+            Click on : <span>shift + 1 -> ! and click Enter or tab</span> in VS
+            code to build structure html page or <span>doc + tab </span>or
+            <span>html:5 + tab .</span>
+          </li>
+        </ul>
+        <h3>HTML DOM Tree & Page structure</h3>
+        <p>
+          DOM stands for <span>Document Object Model</span>, It is a tree-like
+          structure that represents all elements of an HTML document in a
+          hierarchical way.
+        </p>
+        <p>Every tag (element) in your HTML becomes a node in the DOM tree.</p>
+        <div id="div-imgs">
+          <div class="div-img">
+            <img src="./img/Dom-Tree.png" alt="Dom Tree" />
+          </div>
+          <div class="div-img">
+            <img
+              id="Dom-Structure"
+              src="./img/page-structur.png"
+              alt="Dom Structure"
+            />
+          </div>
+        </div>
+        <div class="info">
+          <ul>
+            <li><span>&lt;!DOCTYPE html&gt; :</span> tells the browser</li>
+            <li>
+              <span>&lt;html lang="en"&gt; &lt;/html&gt; : </span>is the root of
+              the HTML document and tells the browser the content is in English.
+            </li>
+            <li>
+              <span>&lt;head&gt; &lt;/head&gt; :</span> for metadata (data about
+              the HTML document). It is placed between the html and body tags.
+            </li>
+            <li>
+              <span>&lt;body&gt; &lt;/body&gt; :</span>It contains all the
+              content that is visible to users in the browser.
+            </li>
+            <li>
+              <span>&lt;meta charset="UTF-8" /&gt; : </span>tells the browser
+              which character encoding to use when displaying the web page.
+            </li>
+            <li>
+              <span
+                >&lt;meta name="viewport" content="width=device-width,
+                initial-scale=1.0" /&gt; :</span
+              >This tag is essential for responsive web design
+            </li>
+            <li>
+              <span>&lt;title&gt;Document&lt;/title&gt; :</span>defines the
+              title of the web page
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li>
+            HTML (HyperText Markup Language) depends primarily on
+            <span>tags</span> to structure content on the web.
+          </li>
+          <li>
+            Indentation in HTML means adding spaces (usually 2 or 4) at the
+            beginning of lines to show the nested structure of elements. This
+            doesn’t affect how the page looks but makes the code easier to read
+            and maintain.
+          </li>
+        </ul>
+        <hr />
+        <h2>HTML Validation</h2>
+        <h3>HTML and Errors</h3>
+        <p>
+          Note : HTML is not strict like a programming language, but syntax
+          errors can still cause problems.
+        </p>
+        <p>
+          If you type <span>&lt;h7&gt;text&lt;/h7&gt;</span> HTML don't tell you
+          syntax errors and <span>text</span> will appear on browser
+        </p>
+        <p>
+          You must use proper HTML5 , CSS3 syntax to ensure that browsers
+          process your documents properly.
+        </p>
+        <p>
+          Use : <span>http://validator.w3.org/</span>
+          <a href="http://validator.w3.org/"><span>W3C</span></a> to validate
+          your HTML5 & CSS3 code
+        </p>
+        <div class="div-img2">
+          <img src="./img/valedate-HTML.png" alt="valedate html" />
+        </div>
+        <p>
+          <i class="fa-solid fa-hand-pointer" style="color: var(--color5)"></i>
+          <a href="https://www.youtube.com/watch?v=Gb9ElvxZYZ8" target="_blank"
+            >How To use</a
+          >
+        </p>
+      </div>
+    </section>
+    <section id="session1-htmltagelement">
+      <div class="container">
+        <h2>Tags & elements</h2>
+
+        <p>
+          <span>Tag :</span> The code written inside angle brackets &lt; &gt;.
+          It tells the browser what to do.
+        </p>
+        <p>
+          <span>Element :</span> The complete structure: opening tag + content +
+          closing tag
+        </p>
+        <div class="div-img">
+          <img src="./img/Tag.png" alt="tag" />
+        </div>
+
+        <h3>In HTML, there are two main types of tags</h3>
+        <ul>
+          <li>
+            Paired (Container) Tags like : &lt;p&gt;&lt;/p&gt; .
+            <span>(&lt;p&gt;) </span> is opening tag
+            <span>(&lt;/p&gt;)</span> closing tag
+          </li>
+          <li>
+            Self-closing (Void) Tags like &lt;hr&gt; &lt;br&gt; &lt;img&gt;
+          </li>
+        </ul>
+
+        <h3>In HTML, there are two main types of element</h3>
+        <ul>
+          <li>
+            <span>Inline elements :</span>
+            <ul>
+              <li>Do not start on a new line</li>
+              <li>Only take up as much width as needed</li>
+              <li>Can be placed next to each other</li>
+              <li>Can contain other inline elements</li>
+            </ul>
+          </li>
+          <li>
+            <span>Block elements :</span>
+            <ul>
+              <li>Start on a new line</li>
+              <li>Take up the full width</li>
+              <li>Can contain other block or inline elements</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Note :
+          <span
+            >HTML
+            <span
+              ><u><i>automatically</i></u></span
+            >
+            collapses multiple spaces and line breaks into a single space.</span
+          >
+        </p>
+      </div>
+    </section>
+    <section id="session1-heading-p-pre">
+      <div class="container">
+        <h2>Heading - P - Pre</h2>
+        <div class="part-heading">
+          <div class="col1">
+            <h3>Heading</h3>
+            <p>
+              Six levels : (h1 , h2 , h3 , h4 , h5 , h6) for title inside page
+            </p>
+            <ul>
+              <li>
+                Use &lt;h1&gt; <span>once per page </span>for the main title.
+              </li>
+              <li>
+                Search engines use headings to understand your page structure
+                (important for SEO).
+              </li>
+              <li>it's block element and has style .</li>
+            </ul>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/Heading.png" alt="heading" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <hr />
+        <h3>Paragraph</h3>
+        <p>HTML stands for paragraph. It's used to define blocks of text.</p>
+        <ul>
+          <li>Block element</li>
+          <li>
+            It creates space before and after the paragraph automatically.
+          </li>
+          <li>
+            Can contain inline elements like &lt;span&gt;, &lt;a&gt;,
+            &lt;strong&gt; , etc.
+          </li>
+        </ul>
+
+        <p style="font-size: 15px"><span>&lt;p&gt;&lt;/p&gt;</span></p>
+        <p>
+          <span>&lt;p&gt;</span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
+          necessitatibus asperiores officiis, voluptas modi beatae id ut, nihil
+          fugit saepe nulla unde sit earum doloremque cupiditate totam optio
+          laborum ipsum.<span>&lt;/p&gt;</span>
+        </p>
+        <hr />
+        <h3>Preformatted text</h3>
+        <p>HTML stands for "preformatted text". It tells the browser to:</p>
+        <ul>
+          <li>Preserve spaces</li>
+          <li>Preserve tabs</li>
+          <li>Preserve line breaks</li>
+        </ul>
+        <span>&lt;pre&gt;&lt;/pre&gt;</span>
+        <pre>
+
+          <span> &lt;pre&gt;</span> 
+          This      is
+                      exactly       as
+                  you      typed.             
+          <span>&lt;/pre&gt;</span>
+
+        </pre>
+      </div>
+    </section>
+    <section id="session1-assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <div class="div-img">
+          <img src="./img/Assignment.png" alt="assignment" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <ul class="nav-site">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+        <ul class="nav-page">
+          <li><a href="#session1-webintro">Web Introduction</a></li>
+          <li><a href="#session1-htmlIntor">HTML Introduction</a></li>
+          <li><a href="#session1-htmltagelement">HTML Tag&Element</a></li>
+          <li><a href="#session1-heading-p-pre">heading_p_pre</a></li>
+          <li><a href="#session1-assignment">Assignment</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
