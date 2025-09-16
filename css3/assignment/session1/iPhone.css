@@ -1,0 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap');
+
+
+#product {
+  width: 35%;
+  height: 650px;
+  border: 2px solid rgb(149, 147, 147);
+  background-image: url(iPhone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+  color: blue;
+  font-family: "Oleo Script", system-ui;
+}
