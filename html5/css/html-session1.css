@@ -1,5 +1,3 @@
-
-
 /* @media (max-width: 390px) {
   
 } */
@@ -590,11 +588,6 @@ footer {
   }
 } */
 
-
-
-
-
-
 /*
 
 *********************************************
@@ -724,7 +717,7 @@ footer {
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   padding: 0;
@@ -738,6 +731,7 @@ footer {
   --color1: #ffeaea;
   --color2: #ddd;
   --color4: black;
+  --color5: rgb(139, 12, 12);
 }
 body {
   background-color: var(--color1);
@@ -758,8 +752,8 @@ body {
       flex-wrap: wrap;
     }
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 3px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -768,6 +762,15 @@ body {
       border-radius: 22px;
       margin: auto;
       margin-block: 30px;
+    }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 10px;
+    }
+
+    & a {
+      text-decoration: none;
     }
   }
   header,
@@ -783,12 +786,12 @@ body {
       }
       & h1 {
         text-align: center;
-        margin-block: 20px;
+        margin-block: 10px;
         font-size: 1.2rem;
       }
       & h2 {
         text-align: center;
-        margin-block: 20px;
+        margin-block: 10px;
         font-size: 1rem;
         color: rgb(56, 56, 185);
         & img {
@@ -852,11 +855,7 @@ body {
           height: 340px;
         }
       }
-      & span {
-        font-weight: 300;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -870,20 +869,15 @@ body {
         font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
         padding-left: 10px;
       }
       & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-bottom: 10px;
         & li {
           padding-block: 5px;
-          font-size: 10px;
-        }
-        & span {
-          font-weight: 300;
-          color: blue;
           font-size: 10px;
         }
       }
@@ -924,8 +918,9 @@ body {
         }
       }
       & .iden {
-        color: blue;
+        color: var(--color5);
         font-weight: 600;
+        font-size: 10px;
       }
     }
   }
@@ -947,11 +942,7 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 300;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1057,11 +1048,7 @@ body {
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & span {
-        font-weight: 300;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1179,11 +1166,7 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 300;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1278,11 +1261,7 @@ body {
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & span {
-        font-weight: 300;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1383,8 +1362,8 @@ body {
       flex-wrap: wrap;
     }
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 3px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -1393,6 +1372,14 @@ body {
       border-radius: 22px;
       margin: auto;
       margin-block: 30px;
+    }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 10px;
+    }
+    & a {
+      text-decoration: none;
     }
   }
   header,
@@ -1428,7 +1415,7 @@ body {
         & li {
           & a {
             text-decoration: none;
-            font-size: 8px;
+            font-size: 10px;
             font-weight: 600;
             text-transform: capitalize;
             color: rgb(252, 252, 252);
@@ -1452,7 +1439,7 @@ body {
         & li {
           & a {
             text-decoration: none;
-            font-size: 8px;
+            font-size: 10px;
             font-weight: 600;
             text-transform: uppercase;
             color: rgb(56, 56, 185);
@@ -1472,11 +1459,7 @@ body {
           height: 340px;
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1490,20 +1473,15 @@ body {
         font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
         padding-left: 10px;
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
         & li {
           padding-block: 5px;
-          font-size: 10px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 10px;
         }
       }
@@ -1524,6 +1502,7 @@ body {
       & table {
         margin-left: 60px;
         border: 1px solid rgb(161, 158, 158);
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
@@ -1567,11 +1546,6 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 10px;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1590,7 +1564,7 @@ body {
         font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
         padding-left: 10px;
       }
@@ -1601,9 +1575,10 @@ body {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
-        padding: 5px;
+        padding: 10px;
         & thead tr td {
           text-align: center;
           font-size: 12px;
@@ -1621,7 +1596,7 @@ body {
       }
       & ul {
         margin-left: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
 
         & li {
           padding-block: 5px;
@@ -1682,11 +1657,7 @@ body {
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1705,9 +1676,8 @@ body {
         font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
-        padding-left: 10px;
       }
       & a {
         text-decoration: none;
@@ -1737,7 +1707,7 @@ body {
       }
       & ul {
         margin-left: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
         & li {
           padding-block: 5px;
           font-size: 10px;
@@ -1800,11 +1770,7 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1823,9 +1789,8 @@ body {
         font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
-        padding-left: 10px;
       }
       & a {
         text-decoration: none;
@@ -1855,7 +1820,7 @@ body {
       }
       & ul {
         margin-left: 20px;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
 
         & li {
           padding-block: 5px;
@@ -1882,11 +1847,7 @@ body {
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 10px;
-      }
+
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1974,8 +1935,7 @@ body {
     width: 95%;
     margin: auto;
     padding: 30px;
-    padding-left: 50px;
-    margin-block: 8px;
+    margin-block: 15px;
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
@@ -1985,10 +1945,9 @@ body {
       justify-content: space-around;
       flex-wrap: wrap;
     }
-
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 4px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -1998,23 +1957,33 @@ body {
       margin: auto;
       margin-block: 30px;
     }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 15px;
+    }
+
+    & a {
+      text-decoration: none;
+    }
   }
   header,
   footer {
     & .container {
       padding: 0px;
-      background-color: var(--color1);
       box-shadow: none;
+      background-color: var(--color1);
       & h1 {
         text-align: center;
         margin-block: 20px;
         font-size: 2.5rem;
+        color: rgb(69, 70, 69);
       }
       & h2 {
         text-align: center;
         margin-block: 20px;
         font-size: 1.5rem;
-        color: rgb(56, 56, 185);
+        color: rgb(100, 100, 225);
         & img {
           width: 20px;
         }
@@ -2057,9 +2026,9 @@ body {
           & a {
             text-decoration: none;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 400;
             text-transform: uppercase;
-            color: rgb(56, 56, 185);
+            color: rgb(100, 100, 225);
           }
           & a:hover {
             color: #fff;
@@ -2078,7 +2047,7 @@ body {
       }
       & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
         font-size: 15px;
       }
       & h2 {
@@ -2100,7 +2069,7 @@ body {
         font-weight: 400;
         & span {
           font-weight: 400;
-          color: blue;
+          color: var(--color5);
           font-size: 15px;
         }
       }
@@ -2114,7 +2083,7 @@ body {
         }
         & span {
           font-weight: 400;
-          color: blue;
+          color: var(--color5);
           font-size: 15px;
         }
       }
@@ -2136,6 +2105,7 @@ body {
         margin-left: 60px;
         margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
@@ -2154,7 +2124,7 @@ body {
         }
       }
       & .iden {
-        color: blue;
+        color: var(--color5);
         font-weight: 600;
       }
     }
@@ -2178,7 +2148,7 @@ body {
       }
       & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
         font-size: 15px;
       }
       & h2 {
@@ -2210,6 +2180,7 @@ body {
         margin-left: 60px;
         margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
@@ -2250,7 +2221,6 @@ body {
             display: block;
             border-radius: 10px;
             box-shadow: 0 0 5px 5px gray;
-            
           }
           & #Dom-Structure {
             height: 300px;
@@ -2293,7 +2263,7 @@ body {
       }
       & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
         font-size: 15px;
       }
       & h2 {
@@ -2403,7 +2373,7 @@ body {
       }
       & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
         font-size: 15px;
       }
       & h2 {
