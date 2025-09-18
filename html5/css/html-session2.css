@@ -13,6 +13,7 @@
   --color1: #ffeaea;
   --color2: #ddd;
   --color4: black;
+  --color5: rgb(139, 12, 12);
 }
 
 body {
@@ -118,7 +119,6 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      flex-wrap: wrap;
     }
 
     & hr {
@@ -133,13 +133,19 @@ body {
       margin: auto;
       margin-block: 30px;
     }
-  }
 
+    & span {
+      font-weight: 800;
+      color: var(--color5);
+      font-size: 10px;
+    }
+  }
   header,
   footer {
     & .container {
+      padding: 0px;
       background-color: var(--color1);
-
+      box-shadow: none;
       & h1 {
         text-align: center;
         margin-block: 20px;
@@ -160,7 +166,7 @@ body {
         list-style: none;
         border: 1px solid rgb(243, 248, 243);
         background-color: rgb(69, 70, 69);
-        border-radius: 8px;
+        border-radius: 10px;
         padding-block: 8px;
         margin-top: 10px;
         margin-bottom: 30px;
@@ -183,7 +189,7 @@ body {
         list-style: none;
         border: 1px solid var(--color1);
         background-color: var(--color3);
-        border-radius: 8px;
+        border-radius: 10px;
         padding-block: 8px;
         margin-top: 40px;
         margin-bottom: 5px;
@@ -203,19 +209,17 @@ body {
       }
     }
   }
-
   #session2-anchor {
     & .container {
       padding: 10px;
-      & span {
-        font-weight: 400;
-        color: blue;
+      /* & span {
+        font-weight: 800;
+        color: var(--color5);
         font-size: 10px;
-      }
+      } */
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-block: 20px;
         font-size: 20px;
         font-family: "Oleo Script", system-ui;
       }
@@ -230,13 +234,13 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 10px;
         padding-left: 10px;
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
 
         & li {
           padding-block: 5px;
@@ -244,27 +248,26 @@ body {
         }
         & span {
           font-weight: 400;
-          color: blue;
+          color: var(--color5);
           font-size: 10px;
         }
       }
     }
   }
-
   #session2-format {
     & .container {
+      padding: 10px;
       & .containt {
         & table {
-          margin-left: 60px;
-          margin-bottom: 60px;
+          margin-bottom: 40px;
           border: 1px solid rgb(161, 158, 158);
           background-color: #eee;
-          border-radius: 22px;
-          padding: 10px;
+          border-radius: 10px;
+          padding: 8px;
           & thead tr td {
             text-align: center;
-            font-size: 15px;
-            font-weight: 500;
+            font-size: 10px;
+            font-weight: 400;
             background-color: #ddd;
           }
           & tr:nth-child(odd) {
@@ -273,177 +276,219 @@ body {
           & tr td {
             border-bottom: 1px solid black;
             padding: 10px;
+            font-size: 10px;
           }
         }
       }
-      & span {
+      /* & span {
         font-weight: 400;
-        color: blue;
-      }
+        color: var(--color5);
+        font-size: 10px;
+      } */
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
+        margin-block: 20px;
+        font-size: 20px;
         font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
-        font-size: 25px;
-        font-weight: 400;
-      }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 15px;
+        font-weight: 300;
       }
       & p {
-        margin: 20px 0px 20px;
-        font-size: 15px;
+        margin: 10px;
+        font-size: 10px;
         padding-left: 10px;
       }
       & ul {
         margin-left: 40px;
         margin-bottom: 50px;
-
         & li {
           padding-block: 5px;
-          font-size: 15px;
+          font-size: 10px;
         }
-        & span {
-          font-weight: 400;
-          color: blue;
-        }
-      }
-      & table {
-        margin-left: 60px;
-        margin-block: 20px;
-        border: 1px solid rgb(161, 158, 158);
-        background-color: #eee;
-        border-radius: 10px;
-        padding: 10px;
-        & thead tr td {
-          text-align: center;
-          font-size: 15px;
-          font-weight: 500;
-          background-color: #ddd;
-        }
-        & tr:nth-child(odd) {
-          background-color: #f1a5a5;
-        }
-        & tr td {
-          border-bottom: 1px solid black;
-          padding: 10px;
-        }
+        /* & span {
+          font-weight: 300;
+          color: var(--color5);
+          font-size: 10px;
+        } */
       }
     }
   }
-
   #session2-list {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
+      padding: 10px;
+      & #type-list {
+        margin-left: 40px;
+        margin-bottom: 50px;
+        & li {
+          padding-block: 5px;
+          font-size: 10px;
+        }
       }
+      & ol,
+      & ul {
+        margin-left: 20px;
+        & li {
+          padding-block: 5px;
+          font-size: 10px;
+        }
+        /* & span {
+          font-weight: 400;
+          color: var(--color5);
+          font-size: 10px;
+        } */
+      }
+      & .containt {
+        margin-block: 20px;
+        flex-direction: column;
+        & .ol-ul-dl {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          & #ol,
+          & #ul,
+          & #dl {
+            width: 32%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 5px;
+            margin-block: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            & h3 {
+              text-align: center;
+              margin-block: 10px;
+              font-weight: 400;
+            }
+            & p {
+              margin: 5px;
+              font-size: 10px;
+              padding-left: 0px;
+              text-align: left;
+              font-weight: 300;
+              & span {
+                color: var(--color5);
+                font-size: 10px;
+                font-weight: 300;
+              }
+            }
+            & pre {
+              margin-top: 5px;
+              font-size: 10px;
+              font-weight: 300;
+            }
+          }
+        }
+
+        & .ol2-ul2-dl2 {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          & #ol2,
+          & #ul2,
+          & #dl2 {
+            width: 32%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 5px;
+            margin-block: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            height: 100px;
+            font-size: 10px;
+            font-weight: 400;
+          }
+        }
+      }
+      /* & span {
+        font-weight: 400;
+        color: var(--color5);
+        font-size: 10px;
+      } */
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
+        margin-block: 20px;
+        font-size: 20px;
         font-family: "Oleo Script", system-ui;
       }
-      & h3 {
-        margin-block: 15px;
-        font-size: 25px;
-        font-weight: 400;
+      & p {
+        margin: 10px;
+        font-size: 10px;
+        padding-left: 10px;
       }
       & h4 {
         margin-top: 15px;
         font-size: 12px;
         font-weight: 400;
       }
-      & ol {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
-        & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
-        }
+      & h3 {
+        margin-block: 15px;
+        font-size: 15px;
+        font-weight: 300;
       }
-      & .containt {
-        margin-block: 20px;
-        flex-wrap: wrap;
-        #ol,
-        #ul,
-        #dl {
-          width: 32%;
-          background-color: #f1a5a5;
-          border-radius: 22px;
-          padding: 5px;
-          margin-block: 10px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+      & pre {
+        margin-top: 5px;
+        font-size: 10px;
+        font-weight: 300;
+      }
+      & .containt-sublist {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-          & h3 {
-            text-align: center;
-            margin-block: 20px;
-          }
-          & pre {
-            margin-top: 10px;
-          }
+        & .col1 {
+          width: 40%;
         }
-
-        & #ol2,
-        & #ul2,
-        & #dl2 {
-          width: 32%;
-          background-color: #f1a5a5;
-          border-radius: 22px;
-          padding: 5px;
-          margin-block: 10px;
+        & .col2 {
+          width: fit-content;
+          padding: 20px;
           display: flex;
-          flex-direction: column;
-          align-items: center;
           justify-content: center;
-
-          & h3 {
-            text-align: center;
-          }
-
-          & p {
-            margin-block: 5px;
-          }
+          align-items: center;
+          background: var(--color3);
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          border-radius: 10px;
         }
       }
       & #div-img {
+        margin: auto;
+        padding: 5px;
         & img {
           display: block;
-          margin-block: 20px;
+          width: 80%;
+          margin: auto;
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         }
-        display: flex;
-        justify-content: center;
       }
     }
   }
-
   #session2-image {
     & .container {
-      & span {
+      padding: 10px;
+      /* & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
+        font-size: 10px;
+      } */
+      & p {
+        margin: 10px;
+        font-size: 10px;
+        padding-left: 10px;
       }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-block: 20px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -463,14 +508,22 @@ body {
           display: flex;
           padding-top: 30px;
 
-          & ul {
-            margin-left: 20px;
+          margin-left: 20px;
+          & li {
+            padding-block: 5px;
+            font-size: 10px;
           }
+          /* & span {
+            font-weight: 400;
+            color: var(--color5);
+            font-size: 10px;
+          } */
         }
         & .con2 {
-          width: fit-content;
+          width: 40%;
           & img {
-            width: 300px;
+            width: 100%;
+            height: 100%;
             border-radius: 22px;
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
@@ -478,13 +531,9 @@ body {
       }
     }
   }
-
   #session2-table {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
+      padding: 10px;
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -492,72 +541,117 @@ body {
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
-      & h3 {
-        margin-block: 15px;
-        font-size: 25px;
+      & span {
         font-weight: 400;
+        color: var(--color5);
+      }
+      & p {
+        margin: 10px;
+        font-size: 10px;
+        padding-left: 10px;
       }
       & h4 {
         margin-top: 15px;
         font-size: 12px;
         font-weight: 400;
       }
+      & h3 {
+        margin-block: 15px;
+        font-size: 15px;
+        font-weight: 300;
+      }
       & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
+        margin-left: 20px;
         & li {
           padding-block: 5px;
-          font-size: 15px;
+          font-size: 10px;
         }
-        & span {
+        /* & span {
           font-weight: 400;
-          color: blue;
-        }
+          color: var(--color5);
+          font-size: 10px;
+        } */
+      }
+      & pre {
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 300;
       }
       .containt {
         padding-top: 15px;
         border-radius: 22px;
         background-color: #eee;
-        justify-content: space-around;
-
+        justify-content: space-between;
         & .con1 {
           width: 45%;
         }
         & .con2 {
-          width: 45%;
           align-items: center;
-          padding: 10px;
-          & table {
+          table {
             border: 1px solid rgb(161, 158, 158);
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
             background-color: #eee;
-            border-radius: 22px;
-            padding: 10px;
-            & thead tr td {
-              text-align: center;
-              font-size: 15px;
-              font-weight: 500;
-              background-color: #ddd;
+            border-radius: 10px;
+            padding: 5px;
+
+            & thead {
+              tr {
+                th {
+                  text-align: center;
+                  font-size: 15px;
+                  font-weight: 500;
+                  background-color: #ddd;
+                  padding: 5px;
+                }
+              }
             }
-            & tr:nth-child(odd) {
-              background-color: #f1a5a5;
+
+            & tbody {
+              & tr {
+                & td {
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: 500;
+                }
+              }
+
+              & tr:nth-child(odd) {
+                background-color: var(--color1);
+              }
+
+              & tr:nth-child(even) {
+                background-color: var(--color3);
+              }
             }
-            & tr td {
-              border-bottom: 1px solid black;
-              padding: 10px;
+
+            & tfoot {
+              tr {
+                td {
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: 500;
+                  background-color: #ddd;
+                }
+              }
+            }
+
+            & tr {
+              & td {
+                border-bottom: 1px solid black;
+                padding: 10px;
+              }
             }
           }
         }
       }
     }
   }
-
   #session2-divspan {
     & .container {
-      & span {
+      /* & span {
         font-weight: 400;
-        color: blue;
-      }
+        color: var(--color5);
+      } */
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -583,10 +677,10 @@ body {
           padding-block: 5px;
           font-size: 15px;
         }
-        & span {
+        /* & span {
           font-weight: 400;
-          color: blue;
-        }
+          color: var(--color5);
+        } */
       }
       & .containt {
         align-items: start;
@@ -607,7 +701,6 @@ body {
       }
     }
   }
-
   #session2-assignment {
     & .container {
       & h2 {
@@ -650,8 +743,7 @@ body {
     width: 95%;
     margin: auto;
     padding: 30px;
-    padding-left: 50px;
-    margin-block: 8px;
+    margin-block: 15px;
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
@@ -663,8 +755,8 @@ body {
     }
 
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 4px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -674,24 +766,32 @@ body {
       margin: auto;
       margin-block: 30px;
     }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 15px;
+    }
+    & a {
+      text-decoration: none;
+    }
   }
-
   header,
   footer {
     & .container {
       padding: 0px;
-      background-color: var(--color1);
       box-shadow: none;
+      background-color: var(--color1);
       & h1 {
         text-align: center;
         margin-block: 20px;
         font-size: 2.5rem;
+        color: rgb(69, 70, 69);
       }
       & h2 {
         text-align: center;
         margin-block: 20px;
         font-size: 1.5rem;
-        color: rgb(56, 56, 185);
+        color: rgb(100, 100, 225);
         & img {
           width: 20px;
         }
@@ -734,9 +834,9 @@ body {
           & a {
             text-decoration: none;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 400;
             text-transform: uppercase;
-            color: rgb(56, 56, 185);
+            color: rgb(100, 100, 225);
           }
           & a:hover {
             color: #fff;
@@ -745,14 +845,8 @@ body {
       }
     }
   }
-
   #session2-anchor {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -765,32 +859,22 @@ body {
         font-size: 25px;
         font-weight: 400;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
+        font-weight: 400;
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
-
+        margin-bottom: 10px;
         & li {
           padding-block: 5px;
           font-size: 15px;
         }
-        & span {
-          font-weight: 400;
-          color: blue;
-        }
       }
     }
   }
-
   #session2-format {
     & .container {
       & .containt {
@@ -798,32 +882,6 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-
-        & table {
-          border: 1px solid rgb(161, 158, 158);
-          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-          background-color: #eee;
-          border-radius: 22px;
-          padding: 10px;
-          margin-left:0px ;
-          & thead tr td {
-            text-align: center;
-            font-size: 15px;
-            font-weight: 500;
-            background-color: #ddd;
-          }
-          & tr:nth-child(odd) {
-            background-color: #f1a5a5;
-          }
-          & tr td {
-            border-bottom: 1px solid black;
-            padding: 10px;
-          }
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
       }
       & h2 {
         text-align: center;
@@ -837,33 +895,24 @@ body {
         font-size: 25px;
         font-weight: 400;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
           padding-block: 5px;
           font-size: 15px;
         }
-        & span {
-          font-weight: 400;
-          color: blue;
-        }
       }
       & table {
-        margin-left: 60px;
-        margin-block: 20px;
+        margin-block: 10px;
         border: 1px solid rgb(161, 158, 158);
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
@@ -874,7 +923,7 @@ body {
           background-color: #ddd;
         }
         & tr:nth-child(odd) {
-          background-color: #f1a5a5;
+          background-color: var(--color3);
         }
         & tr td {
           border-bottom: 1px solid black;
@@ -883,13 +932,8 @@ body {
       }
     }
   }
-
   #session2-list {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -902,83 +946,88 @@ body {
         font-size: 25px;
         font-weight: 400;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
-      & #type-lis {
+      & #type-list {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
           padding-block: 5px;
           font-size: 15px;
         }
-        & span {
-          font-weight: 400;
-          color: blue;
-        }
       }
       & .containt {
-        margin-block: 20px;
-        flex-wrap: wrap;
-        display: flex;
-        align-items: flex-start;
-        #ol,
-        #ul,
-        #dl {
-          width: 32%;
-          background-color: #f1a5a5;
-          border-radius: 22px;
-          padding: 5px;
-          margin-block: 10px;
+        flex-direction: column;
+        margin-block: 10px;
+        & .ol-ul-dl {
+          width: 100%;
           display: flex;
-          flex-direction: column;
-          justify-content: center;
           align-items: center;
-          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-
-          & h3 {
-            text-align: center;
-            margin-block: 20px;
-          }
-          & pre {
-            margin-top: 10px;
-          }
-        }
-        & #ol2,
-        & #ul2,
-        & #dl2 {
-          width: 32%;
-          background-color: #f1a5a5;
-          border-radius: 22px;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          padding-block: 10px;
-          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-
-          & h3 {
-            text-align: center;
-          }
-
-          & p {
+          justify-content: space-between;
+          & #ol,
+          & #ul,
+          & #dl {
+            width: 33%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 5px;
             margin-block: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            & h3 {
+              text-align: center;
+              margin-block: 10px;
+              font-weight: 400;
+            }
+            & p {
+              font-size: 15px;
+              padding-left: 0px;
+              text-align: left;
+              font-weight: 400;
+            }
+            & pre {
+              font-size: 15px;
+              font-weight: 400;
+            }
           }
         }
-        & #dl2 {
-          line-height: 10px;
+
+        & .ol2-ul2-dl2 {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          & #ol2,
+          & #ul2,
+          & #dl2 {
+            width: 33%;
+            background-color: #fff;
+            border-radius: 10px;
+            margin-block: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+
+            & h3 {
+              text-align: center;
+            }
+          }
         }
       }
       & #div-img {
+        margin: 10px auto;
+        padding: 5px;
         & img {
           display: block;
-          margin-block: 20px;
+          width: 80%;
+          margin: auto;
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         }
-        display: flex;
-        justify-content: center;
       }
       & .containt-sublist {
         display: flex;
@@ -990,7 +1039,7 @@ body {
         & .col2 {
           width: 25%;
           padding: 10px;
-          
+
           min-height: 100%;
           & ul {
             margin-left: 20px;
@@ -1001,18 +1050,31 @@ body {
           background-color: #f1a5a5;
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           border-radius: 10px;
-          height: fit-content;
+          width: fit-content;
+          padding: 20px;
         }
+      }
+      & ol {
+        margin-left: 40px;
+        margin-bottom: 10px;
+
+        & li {
+          font-size: 15px;
+        }
+      }
+      & p {
+        margin: 10px;
+        font-size: 15px;
+        padding-left: 10px;
+      }
+      & pre {
+        font-size: 15px;
+        font-weight: 400;
       }
     }
   }
-
   #session2-image {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1037,9 +1099,6 @@ body {
         & .con1 {
           width: 45%;
           display: flex;
-          padding-top: 30px;
-          
-
           & ul {
             margin-left: 20px;
           }
@@ -1055,13 +1114,8 @@ body {
       }
     }
   }
-
   #session2-table {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1074,22 +1128,18 @@ body {
         font-size: 25px;
         font-weight: 400;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
+      & p {
+        margin: 10px;
+        font-size: 15px;
+        padding-left: 10px;
         font-weight: 400;
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
           font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
         }
       }
       .containt {
@@ -1100,43 +1150,75 @@ body {
         margin: 10px;
         & .con1 {
           width: 45%;
-
         }
         & .con2 {
-          width: 45%;
           align-items: center;
-          & table {
+          /* SCSS (nested) - put this in .scss file */
+          table {
             border: 1px solid rgb(161, 158, 158);
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
             background-color: #eee;
-            border-radius: 22px;
-            padding: 10px;
-            margin-left: auto;
-            & thead tr td {
-              text-align: center;
-              font-size: 15px;
-              font-weight: 500;
-              background-color: #ddd;
+            border-radius: 10px;
+            padding: 5px;
+
+            & thead {
+              tr {
+                th {
+                  text-align: center;
+                  font-size: 15px;
+                  font-weight: 500;
+                  background-color: #ddd;
+                  padding: 5px;
+                }
+              }
             }
-            & tr:nth-child(odd) {
-              background-color: #f1a5a5;
+
+            & tbody {
+              & tr {
+                & td {
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: 500;
+                }
+              }
+
+              & tr:nth-child(odd) {
+                background-color: var(--color1);
+              }
+
+              & tr:nth-child(even) {
+                background-color: var(--color3);
+              }
             }
-            & tr td {
-              border-bottom: 1px solid black;
-              padding: 10px;
+
+            & tfoot {
+              tr {
+                td {
+                  text-align: center;
+                  font-size: 12px;
+                  font-weight: 500;
+                  background-color: #ddd;
+                }
+              }
+            }
+
+            & tr {
+              & td {
+                border-bottom: 1px solid black;
+                padding: 10px;
+              }
             }
           }
         }
       }
+      & pre {
+        font-size: 15px;
+        font-weight: 400;
+      }
     }
   }
-
   #session2-divspan {
     & .container {
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
         margin-top: 30px;
@@ -1149,22 +1231,12 @@ body {
         font-size: 25px;
         font-weight: 400;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
           font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
         }
       }
       & .containt {
@@ -1188,6 +1260,11 @@ body {
           align-items: center;
           width: 45%;
         }
+      }
+      & p {
+        margin: 10px;
+        font-size: 15px;
+        padding-left: 10px;
       }
     }
   }
