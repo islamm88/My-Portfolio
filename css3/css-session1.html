@@ -8,17 +8,18 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-   <header>
+    <header>
       <div class="container">
         <h1>CSS 3</h1>
-        <h2>SESSION 1 <a href="./assets/CSS3-Session1.pdf" target="_blank"><img src="./img/pdf.png" alt="Session1 file pdf " width="20"></a></h2>
+        <h2>SESSION 1 <a href="./assets/CSS3-Session1.pdf" target="_blank"><img
+              src="./img/pdf.png" alt="Session1 file pdf " width="20"></a></h2>
         <ul class="nav-site">
           <li><a href="./css-session1.html">Session 1</a></li>
           <li><a href="./css-session2.html">Session 2</a></li>
           <li><a href="./css-session3.html">Session 3</a></li>
-          <li><a href="">Session 4</a></li>
-          <li><a href="">Session 5</a></li>
-          <li><a href="">Test your self</a></li>
+          <li><a href>Session 4</a></li>
+          <li><a href>Session 5</a></li>
+          <li><a href>Test yourself</a></li>
         </ul>
         <ul class="nav-page">
           <li><a href="#session1-introduction">Introduction</a></li>
@@ -29,13 +30,19 @@
         </ul>
       </div>
     </header>
-    <section id = "session1-introduction">
+    <section id="session1-introduction">
       <div class="container">
         <h2>Introduction</h2>
         <ul>
-          <li>CSS3 (early 2000s): instead of one big spec, it was split into modules (Selectors, Flexbox, Grid, Transitions, Animations, etc.). <br>
-              <span>Modern CSS (today):</span> no CSS4 or “final version” — CSS is evolving continuously. Each module has its own level (Selectors Level 4, Media Queries Level 5, Grid Level 2, etc.).</li>
-          <li>CSS => Cascade Style Sheet " For Presentation And Visuals "</li>
+          <li>CSS3 (early 2000s): instead of one big spec, it was split into
+            modules (Selectors, Flexbox, Grid, Transitions, Animations, etc.).
+            <br>
+            <span>Modern CSS (today):</span> no CSS4 or “final version” — CSS is
+            evolving continuously.
+            Each module has its own level (Selectors Level 4, Media Queries
+            Level 5, Grid Level 2, etc.).</li>
+          <li>CSS = &gt; Cascading Style Sheets
+            " For Presentation And Visuals "</li>
           <li>Prerequisite to CSS is <span>HTML</span></li>
         </ul>
         <h3>What we need ?</h3>
@@ -45,19 +52,21 @@
         </ul>
         <p>Extention file <span>.css</span> like main.css</p>
         <h3>Where can I create CSS Code ?</h3>
-        <div class = "containt">
-        <ol>
-            <li>External file  
-            <li>internal</li> 	
-                <ul>
-                  <li>in file  inside &lt;head&gt;  <span>&lt;style&gt;&lt;/style&gt;</span>   &lt;/head&gt;</li>
-                  <li>inline  inside the <span>opening tage</span> what you want style it like &lt;p&gt; tage</li>
-                </ul>	
-          </li>
-        </ol>
-        <div class = "div-img">
-          <img src="./img/css-places.png" alt="Css-places" loading="lazy">
-        </div>
+        <div class="containt">
+          <ol>
+            <li>External file</li>
+            <li>internal
+              <ul>
+                <li>in file inside &lt;head&gt;
+                  <span>&lt;style&gt;&lt;/style&gt;</span> &lt;/head&gt;</li>
+                <li>inline inside the <span>opening tage</span> what you want
+                  style it like &lt;p&gt; tage</li>
+              </ul>
+            </li>
+          </ol>
+          <div class="div-img">
+            <img src="./img/css-places.png" alt="Css-places" loading="lazy">
+          </div>
         </div>
         <h3>Full Priority Order (Simplified)</h3>
         <br>
@@ -68,10 +77,10 @@
           <li>Internal styles between tag &lt;style&gt;&lt;/style&gt;</li>
           <li>External styles</li>
           <li>Browser default styles (lowest)</li>
-        </ol>  
+        </ol>
       </div>
     </section>
-    <section id = "session1-CommentSelector">
+    <section id="session1-CommentSelector">
       <div class="container">
         <h2>Selector & Comment</h2>
         <h3> in CSS, comments are often used to:</h3>
@@ -80,100 +89,122 @@
           <li>Sometimes using to ignor code to test or debug</li>
         </ul>
         <h3>Type of Comment : </h3>
-          <div class = "containt">
-            <ul>
-              <li>Single Line  /*   ....    * /</li>
-              <li>Multiple Line</li>
-            </ul>
-            <div class="div-img">
-              <img src="./img/comment.png" alt="commant" loading="lazy">
-            </div>
-          </div>
-        <h3>Some Types of Selector :</h3>
-          <ul >
-            <li>Universal Selector  (*) : Example: <span>* { margin: 0; }</span> Selects all elements on the page. </li>
-            <li>Type Selector (Element Selector) : Example: <span>p { color: red; }</span> Selects all elements of a specific HTML tag (e.g., all &lt;p&gt; tags).</li>
-            <li>Class Selector : Example <span>.note { font-size: 14px; }</span>  Selects all elements with a given class.</li>
-            <li>ID Selector : Example: <span>#header { background: blue; }</span> Selects the single element with a specific id.</li>
-            <li>Group Selector : Example: <span>h1, p, div { margin: 0; }</span> Applies the same style to multiple selectors.</li>
-            <li>Descendant Selector : Example: <span>div p { color: green; }</span> Selects all &lt;p&gt; elements inside a .</li>
+        <div class="containt">
+          <ul>
+            <li>Single Line /* .... * /</li>
+            <li>Multiple Line</li>
           </ul>
+          <div class="div-img">
+            <img src="./img/comment.png" alt="commant" loading="lazy">
+          </div>
+        </div>
+        <h3>Some Types of Selector :</h3>
+        <ul>
+          <li>Universal Selector (*) : Example: <span>* { margin: 0; }</span>
+            Selects all elements on the page. </li>
+          <li>Type Selector (Element Selector) : Example: <span>p { color: red;
+              }</span> Selects all elements of a specific HTML tag (e.g., all
+            &lt;p&gt; tags).</li>
+          <li>Class Selector : Example <span>.note { font-size: 14px; }</span>
+            Selects all elements with a given class.</li>
+          <li>ID Selector : Example: <span>#header { background: blue; }</span>
+            Selects the single element with a specific id.</li>
+          <li>Group Selector : Example: <span>h1, p, div { margin: 0; }</span>
+            Applies the same style to multiple selectors.</li>
+          <li>Descendant Selector : Example: <span>div p { color: green;
+              }</span> Selects all &lt;p&gt; elements inside a .</li>
+        </ul>
       </div>
     </section>
-    <section id = "session1-background">
+    <section id="session1-background">
       <div class="container">
         <h2>Background</h2>
-        <h3><span>We will take a &lt;div&gt; as example to implement </span></h3>
+        <h3><span>We will take a &lt;div&gt; as example to implement
+          </span></h3>
         <h3>background-color</h3>
         <ul>
-          <li>The background-color property in CSS is used to set the background color of an element.</li>
+          <li>The background-color property in CSS is used to set the background
+            color of an element.</li>
           <li>Default value is transparent.</li>
         </ul>
-        <div class="containt" style="background-color: var(--color3);border-radius: 22px;">
+        <div class="containt"
+          style="background-color: var(--color3);border-radius: 22px;">
           <ul>
             <li>background-color: red;</li>
-            <li>background-color: <span>rgb(107, 5, 5); </span> or <span>background-color: rgba(107, 5, 5,50%);</span></li>
+            <li>background-color: <span>rgb(107, 5, 5); </span> or
+              <span>background-color: rgba(107, 5, 5,50%);</span></li>
             <li>background-color: <span>#eee;</span></li>
           </ul>
-            <div class="div-img">
-              <img src="./img/background-color1.png" alt="background-color1" loading="lazy">
-            </div>
-          
+          <div class="div-img">
+            <img src="./img/background-color1.png" alt="background-color1"
+              loading="lazy">
+          </div>
+
         </div>
-            <ol>
-              <li>You can type color by hexadecimal like <span>#eee , #1f1f1f</span></li>
-              <li>rgba : r -> Red <span style="color: red;">color</span> g -> Green <span style="color: green;">color</span>  b -> Blur <span style="color: blue;">color</span> a -> Alpha</li>
-              <li>The alpha value must be a number between <span>(0 and 1)</span>, not a percentage.</li>
-            </ol>
+        <ol>
+          <li>You can type color by hexadecimal like <span>#eee ,
+              #1f1f1f</span></li>
+          <li>rgba : r -> Red <span style="color: red;">color</span> g -> Green
+            <span style="color: green;">color</span> b -> Blur <span
+              style="color: blue;">color</span> a -> Alpha</li>
+          <li>The alpha value must be a number between <span>(0 and 1)</span>,
+            not a percentage.</li>
+        </ol>
         <div class="containt">
-              <p>There are many great websites for discovering and generating beautiful color palettes for your designs</p>
-              <a href="https://colorhunt.co/" target="_blank"><img id = "colorhunt" src="./img/Color-hunt.png" alt="color hunt website" style="border-radius: 22px;box-shadow: 0 0 2px 2px gray;" loading="lazy"></a>
+          <p>There are many great websites for discovering and generating
+            beautiful color palettes for your designs</p>
+          <a href="https://colorhunt.co/" target="_blank"><img id="colorhunt"
+              src="./img/Color-hunt.png" alt="color hunt website"
+              style="border-radius: 22px;box-shadow: 0 0 2px 2px gray;"
+              loading="lazy"></a>
         </div>
         <h3>linear-gradient </h3>
-        <p>The linear-gradient() function in CSS is used to create smooth transition between two or more colors along a straight line (vertical, horizontal, diagonal, etc.).</p>
-        <p><span>background: linear-gradient(direction, color-stop1, color-stop2, ...);</span></p>
+        <p>The linear-gradient() function in CSS is used to create smooth
+          transition between two or more colors along a straight line (vertical,
+          horizontal, diagonal, etc.).</p>
+        <p><span>background: linear-gradient(direction, color-stop1,
+            color-stop2, ...);</span></p>
         <p>Examples :</p>
-          <ul style="margin-left: 100px;"> 
-            <li>background: linear-gradient(red, yellow);</li>
-            <li>background: linear-gradient(to right, red, yellow);</li>
-            <li>background: linear-gradient(45deg, red, blue, green);</li>
-          </ul>
-        <hr id = "hr">
+        <ul style="margin-left: 100px;">
+          <li>background: linear-gradient(red, yellow);</li>
+          <li>background: linear-gradient(to right, red, yellow);</li>
+          <li>background: linear-gradient(45deg, red, blue, green);</li>
+        </ul>
+        <hr id="hr">
         <h3>background-image</h3>
-          <ul>
-            <li>background-image: url(./img/1.jfif) ;</li>
-          </ul>
+        <ul>
+          <li>background-image: url(./img/1.jfif) ;</li>
+        </ul>
         <div class="containt">
-          <p style = "display: inline; font-size: 18px;"><span>background-repeat</span></p>
-          <p style = "display: inline; font-size: 18px;"><span>background-attachment</span></p>
-          <p style = "display: inline; font-size: 18px;"><span>background-position</span></p>
-          <p style = "display: inline; font-size: 18px;"><span>background-size</span></p>
+          <p><span>background-repeat</span></p>
+          <p><span>background-attachment</span></p>
+          <p><span>background-position</span></p>
+          <p><span>background-size</span></p>
         </div>
         <h3>background-repeat</h3>
         <ul>
-           <li>background-repeat: no-repeat;</li>
-           <li>background-repeat: repeat;</li>
-           <li>background-repeat: repeat-x;</li>
-           <li>background-repeat: repeat-y;</li> 
+          <li>background-repeat: no-repeat;</li>
+          <li>background-repeat: repeat;</li>
+          <li>background-repeat: repeat-x;</li>
+          <li>background-repeat: repeat-y;</li>
         </ul>
         <h3>background-attachment</h3>
         <ul>
-           <li>background-attachment: scroll;   => default</li>
-           <li>background-attachment: fixed;</li>
-           
-           
+          <li>background-attachment: scroll; => default</li>
+          <li>background-attachment: fixed;</li>
+
         </ul>
         <h3>background-size</h3>
         <ul>
-           <li>background-size: auto;     => default</li>
-           <li>background-size: cover;<span>stretch and cut</span></li>
-           <li>background-size:contain;<span>fully visible</span></li>
-           <li>background-size: 100px 200px ;    W H </li>
-           <li>background-size: 50% 80% ;</li>
+          <li>background-size: auto; => default</li>
+          <li>background-size: cover;<span>stretch and cut</span></li>
+          <li>background-size:contain;<span>fully visible</span></li>
+          <li>background-size: 100px 200px ; W H </li>
+          <li>background-size: 50% 80% ;</li>
         </ul>
         <h3>background-position</h3>
         <ul>
-          <li>background-position: left top;   => default</li>
+          <li>background-position: left top; => default</li>
           <li>background-position: left center;</li>
           <li>background-position: left bottom;</li>
           <li>background-position: center top;</li>
@@ -187,21 +218,24 @@
         </ul>
       </div>
     </section>
-    <section id = "session1-font-icon">
+    <section id="session1-font-icon">
       <div class="container">
         <h2>Font & Icon</h2>
         <h3>Add font using <span>Google Font Online</span> : </h3>
-        <p>visit website : <a href="https://fonts.google.com/" target="_blank">Google Font</a></p>
+        <p>visit website : <a href="https://fonts.google.com/"
+            target="_blank">Google Font</a></p>
         <ul>
           <li>Select a font what you want as like "Roboto"</li>
           <li>Get font</li>
           <li>Get embed code</li>
           <li>select @import</li>
           <li>Copy code without &lt;style&gt; in your CSS file</li>
-          <li>Add a <span>font-family: "Roboto", sans-serif;</span>  in your CSS</li>
+          <li>Add a <span>font-family: "Roboto", sans-serif;</span> in your
+            CSS</li>
         </ul>
         <h3>Add Icon using <span>font awesome Online</span> : </h3>
-        <p>visit website : <a href="https://fontawesome.com/" target="_blank">Font Awesome</a></p>
+        <p>visit website : <a href="https://fontawesome.com/"
+            target="_blank">Font Awesome</a></p>
         <ul>
           <li>Click on Icons</li>
           <li>Type Email in search</li>
@@ -209,16 +243,22 @@
           <li>Select envelope</li>
           <li>Copy code snippet to add it in HTML file</li>
         </ul>
-        <p>visit website : <a href="https://cdnjs.com/libraries/font-awesome" target="_blank">font awesome cdn</a><img src="./img/FACDN.png" alt="font awesome cdn" height="30px"> Click on  <svg width = "20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" aria-hidden="true" class="icon"><path d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg></p>
+        <p>visit website : <a href="https://cdnjs.com/libraries/font-awesome"
+            target="_blank">font awesome cdn</a><img src="./img/FACDN.png"
+            alt="font awesome cdn" height="30px"> Click on <svg width="20"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+            aria-hidden="true" class="icon"><path
+              d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"></path></svg></p>
         <ul>
           <li>create &lt;link&gt; in head part in your HTML file </li>
-          <li>Add in href attribute link which you copied it from font awesome cdn =>  <span>href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"</span></li>
+          <li>Add in href attribute link which you copied it from font awesome
+            cdn => <span>href =
+              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"</span></li>
         </ul>
-      </div> 
-      
-      
+      </div>
+
     </section>
-    <section id = "session1-assignment">
+    <section id="session1-assignment">
       <div class="container">
         <h2>Assignment</h2>
         <h3><u>Challenge : </u></h3>
@@ -235,11 +275,12 @@
                 <img src="./img/background-img.png" alt="background-img" loading="lazy" width="350" >
             </pre>
           </div>
-          <div class="div-img"> 
-            <img src="./img/section1-assignment2.png" alt="background-img" loading="lazy" >
-            <a href="./assignment/session1.rar" download="">Download</a>
+          <div class="div-img">
+            <img src="./img/section1-assignment2.png" alt="background-img"
+              loading="lazy">
+            <a href="./assignment/session1.rar" download>Download</a>
           </div>
-          
+
         </div>
       </div>
     </section>
@@ -249,9 +290,9 @@
           <li><a href="./css-session1.html">Session 1</a></li>
           <li><a href="./css-session2.html">Session 2</a></li>
           <li><a href="./css-session3.html">Session 3</a></li>
-          <li><a href="">Session 4</a></li>
-          <li><a href="">Session 5</a></li>
-          <li><a href="">Test your self</a></li>
+          <li><a href>Session 4</a></li>
+          <li><a href>Session 5</a></li>
+          <li><a href>Test your self</a></li>
         </ul>
         <ul class="nav-page">
           <li><a href="#session1-introduction">Introduction</a></li>
@@ -260,6 +301,7 @@
           <li><a href="#session1-font-icon">Font&Icon</a></li>
           <li><a href="#session1-assignment">Assignment</a></li>
         </ul>
+      </div>
     </footer>
   </body>
 </html>

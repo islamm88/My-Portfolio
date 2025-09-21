@@ -403,13 +403,15 @@ footer {
   font-family: "Roboto", sans-serif;
 }
 :root {
-  --color3: #f5cbcb;
-  --color1: #ffeaea;
-  --color2: #ddd;
+  --color3: #f1e4e4;
+  --color1: #e9dbdb;
+  --color2: #e870ed;
   --color4: black;
+  --color5: rgb(139, 12, 12);
+  --bgcolor: rgb(228, 227, 221);
 }
 body {
-  background-color: var(--color1);
+  background-color: var(--bgcolor);
 }
 @media (max-width: 390px) {
   .container {
@@ -2328,11 +2330,10 @@ body {
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
-      /* border:1px solid red; */
     }
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 4px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -2342,23 +2343,32 @@ body {
       margin: auto;
       margin-block: 30px;
     }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 15px;
+    }
+    & a {
+      text-decoration: none;
+    }
   }
   header,
   footer {
     & .container {
-      background-color: var(--color1);
       padding: 0px;
       box-shadow: none;
+      background-color: var(--bgcolor);
       & h1 {
         text-align: center;
         margin-block: 20px;
         font-size: 2.5rem;
+        color: rgb(69, 70, 69);
       }
       & h2 {
         text-align: center;
         margin-block: 20px;
         font-size: 1.5rem;
-        color: rgb(56, 56, 185);
+        color: rgb(50, 50, 240);
         & img {
           width: 20px;
         }
@@ -2401,12 +2411,12 @@ body {
           & a {
             text-decoration: none;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 400;
             text-transform: uppercase;
-            color: rgb(56, 56, 185);
+            color: rgb(50, 50, 240);
           }
           & a:hover {
-            color: #fff;
+            color: var(--color2);
           }
         }
       }
@@ -2463,14 +2473,10 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -2480,28 +2486,17 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul,
       & ol {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -2608,14 +2603,10 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -2625,28 +2616,17 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul,
       & ol {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -2738,22 +2718,18 @@ body {
           border-left-color: yellow;
         }
         & #circle {
-          width: 300px;
-          height: 300px;
+          width: 200px;
+          height: 200px;
           background-color: var(--color3);
           border-radius: 50%;
           margin: 10px;
           box-shadow: 0 0 2px 2px gray;
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-      }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -2763,28 +2739,17 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul,
       & ol {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -2848,8 +2813,8 @@ body {
           margin: 30px;
         }
         & #design {
-          width: 300px;
-          height: 300px;
+          width: 200px;
+          height: 200px;
           background-color: var(--color3);
           border-radius: 20px 0px 20px 0px;
           border-top-right-radius: 50% 50%;
@@ -2894,23 +2859,19 @@ body {
           border-bottom-color: blue;
           border-left-color: yellow;
         }
-        & #circle {
+        /* & #circle {
           width: 300px;
           height: 300px;
           background-color: var(--color3);
           border-radius: 50%;
           margin: 10px;
           box-shadow: 0 0 2px 2px gray;
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
+        } */
       }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -2920,98 +2881,18 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul,
       & ol {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
           font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-      & #negative-margin {
-        justify-content: space-around;
-        width: 50%;
-        margin: auto;
-        margin-bottom: 40px;
-        & .parent-margin-negative1 {
-          width: 200px;
-          height: 200px;
-          background-color: var(--color3);
-          display: flex;
-          justify-content: center;
-          margin-top: 30px;
-          border-radius: 10px;
-          box-shadow: 0 0 2px 2px gray;
-          & .child {
-            width: 60px;
-            height: 60px;
-            background-color: #fff;
-            margin: -30px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #380303;
-            font-size: 30px;
-          }
-        }
-        & .parent-margin-negative2 {
-          width: 200px;
-          height: 200px;
-          background-color: var(--color3);
-          display: flex;
-          align-items: center;
-          margin-top: 30px;
-          border-radius: 10px;
-          box-shadow: 0 0 2px 2px gray;
-          & .child {
-            width: 60px;
-            height: 90px;
-            background-color: #fff;
-            margin-left: -30px;
-            border-radius: 5%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #380303;
-            font-size: larger;
-          }
-        }
-      }
-      & .Challenge {
-        background-color: #eee;
-        padding: 10px;
-        box-shadow: 0 0 2px 2px gray;
-        border-radius: 10px;
-        margin-block: 20px;
-        & * {
-          margin: 30px;
-        }
-        & #design {
-          width: 300px;
-          height: 300px;
-          background-color: var(--color3);
-          border-radius: 20px 0px 20px 0px;
-          border-top-right-radius: 50% 50%;
-          border-bottom-left-radius: 50% 50%;
-          box-shadow: 0 0 2px 2px gray;
         }
       }
     }

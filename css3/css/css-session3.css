@@ -1414,7 +1414,6 @@ body {
         & #div3 {
           direction: rtl; 
         }
-
         & p {
           & a {
             font-size: 20px;
@@ -1452,7 +1451,7 @@ body {
       }
     }
   }
-  #session1-CommentSelector {
+  #session3-dimensions {
     & .container {
       & .containt {
         display: flex;
@@ -1468,6 +1467,27 @@ body {
             border-radius: 10px;
             box-shadow: 0 0 2px 2px gray;
           }
+        }
+        & #p400 {
+          width: 400px;
+          background-color: var(--color3);
+          box-shadow: 0 0 2px 2px gray;
+        }
+        & #p400mor {
+          width: 400px;
+          background-color: var(--color3);
+          box-shadow: 0 0 2px 2px gray;
+        }
+        & #p400min {
+          min-width: 400px;
+          background-color: var(--color3);
+          box-shadow: 0 0 2px 2px gray;
+        }
+        & #fit {
+          all: unset;
+          min-width: fit-content;
+          background-color: var(--color3);
+          box-shadow: 0 0 2px 2px gray;
         }
       }
       & span {

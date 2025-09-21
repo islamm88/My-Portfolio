@@ -9,13 +9,15 @@
   font-family: "Roboto", sans-serif;
 }
 :root {
-  --color3: #f5cbcb;
-  --color1: #ffeaea;
-  --color2: #ddd;
+  --color3: #f1e4e4;
+  --color1: #e9dbdb;
+  --color2: #e870ed;
   --color4: black;
+  --color5: rgb(139, 12, 12);
+  --bgcolor: rgb(228, 227, 221);
 }
 body {
-  background-color: var(--color1);
+  background-color: var(--bgcolor);
 }
 @media (max-width: 390px) {
   .container {
@@ -1261,8 +1263,8 @@ body {
       flex-wrap: wrap;
     }
     & hr {
-      width: 90%;
-      height: 5px;
+      width: 100%;
+      height: 4px;
       background: linear-gradient(
         to right,
         rgb(32, 32, 32),
@@ -1272,23 +1274,32 @@ body {
       margin: auto;
       margin-block: 30px;
     }
+    & span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 15px;
+    }
+    & a {
+      text-decoration: none;
+    }
   }
   header,
   footer {
     & .container {
-      background-color: var(--color1);
       padding: 0px;
       box-shadow: none;
+      background-color: var(--bgcolor);
       & h1 {
         text-align: center;
         margin-block: 20px;
         font-size: 2.5rem;
+        color: rgb(69, 70, 69);
       }
       & h2 {
         text-align: center;
         margin-block: 20px;
         font-size: 1.5rem;
-        color: rgb(56, 56, 185);
+        color: rgb(50, 50, 240);
         & img {
           width: 20px;
         }
@@ -1331,12 +1342,12 @@ body {
           & a {
             text-decoration: none;
             font-size: 20px;
-            font-weight: 600;
+            font-weight: 400;
             text-transform: uppercase;
-            color: rgb(56, 56, 185);
+            color: rgb(50, 50, 240);
           }
           & a:hover {
-            color: #fff;
+            color: var(--color2);
           }
         }
       }
@@ -1360,15 +1371,10 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -1378,28 +1384,17 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul,
       & ol {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -1423,15 +1418,10 @@ body {
           }
         }
       }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -1441,89 +1431,16 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
-      & ul {
+    & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  #session1-background {
-    & .container {
-      & .containt {
-        & .div-img {
-          width: 25%;
-          height: 200px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 10px;
-            box-shadow: 0 0 2px 2px gray;
-          }
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
-      & h2 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
-        font-family: "Oleo Script", system-ui;
-      }
-      & h3 {
-        margin-top: 15px;
-        font-size: 25px;
-        font-weight: 400;
-      }
-      & p {
-        margin: 20px 0px 20px;
-        font-size: 15px;
-        padding-left: 10px;
-        font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-      & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
-        & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -1549,28 +1466,11 @@ body {
             display: block;
           }
         }
-        & ul {
-          margin: 0px;
-          & li {
-            padding-block: 5px;
-            font-size: 15px;
-          }
-          & span {
-            font-weight: 400;
-            color: blue;
-            font-size: 15px;
-          }
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
       }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -1580,37 +1480,25 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
-      & ol {
+      & ol ,
+      & ul {
         margin-left: 40px;
         margin-bottom: 20px;
-
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
       hr {
-        width: 80%;
+        width: 100%;
         margin-inline: auto;
         background-color: #444242;
         height: 3px;
         margin-block: 40px;
-
       }
     }
   }
@@ -1630,15 +1518,15 @@ body {
           }
         }
       }
-      & span {
+    & span {
         font-weight: 400;
-        color: blue;
+        color: var(--color5);
         font-size: 15px;
       }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -1646,34 +1534,18 @@ body {
         margin-top: 15px;
         font-size: 25px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 25px;
-        }
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
       & ul {
         margin-left: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
 
         & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
           font-size: 15px;
         }
       }
@@ -1719,16 +1591,15 @@ body {
           }
           & a:hover {
             background-color: rgb(76, 74, 74);
-            
-            transform: scale(1.05);
 
+            transform: scale(1.05);
           }
         }
       }
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
@@ -1738,15 +1609,10 @@ body {
         font-weight: 400;
       }
       & p {
-        margin: 20px 0px 20px;
+        margin: 10px;
         font-size: 15px;
         padding-left: 10px;
         font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
       }
     }
   }
