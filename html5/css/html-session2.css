@@ -112,32 +112,25 @@ body {
   .container {
     width: 95%;
     margin: auto;
-    margin-block: 8px;
+    padding: 30px;
+    margin-block: 15px;
     background-color: #ddd;
-    border-radius: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 3px rgb(172, 170, 170);
     & .containt {
       display: flex;
       align-items: center;
       justify-content: space-around;
-    }
-
-    & hr {
-      width: 90%;
-      height: 5px;
-      background: linear-gradient(
-        to right,
-        rgb(32, 32, 32),
-        rgb(187, 183, 183)
-      );
-      border-radius: 22px;
-      margin: auto;
-      margin-block: 30px;
+      flex-wrap: wrap;
     }
 
     & span {
-      font-weight: 800;
+      font-weight: 400;
       color: var(--color5);
       font-size: 10px;
+    }
+    & a {
+      text-decoration: none;
     }
   }
   header,
@@ -212,11 +205,6 @@ body {
   #session2-anchor {
     & .container {
       padding: 10px;
-      /* & span {
-        font-weight: 800;
-        color: var(--color5);
-        font-size: 10px;
-      } */
       & h2 {
         text-align: center;
         margin-block: 20px;
@@ -225,12 +213,7 @@ body {
       }
       & h3 {
         margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
+        font-size: 15px;
         font-weight: 400;
       }
       & p {
@@ -239,16 +222,9 @@ body {
         padding-left: 10px;
       }
       & ul {
-        margin-left: 40px;
-        margin-bottom: 25px;
-
+        margin-left: 30px;
+        margin-bottom: 10px;
         & li {
-          padding-block: 5px;
-          font-size: 10px;
-        }
-        & span {
-          font-weight: 400;
-          color: var(--color5);
           font-size: 10px;
         }
       }
@@ -259,7 +235,7 @@ body {
       padding: 10px;
       & .containt {
         & table {
-          margin-bottom: 40px;
+          margin-bottom: 10px;
           border: 1px solid rgb(161, 158, 158);
           background-color: #eee;
           border-radius: 10px;
@@ -275,16 +251,11 @@ body {
           }
           & tr td {
             border-bottom: 1px solid black;
-            padding: 10px;
+            padding: 5px;
             font-size: 10px;
           }
         }
       }
-      /* & span {
-        font-weight: 400;
-        color: var(--color5);
-        font-size: 10px;
-      } */
       & h2 {
         text-align: center;
         margin-block: 20px;
@@ -302,17 +273,11 @@ body {
         padding-left: 10px;
       }
       & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-bottom: 10px;
         & li {
-          padding-block: 5px;
           font-size: 10px;
         }
-        /* & span {
-          font-weight: 300;
-          color: var(--color5);
-          font-size: 10px;
-        } */
       }
     }
   }
@@ -320,25 +285,18 @@ body {
     & .container {
       padding: 10px;
       & #type-list {
-        margin-left: 40px;
-        margin-bottom: 50px;
+        margin-left: 30px;
+        margin-bottom: 10px;
         & li {
-          padding-block: 5px;
           font-size: 10px;
         }
       }
       & ol,
       & ul {
-        margin-left: 20px;
+        margin-left: 30px;
         & li {
-          padding-block: 5px;
           font-size: 10px;
         }
-        /* & span {
-          font-weight: 400;
-          color: var(--color5);
-          font-size: 10px;
-        } */
       }
       & .containt {
         margin-block: 20px;
@@ -355,12 +313,13 @@ body {
             background-color: #fff;
             border-radius: 10px;
             padding: 5px;
-            margin-block: 10px;
+            margin-block: 5px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            height: 265px;
             & h3 {
               text-align: center;
               margin-block: 10px;
@@ -399,7 +358,7 @@ body {
             background-color: #fff;
             border-radius: 10px;
             padding: 5px;
-            margin-block: 10px;
+            margin-block: 5px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -411,11 +370,6 @@ body {
           }
         }
       }
-      /* & span {
-        font-weight: 400;
-        color: var(--color5);
-        font-size: 10px;
-      } */
       & h2 {
         text-align: center;
         margin-block: 20px;
@@ -427,13 +381,8 @@ body {
         font-size: 10px;
         padding-left: 10px;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
       & h3 {
-        margin-block: 15px;
+        margin-bottom: 10px;
         font-size: 15px;
         font-weight: 300;
       }
@@ -445,20 +394,28 @@ body {
       & .containt-sublist {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-top: 20px;
+        background-color: #eee;
+        border-radius: 10px;
 
-        & .col1 {
-          width: 40%;
-        }
+        & .col1,
         & .col2 {
-          width: fit-content;
-          padding: 20px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: var(--color3);
+          width: 25%;
+          padding: 10px;
+
+          min-height: 100%;
+          & ul {
+            margin-left: 20px;
+          }
+        }
+
+        & .col2 {
+          background-color: var(--color3);
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           border-radius: 10px;
+          width: fit-content;
+          padding: 20px;
         }
       }
       & #div-img {
@@ -476,11 +433,6 @@ body {
   #session2-image {
     & .container {
       padding: 10px;
-      /* & span {
-        font-weight: 400;
-        color: var(--color5);
-        font-size: 10px;
-      } */
       & p {
         margin: 10px;
         font-size: 10px;
@@ -507,17 +459,10 @@ body {
           width: 45%;
           display: flex;
           padding-top: 30px;
-
           margin-left: 20px;
           & li {
-            padding-block: 5px;
             font-size: 10px;
           }
-          /* & span {
-            font-weight: 400;
-            color: var(--color5);
-            font-size: 10px;
-          } */
         }
         & .con2 {
           width: 40%;
@@ -550,40 +495,35 @@ body {
         font-size: 10px;
         padding-left: 10px;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
-      }
       & h3 {
         margin-block: 15px;
         font-size: 15px;
-        font-weight: 300;
+        font-weight: 400;
       }
       & ul {
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-bottom: 10px;
         & li {
-          padding-block: 5px;
           font-size: 10px;
         }
-        /* & span {
-          font-weight: 400;
-          color: var(--color5);
-          font-size: 10px;
-        } */
       }
       & pre {
         margin-top: 5px;
-        font-size: 15px;
+        font-size: 10px;
         font-weight: 300;
       }
       .containt {
         padding-top: 15px;
         border-radius: 22px;
         background-color: #eee;
-        justify-content: space-between;
+        justify-content: space-around;
         & .con1 {
           width: 45%;
+          & pre {
+            margin-top: 5px;
+            font-size: 10px;
+            font-weight: 300;
+          }
         }
         & .con2 {
           align-items: center;
@@ -598,7 +538,7 @@ body {
               tr {
                 th {
                   text-align: center;
-                  font-size: 15px;
+                  font-size: 10px;
                   font-weight: 500;
                   background-color: #ddd;
                   padding: 5px;
@@ -610,8 +550,9 @@ body {
               & tr {
                 & td {
                   text-align: center;
-                  font-size: 12px;
+                  font-size: 10px;
                   font-weight: 500;
+                  padding: 5px;
                 }
               }
 
@@ -628,17 +569,11 @@ body {
               tr {
                 td {
                   text-align: center;
-                  font-size: 12px;
+                  font-size: 10px;
                   font-weight: 500;
                   background-color: #ddd;
+                  padding: 5px;
                 }
-              }
-            }
-
-            & tr {
-              & td {
-                border-bottom: 1px solid black;
-                padding: 10px;
               }
             }
           }
@@ -648,55 +583,71 @@ body {
   }
   #session2-divspan {
     & .container {
-      /* & span {
-        font-weight: 400;
-        color: var(--color5);
-      } */
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
+        margin-block: 20px;
+        font-size: 20px;
         font-family: "Oleo Script", system-ui;
       }
       & h3 {
-        margin-block: 15px;
-        font-size: 25px;
-        font-weight: 400;
+        margin-bottom: 10px;
+        font-size: 15px;
+        font-weight: 300;
       }
-      & h4 {
-        margin-top: 15px;
-        font-size: 12px;
-        font-weight: 400;
+      & pre {
+        margin-top: 5px;
+        font-size: 10px;
+        font-weight: 300;
       }
       & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
+        margin-left: 30px;
+        margin-bottom: 10px;
         & li {
-          padding-block: 5px;
-          font-size: 15px;
+          font-size: 10px;
         }
-        /* & span {
-          font-weight: 400;
-          color: var(--color5);
-        } */
+      }
+      & p {
+        margin: 10px;
+        font-size: 10px;
+        padding-left: 10px;
       }
       & .containt {
-        align-items: start;
-        & .div-test1 {
+        margin-block: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 10px;
+
+        & .div-contain1,
+        & .div-contain2 {
           width: 45%;
-          padding: 30px;
+          padding: 15px;
           background-color: var(--color3);
           border-radius: 22px;
-          margin-left: 50px;
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           & ul {
-            margin-left: 30px;
-            margin-top: 10px;
+            margin-left: 25px;
+            margin-bottom: 5px;
           }
         }
-        & .div-test2 {
+        & .div-contain1 {
+          width: fit-content;
+        }
+        & .div-desc {
+          display: flex;
+          align-items: center;
           width: 45%;
+        }
+        & pre {
+          font-size: 10px;
+          font-weight: 400;
+          & span {
+            font-weight: 400;
+            color: var(--color5);
+            font-size: 10px;
+          }
         }
       }
     }
@@ -713,10 +664,11 @@ body {
 
       & #div-imgs {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         & .div-img {
-          width: 20%;
+          width: 45%;
           height: 200px;
           & img {
             display: block;
@@ -726,13 +678,14 @@ body {
           }
         }
         & :nth-child(1) {
-          width: 15%;
+          height: 150px;
+          margin-block: 10px;
         }
         & :nth-child(2) {
-          height: 150px;
+          height: 110px;
         }
         & :nth-child(4) {
-          height: 50px;
+          height: 30px;
         }
       }
     }
@@ -754,18 +707,6 @@ body {
       flex-wrap: wrap;
     }
 
-    & hr {
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(
-        to right,
-        rgb(32, 32, 32),
-        rgb(187, 183, 183)
-      );
-      border-radius: 22px;
-      margin: auto;
-      margin-block: 30px;
-    }
     & span {
       font-weight: 400;
       color: var(--color5);
@@ -1032,8 +973,10 @@ body {
       & .containt-sublist {
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 20px;
+        background-color: #eee;
+        border-radius: 10px;
 
         & .col1,
         & .col2 {
@@ -1047,7 +990,7 @@ body {
         }
 
         & .col2 {
-          background-color: #f1a5a5;
+          background-color: var(--color3);
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           border-radius: 10px;
           width: fit-content;
@@ -1068,8 +1011,13 @@ body {
         padding-left: 10px;
       }
       & pre {
-        font-size: 15px;
+        font-size: 12px;
         font-weight: 400;
+        & span {
+          font-weight: 400;
+          color: var(--color5);
+          font-size: 10px;
+        }
       }
     }
   }
@@ -1143,7 +1091,6 @@ body {
         }
       }
       .containt {
-        padding-top: 15px;
         border-radius: 22px;
         background-color: #eee;
         justify-content: space-around;
@@ -1153,14 +1100,12 @@ body {
         }
         & .con2 {
           align-items: center;
-          /* SCSS (nested) - put this in .scss file */
           table {
             border: 1px solid rgb(161, 158, 158);
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
             background-color: #eee;
             border-radius: 10px;
             padding: 5px;
-
             & thead {
               tr {
                 th {
@@ -1172,7 +1117,6 @@ body {
                 }
               }
             }
-
             & tbody {
               & tr {
                 & td {
@@ -1212,8 +1156,14 @@ body {
         }
       }
       & pre {
-        font-size: 15px;
+        margin-top: 10px;
+        font-size: 12px;
         font-weight: 400;
+        & span {
+          font-weight: 400;
+          color: var(--color5);
+          font-size: 10px;
+        }
       }
     }
   }
@@ -1243,8 +1193,12 @@ body {
         margin-block: 10px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        & .div-test1 {
+        justify-content: space-around;
+        background-color: #eee;
+        border-radius: 10px;
+        padding: 15px;
+        & .div-contain1,
+        & .div-contain2 {
           width: 25%;
           padding: 15px;
           background-color: var(--color3);
@@ -1255,10 +1209,22 @@ body {
             margin-bottom: 5px;
           }
         }
-        & .div-test2 {
+        & .div-contain1 {
+          width: fit-content;
+        }
+        & .div-desc {
           display: flex;
           align-items: center;
           width: 45%;
+        }
+        & pre {
+          font-size: 12px;
+          font-weight: 400;
+          & span {
+            font-weight: 400;
+            color: var(--color5);
+            font-size: 10px;
+          }
         }
       }
       & p {
@@ -1268,27 +1234,26 @@ body {
       }
     }
   }
-
   #session2-assignment {
     & .container {
       & h2 {
         text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         font-size: 30px;
         font-family: "Oleo Script", system-ui;
       }
 
       & #div-imgs {
         background-color: black;
-        padding: 30px;
+        padding: 10px;
         border-radius: 10px;
         box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         display: flex;
         align-items: center;
         justify-content: space-between;
         & .div-img {
-          width: 20%;
+          width: 25%;
           height: 200px;
           & img {
             display: block;
@@ -1298,13 +1263,14 @@ body {
           }
         }
         & :nth-child(1) {
-          width: 15%;
-        }
-        & :nth-child(2) {
+          width: 13%;
           height: 150px;
         }
+        & :nth-child(2) {
+          height: 110px;
+        }
         & :nth-child(4) {
-          height: 50px;
+          height: 30px;
         }
       }
     }
