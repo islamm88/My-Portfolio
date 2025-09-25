@@ -1,0 +1,167 @@
+@media (max-width: 390px) {
+}
+@media (min-width: 391px) and (max-width: 767px) {
+  #session3-attributes {
+    & .container {
+      & .containt {
+        justify-content: space-between;
+        margin-block: 20px;
+      }
+    }
+  }
+  #session3-entitie {
+    & .container {
+      & .containt {
+        display: flex;
+        justify-content: space-between;
+        margin-block: 20px;
+        & #describe-entities {
+          width: 70%;
+        }
+      }
+    }
+  }
+  #session3-Semantic {
+    & .container {
+      & .containt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .div-img {
+          width: 45%;
+          height: 100%;
+          & img {
+            border-radius: 10px;
+            width: 100%;
+            display: inline-block;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+  #session3-AudioVideo {
+    & .container {
+      & .containet {
+        & .audio,
+        & .video {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          & .col2{
+            width: 50%;
+            & audio ,
+            & video {
+              width: 100%;
+            }
+          }
+        }
+        & .compair {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & h3 {
+            & span {
+              font-size: inherit;
+            }
+          }
+          & table {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  #session3-assignment {
+    & p {
+      background-color: black;
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    }
+  }
+  & aduio,
+  & video {
+    border-radius: 10px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  #session3-attributes {
+    & .container {
+      & .containt {
+        justify-content: space-between;
+        margin-block: 20px;
+      }
+    }
+  }
+  #session3-entitie {
+    & .container {
+      & .containt {
+        justify-content: space-between;
+        margin-block: 20px;
+      }
+    }
+  }
+  #session3-Semantic {
+    & .container {
+      & .containt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & .div-img {
+          width: 45%;
+          height: 100%;
+          & img {
+            border-radius: 10px;
+            width: 100%;
+            display: inline-block;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+  #session3-AudioVideo {
+    & .container {
+      & .containet {
+        & .audio,
+        & .video {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        & .compair {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & h3 {
+            & span {
+              font-size: inherit;
+            }
+          }
+          & table {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  #session3-assignment {
+    & p {
+      background-color: black;
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    }
+  }
+
+  & aduio,
+  & video {
+    border-radius: 10px;
+  }
+}

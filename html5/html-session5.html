@@ -4,44 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5-Session5</title>
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/html-global-css.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
     <header id="header">
-      <div class="container" style="box-shadow: none">
-        <h1>HTML5</h1>
+      <div class="container">
+        <div id="logo">
+          <a href="./html-session1.html"
+            ><img src="../imge/html.png" alt="my logo" loading="lazy"
+          /></a>
+          <h1>HTML5</h1>
+        </div>
         <h2>
           SESSION 5
-          <a href="../assets/HTML5-Session5.pdf" target="_blank"
-            ><img src="../imge/pdf.png" alt="session4"
-          /></a>
+          <a href="../assets/HTML5-Session1.pdf" target="_blank"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
         </h2>
-      <ul class="nav-site">
-          <li><a href="./html-session1.html">Session 1</a></li>
-          <li><a href="./html-session2.html">Session 2</a></li>
-          <li><a href="./html-session3.html">Session 3</a></li>
-          <li><a href="./html-session4.html">Session 4</a></li>
-          <li><a href="./html-session5.html">Session 5</a></li>
-          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
-        </ul>
-        <ul class="nav-page">
-          <li><a href="#sec5-che-rad">Checkbox & Radio</a></li>
-          <li><a href="#sec5-sel-txt">Select & Textarea</a></li>
-          <li><a href="#sec5-Another-Inputs">Another Inputs</a></li>
-          <li><a href="#sec5-Assignment">Assignment</a></li>
-        </ul>
       </div>
     </header>
+    <ul class="nav-site">
+      <li><a href="./html-session1.html">Session 1</a></li>
+      <li><a href="./html-session2.html">Session 2</a></li>
+      <li><a href="./html-session3.html">Session 3</a></li>
+      <li><a href="./html-session4.html">Session 4</a></li>
+      <li><a href="./html-session5.html">Session 5</a></li>
+      <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session1-webintro">Web Introduction</a></li>
+      <li><a href="#session1-htmlIntor">HTML Introduction</a></li>
+      <li><a href="#session1-htmltagelement">HTML Tag&Element</a></li>
+      <li><a href="#session1-heading-p-pre">heading_p_pre</a></li>
+      <li><a href="#session1-assignment">Assignment</a></li>
+    </ul>
     <section id="sec5-che-rad">
       <div class="container">
         <h2>Checkbox & Radio</h2>
-        
+
         <h3>Checkbox :</h3>
         <ul>
           <li>Inline element</li>
@@ -243,7 +249,13 @@
             <div class="part1">
               <label for="info">Information :</label>
               <br />
-              <textarea name="info" id="info" cols="50" rows="15" placeholder=" Insert your information "></textarea> 
+              <textarea
+                name="info"
+                id="info"
+                cols="50"
+                rows="15"
+                placeholder=" Insert your information "
+              ></textarea>
             </div>
             <div class="part2">
               &lt;textarea name="info" id="info" cols="50"
@@ -253,7 +265,7 @@
         </div>
       </div>
     </section>
-    <section id = "sec5-Another-Inputs">
+    <section id="sec5-Another-Inputs">
       <div class="container">
         <h2>Another inputs</h2>
         <h2>Time & URL & SEARCH & FILE</h2>
@@ -261,57 +273,46 @@
           <table>
             <tr>
               <td>Time</td>
-              <td> used to represent  times </td>
-              <td><input type="time" name="" id=""></td>
+              <td>used to represent times</td>
+              <td><input type="time" name="" id="" /></td>
               <td>&lt;input type="time"&gt;</td>
             </tr>
             <tr>
               <td>url</td>
               <td>used to add URLs.</td>
-              <td><form action=""><input type="url" name="" id=""><input type="submit"></form></td>
+              <td>
+                <form action="">
+                  <input type="url" name="" id="" /><input type="submit" />
+                </form>
+              </td>
               <td>&lt;input type="url"&gt;</td>
             </tr>
             <tr>
               <td>search</td>
               <td>it’s used for search .</td>
-              <td><input type="search" name="" id=""></td>
+              <td><input type="search" name="" id="" /></td>
               <td>&lt;input type="search"&gt;</td>
             </tr>
             <tr>
-              <td>readonly </td>
-              <td>used to let the user select file from their device so they can be uploaded.</td>
-              <td><input type="file" name="" id=""></td>
+              <td>readonly</td>
+              <td>
+                used to let the user select file from their device so they can
+                be uploaded.
+              </td>
+              <td><input type="file" name="" id="" /></td>
               <td>&lt;input type="file"&gt;</td>
             </tr>
           </table>
         </div>
       </div>
     </section>
-    <section id = "sec5-Assignment">
+    <section id="sec5-Assignment">
       <div class="container">
         <h2>Assignment</h2>
         <div class="containt">
-          <img src="./img/reg2-form.png" alt="">
+          <img src="./img/reg2-form.png" alt="" />
         </div>
       </div>
     </section>
-    <footer>
-      <div class="container">
-        <ul class="nav-site">
-          <li><a href="./html-session1.html">Session 1</a></li>
-          <li><a href="./html-session2.html">Session 2</a></li>
-          <li><a href="./html-session3.html">Session 3</a></li>
-          <li><a href="./html-session4.html">Session 4</a></li>
-          <li><a href="./html-session5.html">Session 5</a></li>
-          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
-        </ul>
-        <ul class="nav-page">
-          <li><a href="#sec5-che-rad">Checkbox & Radio</a></li>
-          <li><a href="#sec5-sel-txt">Select & Textarea</a></li>
-          <li><a href="#sec5-Another-Inputs">Another Inputs</a></li>
-          <li><a href="#sec5-Assignment">Assignment</a></li>
-        </ul>
-      </div>
-    </footer>
   </body>
 </html>
