@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css3-Session2</title>
+    <link rel="stylesheet" href="./css/css-global-css.css">
     <link rel="stylesheet" href="./css/css-session2.css" />
     <link
       rel="stylesheet"
@@ -11,39 +12,112 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-    <header>
+    <aside>
+      <ul class="nav-page-menu">
+        <li><a href="#session1-webintro">Courses</a></li>
+      </ul>
+    </aside>
+    <header id="header">
       <div class="container">
-        <h1>CSS 3</h1>
-        <h2>SESSION 2</h2>
-        <ul class="nav-site">
-          <li><a href="./css-session1.html">Session 1</a></li>
-          <li><a href="./css-session2.html">Session 2</a></li>
-          <li><a href="./css-session3.html">Session 3</a></li>
-          <li><a href>Session 4</a></li>
-          <li><a href>Session 5</a></li>
-          <li><a href>Test yourself</a></li>
-        </ul>
-        <ul class="nav-page">
-          <li>
-            <a href="#sec2-margin">Margin</a>
-          </li>
-          <li>
-            <a href="#sec2-padding">Padding</a>
-          </li>
-          <li>
-            <a href="#sec2-border">Border</a>
-          </li>
-          <li>
-            <a href="#sec2-boxsizeing">Box-Sizeing</a>
-          </li>
-          <li>
-            <a href="#sec2-boxshadow">Box-Shadow</a>
-          </li>
-
-          <li><a href="#sec2-dispaly">dispaly</a></li>
-        </ul>
+        <div id="logo">
+          <a href="./css-session1.html"><img src="../imge/css.png"
+              alt="my logo" loading="lazy" /></a>
+          <h1>CSS 3</h1>
+        </div>
+        <h2>
+          SESSION 2
+          <a href="./assets/CSS3-Session1.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
+        </h2>
       </div>
     </header>
+    <ul class="nav-site">
+      <li><a href="./css-session1.html">Session 1</a></li>
+      <li><a href="./css-session2.html">Session 2</a></li>
+      <li><a href="./css-session3.html">Session 3</a></li>
+      <li><a href>Session 4</a></li>
+      <li><a href>Session 5</a></li>
+      <li><a href>Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href>Test</a></li>
+    </ul>
+    <section id="session2-border">
+      <div class="container">
+        <h2>Border</h2>
+        <h3>What is Border ?</h3>
+        <p>
+          In CSS, the border is the line that goes around the padding and
+          content of an element. <span>It’s part of the box model</span>.
+        </p>
+        <p>
+          <span>border-top - border-right - border-bottom - border-left</span>
+        </p>
+        <h3>Each border has 3 main parts:</h3>
+        <ul>
+          <li>size</li>
+          <li>style</li>
+          <li>color</li>
+        </ul>
+        <div class="containt">
+          <div>
+            <h3>border-width</h3>
+            <ul>
+              <li>border-top-width:2px ;</li>
+              <li>border-right-width:5px ;</li>
+              <li>border-bottom-width:3px ;</li>
+              <li>border-left-width:1px ;</li>
+              <li>border-width : 5px 3px ;</li>
+              <li>border-width : 5px ;</li>
+            </ul>
+            <h3>border-style</h3>
+            <ul>
+              <li>border-top-style:dotted ;</li>
+              <li>border-right-style:solid ;</li>
+              <li>border-bottom-style:double ;</li>
+              <li>border-left-style:dashed ;</li>
+              <li>border-style: dotted solid ;</li>
+              <li>border-style: solid ;</li>
+            </ul>
+            <h3>border-color</h3>
+            <ul>
+              <li>border-top-color:red ;</li>
+              <li>border-right-color:green ;</li>
+              <li>border-bottom-color:blue ;</li>
+              <li>border-left-color:yellow ;</li>
+              <li>border-color: red blue ;</li>
+              <li>border-color: blue ;</li>
+            </ul>
+            <h3>Shortcut</h3>
+            <p>border : 1px solid red ;</p>
+          </div>
+          <div id="border-dis"></div>
+        </div>
+        <div class="containt">
+          <div>
+            <h3>border-radius</h3>
+            <ul>
+              <li>border-top-left-radius: 5px ;</li>
+              <li>border-top-right-radius: 5px ;</li>
+              <li>border-bottom-left-radius: 5px ;</li>
+              <li>border-bottom-right-radius: 5px ;</li>
+              <li>border-radius: 5px 5px 0px 0px ;</li>
+            </ul>
+            <p>
+              <span>Note : To create Circle must make width = height and
+                border-radius = 50%</span>
+            </p>
+          </div>
+          <div>
+            <div id="circle"></div>
+          </div>
+        </div>
+        <div id="Challenge" class="containt Challenge">
+          <h2>Challenge</h2>
+          <div id="design"></div>
+        </div>
+      </div>
+    </section>
     <section id="session2-margin">
       <div class="container">
         <h2>Margin</h2>
@@ -168,82 +242,6 @@
         </div>
       </div>
     </section>
-    <section id="session2-border">
-      <div class="container">
-        <h2>Border</h2>
-        <h3>What is Border ?</h3>
-        <p>
-          In CSS, the border is the line that goes around the padding and
-          content of an element. <span>It’s part of the box model</span>.
-        </p>
-        <p>
-          <span>border-top - border-right - border-bottom - border-left</span>
-        </p>
-        <h3>Each border has 3 main parts:</h3>
-        <ul>
-          <li>size</li>
-          <li>style</li>
-          <li>color</li>
-        </ul>
-        <div class="containt">
-          <div>
-            <h3>border-width</h3>
-            <ul>
-              <li>border-top-width:2px ;</li>
-              <li>border-right-width:5px ;</li>
-              <li>border-bottom-width:3px ;</li>
-              <li>border-left-width:1px ;</li>
-              <li>border-width : 5px 3px ;</li>
-              <li>border-width : 5px ;</li>
-            </ul>
-            <h3>border-style</h3>
-            <ul>
-              <li>border-top-style:dotted ;</li>
-              <li>border-right-style:solid ;</li>
-              <li>border-bottom-style:double ;</li>
-              <li>border-left-style:dashed ;</li>
-              <li>border-style: dotted solid ;</li>
-              <li>border-style: solid ;</li>
-            </ul>
-            <h3>border-color</h3>
-            <ul>
-              <li>border-top-color:red ;</li>
-              <li>border-right-color:green ;</li>
-              <li>border-bottom-color:blue ;</li>
-              <li>border-left-color:yellow ;</li>
-              <li>border-color: red blue ;</li>
-              <li>border-color: blue ;</li>
-            </ul>
-            <h3>Shortcut</h3>
-            <p>border : 1px solid red ;</p>
-          </div>
-          <div id="border-dis"></div>
-        </div>
-        <div class="containt">
-          <div>
-            <h3>border-radius</h3>
-            <ul>
-              <li>border-top-left-radius: 5px ;</li>
-              <li>border-top-right-radius: 5px ;</li>
-              <li>border-bottom-left-radius: 5px ;</li>
-              <li>border-bottom-right-radius: 5px ;</li>
-              <li>border-radius: 5px 5px 0px 0px ;</li>
-            </ul>
-            <p>
-              <span>Note : To create Circle must make width = height and
-                border-radius = 50%</span>
-            </p>
-          </div>
-          <div>
-            <div id="circle"></div>
-          </div>
-        </div>
-        <div id="Challenge" class="containt Challenge">
-          <h2>Challenge</h2>
-          <div id="design"></div>
-        </div>
-      </div>
-    </section>
     <section id="session2-boxsizeing">
       <div class="container">
         <h2>Box-Sizing</h2>
@@ -273,11 +271,11 @@
         <div class="containt">
           <div id="desc">
             <pre>
-width: 200px;
-height: 200px;
-background-color: violet;
-border-radius:22px ;
-<span>box-shadow: -5px -5px 5px 5px rgba(114, 114, 114, 0.493) ;</span>
+      width: 200px;
+      height: 200px;
+      background-color: violet;
+      border-radius:22px ;
+      <span>box-shadow: -5px -5px 5px 5px rgba(114, 114, 114, 0.493) ;</span>
 </pre>
           </div>
           <div>
