@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/js-global-css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="./css/js-session1-css.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./html-session1.html"
+            ><img src="../imge/js.png" alt="my logo" loading="lazy"
+          /></a>
+          <h1>JavaScript</h1>
+        </div>
+        <h2>
+          SESSION 1
+          <a href="" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./html-session1.html">Session 1</a></li>
+      <li><a href="./html-session2.html">Session 2</a></li>
+      <li><a href="./html-session3.html">Session 3</a></li>
+      <li><a href="./html-session4.html">Session 4</a></li>
+      <li><a href="./html-session5.html">Session 5</a></li>
+      <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session1-introduction">Introduction</a></li>
+      <li><a href="#session1-------"></a></li>
+      <li><a href="#session1-------"></a></li>
+      <li><a href="#session1-------"></a></li>
+      <li><a href="#session1-------"></a></li>
+    </ul>
+    <section id="session1-introduction">
+      <div class="container">
+        <h2>Introduction</h2>
+        <h3>what is JavaScript ?</h3>
+        <div class="containt">
+          <div class="col1">
+            <ul>
+              <li>
+                JavaScript (often abbreviated as JS) is a high-level,
+                interpreted programming language that is most commonly used to
+                make web pages interactive and dynamic.
+              </li>
+              <li>
+                Client-side scripting language: Runs directly in the user’s web
+                browser without needing to be compiled.
+              </li>
+              <li>
+                Core web technology: Alongside HTML (structure) and CSS (style),
+                JavaScript adds behavior to web pages.
+              </li>
+              <li>
+                Interactivity: Used for things like dropdown menus, form
+                validation, animations, image sliders, and interactive maps.
+              </li>
+              <li>
+                Server-side: While originally designed for the browser,
+                JavaScript can now run on servers (e.g., Node.js) and even in
+                desktop and mobile apps.
+              </li>
+              <li>JavaScript : can update and change both HTML and CSS.</li>
+            </ul>
+          </div>
+          <div class="col2">
+          <div class="par1">
+            <button onclick="document.getElementById('face').src = './img/smile.png'">Happy</button>
+            <button onclick="document.getElementById('face').src = './img/sad.png' ">Sad</button>
+          </div>
+          <div class="par2">
+            <img id = "face" src="./img/smile.png" alt="smile face">
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

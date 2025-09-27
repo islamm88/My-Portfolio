@@ -1,0 +1,59 @@
+@media (max-width: 390px) {
+
+}
+
+@media (min-width: 391px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 767px) {
+  & .container {
+    box-shadow: 0 0 3px 3px #aaa;
+    & .col1,
+    & .col2 {
+      width: 45%;
+    }
+    & .col2{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      box-shadow: 0 0 3px 3px #aaa;
+      border-radius: 10px;
+      & .par1, .par2{
+        width: 45%;
+        height: 200px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        
+        & button {
+          margin-block: 10px;
+          width: 80%;
+          padding: 5px; 
+          border: none;
+          border-radius: 5px;
+          background-color: rgba(242, 193, 33);
+          color: black;
+          font-weight: bold;
+          box-shadow: 0 0 3px 3px white;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background-color: #d1a21a;
+            box-shadow: 0 0 5px 5px rgba(242, 193, 33, 0.7);
+          } 
+        }
+      }
+      & img{
+        width: 80%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px #aaa;
+      }
+    }
+  }
+}
