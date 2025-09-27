@@ -623,7 +623,7 @@ body {
     }
     & h2 {
       text-align: center;
-      margin-top: 10px;
+      margin-top: 15px;
       margin-bottom: 50px;
       font-size: 30px;
       font-family: "Roboto Slab", serif;
@@ -812,7 +812,4 @@ body {
       color: black;
     }
   }
-
-  
-
 }
