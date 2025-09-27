@@ -12,6 +12,41 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
   </head>
   <body>
+    <aside id="html-aside">
+        <header>
+        <a href="./html-session1.html"
+          ><img src="../imge/html.png" alt="my logo" loading="lazy"
+        /></a>
+        <h1>HTML5</h1>
+        <bottom
+          onclick="document.getElementById('html-aside').style.left = '100%'"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></bottom>
+      </header>
+        <details>
+        <summary>Sessions</summary>
+        <ul class="nav-site-asid">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary>Page Content</summary>
+        <ul class="nav-page-aside">
+          <li><a href="#session2-anchor" onclick="document.getElementById('html-aside').style.left = '100%'">Anchor</a></li>
+          <li><a href="#session2-format" onclick="document.getElementById('html-aside').style.left = '100%'">Text Formatting</a></li>
+          <li><a href="#session2-list" onclick="document.getElementById('html-aside').style.left = '100%'">List</a></li>
+          <li><a href="#session2-image" onclick="document.getElementById('html-aside').style.left = '100%'">Image</a></li>
+          <li><a href="#session2-table" onclick="document.getElementById('html-aside').style.left = '100%'">Table</a></li>
+          <li><a href="#session2-divspan" onclick="document.getElementById('html-aside').style.left = '100%'">Div vs Span</a></li>
+          <li><a href="#session2-assignment" onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a></li>
+        </ul>
+      </details>
+    </aside>
     <header id="header">
       <div class="container">
         <div id="logo">
@@ -19,6 +54,10 @@
             ><img src="../imge/html.png" alt="my logo" loading="lazy"
           /></a>
           <h1>HTML5</h1>
+          <bottom
+            onclick="document.getElementById('html-aside').style.left = '0'"
+            ><i class="fa-solid fa-bars"></i
+          ></bottom>
         </div>
         <h2>
           SESSION 2
