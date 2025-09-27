@@ -311,7 +311,7 @@ body {
     z-index: 100;
     display: flex;
     position: sticky;
-    top: 55px;
+    top: 5px;
     justify-content: space-around;
     list-style: none;
     border: 1px solid #fff;
@@ -336,8 +336,8 @@ body {
     }
   }
   & .nav-site {
-    z-index: 100;
-    position: sticky;
+    /* z-index: 100;
+    position: sticky; */
     top: 5px;
     display: flex;
     justify-content: space-around;
