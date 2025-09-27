@@ -549,6 +549,29 @@ body {
       }
     }
   }
+  & #up {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(241, 101, 41, 0.8);
+    margin-left: 3px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    & a {
+      text-decoration: none;
+      color: white;
+      font-size: 25px;
+      position: relative;
+      top: 4px;
+      left: 7.5px;
+    }
+    & a:hover {
+      color: black;
+    }
+  }
 }
 
 @media (min-width: 768px) {
