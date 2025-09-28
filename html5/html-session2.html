@@ -13,18 +13,19 @@
   </head>
   <body>
     <aside id="html-aside">
-        <header>
-        <a href="./html-session1.html"
-          ><img src="../imge/html.png" alt="my logo" loading="lazy"
-        /></a>
+      <header>
+        <a href="./html-session1.html"><img src="../imge/html.png" alt="my logo"
+            loading="lazy" /></a>
         <h1>HTML5</h1>
         <bottom
-          onclick="document.getElementById('html-aside').style.left = '100%'"
-          ><i class="fa-solid fa-circle-xmark"></i
-        ></bottom>
+          onclick="document.getElementById('html-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
       </header>
-        <details>
-        <summary>Sessions</summary>
+      <details>
+        <summary onclick="collapses_nav_site()"><i
+            class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i>
+          Sessions</summary>
         <ul class="nav-site-asid">
           <li><a href="./html-session1.html">Session 1</a></li>
           <li><a href="./html-session2.html">Session 2</a></li>
@@ -35,35 +36,44 @@
         </ul>
       </details>
       <details>
-        <summary>Page Content</summary>
+        <summary onclick="collapses_nav_page()"><i
+            class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation</summary>
         <ul class="nav-page-aside">
-          <li><a href="#session2-anchor" onclick="document.getElementById('html-aside').style.left = '100%'">Anchor</a></li>
-          <li><a href="#session2-format" onclick="document.getElementById('html-aside').style.left = '100%'">Text Formatting</a></li>
-          <li><a href="#session2-list" onclick="document.getElementById('html-aside').style.left = '100%'">List</a></li>
-          <li><a href="#session2-image" onclick="document.getElementById('html-aside').style.left = '100%'">Image</a></li>
-          <li><a href="#session2-table" onclick="document.getElementById('html-aside').style.left = '100%'">Table</a></li>
-          <li><a href="#session2-divspan" onclick="document.getElementById('html-aside').style.left = '100%'">Div vs Span</a></li>
-          <li><a href="#session2-assignment" onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a></li>
+          <li><a href="#session2-anchor"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Anchor</a></li>
+          <li><a href="#session2-format"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Text
+              Formatting</a></li>
+          <li><a href="#session2-list"
+              onclick="document.getElementById('html-aside').style.left = '100%'">List</a></li>
+          <li><a href="#session2-image"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Image</a></li>
+          <li><a href="#session2-table"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Table</a></li>
+          <li><a href="#session2-divspan"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Div
+              vs Span</a></li>
+          <li><a href="#session2-assignment"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a></li>
         </ul>
       </details>
     </aside>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"
-            ><img src="../imge/html.png" alt="my logo" loading="lazy"
-          /></a>
+          <a href="./html-session1.html"><img src="../imge/html.png"
+              alt="my logo" loading="lazy" /></a>
           <h1>HTML5</h1>
           <bottom
-            onclick="document.getElementById('html-aside').style.left = '0'"
-            ><i class="fa-solid fa-bars"></i
-          ></bottom>
+            onclick="document.getElementById('html-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
         </div>
         <h2>
           SESSION 2
-          <a href="../assets/HTML5-Session2.pdf" target="_blank"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
+          <a href="../assets/HTML5-Session2.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
         </h2>
       </div>
     </header>
@@ -100,8 +110,10 @@
         <h3>The cases of anchor : </h3>
         <ul>
           <li>link &#128073 <span style="color: blue;">blue</span> color </li>
-          <li>visited &#128073 <span style="color: purple;">purple</span> color</li>
-          <li>hover you can make in color &#128073 <span style="color: green;">green</span> color</li>
+          <li>visited &#128073 <span style="color: purple;">purple</span>
+            color</li>
+          <li>hover you can make in color &#128073 <span
+              style="color: green;">green</span> color</li>
           <li>active &#128073 <span style="color: red;">red</span> color</li>
         </ul>
         <h3>How to Type anchor tag ?</h3>
@@ -370,7 +382,8 @@
             </ul>
           </div>
         </div>
-        <p><strong>Note: you should  put <span>ul </span> or <span> ol</span> insede
+        <p><strong>Note: you should put <span>ul </span> or <span> ol</span>
+            insede
             <span>li</span> if you want make a nested list .</strong> </p>
       </div>
     </section>
@@ -637,24 +650,25 @@
       </div>
     </section>
     <section id="session2-assignment">
-        <div class="container"
-          style="justify-content: space-between; display: flex; flex-wrap: wrap; flex-direction: column;">
-          <h2>Assignment</h2>
-          <div id="div-imgs">
-            <div class="div-img"><img src="./img/assignmentsec2-1.png"
-                alt="ul-assignment" loading="lazy"></div>
-            <div class="div-img"><img src="./img/assignmentsec2-2.png"
-                alt="ol-assignment" loading="lazy"></div>
-            <div class="div-img"><img src="./img/assignmentsec2-3.png"
-                alt="table-assignment" loading="lazy"></div>
-            <div class="div-img" id="anchor-assignment"><img
-                src="./img/assignmentsec2-4.png" alt="anchor-assignment"
-                loading="lazy"></div>
-          </div>
+      <div class="container"
+        style="justify-content: space-between; display: flex; flex-wrap: wrap; flex-direction: column;">
+        <h2>Assignment</h2>
+        <div id="div-imgs">
+          <div class="div-img"><img src="./img/assignmentsec2-1.png"
+              alt="ul-assignment" loading="lazy"></div>
+          <div class="div-img"><img src="./img/assignmentsec2-2.png"
+              alt="ol-assignment" loading="lazy"></div>
+          <div class="div-img"><img src="./img/assignmentsec2-3.png"
+              alt="table-assignment" loading="lazy"></div>
+          <div class="div-img" id="anchor-assignment"><img
+              src="./img/assignmentsec2-4.png" alt="anchor-assignment"
+              loading="lazy"></div>
         </div>
-    </section> 
-        <div id="up">
+      </div>
+    </section>
+    <div id="up">
       <a href="#"><i class="fa-solid fa-sort-up"></i></a>
     </div>
+    <script src = "./js/html-global-js.js"></script>
   </body>
 </html>

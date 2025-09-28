@@ -94,8 +94,11 @@ body {
       cursor: pointer;
       padding: 10px;
       & summary {
-        list-style:none;
+        list-style: none;
+        & .fa-chevron-down {
+          display: none;
         }
+      }
       & ul {
         list-style: circle;
         padding-left: 20px;
@@ -114,7 +117,6 @@ body {
           }
         }
       }
-
     }
     /* & .nav-page-aside {
     
@@ -421,8 +423,6 @@ body {
     }
   }
   & .nav-site {
-    /* z-index: 100;
-    position: sticky; */
     top: 5px;
     display: flex;
     justify-content: space-around;
@@ -630,6 +630,9 @@ body {
           left: 25px;
           width: 50px;
           height: 50px;
+        }
+        & .fa-bars {
+          display: none;
         }
       }
     }
@@ -893,6 +896,9 @@ body {
           left: 25px;
           width: 80px;
           height: 80px;
+        }
+        & .fa-bars {
+          display: none;
         }
       }
     }
