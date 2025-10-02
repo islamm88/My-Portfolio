@@ -1,0 +1,302 @@
+@media (max-width: 390px) {
+}
+@media (min-width: 390px) and (max-width: 767px) {
+  #session4-form {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 25%;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        & #part1,
+        & #part2 {
+          width: 45%;
+          margin-block: 20px;
+        }
+        & #part2 {
+          width: fit-content;
+          width: 30%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-input-attributes {
+    .container {
+      .containt {
+        & .details,
+        & table {
+          width: 45%;
+        }
+      }
+    }
+  }
+
+  #session4-Input-Label {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 25%;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        & #part1,
+        & #part2 {
+          width: 45%;
+          margin-block: 20px;
+        }
+        & #part2 {
+          width: fit-content;
+          width: 30%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-hidding-disabel {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #session4-example {
+    & .container {
+      & .containt {
+        & .part1,
+        & .part2 {
+          width: 45%;
+          margin-block: 20px;
+        }
+        & .part1 {
+          font-size: 15px;
+          padding: 10px;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & .part2 {
+          width: fit-content;
+          width: 30%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-assignment {
+    & .container {
+      & .containt {
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px;
+
+        & img {
+          display: inline-block;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 767px) {
+  #session4-form {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 25%;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        & #part1,
+        & #part2 {
+          width: 45%;
+          margin-block: 20px;
+        }
+        & #part2 {
+          width: fit-content;
+          width: 30%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-input-attributes {
+    .container {
+      .containt {
+        & .details,
+        & table {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  #session4-Input-Label {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 25%;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        & #part1,
+        & #part2 {
+          width: 50%;
+          margin-block: 20px;
+        }
+        & #part2 {
+          width: fit-content;
+          width: 31%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-hidding-disabel {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 100%;
+          & img {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-example {
+    & .container {
+      & .containt {
+        & .part1,
+        & .part2 {
+          width: 45%;
+          margin-block: 20px;
+        }
+        & .part1 {
+          font-size: 15px;
+          padding: 10px;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
+        }
+        & .part2 {
+          width: fit-content;
+          width: 30%;
+          & form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            padding: 30px;
+            width: 100%;
+          }
+          & .div-img {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-assignment {
+    & .container {
+      & .containt {
+        background-color: black;
+        border-radius: 10px;
+        padding: 20px;
+        width: fit-content;
+        margin: auto;
+
+        & img {
+          display: inline-block;
+          margin: auto;
+        }
+      }
+    }
+  }
+}

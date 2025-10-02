@@ -49,9 +49,9 @@
           align-items: center;
           justify-content: space-between;
           width: 100%;
-          & .col2{
+          & .col2 {
             width: 50%;
-            & audio ,
+            & audio,
             & video {
               width: 100%;
             }
@@ -88,13 +88,11 @@
     width: 50%;
   }
 }
-
 @media (min-width: 768px) {
   #session3-attributes {
     & .container {
-      & .containt {
-        justify-content: space-between;
-        margin-block: 20px;
+      & table {
+        margin-left: 30px;
       }
     }
   }
@@ -159,9 +157,16 @@
       box-shadow: 0 0 3px 3px rgb(172, 170, 170);
     }
   }
+  #session3-AudioVideo {
+    & audio,
+    & video {
+      border-radius: 10px;
 
-  & aduio,
-  & video {
-    border-radius: 10px;
+    }
+
+    & video {
+      border-radius: 10px;
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    }
   }
 }

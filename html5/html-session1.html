@@ -22,11 +22,11 @@
             class="fa-solid fa-circle-xmark"></i></bottom>
       </header>
       <details>
-        <summary onclick="collapses_nav_site()"><i
-            class="fa-solid fa-chevron-down down-nav-site"></i><i
-            class="fa-solid fa-chevron-right right-nav-site"></i>
-          Sessions</summary>
-        <ul class="nav-site-asid ">
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
           <li><a href="./html-session1.html">Session 1</a></li>
           <li><a href="./html-session2.html">Session 2</a></li>
           <li><a href="./html-session3.html">Session 3</a></li>
@@ -36,10 +36,11 @@
         </ul>
       </details>
       <details>
-        <summary onclick="collapses_nav_page()"><i
-            class="fa-solid fa-chevron-down down-nav_page"></i><i
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
             class="fa-solid fa-chevron-right right-nav_page"></i> Page
-          Navigation</summary>
+          Navigation
+        </summary>
         <ul class="nav-page-asid">
           <li>
             <a
@@ -47,16 +48,28 @@
               onclick="document.getElementById('html-aside').style.left = '100%'">Web
               Introduction</a>
           </li>
-          <li><a href="#session1-htmlIntor"
+          <li>
+            <a
+              href="#session1-htmlIntor"
               onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Introduction</a></li>
-          <li><a href="#session1-htmltagelement"
+              Introduction</a>
+          </li>
+          <li>
+            <a
+              href="#session1-htmltagelement"
               onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Tag&Element</a></li>
-          <li><a href="#session1-heading-p-pre"
-              onclick="document.getElementById('html-aside').style.left = '100%'">heading_p_pre</a></li>
-          <li><a href="#session1-assignment"
-              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a></li>
+              Tag&Element</a>
+          </li>
+          <li>
+            <a
+              href="#session1-heading-p-pre"
+              onclick="document.getElementById('html-aside').style.left = '100%'">heading_p_pre</a>
+          </li>
+          <li>
+            <a
+              href="#session1-assignment"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a>
+          </li>
         </ul>
       </details>
     </aside>
@@ -103,13 +116,16 @@
           <u>servers</u>. A simplified diagram of how they interact might look
           like this:
         </p>
-        <div class="div-img">
-          <img src="./img/browser.png" alt="browser" />
-          <img src="./img/user.png" alt="user" />
-          <img src="./img/client.webp" alt="client" />
-          <img src="./img/requests-responses.png" alt="rr" />
-          <img src="./img/server.png" alt="server" />
-          <img src="./img/websit-folders.png" alt="wf" />
+        <div class="notes">
+
+          <div class="div-img">
+            <img src="./img/browser.png" alt="browser" />
+            <img src="./img/user.png" alt="user" />
+            <img src="./img/client.webp" alt="client" />
+            <img src="./img/requests-responses.png" alt="rr" />
+            <img src="./img/server.png" alt="server" />
+            <img src="./img/websit-folders.png" alt="wf" />
+          </div>
         </div>
         <h3>There are some important terms :</h3>
         <ul>
@@ -288,10 +304,12 @@
             <img src="./img/Chrome.png" alt="VScode" width="25" />
           </li>
         </ul>
-        <p>
-          Note : you can use VS Code online
-          <a href="https://vscode.dev/" target="_blank"> VS Code</a>
-        </p>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p> you can use VS Code online
+            <a href="https://vscode.dev/" target="_blank"> VS Code</a>
+          </p>
+        </div>
         <h3>Creating first Page</h3>
         <ul>
           <li>
@@ -327,7 +345,7 @@
         <p>Every tag (element) in your HTML becomes a node in the DOM tree.</p>
         <div id="div-imgs">
           <div class="div-img">
-            <img src="./img/Dom-Tree.png" alt="Dom Tree" />
+            <img id="DOM" src="./img/Dom-Tree.png" alt="Dom Tree" />
           </div>
           <div class="div-img">
             <img
@@ -401,15 +419,13 @@
         <div class="div-img2">
           <img src="./img/valedate-HTML.png" alt="valedate html" />
         </div>
-        <p>
-          <i class="fa-solid fa-hand-pointer" style="color: var(--color5)"></i>
-          <a href="https://www.youtube.com/watch?v=Gb9ElvxZYZ8"
-            target="_blank">How To use</a>
-        </p>
-        <p>
-          Note : If you want syntax error detection/fixing, you’ll need other
-          extensions in VScode like <span>HTMLHint</span> finds HTML mistakes
-        </p>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>
+            If you want syntax error detection/fixing, you’ll need other
+            extensions in VScode like <span>HTMLHint</span> finds HTML mistakes
+          </p>
+        </div>
       </div>
     </section>
     <section id="session1-htmltagelement">
@@ -460,13 +476,14 @@
             </ul>
           </li>
         </ul>
-        <p>
-          Note :
-          <span>HTML
+        <div class="notes">
+          <h3>Note :</h3>
+          <p> HTML
             <span><u><i>automatically</i></u></span>
             collapses multiple spaces and line breaks into a single
-            space.</span>
-        </p>
+            space.</p>
+        </div>
+
       </div>
     </section>
     <section id="session1-heading-p-pre">
@@ -525,16 +542,29 @@
           <li>Preserve tabs</li>
           <li>Preserve line breaks</li>
         </ul>
-        <span>&lt;pre&gt;&lt;/pre&gt;</span>
+        <p><span>&lt;pre&gt;&lt;/pre&gt;</span></p>
         <pre>
-
-          <span> &lt;pre&gt;</span> 
-          This      is
-                      exactly       as
-                  you      typed.             
-          <span>&lt;/pre&gt;</span>
-
+              <span> &lt;pre&gt;</span> 
+              This      is
+                          exactly       as
+                      you      typed.             
+              <span>&lt;/pre&gt;</span>
         </pre>
+
+        <div class="notes">
+          <h3>Notes:</h3>
+          <ul>
+            <li>&lt;p&gt; a paragraph cannot contain another &lt;p&gt;.</li>
+            <li>
+              &lt;h1&gt; ... &lt;h6&gt; a heading cannot contain another
+              heading.
+            </li>
+            <li>
+              &lt;pre&gt; a preformatted text block cannot contain another
+              &lt;pre&gt;.
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section id="session1-assignment">

@@ -116,7 +116,7 @@
               style="color: green;">green</span> color</li>
           <li>active &#128073 <span style="color: red;">red</span> color</li>
         </ul>
-        <h3>How to Type anchor tag ?</h3>
+        <h3>How to type anchor tag ?</h3>
         <p><span>&lt;a href = "<u>https://www.example.com</u>" target = "_blank"
             &gt;<span style="color: black;">Visit
               Example</span>&lt;/a&gt;</span></p>
@@ -128,15 +128,15 @@
           <li>Text between the tags is the clickable link like <a
               href="https://www.google.com" target="_blank">Google</a>. </li>
         </ul>
-        <h3>What can Anchor do ?</h3>
+        <h3>What can anchor do ?</h3>
         <ul>
-          <li>Link to Another Website &#128073 <span>&lt;a
+          <li>Link to another website &#128073 <span>&lt;a
               href="<u>https://www.google.com</u>"&gt;<span
                 style="color: black;"> Google</span> &lt;/a&gt; </span>.</li>
-          <li>Link to Another Page in Same Website &#128073 <span>&lt;a
+          <li>Link to another page in same website &#128073 <span>&lt;a
               href="about.html"&gt;<span style="color: black;"> About Us </span>
               &lt;/a&gt; </span> .</li>
-          <li>Link to a File by img (e.g., PDF, Image) &#128073 <a
+          <li>Link to a file by img (e.g., PDF, Image) &#128073 <a
               href="https://code.visualstudio.com/docs/?dv=win64user"
               target="_blank" download><img src="../HTML5/img/VScode.png"
                 alt="VS Code" width="10"></a>
@@ -171,7 +171,24 @@
     <section id="session2-format">
       <div class="container">
         <h2>Text Formatting</h2>
+        <h3>In HTML, text formatting tags are used to style or emphasize parts
+          of the text.</h3>
         <div class="containt">
+          <div class="info">
+            <h3>Nested concept in HTML :</h3>
+            <p>In HTML, <span>Nesting</span> refers to placing one HTML element
+              inside another. This is how you build a structured, hierarchical
+              layout for web pages.</p>
+            <p><span>&lt;p&gt;</span>This is a <span>&lt;strong&gt;</span>nested
+              <span>&lt;/strong&gt;</span> element. <span>&lt;/p&gt;</span></p>
+            <ul>
+              <li>Here, the <span>&lt;strong&gt;</span> tag is nested inside the
+                <span>&lt;p&gt; tag</span>.</li>
+              <li>The structure is valid because inline elements like
+                <span>&lt;strong&gt;</span> can be placed inside block elements
+                like <span>&lt;p&gt;</span>.</li>
+            </ul>
+          </div>
           <table>
             <thead>
               <tr>
@@ -237,19 +254,13 @@
             </tbody>
           </table>
         </div>
-        <h3>Nested Concept in HTML :</h3>
-        <p>In HTML, <span>Nesting</span> refers to placing one HTML element
-          inside another. This is how you build a structured, hierarchical
-          layout for web pages.</p>
-        <p><span>&lt;p&gt;</span>This is a <span>&lt;strong&gt;</span>nested
-          <span>&lt;/strong&gt;</span> element. <span>&lt;/p&gt;</span></p>
-        <ul>
-          <li>Here, the <span>&lt;strong&gt;</span> tag is nested inside the
-            <span>&lt;p&gt; tag</span>.</li>
-          <li>The structure is valid because inline elements like
-            <span>&lt;strong&gt;</span> can be placed inside block elements
-            like <span>&lt;p&gt;</span>.</li>
-        </ul>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>These tags help with styling, meaning, and accessibility.
+            For actual design, we usually combine them with CSS for more
+            control.</p>
+        </div>
+
       </div>
     </section>
     <section id="session2-list">
@@ -271,20 +282,9 @@
               <p><span>&lt;li&gt;&lt;/li&gt; &nbsp;&nbsp; &nbsp;&nbsp;</span>
                 List item</p>
               <p><u>ol</u> and <u>li</u> are block element</p>
-              <pre>
-            <p>HTML Code :</p>
-            &lt;ol&gt;
-              &lt;li&gt;list item1&lt;/li&gt;
-              &lt;li&gt;list item2&lt;/li&gt;
-              &lt;li&gt;list item3&lt;/li&gt;
-            &lt;/ol&gt;
-            </pre>
-              <div id="ol2">
-                <ol>
-                  <li>list item1</li>
-                  <li>list item2</li>
-                  <li>list item3</li>
-                </ol>
+              <p>HTML Code</p>
+              <div class="div-img">
+                <img src="./img/list-ol-code.png" alt>
               </div>
             </div>
             <div id="ul">
@@ -294,76 +294,34 @@
               <p><span>&lt;li&gt;&lt;/li&gt; &nbsp;&nbsp; &nbsp;&nbsp;</span>
                 List item</p>
               <p><u>ul</u> and <u>li</u> are block element</p>
-              <pre>
-                <p>HTML Code :</p>
-              &lt;ul&gt;
-                &lt;li&gt;list item1&lt;/li&gt;
-                &lt;li&gt;list item2&lt;/li&gt;
-                &lt;li&gt;list item3&lt;/li&gt;
-              &lt;/ul&gt;
-              </pre>
-              <div id="ul2">
-                <ul style="margin: 0px;">
-                  <li>list item1</li>
-                  <li>list item2</li>
-                  <li>list item3</li>
-                </ul>
+              <p>HTML Code</p>
+              <div class="div-img">
+                <img src="./img/list-ul-code.png" alt>
               </div>
             </div>
             <div id="dl">
-              <h3>dl & dt</h3>
+              <h3>dl & dt & dd</h3>
               <p><span>&lt;dl&gt;&lt;/dl&gt; &nbsp;&nbsp;</span> Description
                 List</p>
               <p><span>&lt;dt&gt;&lt;/dt&gt; &nbsp;&nbsp; &nbsp;&nbsp;</span>
                 Description Term</p>
               <p>ul and li are block element</p>
-              <pre>
-              <p>HTML Code :</p>
-            &lt;dl&gt;
-              &lt;dt&gt;list item1&lt;/dt&gt;
-              &lt;dt&gt;list item2&lt;/dt&gt;
-              &lt;dt&gt;list item3&lt;/dt&gt;
-            &lt;/dl&gt;
-            </pre>
-              <div id="dl2">
-                <dl>
-                  <dt>list item1</dt>
-                  <dt>list item2</dt>
-                  <dt>list item3</dt>
-                </dl>
+              <p>HTML Code </p>
+              <div class="div-img">
+                <img src="./img/list-dl-code.png" alt="dl photo">
               </div>
             </div>
           </div>
         </div>
-        <p><span>Usually used UL tag in header part to create a navigation
-            bar</span> </p>
-        <div id="div-img">
-          <img src="./img/Ex-header.png" alt="header img" loading="lazy">
+        <div class="notes">
+          <h3>Note : </h3>
+          <p>Usually used UL tag in header part to create a navigation bar</p>
         </div>
-        <h3>nested list :</h3>
+        <h3>Nested list :</h3>
         <p>In HTML, a Sub List (or nested list) is created by placing another
           &lt;ul&gt; (unordered list) or &lt;ol&gt; (ordered list) inside an
           &lt;li&gt; (list item) of a main list.</p>
         <div class="containt-sublist">
-          <div class="col1">
-            <pre>
-            &lt;ul&gt;
-              <span>&lt;li&gt;HTML</span>
-                &lt;ul&gt;
-                  &lt;li&gt;Elements&lt;/li&gt;
-                  &lt;li&gt;Attributes&lt;/li&gt;
-                  &lt;li&gt;Tags&lt;/li&gt;
-                &lt;/ul&gt;
-              <span>&lt;/li&gt;</span>
-              &lt;li&gt;CSS
-                &lt;ul&gt;
-                  &lt;li&gt;Selectors&lt;/li&gt;
-                  &lt;li&gt;Properties&lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/li&gt;
-            &lt;/ul&gt;
-            </pre>
-          </div>
           <div class="col2">
             <ul>
               <li>HTML
@@ -381,10 +339,20 @@
               </li>
             </ul>
           </div>
+          <div class="col1">
+            <img src="./img/ul-code.png" alt="ul photo">
+          </div>
         </div>
-        <p><strong>Note: you should put <span>ul </span> or <span> ol</span>
-            insede
-            <span>li</span> if you want make a nested list .</strong> </p>
+        <div class="notes">
+          <h3>Note:</h3>
+          <ul>
+            <li><strong> you should put <span>ul </span> or <span> ol</span>
+                inside
+                <span>li</span> if you want make a nested list .</strong></li>
+            <li>Not Logic nested &lt;li&gt; inside &lt;li&gt; </li>
+          </ul>
+          <p> </p>
+        </div>
       </div>
     </section>
     <section id="session2-image">
@@ -448,34 +416,6 @@
             preferred for styling).</li>
         </ul>
         <div class="containt ">
-          <div class="con1">
-            <pre>
-              &lt;table border="1"&gt;
-                  <span>&lt;thead&gt;</span>
-                    &lt;tr&gt;
-                      &lt;th&gt;Header 1&lt;/th&gt;
-                      &lt;th&gt;Header 2&lt;/th&gt;
-                    &lt;/tr&gt;
-                  <span>&lt;/thead&gt;</span>
-                  <span>&lt;tbody&gt;</span>
-                    &lt;tr&gt;
-                      &lt;td&gt;Data 1&lt;/td&gt;
-                      &lt;td&gt;Data 2&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                      &lt;td&gt;Data 3&lt;/td&gt;
-                      &lt;td&gt;Data 4&lt;/td&gt;
-                    &lt;/tr&gt;
-                  <span>&lt;/tbody&gt;</span>
-                  <span>&lt;tfoot&gt;</span>
-                      &lt;tr&gt;
-                        &lt;td&gt;foot1&lt;/td&gt;
-                        &lt;td&gt;foot2&lt;/td&gt;
-                      &lt;/tr&gt;
-                  <span>&lt;/tfoot&gt;</span>
-                  &lt;/table&gt;
-            </pre>
-          </div>
           <div class="con2">
             <table border="1" style="width: 100%;">
               <thead>
@@ -502,6 +442,9 @@
               </tfoot>
             </table>
           </div>
+          <div class="con1">
+            <img src="./img/table-created.png" alt>
+          </div>
         </div>
         <h3>To merge cells in an HTML &lt;table&gt;, you use: </h3>
         <ul>
@@ -509,22 +452,8 @@
             horizontally)</li>
           <li><span>rowspan</span> Merge rows (cells vertically)</li>
         </ul>
-        <h3>colspan :</h3>
+        <h3>Colspan :</h3>
         <div class="containt">
-          <div class="con1">
-            <pre>
-            &lt;table border="1"&gt;
-              &lt;tr&gt;
-                &lt;th <span>colspan="3"</span>&gt;Merged Column Header&lt;/th&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td&gt;Cell 1&lt;/td&gt;
-                &lt;td&gt;Cell 2&lt;/td&gt;
-                &lt;td&gt;Cell 3&lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/table&gt;
-            </pre>
-          </div>
           <div class="con2">
             <table border="1">
               <thead>
@@ -540,26 +469,12 @@
               </tr>
             </table>
           </div>
-        </div>
-        <h3>rowspan :</h3>
-        <div class="containt">
           <div class="con1">
-            <pre>
-            &lt;table border="1"&gt;
-                  &lt;tr&gt;
-                    &lt;th&gt;Name&lt;/th&gt;
-                    &lt;th&gt;Score&lt;/th&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                    &lt;td <span>rowspan ="2"</span> &gt;Ahmed&lt;/td&gt;
-                    &lt;td&gt;85&lt;/td&gt;
-                  &lt;/tr&gt;
-                  &lt;tr&gt;
-                    &lt;td&gt;90&lt;/td&gt;
-                  &lt;/tr&gt;
-                &lt;/table&gt;
-            </pre>
+            <img src="./img//table-col-code.png" alt="table colspan photo">
           </div>
+        </div>
+        <h3>Rowspan :</h3>
+        <div class="containt">
           <div class="con2">
             <table border="1">
               <thead>
@@ -577,6 +492,9 @@
               </tr>
             </table>
           </div>
+          <div class="con1">
+            <img src="./img/table-row-code.png" alt="table rowspan photo">
+          </div>
         </div>
       </div>
     </section>
@@ -593,17 +511,6 @@
           <li>Block Element</li>
         </ul>
         <div class="containt">
-          <div class="div-desc">
-            <pre>
-<span>&lt;div class = "test"&gt;</span>
-      &lt;h3&gt;Frontend Courses :&lt;/h3&gt;
-      &lt;ul&gt;
-      &lt;li&gt;HTML&lt;/li&gt;
-      &lt;li&gt;CSS&lt;/li&gt;
-      &lt;li&gt;JS&lt;/li&gt;
-      &lt;/ul&gt;
-<span>&lt;/div&gt;</span></pre>
-          </div>
           <div class="div-contain1 ">
             <h3>Frontend Courses :</h3>
             <ul>
@@ -611,6 +518,9 @@
               <li>CSS</li>
               <li>JS</li>
             </ul>
+          </div>
+          <div class="div-img">
+            <img src="./img/div-code.png" alt="div photo">
           </div>
         </div>
         <h3>&lt;span&gt; in HTML</h3>
@@ -621,32 +531,29 @@
           CSS or JavaScript to apply styles or manipulate parts of the
           content.</p>
         <ul>
+          <li>Opening and Closing Tag <span>&lt;span&gt;&lt;/span&gt;</span></li>
           <li>Inline element</li>
         </ul>
         <div class="containt">
-          <div class="div-desc">
-            <pre>
-            #x {
-              color : red;
-            }
-
-            #y {
-              color : green;
-            }
-          </pre>
-          </div>
           <div class="div-contain2">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <p>Lorem ipsum dolor sit amet, 
               acilis amet vitae illo eveniet.
-              Excepturi dolore &lt;span id = "x" &gt; dicta aliquid vitae
-              minus &lt;/span&gt; ea temporibus
-              pariatur culpa molestiae ex? &lt;span id = "y"
-              &gt;Explicabo&lt;/span&gt;, maiores consectetur.</p>
+              dolore <span style="color:red">dicta 
+              minus </span>ea temporibus
+              pariatur culpa molestiae ex?Explicabo,
+              maiores consectetur.</p>
           </div>
+          <div class="div-img">
+            <img src="./img/span-code.png" alt="span code photo" loading="lazy">
+          </div>
+
         </div>
-        <p>Note : If you apply a CSS rule targeting the
-          <span>&lt;span&gt;</span> tag directly (without a class or ID), it
-          will affect all <span>&lt;span&gt;</span> elements on the page. </p>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p> If you apply a CSS rule targeting the
+            <span>&lt;span&gt;</span> tag directly (without a class or ID), it
+            will affect all <span>&lt;span&gt;</span> elements on the page. </p>
+        </div>
       </div>
     </section>
     <section id="session2-assignment">
@@ -669,6 +576,6 @@
     <div id="up">
       <a href="#"><i class="fa-solid fa-sort-up"></i></a>
     </div>
-    <script src = "./js/html-global-js.js"></script>
+    <script src="./js/html-global-js.js"></script>
   </body>
 </html>

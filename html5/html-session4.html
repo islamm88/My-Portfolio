@@ -5,27 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5-Session4</title>
     <link rel="stylesheet" href="./css/html-global-css.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/html-session4.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"
-            ><img src="../imge/html.png" alt="my logo" loading="lazy"
-          /></a>
+          <a href="./html-session1.html"><img src="../imge/html.png"
+              alt="my logo" loading="lazy" /></a>
           <h1>HTML5</h1>
         </div>
         <h2>
           SESSION 4
-          <a href="../assets/HTML5-Session1.pdf" target="_blank"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
+          <a href="../assets/HTML5-Session1.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
         </h2>
       </div>
     </header>
@@ -61,17 +58,38 @@
               <li>Block element</li>
               <li>Opening & Closing Tag</li>
             </ul>
+            <p><strong> Main attributes Form </strong></p>
+            <ul>
+              <li>action : Specifies the URL (server endpoint) where the form
+                data will be sent. <span>[ &lt;form action="/submit.php"&gt;
+                  &lt;/form&gt;]</span> </li>
+              <li>method : Defines the HTTP method used to send form data.
+                <span>[&lt;form method="post" &gt; &lt;/form&gt;]</span>
+                <ul>
+                  <li><span>GET</span> → data is appended to the URL (visible
+                    in the address
+                    bar).</li>
+                  <li><span>POST</span> → data is sent in the body (more secure,
+                    used for
+                    login/registration).</li>
+                </ul>
+              </li>
+              <li>novalidate : Disables HTML5 form validation. <span>[&lt;form
+                  novalidate&gt;&lt;/form&gt;]</span></li>
+            </ul>
           </div>
-          <div>
+          <div class="div-img">
             <img src="./img/login.png" alt="login" loading="lazy" />
           </div>
         </div>
-
-        <hr />
-        <h3>Input & Label</h3>
-        <h3>Input :</h3>
+      </div>
+    </section>
+    <section id="session4-Input-Label">
+      <div class="container">
+        <h2>Input & Label</h2>
         <div class="containt" id="desc-input">
           <div class="part1">
+            <h4>Input :</h4>
             <p>
               The<span>&lt;input&gt;</span> element in HTML is used to create
               interactive controls in web forms to accept data from the user.
@@ -99,8 +117,8 @@
                 <td>type = "text"</td>
                 <td>
                   <form>
-                    <label for="text">Name : </label
-                    ><input type="text" id="text" />
+                    <label for="text">Name : </label><input type="text"
+                      id="text" />
                   </form>
                 </td>
               </tr>
@@ -108,8 +126,8 @@
                 <td>type = "password"</td>
                 <td>
                   <form>
-                    <label for="pass">Password : </label
-                    ><input type="password" id="pass" />
+                    <label for="pass">Password : </label><input type="password"
+                      id="pass" />
                   </form>
                 </td>
               </tr>
@@ -117,10 +135,8 @@
                 <td>type = "email"</td>
                 <td>
                   <form>
-                    <label for="email">Email : </label
-                    ><input type="email" id="email" /> <br /><input
-                      type="submit"
-                    />
+                    <label for="email">Email : </label><input type="email"
+                      id="email" />
                   </form>
                 </td>
               </tr>
@@ -137,9 +153,8 @@
                 <td>type = "checkbox"</td>
                 <td>
                   <form>
-                    <input type="checkbox" id="html" /><label for="html"
-                      >HTML</label
-                    >
+                    <input type="checkbox" id="html" /><label
+                      for="html">HTML</label>
                   </form>
                 </td>
               </tr>
@@ -147,9 +162,8 @@
                 <td>type = "radio"</td>
                 <td>
                   <form>
-                    <input type="radio" id="male" /><label for="male"
-                      >Male</label
-                    >
+                    <input type="radio" id="male" /><label
+                      for="male">Male</label>
                   </form>
                 </td>
               </tr>
@@ -177,9 +191,9 @@
             </table>
           </div>
         </div>
-        <h3>label :</h3>
         <div class="containt" id="desc-label">
           <div id="part1">
+            <h4>label :</h4>
             <p>
               In HTML, the <span>&lt;label&gt;</span> element is used to define
               a label for an input element, helping users understand what the
@@ -213,16 +227,10 @@
                 <input type="password" name="password" id="pass-w" required />
               </label>
             </form>
-            <hr />
-            <p>
-              &lt;label for="user-name"&gt; User Name:<br />
-              &lt;input type="text" name="name" id="user-name" /&gt; <br />
-              &lt;/label&gt; <br />
 
-              &lt;label for="pass-w"&gt; password : <br />
-              &lt;input type="password" name="password" id="pass-w" /&gt; <br />
-              &lt;/label&gt;
-            </p>
+            <div class="div-img">
+              <img src="./img/label.png" alt="code">
+            </div>
           </div>
         </div>
       </div>
@@ -230,41 +238,48 @@
     <section id="session4-input-attributes">
       <div class="container">
         <h2>Input Attributes</h2>
-        <h3>
-          <span
-            >Placeholder - Hidden - Disabled - Value - Required - Autofocus -
-            Maxlength - Minlength:</span
-          >
-        </h3>
-        <p>
-          Placeholder : to display a short hint or example text inside the
-          field.
-        </p>
-        <p>Hidden : used to hide an element from the page.</p>
-        <p>Disabled : used to make form elements uneditable and unclickable.</p>
-        <p>
-          Value : used to specify the initial value of a form element like
-          &lt;input&gt;, &lt;button&gt;.
-        </p>
-        <p>Required : used to make form fields mandatory.</p>
-        <p>
-          Autofocus : used to automatically place the cursor inside a specific
-          form field as soon as the page loads.
-        </p>
-        <p>
-          Maxlength : used to set the maximum number of characters a user can
-          enter in an &lt;input&gt; or &lt;textarea&gt; field.
-        </p>
-        <p>
-          Minlength : used to set the minimum number of characters that the user
-          must enter in an &lt;input&gt; or &lt;textarea&gt; field before the
-          form can be submitted.
-        </p>
-        <p>
-          readonly : you can add to most input types to make them non-editable
-          while still allowing the user to focus and copy the text.
-        </p>
         <div class="containt">
+          <div class="details">
+            <h3>
+              <span>Placeholder - Hidden - Disabled - Value - Required -
+                Autofocus -
+                Maxlength - Minlength:</span>
+            </h3>
+            <p>
+              Placeholder : to display a short hint or example text inside the
+              field.
+            </p>
+            <p>Hidden : used to hide an element from the page.</p>
+            <p>Disabled : used to make form elements uneditable and
+              unclickable.</p>
+            <p>
+              Value : used to specify the initial value of a form element like
+              &lt;input&gt;, &lt;button&gt;.
+            </p>
+            <p>Required : used to make form fields mandatory.</p>
+            <p>
+              Autofocus : used to automatically place the cursor inside a
+              specific
+              form field as soon as the page loads.
+            </p>
+            <p>
+              Maxlength : used to set the maximum number of characters a user
+              can
+              enter in an &lt;input&gt; or &lt;textarea&gt; field.
+            </p>
+            <p>
+              Minlength : used to set the minimum number of characters that the
+              user
+              must enter in an &lt;input&gt; or &lt;textarea&gt; field before
+              the
+              form can be submitted.
+            </p>
+            <p>
+              readonly : you can add to most input types to make them
+              non-editable
+              while still allowing the user to focus and copy the text.
+            </p>
+          </div>
           <table>
             <tr>
               <td>
@@ -300,7 +315,7 @@
             <tr>
               <td>&lt;input type="text" name=" " id=" " autofocus &gt;</td>
               <td>
-                <form><input type="text" autofocus /></form>
+                <form><input type="text" /></form>
               </td>
             </tr>
             <tr>
@@ -328,14 +343,13 @@
                 readonly &gt;
               </td>
               <td>
-                <form action="">
+                <form action>
                   <input
                     type="text"
-                    name=""
-                    id=""
+                    name
+                    id
                     value="465$7WE%&FG"
-                    readonly
-                  />
+                    readonly />
                 </form>
               </td>
             </tr>
@@ -355,6 +369,18 @@
           return them to their default values.
         </p>
         <div class="containt">
+          <div class="details">
+            <h3>button :</h3>
+            <ul>
+              <li>Openeing and Closing Tag</li>
+              <li>Inline Element</li>
+              <li>
+                The onclick attribute is used to run JavaScript code when the
+                user
+                clicks an element, like a button.
+              </li>
+            </ul>
+          </div>
           <table>
             <tr>
               <td>&lt;input type="submit" name = "" id =""&gt;</td>
@@ -376,57 +402,19 @@
             </tr>
           </table>
         </div>
-        <h3>button :</h3>
-        <ul>
-          <li>Openeing and Closing Tag</li>
-          <li>Inline Element</li>
-          <li>
-            The onclick attribute is used to run JavaScript code when the user
-            clicks an element, like a button.
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section id="session4-form-attributes">
-      <div class="container">
-        <h2>Form Attributes</h2>
-        <h3>Action & Methode</h3>
-        <p>
-          Action : Specifies the URL where the form data will be sent after
-          submission.
-        </p>
-        <p>Methode : Defines the HTTP method for sending data.</p>
-        <ul>
-          <li><span>get</span> Data is visible in the URL</li>
-          <li><span>post</span> Data is hidden from the URL</li>
-        </ul>
-        <div class="containt">
-          <table>
-            <tr>
-              <td>&lt;form action="" &lt;/form&gt;</td>
-              <td>
-                Specifies the URL where the form data will be sent after
-                submission.
-              </td>
-            </tr>
-            <tr>
-              <td>&lt;form method =" " &gt;&lt;/form&gt;</td>
-              <td>Defines the HTTP method for sending data.</td>
-            </tr>
-          </table>
-        </div>
       </div>
     </section>
     <section id="session4-hidding-disabel">
       <div class="container">
         <h2>Hidden & disabel</h2>
         <div class="containt">
-          <img
-            class="Hidden-disabel"
-            src="./img/hidden-disabel.png"
-            alt="hidden-disabel"
-            loading="lazy"
-          />
+          <div class="div-img">
+            <img
+              class="Hidden-disabel"
+              src="./img/hidden-disabel.png"
+              alt="hidden-disabel"
+              loading="lazy" />
+          </div>
         </div>
       </div>
     </section>
@@ -434,49 +422,34 @@
       <div class="container">
         <h2>Example</h2>
         <div class="containt">
-          <div class="part1">
+          <div class="part2">
             <form method="post">
-              <label for="username">Username : </label>
-              <input
-                type="text"
-                name="username"
-                id="username"
-                required
-                placeholder="Add Your Name"
-                maxlength="30"
-              />
-              <br />
-              <br />
-              <label for="password">Password :</label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                required
-                placeholder="Add Your Password"
-                maxlength="15"
-                minlength="8"
-              />
-              <br />
-              <br />
+              <label for="username">Username :
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  required
+                  placeholder="Add Your Name"
+                  maxlength="30" /></label>
+              <br>
+              <br>
+              <label for="password">Password :
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  placeholder="Add Your Password"
+                  maxlength="15"
+                  minlength="8" /></label>
+              <br>
+              <br>
               <button>Login</button>
             </form>
           </div>
-          <div class="part2">
-            &lt;form action="" method = "post"&gt; <br />
-            &lt;label for="username"&gt;Username : &lt;/label&gt; <br />
-            &lt;input type="text" name="username" id="username" required
-            placeholder="Add Your Name" maxlength="30"&gt; <br />
-            &lt;br&gt; <br />
-            &lt;br&gt; <br />
-            &lt;label for="password"&gt;Password :&lt;/label&gt; <br />
-            &lt;input type="password" name="password" id="password" required
-            placeholder="Add Your Password" maxlength="15" minlength="8" &gt;
-            <br />
-            &lt;br&gt; <br />
-            &lt;br&gt; <br />
-            &lt;button&gt;Login&lt;/button&gt; <br />
-            &lt;/form&gt; <br />
+          <div class="part1">
+            <img src="./img/login-code.png" alt>
           </div>
         </div>
         <p><span>Note : Chang Methode to get and see URL</span></p>
@@ -489,13 +462,13 @@
           <img
             src="./img/reg1-form.png"
             alt="regestration form"
-            loading="lazy"
-          />
+            loading="lazy" />
         </div>
       </div>
     </section>
     <div id="up">
       <a href="#"><i class="fa-solid fa-sort-up"></i></a>
     </div>
+    <script src="./js/html-global-js.js"></script>
   </body>
 </html>
