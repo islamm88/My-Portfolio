@@ -54,63 +54,63 @@
           <li>Global Attributes</li>
         </ul>
         <h3>Element-Specific Attributes</h3>
-            <p>
-              These attributes are specific to certain elements. You can’t use
-              them
-              on just any tag — only where they are allowed.
-            </p>
-          <table>
-            <thead>
-              <tr>
-                <th>Attribute</th>
-                <th>Element</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>href</td>
-                <td>&lt;a&gt;</td>
-                <td>Specifies the link URL</td>
-              </tr>
-              <tr>
-                <td>src</td>
-                <td>&lt;img&gt;</td>
-                <td>Specifies the source of an image</td>
-              </tr>
-              <tr>
-                <td>alt</td>
-                <td>&lt;img&gt;</td>
-                <td>Provides alternate text for an image</td>
-              </tr>
-            </tbody>
-            <tr></tr>
-          </table>
+        <p>
+          These attributes are specific to certain elements. You can’t use
+          them
+          on just any tag — only where they are allowed.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>href</td>
+              <td>&lt;a&gt;</td>
+              <td>Specifies the link URL</td>
+            </tr>
+            <tr>
+              <td>src</td>
+              <td>&lt;img&gt;</td>
+              <td>Specifies the source of an image</td>
+            </tr>
+            <tr>
+              <td>alt</td>
+              <td>&lt;img&gt;</td>
+              <td>Provides alternate text for an image</td>
+            </tr>
+          </tbody>
+          <tr></tr>
+        </table>
         <h3>Global Attributes</h3>
-          <p>These attributes can be used on any HTML element. They are shared
-            across all tags.</p>
-          <table>
-            <thead>
-              <tr>
-                <th>Attribute</th>
-                <th>Symbol</th>
-                <th>Description</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>id</td>
-                <td>#</td>
-                <td>Specifies a unique ID for the element</td>
-              </tr>
-              <tr>
-                <td>class</td>
-                <td>.</td>
-                <td>Assigns one or more class names for styling or JS</td>
-              </tr>
-            </tbody>
-            <tr></tr>
-          </table>
+        <p>These attributes can be used on any HTML element. They are shared
+          across all tags.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Symbol</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>#</td>
+              <td>Specifies a unique ID for the element</td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td>.</td>
+              <td>Assigns one or more class names for styling or JS</td>
+            </tr>
+          </tbody>
+          <tr></tr>
+        </table>
         <h3>The different Between Id and class</h3>
         <ul>
           <li><u>(id attribute)</u> is used to uniquely identify a <span>single
@@ -118,7 +118,8 @@
           <li><u>(class attribute)</u> is used to <span>group multiple
               elements</span>group multiple elements together</li>
         </ul>
-        <div id="id-class">
+        <div class="notes">
+          <h3>Note :</h3>
           <p>If you use the same id on multiple elements, the HTML is invalid
             and may lead to <span>unexpected behavior</span>.</p>
         </div>
@@ -128,7 +129,7 @@
       <div class="container">
         <h2>Entities & Symbols & Emojis </h2>
         <div class="containt">
-          <div id = "describe-entities">
+          <div id="describe-entities">
             <p>HTML entities are special codes used in HTML to display
               characters that are reserved in HTML or not available on a
               keyboard like -&gt; &copy;. </p>
@@ -153,7 +154,7 @@
             <thead>
               <tr>
                 <th>Result</th>
-                <th>Name</th>
+                <th>Number</th>
               </tr>
             </thead>
             <tbody>
@@ -169,6 +170,14 @@
                 <td>&copy;</td>
                 <td>&amp;copy;</td>
               </tr>
+              <tr>
+                <td>&#9813;</td>
+                <td>&amp;#9813;</td>
+              </tr>
+              <tr>
+                <td>&#128516;</td>
+                <td>&amp;#128516;</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -180,7 +189,6 @@
         <p>Semantic elements are HTML tags that clearly describe their meaning —
           both to the browser and to developers.
           They improve readability, accessibility, and SEO.</p>
-        <p><span>Note: Block Element</span></p>
         <div class="containt">
           <table>
             <tr><th>Tags</th></tr>
@@ -206,6 +214,10 @@
           <li>SEO (search engines understand your layout better)</li>
           <li>Maintainability (code is easier to read and structure)</li>
         </ul>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>Semantic elements are Block Element</p>
+        </div>
       </div>
     </section>
     <section id="session3-AudioVideo">
@@ -217,14 +229,9 @@
               <h3>Audio</h3>
               <p> <span>&lt;audio&gt;&lt;/audio&gt;</span></p>
               <p>Two different way to type </p>
-              <ul>
-                <li><span>&lt;audio controls src="Audio1.mp3"
-                    type="audio/mpeg"&gt;&lt;/audio&gt;</span></li>
-                <li><span>&lt;audio controls&gt; <br>
-                    &lt;source src="Audio1.mp3" type="audio/mpeg"&gt;<br>
-                    Your browser does not support the audio element. <br>
-                    &lt;/audio&gt;</span></li>
-              </ul>
+              <audio controls src="./assets/Audio1.mp3"
+                type="audio/mpeg"></audio>
+
               <p>Properties : </p>
               <ul>
                 <li><span>inline-block</span></li>
@@ -237,8 +244,10 @@
               </ul>
             </div>
             <div class="col2">
-              <audio controls src="./assets/Audio1.mp3"
-                type="audio/mpeg"></audio>
+              <div class="div-img">
+                <img src="./img/audio-code.png" alt="audio photo code "
+                  loading="lazy">
+              </div>
             </div>
           </div>
           <div class="video">
@@ -246,15 +255,9 @@
               <h3>Video</h3>
               <p><span>&lt;video&gt;&lt;/viedo&gt;</span></p>
               <p>Two different way to type </p>
-              <ul>
-                <li><span>&lt;video controls src="Video1.mp4" type="video/mp4"
-                    width="500"
-                    poster="poster.jpg"&gt;&lt;/video&gt;</span></li>
-                <li><span>&lt;video width="400" controls&gt;<br>
-                    &lt;source src="video.mp4" type="video/mp4"&gt;<br>
-                    Your browser does not support the video tag. <br>
-                    &lt;/video&gt;</span></li>
-              </ul>
+              <video controls src="./assets/Video1.mp4" type="video/mp4"
+                width="500" height="300"
+                poster="./assets/poster.jpg"></video>
               <p>Properties : </p>
               <ul>
                 <li><span>inline-block</span></li>
@@ -272,14 +275,15 @@
               </ul>
             </div>
             <div class="col2">
-              <video controls src="./assets/Video1.mp4" type="video/mp4"
-                width="500"
-                poster="./assets/poster.jpg"></video>
-
+              <div class="div-img">
+                <img src="./img/video-code.png" alt="video photo code"
+                  loading="lazy">
+              </div>
             </div>
           </div>
           <div class="compair">
-            <h3>Comparison between <span>Inline</span> , <span>Block</span> and <span>Inline Block</span></h3>
+            <h3>Comparison between <span>Inline</span> , <span>Block</span> and
+              <span>Inline Block</span></h3>
             <table>
               <thead>
                 <tr>
@@ -321,8 +325,6 @@
     <section id="session3-name-convetion">
       <div class="container">
         <h2>Naming Conventions</h2>
-        <div class="containt">
-          <div class="part">
             <h3>General Best Practices:</h3>
             <ul>
               <li>HTML is not case-sensitive</li>
@@ -331,16 +333,12 @@
               <li>Avoid spaces and special characters</li>
               <li>Be semantic and descriptive</li>
             </ul>
-          </div>
-          <div class="part">
             <h3>Avoid:</h3>
             <ul>
               <li>Special characters: @, $, #, %, etc.</li>
               <li>Starting names with numbers: 1header</li>
             </ul>
           </div>
-        </div>
-      </div>
     </section>
     <section id="session3-assignment">
       <div class="container">
