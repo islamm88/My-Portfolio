@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3-Session4</title>
+    <link rel="stylesheet" href="./css/css-global-css.css" />
+    <link rel="stylesheet" href="./css/css-session4.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <!-- <div class="overlay" id="overlay">
+      <img id="overlay-img" src alt="Large view" />
+    </div> -->
+    <aside id="css-aside">
+      <header>
+        <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+            loading="lazy" /></a>
+        <h1>CSS3</h1>
+        <bottom
+          onclick="document.getElementById('css-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href="./css-session1.html">Session 1</a></li>
+          <li><a href="./css-session2.html">Session 2</a></li>
+          <li><a href="./css-session3.html">Session 3</a></li>
+          <li><a href>Session 4</a></li>
+          <li><a href>Session 5</a></li>
+          <li><a href>Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#session1-introduction"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Introduction</a>
+          </li>
+          <li>
+            <a
+              href="#session1-CommentSelector"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Selector&Comment</a>
+          </li>
+          <li>
+            <a
+              href="#session1-background"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Background</a>
+          </li>
+          <li>
+            <a
+              href="#session1-font-icon"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Font&Icon</a>
+          </li>
+          <li>
+            <a
+              href="#session1-assignment"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Assignment</a>
+          </li>
+        </ul>
+      </details>
+    </aside>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+              loading="lazy" /></a>
+          <h1>CSS 3</h1>
+          <bottom
+            onclick="document.getElementById('css-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
+        </div>
+        <h2>
+          SESSION 4
+          <a href="./assets/CSS3-Session1.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./css-session1.html">Session 1</a></li>
+      <li><a href="./css-session2.html">Session 2</a></li>
+      <li><a href="./css-session3.html">Session 3</a></li>
+      <li><a href>Session 4</a></li>
+      <li><a href>Session 5</a></li>
+      <li><a href>Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session1-introduction">Introduction </a></li>
+      <li><a href="#session1-CommentSelector">Selector&Comment</a></li>
+      <li><a href="#session1-background">Background</a></li>
+      <li><a href="#session1-font-icon">Font&Icon</a></li>
+      <li><a href="#session1-assignment">Assignment</a></li>
+    </ul>
+    <section id="session4-flexbox">
+      <div class="container">
+        <h2>Flexbox</h2>
+        <h2>display - flex-direction - flex-wrap</h2>
+        <h3>Parent :</h3>
+        <ul>
+          <li>display: <span>flex</span>(When you apply it to a container, all
+            its direct children become flex items, which you can easily control)
+          <ul>
+            <li>width : auto</li>
+            <li>height : stretch</li>
+          </ul></li>
+          <li>flex-direction: <span>[ row "default" - row-reverse - column -
+              column-reverse ]</span></li>
+        </ul>
+        <div class="containt">
+          <div class="part1 reverse">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+            </div>
+            <div class="parent2">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+            </div>
+          </div>
+          <div class="part2 revers-code">
+            <div class="div-img">
+              <img src="./img/diplay-flex-code.png"
+                alt="display flex photo code" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <ul>
+          <li>flex-wrap : is used with display: flex to control whether flex
+            items should stay in one line or wrap onto multiple lines when they
+            don’t fit in the container.</li>
+          <li>flex-wrap: <span>[ nowrap "default" - wrap - wrap-reverse ]
+            </span></li>
+        </ul>
+        <div class="containt">
+          <div class="part1 flex-wrap">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+              <div class="ch3"><h2>4</h2></div>
+              <div class="ch3"><h2>5</h2></div>
+            </div>
+            <div class="parent2 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+              <div class="ch3"><h2>4</h2></div>
+              <div class="ch3"><h2>5</h2></div>
+            </div>
+          </div>
+          <div class="part2 flex-wrap-code">
+            <div class="div-img">
+              <img src="./img/flex-wrap-code.png" alt="flex wrap photo code"
+                loading="lazy">
+            </div>
+          </div>
+
+        </div>
+        <hr>
+        <h2>justify-content - align-item - align-content </h2>
+        <p>justify-content is a Flexbox property that controls the horizontal
+          alignment of flex items inside a flex container <span>(if the
+            direction is
+            row).</span></p>
+        <ul>
+          <li>justify-content : [ flex-start "default" - flex-end - center -
+            space-between - space-around - space-evenly ]</li>
+        </ul>
+        <div class="containt">
+          <div class="part1 justify-content">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+            </div>
+          </div>
+          <div class="part2 justify-content-code">
+            <div class="div-img">
+              <img src="./img/justify-content-code.png"
+                alt="justify content photo code" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <p>align-items It controls how flex items are aligned vertically </p>
+        <ul>
+          <li>align-items: [stretch - flex-start - flex-end - center]</li>
+        </ul>
+        <div class="containt">
+          <div class="part1 align-item">
+            <div class="parent1">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+              <div class="ch4"><h2>4</h2></div>
+              <div class="ch5"><h2>5</h2></div>
+              <div class="ch6"><h2>6</h2></div>
+    
+          
+            
+            </div>
+          </div>
+            <div class="part2 align-item-code">
+            <div class="div-img">
+              <img src="./img/align-item-code.png"
+                alt="justify content photo code" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

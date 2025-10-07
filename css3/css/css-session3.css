@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
-}
-:root {
-  --color3: #f5cbcb;
-  --color1: #ffeaea;
-  --color2: #ddd;
-  --color4: black;
-}
-body {
-  background-color: var(--color1);
-}
 @media (max-width: 390px) {
   .container {
     width: 95%;
@@ -1245,208 +1226,28 @@ body {
   }
 }
 @media (min-width: 768px) {
-  .container {
-    width: 95%;
-    margin: auto;
-    padding: 30px;
-    padding-left: 50px;
-    margin-block: 8px;
-    background-color: #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    & .containt {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    & hr {
-      width: 90%;
-      height: 5px;
-      background: linear-gradient(
-        to right,
-        rgb(32, 32, 32),
-        rgb(187, 183, 183)
-      );
-      border-radius: 22px;
-      margin: auto;
-      margin-block: 30px;
-    }
-  }
-  header,
-  footer {
-    & .container {
-      background-color: var(--color1);
-      padding: 0px;
-      box-shadow: none;
-      & h1 {
-        text-align: center;
-        margin-block: 20px;
-        font-size: 2.5rem;
-      }
-      & h2 {
-        text-align: center;
-        margin-block: 20px;
-        font-size: 1.5rem;
-        color: rgb(56, 56, 185);
-        & img {
-          width: 20px;
-        }
-      }
-      & .nav-page {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        border: 1px solid rgb(243, 248, 243);
-        background-color: rgb(69, 70, 69);
-        border-radius: 10px;
-        padding-block: 8px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-        & li {
-          & a {
-            text-decoration: none;
-            font-size: 15px;
-            font-weight: 600;
-            text-transform: capitalize;
-            color: rgb(252, 252, 252);
-          }
-          & a:hover {
-            color: rgb(81, 192, 100);
-          }
-        }
-      }
-      & .nav-site {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        border: 1px solid var(--color1);
-        background-color: var(--color3);
-        border-radius: 10px;
-        padding-block: 8px;
-        margin-top: 40px;
-        margin-bottom: 5px;
-
-        & li {
-          & a {
-            text-decoration: none;
-            font-size: 20px;
-            font-weight: 600;
-            text-transform: uppercase;
-            color: rgb(56, 56, 185);
-          }
-          & a:hover {
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
   #session3-text {
     & .container {
       & .containt {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        /* border: 1px solid blue; */
-        padding: 20px;
-      }
-      & .part1 {
-        /* border: 1px solid red; */
-        height: 350px;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-        & p {
-          padding: 10px;
-          margin: 5px;
+        & .part1 {
+            width: 45%;
         }
-
-        & ol {
-          margin-left: 40px;
-          margin-bottom: 50px;
-
-          & li {
-            padding-block: 5px;
-            font-size: 15px;
-            margin-block: 20px;
+        & .part2 {
+          width: 30%;
+          & .div-img {
+            height: 300px;
+            & img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              border-radius: 10px;
+              box-shadow: var(--color6);
+              box-shadow: 0 0 2px 2px gray;
+            }
           }
-          & span {
-            font-weight: 400;
-            color: blue;
-            font-size: 15px;
-          }
-        }
-      }
-      & .part2 {
-        /* border: 1px solid red; */
-        height: 350px;
-        width: 30%;
-        display: flex;
-        flex-direction: column;
-
-        & #text-prop1 {
-          color: red;
-        }
-        & #text-prop2 {
-          text-shadow: 1px 1px 1px red;
-        }
-        & #text-prop3 ,
-        & #text-prop4 ,
-        & #text-prop5 {
-          margin: 0px;
-        }
-        & #div1 , 
-        & #div2 ,
-        & #div3 {
-          width: 100%;
-          border: 1px solid black;
-          text-align: center;
-          margin-block: 20px;
-          & #text-prop3 {
-            margin: 0px;
-          }
-        }
-        & #div2 {
-          text-align: right;
-          direction: rtl;
-        }
-        & #div3 {
-          direction: rtl; 
-        }
-        & p {
-          & a {
-            font-size: 20px;
-            font-weight: 600;
-          }
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
-      & h2 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
-        font-family: "Oleo Script", system-ui;
-      }
-      & h3 {
-        margin-top: 15px;
-        font-size: 25px;
-        font-weight: 400;
-      }
-      & p {
-        margin: 20px 0px 20px;
-        font-size: 15px;
-        padding-left: 10px;
-        font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
         }
       }
     }
@@ -1488,110 +1289,6 @@ body {
           min-width: fit-content;
           background-color: var(--color3);
           box-shadow: 0 0 2px 2px gray;
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
-      & h2 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
-        font-family: "Oleo Script", system-ui;
-      }
-      & h3 {
-        margin-top: 15px;
-        font-size: 25px;
-        font-weight: 400;
-      }
-      & p {
-        margin: 20px 0px 20px;
-        font-size: 15px;
-        padding-left: 10px;
-        font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-      & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
-        & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-    }
-  }
-  #session1-background {
-    & .container {
-      & .containt {
-        & .div-img {
-          width: 25%;
-          height: 200px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 10px;
-            box-shadow: 0 0 2px 2px gray;
-          }
-        }
-      }
-      & span {
-        font-weight: 400;
-        color: blue;
-        font-size: 15px;
-      }
-      & h2 {
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 50px;
-        font-size: 30px;
-        font-family: "Oleo Script", system-ui;
-      }
-      & h3 {
-        margin-top: 15px;
-        font-size: 25px;
-        font-weight: 400;
-      }
-      & p {
-        margin: 20px 0px 20px;
-        font-size: 15px;
-        padding-left: 10px;
-        font-weight: 400;
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
-        }
-      }
-      & ul {
-        margin-left: 40px;
-        margin-bottom: 50px;
-
-        & li {
-          padding-block: 5px;
-          font-size: 15px;
-        }
-        & span {
-          font-weight: 400;
-          color: blue;
-          font-size: 15px;
         }
       }
     }

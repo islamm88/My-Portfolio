@@ -1755,7 +1755,6 @@
         margin-top: 10px;
         margin-bottom: 30px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -1854,6 +1853,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-block: 30px;
         & .div-img {
           width: 25%;
           height: 200px;
@@ -1877,7 +1877,6 @@
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          margin: auto;
           box-shadow: 0 0 2px 2px gray;
 
           & div {
@@ -1904,7 +1903,6 @@
         margin-top: 10px;
         margin-bottom: 30px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -1927,10 +1925,9 @@
         }
       }
       & #negative-margin {
-        justify-content: space-around;
-        width: 50%;
-        margin: auto;
-        margin-bottom: 40px;
+        margin-block: 0px;
+        justify-content: space-between;
+        width: 40%;
         & .parent-margin-negative1 {
           width: 200px;
           height: 200px;
@@ -2034,7 +2031,6 @@
         margin-top: 10px;
         margin-bottom: 10px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -2143,21 +2139,12 @@
           border-bottom-color: blue;
           border-left-color: yellow;
         }
-        /* & #circle {
-          width: 300px;
-          height: 300px;
-          background-color: var(--color3);
-          border-radius: 50%;
-          margin: 10px;
-          box-shadow: 0 0 2px 2px gray;
-        } */
       }
       & h2 {
         text-align: center;
         margin-top: 10px;
         margin-bottom: 30px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -2237,7 +2224,6 @@
         margin-top: 30px;
         margin-bottom: 50px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -2364,7 +2350,6 @@
         margin-top: 30px;
         margin-bottom: 50px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;
@@ -2408,7 +2393,6 @@
         margin-top: 30px;
         margin-bottom: 50px;
         font-size: 30px;
-        font-family: "Oleo Script", system-ui;
       }
       & h3 {
         margin-top: 15px;

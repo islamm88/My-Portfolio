@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css3-Session3</title>
     <link rel="stylesheet" href="./css/css-global-css.css" />
+    <link rel="stylesheet" href="./css/css-session3.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./css-session1.html"><img src="../imge/css.png"
-              alt="my logo" loading="lazy" /></a>
+          <a href="./css-session1.html"
+            ><img src="../imge/css.png" alt="my logo" loading="lazy"
+          /></a>
           <h1>CSS 3</h1>
         </div>
         <h2>
-          SESSION 1
-          <a href="./assets/CSS3-Session1.pdf" target="_blank"><i
-              class="fa-solid fa-file-pdf"></i></a>
+          SESSION 3
+          <a href="./assets/CSS3-Session1.pdf" target="_blank"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
         </h2>
       </div>
     </header>
@@ -29,7 +33,7 @@
       <li><a href="./css-session1.html">Session 1</a></li>
       <li><a href="./css-session2.html">Session 2</a></li>
       <li><a href="./css-session3.html">Session 3</a></li>
-      <li><a href>Session 4</a></li>
+      <li><a href="./css-session4.html">Session 4</a></li>
       <li><a href>Session 5</a></li>
       <li><a href>Test yourself</a></li>
     </ul>
@@ -45,44 +49,62 @@
         </h3>
         <div class="containt">
           <div class="part1">
-            <ol>
-              <li>color : red;</li>
+            <h4>Color :</h4>
+            <ul>
+              <li>
+                <span style="color: red">Red</span> -
+                <span style="color: blue">Blue</span> -
+                <span style="color: black">Black</span>
+              </li>
+              <li>rgba(144, 214, 241, 0.173) - #90d6f12c</li>
+            </ul>
+            <h4>Text shadow :</h4>
+            <ul>
               <li>text-shadow: 1px 1px 1px red;</li>
-              <li>
-                text-align: center ; -> You can use text-align: center; on any
-                <strong>block-level element </strong> <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>[center - left -
-                  right]</span>
-              </li>
+            </ul>
+            <h4>Text align :</h4>
+            <ul>
+              <li>text-align: center</li>
+              <ul>
+                <li>[center - left - right]</li>
+              </ul>
+            </ul>
+            <h4>Direction :</h4>
+            <ul>
               <li>direction: ltr ; & direction: rtl ;</li>
+            </ul>
+            <h4>Vertical-align:</h4>
+            <ul>
               <li>
-                vertical-align: top; <br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>[middle - top -
-                  bottom]</span>
+                [middle - top - bottom] <span>work with online element</span>
+              </li>
+            </ul>
+            <h4>Text-decoration :</h4>
+            <ul>
+              <li>[ none - underline - overline - line-through ]</li>
+            </ul>
+            <h4>Text Spacing</h4>
+            <ul>
+              <li>
+                <span>letter-spacing :</span> used to control the space between
+                letters in text.
               </li>
               <li>
-                text-decoration: none; <span>it's useful with anchor</span>
+                <span>text-indent:</span> used to control the indentation
+                (space) of the first line of a paragraph.
+                <u>can take a negative value</u>
               </li>
-            </ol>
+              <li>
+                <span>line-height:</span> that controls the vertical space
+                between lines of text
+              </li>
+              <li><span>word-spacing: </span>that controls the space between words in text.</li>
+            </ul>
           </div>
-          <div class="part2" style="width: 30%">
-            <p id="text-prop1">Welcomr in CSS .</p>
-            <p id="text-prop2">Welcomr in CSS .</p>
-            <div id="div1"><p id="text-prop3">Text Align Center</p></div>
-            <div id="div2"><p id="text-prop4">مرحبا .</p></div>
-            <div id="div3">
-              <p id="text-prop5" style="margin: 0px">
-                Welcome
-                <span style="vertical-align: top; font-size: 30px">Islam</span>
-                in CSS
-              </p>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/Text-format.png" alt />
             </div>
-            <p>
-              <a
-                href="https://www.google.com"
-                target="_blank"
-                style="text-decoration: none; margin-block: 20px">GOOGLE</a>
-            </p>
           </div>
         </div>
       </div>

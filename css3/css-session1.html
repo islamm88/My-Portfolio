@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS3-Session1</title>
-    <link rel="stylesheet" href="./css/css-global-css.css">
-    <link rel="stylesheet" href="./css/css-session1.css">
+    <link rel="stylesheet" href="./css/css-global-css.css" />
+    <link rel="stylesheet" href="./css/css-session1.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link
       rel="stylesheet"
@@ -13,17 +13,76 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-    <aside>
-      <ul class="nav-page-menu">
-        <li><a href="#session1-webintro">Courses</a></li>
-      </ul>
+    <div class="overlay" id="overlay">
+      <img id="overlay-img" src alt="Large view" />
+    </div>
+    <aside id="css-aside">
+      <header>
+        <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+            loading="lazy" /></a>
+        <h1>CSS3</h1>
+        <bottom
+          onclick="document.getElementById('css-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href="./css-session1.html">Session 1</a></li>
+          <li><a href="./css-session2.html">Session 2</a></li>
+          <li><a href="./css-session3.html">Session 3</a></li>
+          <li><a href>Session 4</a></li>
+          <li><a href>Session 5</a></li>
+          <li><a href>Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#session1-introduction"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Introduction</a>
+          </li>
+          <li>
+            <a
+              href="#session1-CommentSelector"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Selector&Comment</a>
+          </li>
+          <li>
+            <a
+              href="#session1-background"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Background</a>
+          </li>
+          <li>
+            <a
+              href="#session1-font-icon"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Font&Icon</a>
+          </li>
+          <li>
+            <a
+              href="#session1-assignment"
+              onclick="document.getElementById('css-aside').style.left = '100%'">Assignment</a>
+          </li>
+        </ul>
+      </details>
     </aside>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./css-session1.html"><img src="../imge/css.png"
-              alt="my logo" loading="lazy" /></a>
+          <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+              loading="lazy" /></a>
           <h1>CSS 3</h1>
+          <bottom
+            onclick="document.getElementById('css-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
         </div>
         <h2>
           SESSION 1
@@ -36,25 +95,32 @@
       <li><a href="./css-session1.html">Session 1</a></li>
       <li><a href="./css-session2.html">Session 2</a></li>
       <li><a href="./css-session3.html">Session 3</a></li>
-      <li><a href>Session 4</a></li>
+      <li><a href="./css-session4.html">Session 4</a></li>
       <li><a href>Session 5</a></li>
       <li><a href>Test yourself</a></li>
     </ul>
     <ul class="nav-page">
-      <li><a href>Test</a></li>
+      <li><a href="#session1-introduction">Introduction </a></li>
+      <li><a href="#session1-CommentSelector">Selector&Comment</a></li>
+      <li><a href="#session1-background">Background</a></li>
+      <li><a href="#session1-font-icon">Font&Icon</a></li>
+      <li><a href="#session1-assignment">Assignment</a></li>
     </ul>
     <section id="session1-introduction">
       <div class="container">
-        <h2>Introduction</h2>
+        <h2>Introduction CSS3</h2>
+        <h3>Introduction</h3>
         <ul>
-          <li>CSS3 (early 2000s): instead of one big spec, it was split into
+          <li>
+            CSS3 (early 2000s): instead of one big spec, it was split into
             modules (Selectors, Flexbox, Grid, Transitions, Animations, etc.).
             <span>Modern CSS (today):</span> no CSS4 or “final version” — CSS is
-            evolving continuously.
-            Each module has its own level (Selectors Level 4, Media Queries
-            Level 5, Grid Level 2, etc.).</li>
-          <li>CSS = &gt; Cascading Style Sheets
-            " For Presentation And Visuals "</li>
+            evolving continuously. Each module has its own level (Selectors
+            Level 4, Media Queries Level 5, Grid Level 2, etc.).
+          </li>
+          <li>
+            CSS = &gt; Cascading Style Sheets " For Presentation And Visuals "
+          </li>
           <li>Prerequisite to CSS is <span>HTML</span></li>
         </ul>
         <h3>What we need ?</h3>
@@ -64,23 +130,36 @@
         </ul>
         <p>Extention file <span>.css</span> like main.css</p>
         <h3>Where can I create CSS Code ?</h3>
-        <div class="containt">
-          <ol>
+        <div class="containt" style = "border:1px solid red ">
+          <!-- <ol>
             <li>External file</li>
-            <li>internal
+            <li>
+              internal
               <ul>
-                <li>in file inside &lt;head&gt;
-                  <span>&lt;style&gt;&lt;/style&gt;</span> &lt;/head&gt;</li>
-                <li>inline inside the <span>opening tage</span> what you want
-                  style it like &lt;p&gt; tage</li>
+                <li>
+                  in file inside &lt;head&gt;
+                  <span>&lt;style&gt;&lt;/style&gt;</span> &lt;/head&gt;
+                </li>
+                <li>
+                  inline inside the <span>opening tage</span> what you want
+                  style it like &lt;p&gt; tage
+                </li>
               </ul>
             </li>
-          </ol>
-          <div class="div-img">
-            <img src="./img/css-places.png" alt="Css-places" loading="lazy">
+          </ol> -->
+          <div class="div-img" >
+            <h2>Inline CSS</h2>
+            <p>Written directly inside an HTML element using the style attribute.</p>
+            <img src="./img/inline.png" alt="Css-places" loading="lazy" />
+          </div>
+          <div class="div-img" >
+            <img src="./img/css-places.png" alt="Css-places" loading="lazy" />
+          </div>
+          <div class="div-img" >
+            <img src="./img/css-places.png" alt="Css-places" loading="lazy" />
           </div>
         </div>
-        <h3>Full Priority Order (Simplified)</h3>
+        <h3>Priority Order (Simplified)</h3>
         <ol>
           <li>Inline styles with !important</li>
           <li>Internal/External styles with !important</li>
@@ -94,92 +173,356 @@
     <section id="session1-CommentSelector">
       <div class="container">
         <h2>Selector & Comment</h2>
-        <h3> in CSS, comments are often used to:</h3>
+        <h3>in CSS, comments are often used to:</h3>
         <ul>
           <li>Explain the code - for documentation</li>
           <li>Sometimes using to ignor code to test or debug</li>
         </ul>
-        <h3>Type of Comment : </h3>
+        <h3>Type of Comment :</h3>
         <div class="containt">
           <ul>
             <li>Single Line /* .... * /</li>
             <li>Multiple Line</li>
           </ul>
           <div class="div-img">
-            <img src="./img/comment.png" alt="commant" loading="lazy">
+            <img src="./img/comment.png" alt="commant" loading="lazy" />
           </div>
         </div>
-        <h3>Some Types of Selector :</h3>
-        <ul>
-          <li>Universal Selector (*) : Example: <span>* { margin: 0; }</span>
-            Selects all elements on the page. </li>
-          <li>Type Selector (Element Selector) : Example: <span>p { color: red;
-              }</span> Selects all elements of a specific HTML tag (e.g., all
-            &lt;p&gt; tags).</li>
-          <li>Class Selector : Example <span>.note { font-size: 14px; }</span>
-            Selects all elements with a given class.</li>
-          <li>ID Selector : Example: <span>#header { background: blue; }</span>
-            Selects the single element with a specific id.</li>
-          <li>Group Selector : Example: <span>h1, p, div { margin: 0; }</span>
-            Applies the same style to multiple selectors.</li>
-          <li>Descendant Selector : Example: <span>div p { color: green;
-              }</span> Selects all &lt;p&gt; elements inside a .</li>
-        </ul>
+        <h3 style="text-align: center; margin-bottom: 20px;">Some Types of Selector :</h3>
+        <table>
+          <thead>
+            <th>Selector</th>
+            <th>Definition</th>
+            <th>Code</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td><h3>*</h3></td>
+              <td>
+                <h3><u>Universal Selector</u></h3>
+                <p>
+                  The * is called the Universal Selector in CSS. It matches
+                  <span><b>all</b></span>
+                  elements on the page.
+                </p>
+              </td>
+              <td>
+                <img
+                  src="./img/universal-selector.png"
+                  alt="universal-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td><h3>P-h1-div-span</h3></td>
+              <td>
+                <h3><u>Element Selector</u></h3>
+                <p>Selects elements by their <span><b>tag-name</b></span> .</p>
+                <div class="notes">
+                  <h3>Note :</h3>
+                  <p>
+                    If you type it means: “select all
+                    <span>&lt;p&gt;</span> elements on the page" and apply that
+                    style.
+                  </p>
+                </div>
+              </td>
+              <td>
+                <img
+                  src="./img/element-selector.png"
+                  alt="element-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>.class-name</h3>
+              </td>
+              <td>
+                <h3><u>Class Selector</u></h3>
+                <p>Selects elements by <span><b>class-name </b></span> (with
+                  .).</p>
+                <div class="notes">
+                  <h3>Note :</h3>
+                  <ul>
+                    <li>(.class-name.class-name) mean element has two class like
+                    this <span>&lt;p class="<u>highlight</u> <u>big</u>"&gt;This
+                      text is red&lt;/p&gt;</span></li>
+                    <li>the class selector has higher priority than the element (name) selector.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <img
+                  src="./img/class-selector.png"
+                  alt="class-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>#id-name</h3>
+              </td>
+              <td>
+                <h3><u>ID Selector</u></h3>
+                <p>Selects elements by <span><b>ID</b></span> name (with #).</p>
+                <div class="notes">
+                  <h3>Note :</h3>
+                  <ul>
+                    <li>the ID selector has higher priority than the class selector.</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <img
+                  src="./img/id-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>h1, h2, p</h3>
+              </td>
+              <td>
+                <h3><u>Group Selector (,)</u></h3>
+                <p>Applies the same style to multiple elements.</p>
+                <div class="notes">
+                  <h3>Note :</h3>
+                  <p>you can make group by class and element name like
+                    <span>(.class-name div , .class-name p)</span> </p>
+                </div>
+              </td>
+              <td>
+                <img
+                  src="./img/group-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>div p</h3>
+              </td>
+              <td>
+                <h3><u>Descendant Selector</u></h3>
+                <p>Selects an element <span><b>inside</b></span> another
+                  element.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/Descendant-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>div &gt; p</h3>
+              </td>
+              <td>
+                <h3><u>Child Selector ( &gt; )</u></h3>
+                <p>Selects <span><b>direct</b></span> children only.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/child-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>h1 + p </h3>
+              </td>
+              <td>
+                <h3><u>Adjacent Sibling Selector ( + )</u></h3>
+                <p>Selects the element <span><b>immediately</b> </span> after
+                  another.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/Sibling-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>h1 ~ p</h3>
+              </td>
+              <td>
+                <h3><u>General Sibling Selector ( ~ )</u></h3>
+                <p>Selects all <span><b>siblings</b></span> that come after
+                  another element.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/General-Sibling-Selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3
+                  style="text-align: start; font-size: 15px;">input[required],<br>
+                  [title], <br>
+                  [class = "inp"], <br>
+                  [placeholder~= "name"],<br>
+                  [placeholder*= "-"],<br>
+                  [placeholder^= "U"]</h3>
+              </td>
+              <td>
+                <h3><u>Attribute Selector</u></h3>
+                <p>Selects elements based on their
+                  <span><b>attributes</b></span>.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/attribute-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>:first-child, <br>
+                  :last-child</h3>
+              </td>
+              <td>
+                <h3><u>first child</u></h3>
+                <p>Selects the first child element inside its parent.</p>
+                <p>Selects the last child element inside its parent.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/first&last-child-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>:first-of-type <br>
+                  :last-of-type </h3>
+              </td>
+              <td>
+                <h3><u>first and last type</u></h3>
+                <p>selects the <span><b>first</b></span> element of its type</p>
+                <p>selects the <span><b>last</b></span> element of its type</p>
+              </td>
+              <td>
+                <img
+                  src="./img/first-type-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3>:only-child</h3>
+              </td>
+              <td>
+                <h3><u>only child</u></h3>
+                <p>selects an element if it is the <span><b>only</b></span> child of its parent.</p>
+              </td>
+              <td>
+                <img
+                  src="./img/only-child-selector.png"
+                  alt="id-selector code photo"
+                  loading="lazy"
+                  class="small-img" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
     <section id="session1-background">
       <div class="container">
         <h2>Background</h2>
-        <h3><span>We will take a &lt;div&gt; as example to implement
-          </span></h3>
+        <h3>
+          <span>We will take a &lt;div&gt; as example to implement </span>
+        </h3>
         <h3>background-color</h3>
         <ul>
-          <li>The background-color property in CSS is used to set the background
-            color of an element.</li>
+          <li>
+            The background-color property in CSS is used to set the background
+            color of an element.
+          </li>
           <li>Default value is transparent.</li>
         </ul>
         <div class="containt">
           <ul>
             <li>background-color: red;</li>
-            <li>background-color: <span>rgb(107, 5, 5); </span> or
-              <span>background-color: rgba(107, 5, 5,50%);</span></li>
+            <li>
+              background-color: <span>rgb(107, 5, 5); </span> or
+              <span>background-color: rgba(107, 5, 5,50%);</span>
+            </li>
             <li>background-color: <span>#eee;</span></li>
           </ul>
           <div class="div-img">
-            <img src="./img/background-color1.png" alt="background-color1"
-              loading="lazy">
+            <img
+              src="./img/background-color1.png"
+              alt="background-color1"
+              loading="lazy" />
           </div>
-
         </div>
         <ol>
-          <li>You can type color by hexadecimal like <span>#eee ,
-              #1f1f1f</span></li>
-          <li>rgba : r -> Red <span style="color: red;">color</span> g -> Green
-            <span style="color: green;">color</span> b -> Blur <span
-              style="color: blue;">color</span> a -> Alpha</li>
-          <li>The alpha value must be a number between <span>(0 and 1)</span>,
-            not a percentage.</li>
+          <li>
+            You can type color by hexadecimal like <span>#eee , #1f1f1f</span>
+          </li>
+          <li>
+            rgba : r -> Red <span style="color: red">color</span> g -> Green
+            <span style="color: green">color</span> b -> Blur
+            <span style="color: blue">color</span> a -> Alpha
+          </li>
+          <li>
+            The alpha value must be a number between <span>(0 and 1)</span>, not
+            a percentage.
+          </li>
         </ol>
         <div class="containt">
-          <p>There are many great websites for discovering and generating
-            beautiful color palettes for your designs</p>
-          <a href="https://colorhunt.co/" target="_blank"><img id="colorhunt"
-              src="./img/Color-hunt.png" alt="color hunt website"
-              loading="lazy"></a>
+          <p>
+            There are many great websites for discovering and generating
+            beautiful color palettes for your designs
+          </p>
+          <a href="https://colorhunt.co/" target="_blank"><img
+              id="colorhunt"
+              src="./img/Color-hunt.png"
+              alt="color hunt website"
+              loading="lazy" /></a>
         </div>
-        <h3>linear-gradient </h3>
-        <p>The linear-gradient() function in CSS is used to create smooth
+        <h3>linear-gradient</h3>
+        <p>
+          The linear-gradient() function in CSS is used to create smooth
           transition between two or more colors along a straight line (vertical,
-          horizontal, diagonal, etc.).</p>
-        <p><span>background: linear-gradient(direction, color-stop1,
-            color-stop2, ...);</span></p>
+          horizontal, diagonal, etc.).
+        </p>
+        <p>
+          <span>background: linear-gradient(direction, color-stop1, color-stop2,
+            ...);</span>
+        </p>
         <p>Examples :</p>
         <ul>
           <li>background: linear-gradient(red, yellow);</li>
           <li>background: linear-gradient(to right, red, yellow);</li>
           <li>background: linear-gradient(45deg, red, blue, green);</li>
         </ul>
-        <hr id="hr">
+        <hr id="hr" />
         <h3>background-image</h3>
         <ul>
           <li>background-image: url(./img/1.jfif) ;</li>
@@ -201,14 +544,13 @@
         <ul>
           <li>background-attachment: scroll; => default</li>
           <li>background-attachment: fixed;</li>
-
         </ul>
         <h3>background-size</h3>
         <ul>
           <li>background-size: auto; => default</li>
           <li>background-size: cover;<span>stretch and cut</span></li>
           <li>background-size:contain;<span>fully visible</span></li>
-          <li>background-size: 100px 200px ; W H </li>
+          <li>background-size: 100px 200px ; W H</li>
           <li>background-size: 50% 80% ;</li>
         </ul>
         <h3>background-position</h3>
@@ -230,21 +572,26 @@
     <section id="session1-font-icon">
       <div class="container">
         <h2>Font & Icon</h2>
-        <h3>Add font using <span>Google Font Online</span> : </h3>
-        <p>visit website : <a href="https://fonts.google.com/"
-            target="_blank">Google Font</a></p>
+        <h3>Add font using <span>Google Font Online</span> :</h3>
+        <p>
+          visit website :
+          <a href="https://fonts.google.com/" target="_blank">Google Font</a>
+        </p>
         <ul>
           <li>Select a font what you want as like "Roboto"</li>
           <li>Get font</li>
           <li>Get embed code</li>
           <li>select @import</li>
           <li>Copy code without &lt;style&gt; in your CSS file</li>
-          <li>Add a <span>font-family: "Roboto", sans-serif;</span> in your
-            CSS</li>
+          <li>
+            Add a <span>font-family: "Roboto", sans-serif;</span> in your CSS
+          </li>
         </ul>
-        <h3>Add Icon using <span>font awesome Online</span> : </h3>
-        <p>visit website : <a href="https://fontawesome.com/"
-            target="_blank">Font Awesome</a></p>
+        <h3>Add Icon using <span>font awesome Online</span> :</h3>
+        <p>
+          visit website :
+          <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+        </p>
         <ul>
           <li>Click on Icons</li>
           <li>Type Email in search</li>
@@ -252,40 +599,66 @@
           <li>Select envelope</li>
           <li>Copy code snippet to add it in HTML file</li>
         </ul>
-        <p>visit website : <a href="https://cdnjs.com/libraries/font-awesome"
+        <p>
+          visit website :
+          <a href="https://cdnjs.com/libraries/font-awesome"
             target="_blank">font awesome cdn</a><img src="./img/FACDN.png"
-            alt="font awesome cdn" height="30px">
-          <li>create &lt;link&gt; in head part in your HTML file </li>
-          <li>Add in href attribute link which you copied it from font awesome
-            cdn =&gt; <span>href =
-              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"</span></li>
-        </div>
-
-      </section>
-      <section id="session1-assignment">
-        <div class="container">
-          <h2>Assignment</h2>
-          <h3><u>Challenge : </u></h3>
-          <div class="containt">
-            <div>
-              <pre>
+            alt="font awesome cdn" height="30px" />
+          <li>create &lt;link&gt; in head part in your HTML file</li>
+          <li>
+            Add in href attribute link which you copied it from font awesome cdn
+            =&gt;
+            <span>href =
+              "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"</span>
+          </li>
+        </p>
+      </div>
+    </section>
+    <section id="session1-assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <h3><u>Challenge : </u></h3>
+        <div class="containt">
+          <div>
+            <pre>
               <u>Help Code :</u>
                 width: 50%;
                 height: 500px;
                 border: 2px solid rgb(149, 147, 147);
                 Note :  you will use image & background-image & 2 div
             </pre>
-            </div>
-            <div class="div-img">
-              <img src="./img/background-img.png" alt="background-img"
-                loading="lazy" width="350">
-              <img src="./img/section1-assignment2.png" alt="background-img"
-                loading="lazy">
-              <a href="./assignment/session1.rar" download>Download</a>
-            </div>
-
+          </div>
+          <div class="div-img">
+            <img
+              src="./img/background-img.png"
+              alt="background-img"
+              loading="lazy"
+              width="350" />
+            <img
+              src="./img/section1-assignment2.png"
+              alt="background-img"
+              loading="lazy" />
+            <a href="./assignment/session1.rar" download>Download</a>
           </div>
         </div>
-      </section>
-    </body>
-  </html>
+      </div>
+    </section>
+    <script src="./js/css-global-js.js"></script>
+    <script>
+      const thumbnails = document.querySelectorAll(".small-img");
+      const overlay = document.getElementById("overlay");
+      const overlayImg = document.getElementById("overlay-img");
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          overlayImg.src = img.src;
+          overlay.style.display = "flex";
+        });
+      });
+      overlay.addEventListener("click", (e) => {
+        if (e.target === overlay) {
+          overlay.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
