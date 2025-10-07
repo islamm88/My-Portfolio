@@ -5,27 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5-Session5</title>
     <link rel="stylesheet" href="./css/html-global-css.css" />
+    <link rel="stylesheet" href="./css/html-session5.css">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"
-            ><img src="../imge/html.png" alt="my logo" loading="lazy"
-          /></a>
+          <a href="./html-session1.html"><img src="../imge/html.png"
+              alt="my logo" loading="lazy" /></a>
           <h1>HTML5</h1>
         </div>
         <h2>
           SESSION 5
-          <a href="../assets/HTML5-Session1.pdf" target="_blank"
-            ><i class="fa-solid fa-file-pdf"></i
-          ></a>
+          <a href="../assets/HTML5-Session5.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
         </h2>
       </div>
     </header>
@@ -54,75 +52,21 @@
         </ul>
         <div class="containt">
           <div class="part1">
-            <form action="">
-              <p>Frontend Corses :</p>
-              <input
-                type="checkbox"
-                name="feCorse[]"
-                id="html"
-                value="html"
-                checked
-              />
+            <p>Frontend Corses :</p>
+            <form action method="post">
+              <input type="checkbox" name="feCorse[]" id="html"
+                value="html" checked />
               <label for="html"> HTML</label>
-              <input
-                type="checkbox"
-                name="feCorse[]"
-                id="css"
-                value="css"
-              /><label for="css"> CSS</label>
-              <input
-                type="checkbox"
-                name="feCorse[]"
-                id="js"
-                value="js"
-              /><label for="js"> JS</label>
-            </form>
-            <form action="">
-              <p>Backend Corses :</p>
-              <input
-                type="checkbox"
-                name="bkCorse[]"
-                id="php"
-                value="php"
-              /><label for="php"> PHP</label>
-              <input
-                type="checkbox"
-                name="bkCorse[]"
-                id="mysql"
-                value="mysql"
-                checked
-              /><label for="mysql"> MySQL</label>
-              <input
-                type="checkbox"
-                name="bkCorse[]"
-                id="nodejs"
-                value="nodeja"
-              /><label for="nodejs"> nodejs</label>
+              <input type="checkbox" name="feCorse[]"
+                id="css" value="css" /><label for="css"> CSS</label>
+              <input type="checkbox" name="feCorse[]" id="js"
+                value="js" /><label for="js"> JS</label>
             </form>
           </div>
           <div class="part2">
-            <pre>
-                &lt;form action=""&gt;
-                  &lt;p&gt;Frontend Corses :&lt;/p&gt;
-                  &lt;input type="checkbox" name="feCorse[]" id="html" value="html" checked /&gt;
-                  &lt;label for="html"&gt; HTML&lt;/label&gt;
-                  &lt;input type="checkbox" name="feCorse[]" id="css" value="css" /&gt;
-                  &lt;label for="css"&gt; CSS&lt;/label&gt;
-                  &lt;input type="checkbox" name="feCorse[]" id="js" value="js" /&gt;
-                  &lt;label for="js" &gt; JS&lt;/label&gt;
-                &lt;/form&gt;
-            </pre>
-            <pre>
-              &lt;form action=""&gt;
-                &lt;p&gt;Backend Corses :&lt;/p&gt;
-                &lt;input type="checkbox" name="bkCorse[]" id="php" value="php" /&gt;
-                &lt;label for="php"&gt; PHP&lt;/label&gt;
-                &lt;input type="checkbox" name="bkCorse[]" id="mysql" value="mysql" checked /&gt;
-                &lt;label for="mysql"&gt; MySQL&lt;/label&gt;
-                &lt;input type="checkbox" name="bkCorse[]" id="nodejs" value="nodeja" /&gt;
-                &lt;label for="nodejs"&gt; nodejs&lt;/label&gt;
-             &lt;/form&gt;
-            </pre>
+            <div class="div-img">
+              <img src="./img/check-code.png" alt>
+            </div>
           </div>
         </div>
         <h3>Radio :</h3>
@@ -133,64 +77,45 @@
         </ul>
         <div class="containt">
           <div class="part1">
-            <form action="">
+            <form action>
               <p>your birthday :</p>
               <input
                 type="radio"
                 name="birthday"
                 id="1999"
-                value="1999"
-              /><label for="1999"> 1999</label>
+                value="1999" /><label for="1999"> 1999</label>
               <input
                 type="radio"
                 name="birthday"
                 id="2020"
-                value="2020"
-              /><label for="2020"> 2020</label>
+                value="2020" /><label for="2020"> 2020</label>
               <input
                 type="radio"
                 name="birthday"
                 id="2002"
                 value="2002"
-                checked
-              /><label for="2002"> 2002</label>
+                checked /><label for="2002"> 2002</label>
             </form>
-            <form action="">
+            <form action>
               <p>your gender :</p>
               <input
                 type="radio"
                 name="gender"
                 id="male"
                 value="male"
-                checked
-              /><label for="male"> Male</label>
+                checked /><label for="male"> Male</label>
               <input
                 type="radio"
                 name="gender"
                 id="female"
-                value="female"
-              /><label for="female"> Female</label>
+                value="female" /><label for="female"> Female</label>
             </form>
           </div>
           <div class="part2">
-            <pre>
-            &lt;form action=""&gt;
-              &lt;p&gt;your birthday :&lt;/p&gt;
-              &lt;input type="radio" name="birthday" id="1999" value = "1999" /&gt;
-              &lt;label for="1999"&gt;1999&lt;/label&gt;
-              &lt;input type="radio" name="birthday" id="2020" value = "2020" /&gt;
-              &lt;label for="2020"&gt;2020&lt;/label&gt;
-              &lt;input type="radio" name="birthday" id="2002" value = "2002" checked/&gt;
-              &lt;label for="2002"&gt;2002&lt;/label&gt;
-            &lt;/form&gt;
-            &lt;form action=""&gt;
-              &lt;p&gt;your gender :&lt;/p&gt;
-              &lt;input type="radio" name="gender" id="male" value = "male" checked /&gt;
-              &lt;label for="male"&gt;Male&lt;/label&gt;
-              &lt;input type="radio" name="gender" id="female" value = "female" /&gt;
-              &lt;label for="female"&gt;Female&lt;/label&gt;
-            &lt;/form&gt;
-            </pre>
+            <div class="div-img">
+              <img src="./img/rad1-code.png" alt="readio photo code">
+              <img src="./img/rad2-code.png" alt="readio photo code">
+            </div>
           </div>
         </div>
       </div>
@@ -252,8 +177,7 @@
                 id="info"
                 cols="50"
                 rows="15"
-                placeholder=" Insert your information "
-              ></textarea>
+                placeholder=" Insert your information "></textarea>
             </div>
             <div class="part2">
               &lt;textarea name="info" id="info" cols="50"
@@ -272,15 +196,15 @@
             <tr>
               <td>Time</td>
               <td>used to represent times</td>
-              <td><input type="time" name="" id="" /></td>
+              <td><input type="time" name id /></td>
               <td>&lt;input type="time"&gt;</td>
             </tr>
             <tr>
               <td>url</td>
               <td>used to add URLs.</td>
               <td>
-                <form action="">
-                  <input type="url" name="" id="" /><input type="submit" />
+                <form action>
+                  <input type="url" name id /><input type="submit" />
                 </form>
               </td>
               <td>&lt;input type="url"&gt;</td>
@@ -288,7 +212,7 @@
             <tr>
               <td>search</td>
               <td>it’s used for search .</td>
-              <td><input type="search" name="" id="" /></td>
+              <td><input type="search" name id /></td>
               <td>&lt;input type="search"&gt;</td>
             </tr>
             <tr>
@@ -297,10 +221,34 @@
                 used to let the user select file from their device so they can
                 be uploaded.
               </td>
-              <td><input type="file" name="" id="" /></td>
+              <td><input type="file" name id /></td>
               <td>&lt;input type="file"&gt;</td>
             </tr>
           </table>
+        </div>
+      </div>
+    </section>
+    <section id="session5-summary">
+      <div class="container">
+        <h2>summary</h2>
+        <div class="containt">
+          <p>The &lt;summary&gt; tag in HTML is used inside a &lt;details&gt;
+            element to provide a summary, caption, or heading for the content
+            that can be expanded/collapsed.</p>
+        </div>
+        <div class="containt">
+          <div class="part1">
+            <details>
+              <summary>Click here to learn more</summary>
+              <p>This is the hidden content that appears when you expand the
+                summary.</p>
+              <p>You can put text, images, or even other elements inside.</p>
+            </details>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/summary-tag.png" alt></div>
+          </div>
         </div>
       </div>
     </section>
@@ -308,7 +256,7 @@
       <div class="container">
         <h2>Assignment</h2>
         <div class="containt">
-          <img src="./img/reg2-form.png" alt="" />
+          <img src="./img/reg2-form.png" alt />
         </div>
       </div>
     </section>

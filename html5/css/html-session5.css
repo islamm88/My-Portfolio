@@ -1,0 +1,72 @@
+@media (max-width: 390px) {
+}
+
+@media (min-width: 391px) and (max-width: 767px) {
+}
+
+@media (min-width: 768px) {
+  #session5-che-rad {
+    & .container {
+      & .containt {
+        justify-content: space-between;
+        & .part1,
+        & .part2 {
+          width: 40%;
+          & .div-img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              border-radius: 10px;
+            }
+          }
+          & form {
+            border-radius: 10px;
+            background-color: var(--color3);
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            padding: 20px;
+            margin-left: 30px;
+            width: 50%;
+            margin-block: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #session5-summary {
+    .containt {
+      & .par1 {
+        width: 45%;
+      }
+      & .part2 {
+        width: 45%;
+        & .div-img {
+          margin-block:20px ;
+          & img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+
+  #session5-Assignment {
+    & .containt {
+
+      background-color: black;
+      padding: 20px;
+      width: fit-content;
+      border-radius: 10px;
+      margin: auto;
+    }
+  }
+}

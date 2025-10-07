@@ -657,7 +657,7 @@ body {
       font-family: "Roboto Slab", serif;
     }
     & h3 {
-      margin: 15px;
+      margin: 10px;
       font-size: 25px;
       font-weight: 400;
     }
@@ -674,7 +674,6 @@ body {
     & ul,
     & ol,
     & dl {
-      margin: 10px;
       margin-left: 40px;
       & li,
       & dt {
