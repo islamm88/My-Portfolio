@@ -1,43 +1,43 @@
 @media (max-width: 390px) {
   #session1-webintro {
-    & .container {
-      & .containt {
-        & img {
+    .container {
+      .containt {
+        img {
           width: 45%;
           height: 340px;
         }
       }
-      & .div-img {
+      .div-img {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        & img {
+        img {
           width: 10%;
           display: block;
           margin-inline: 5px;
         }
-        & :nth-child(4) {
+        :nth-child(4) {
           width: 20%;
         }
       }
-      & table {
+      table {
         margin-left: 5px;
         border: 1px solid rgb(161, 158, 158);
         box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 5px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 10px;
           font-weight: 300;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
@@ -47,17 +47,17 @@
     }
   }
   #session1-htmlIntor {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
@@ -65,32 +65,32 @@
         background-color: #eee;
         border-radius: 5px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & #div-imgs {
+      #div-imgs {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 5px;
         width: 100%;
-        & .div-img {
+        .div-img {
           width: 100%;
           height: 180px;
-          & img {
+          img {
             width: 100%;
             height: 100%;
             margin-block: 5px;
@@ -100,18 +100,18 @@
           }
         }
       }
-      & .div-img2 {
+      .div-img2 {
         width: 80%;
         height: 100px;
         margin: auto;
-        & img {
+        img {
           width: 100%;
           height: 100%;
           display: block;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 300px;
           margin-bottom: 20px;
         }
@@ -119,86 +119,86 @@
     }
   }
   #session1-htmltagelement {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        & img {
+        img {
           width: 100%;
           display: block;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 200px;
         }
       }
     }
   }
   #session1-heading-p-pre {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & .part-heading {
+      .part-heading {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        & .col1 {
+        .col1 {
           width: 100%;
         }
-        & .col2 {
+        .col2 {
           width: 70%;
           display: flex;
           align-items: center;
           justify-content: center;
-          & .div-img {
+          .div-img {
             padding: 10px;
             margin: auto;
             width: 100%;
-            & img {
+            img {
               width: 100%;
               height: 150px;
               display: block;
@@ -208,30 +208,30 @@
           }
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -239,65 +239,65 @@
         padding: 10px;
         width: 70%;
         margin: auto;
-        & img {
+        img {
           width: 100%;
           display: block;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 200px;
         }
       }
     }
   }
   #session1-assignment {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        & img {
+        img {
           border-radius: 5px;
           width: 100%;
           display: block;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 200px;
         }
       }
@@ -306,28 +306,22 @@
 }
 @media (min-width: 390px) and (max-width: 767px) {
   #session1-webintro {
-    & .container {
-      & .containt {
-        & img {
-          width: 45%;
-          height: 340px;
-        }
-      }
-      & .div-img {
+    .container {
+      .div-img {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        & img {
+        img {
           width: 10%;
           display: inline-block;
           margin-inline: 10px;
         }
-        & :nth-child(4) {
+        :nth-child(4) {
           width: 30%;
         }
       }
-      & table {
+      table {
         margin-left: 60px;
         margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
@@ -335,16 +329,16 @@
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 15px;
           font-weight: 500;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
@@ -352,48 +346,46 @@
     }
   }
   #session1-htmlIntor {
-    & .container {
-      & .containt {
-        flex-direction: column;
-        & img {
-          width: 45%;
-          height: 340px;
-          border-radius: 10px;
-          box-shadow: 0 0 5px 5px gray;
-        }
+    .container {
+      h2:nth-child(1) {
+        margin-block: 2px;
       }
-      & table {
-        margin: auto;
-        margin-top: 10px;
+      h2:nth-child(2) {
+        margin-top: 2px;
+        font-size: 15px;
+      }
+      table {
+        margin-left: 30px;
+        margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
         box-shadow: 0 0 3px 3px rgb(172, 170, 170);
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
-          font-size: 12px;
-          font-weight: 300;
+          font-size: 15px;
+          font-weight: 500;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
-          font-size: 10px;
         }
       }
-      & #div-imgs {
+      #div-imgs {
         margin-block: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        & .div-img {
-          width: 45%;
-          height: 150px;
-          & img {
+        .div-img {
+          all: unset;
+          width: 48%;
+          height: 300px;
+          img {
             width: 100%;
             height: 100%;
             display: block;
@@ -402,18 +394,38 @@
           }
         }
       }
-      & .div-img2 {
-        width: 50%;
-        height: 100px;
-        margin: auto;
-        & img {
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-block: 20px;
+        ul {
+          margin-left: 40px;
+        }
+        .div-img {
+          img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
+        }
+      }
+      .div-img2 {
+        width: 90%;
+        height: 200px;
+        margin: 15px auto;
+
+        img {
           width: 100%;
           height: 100%;
           display: block;
-          border-radius: 5px;
-          box-shadow: 0 0 3px 3px gray;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 300px;
           margin-bottom: 20px;
         }
@@ -421,164 +433,143 @@
     }
   }
   #session1-htmltagelement {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        & img {
+        img {
           width: 40%;
           display: block;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 200px;
         }
       }
     }
   }
   #session1-heading-p-pre {
-    & .container {
-      & .containt {
-        flex-direction: column;
-        & img {
-          width: 45%;
-          height: 340px;
-          border-radius: 10px;
-          box-shadow: 0 0 5px 5px gray;
-        }
-      }
-      & .part-heading {
+    .container {
+      .containt {
         display: flex;
-        & .col1 {
-          width: 50%;
+        flex-direction: column;
+        .part1 {
+          width: 100%;
         }
-        & .col2 {
-          width: 50%;
+        .part2 {
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
-          & .div-img {
-            padding: 10px;
-            margin: auto;
+          .div-img {
             width: 100%;
-            & img {
-              width: 100%;
-              height: 200px;
+            #h-img ,
+            #p-img ,
+            #pre-img {
               display: block;
+              width: 50%;
+              height: 200px;
               border-radius: 10px;
               box-shadow: 0 0 5px 5px gray;
             }
+            #p-img {
+              width: 90%;
+              height: 150px;
+            }
+            #pre-photo {
+              width: 80%;
+            }
+            #pre-img {
+              width: 80%;
+            }
           }
-        }
-      }
-      & table {
-        margin: auto;
-        margin-top: 10px;
-        border: 1px solid rgb(161, 158, 158);
-        background-color: #eee;
-        border-radius: 10px;
-        padding: 5px;
-        & thead tr td {
-          text-align: center;
-          font-size: 12px;
-          font-weight: 300;
-          background-color: #ddd;
-          border-radius: 10px;
-        }
-        & tr:nth-child(odd) {
-          background-color: #f1a5a5;
-        }
-        & tr td {
-          border-bottom: 1px solid black;
-          padding: 10px;
-          font-size: 10px;
         }
       }
     }
   }
   #session1-assignment {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 340px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding: 10px;
-        & img {
+        img {
           width: 70%;
           display: block;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 200px;
         }
       }
@@ -587,28 +578,26 @@
 }
 @media (min-width: 767px) {
   #session1-webintro {
-    & .container {
-      & .containt {
-        & img {
-          width: 45%;
-          height: 340px;
-        }
-      }
-      & .div-img {
+    .container {
+      .div-img {
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        padding: 10px;
+        border-radius: 10px;
+        margin-block: 40px;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        & img {
+        img {
           width: 10%;
           display: inline-block;
           margin-inline: 10px;
         }
-        & :nth-child(4) {
+        :nth-child(4) {
           width: 30%;
         }
       }
-      & table {
+      table {
         margin-left: 30px;
         margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
@@ -616,16 +605,16 @@
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 15px;
           font-weight: 500;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
@@ -633,23 +622,15 @@
     }
   }
   #session1-htmlIntor {
-    & .container {
-      & .containt {
-        flex-direction: column;
-        & img {
-          width: 45%;
-          height: 340px;
-          border-radius: 10px;
-          box-shadow: 0 0 5px 5px gray;
-        }
-        & .info {
-          width: 45%;
-          & ul {
-            margin-left: 0px;
-          }
-        }
+    .container {
+      h2:nth-child(1) {
+        margin-block: 2px;
       }
-      & table {
+      h2:nth-child(2) {
+        margin-top: 2px;
+        font-size: 20px;
+      }
+      table {
         margin-left: 30px;
         margin-block: 20px;
         border: 1px solid rgb(161, 158, 158);
@@ -657,55 +638,76 @@
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 15px;
           font-weight: 500;
           background-color: #ddd;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
       }
-      & #div-imgs {
+      #div-imgs {
         margin-block: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        & .div-img {
+        .div-img {
           all: unset;
-          width: 45%;
+          width: 30%;
           height: 300px;
-          & img {
+          img {
             width: 100%;
             height: 100%;
             display: block;
             border-radius: 10px;
             box-shadow: 0 0 5px 5px gray;
           }
-          & #DOM {
+          #DOM {
             width: 50%;
             margin-left: 30px;
           }
         }
       }
-      & .div-img2 {
+      .info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-block: 20px;
+        ul {
+          width: 50%;
+          margin-left: 40px;
+        }
+        .div-img {
+          width: 45%;
+          img {
+            display: block;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
+        }
+      }
+
+      .div-img2 {
         width: 60%;
         height: 300px;
         margin: 25px auto;
 
-        & img {
+        img {
           width: 100%;
           height: 100%;
           display: block;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
-        & #Dom-Structure {
+        #Dom-Structure {
           height: 300px;
           margin-bottom: 20px;
         }
@@ -713,40 +715,40 @@
     }
   }
   #session1-htmltagelement {
-    & .container {
-      & .containt {
+    .container {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 100px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & table {
+      table {
         margin: auto;
         margin-top: 10px;
         border: 1px solid rgb(161, 158, 158);
         background-color: #eee;
         border-radius: 10px;
         padding: 5px;
-        & thead tr td {
+        thead tr td {
           text-align: center;
           font-size: 12px;
           font-weight: 300;
           background-color: #ddd;
           border-radius: 10px;
         }
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: #f1a5a5;
         }
-        & tr td {
+        tr td {
           border-bottom: 1px solid black;
           padding: 10px;
           font-size: 10px;
         }
       }
-      & .div-img {
+      .div-img {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -754,7 +756,7 @@
         padding: 10px;
         width: 40%;
         margin: auto;
-        & img {
+        img {
           width: 100%;
           height: 150px;
           display: block;
@@ -765,75 +767,61 @@
     }
   }
   #session1-heading-p-pre {
-    & .container {
-      & .part-heading {
+    .container {
+      .containt {
         display: flex;
-        & .col1 {
-          width: 50%;
+        justify-content: space-between;
+        .part1 {
+          width: 50%;      
         }
-        & .col2 {
+        .part2 {
           width: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          & .div-img {
-            padding: 10px;
-            margin: auto;
-            width: 50%;
-            & img {
-              width: 100%;
-              height: 200px;
+          .div-img {
+            width: fit-content;
+            width: 100%;
+            #h-img ,
+            #p-img ,
+            #pre-img {
+              margin-left: auto;
               display: block;
+              width: 50%;
+              height: 200px;
               border-radius: 10px;
               box-shadow: 0 0 5px 5px gray;
             }
+            #p-img {
+              width: 90%;
+            }
+            #pre-photo {
+              width: 80%;
+            }
+            #pre-img {
+              width: 80%;
+            }
           }
-        }
-      }
-      & table {
-        margin: auto;
-        margin-top: 10px;
-        border: 1px solid rgb(161, 158, 158);
-        background-color: #eee;
-        border-radius: 10px;
-        padding: 5px;
-        & thead tr td {
-          text-align: center;
-          font-size: 12px;
-          font-weight: 300;
-          background-color: #ddd;
-          border-radius: 10px;
-        }
-        & tr:nth-child(odd) {
-          background-color: #f1a5a5;
-        }
-        & tr td {
-          border-bottom: 1px solid black;
-          padding: 10px;
-          font-size: 10px;
         }
       }
     }
   }
   #session1-assignment {
-    & .container {
-      & h2 {
+    .container {
+      h2 {
         margin: 5px;
       }
-      & .containt {
+      .containt {
         flex-direction: column;
-        & img {
+        img {
           width: 45%;
           height: 300px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
         }
       }
-      & .div-img {
+      .div-img {
         width: 40%;
         margin: auto;
         padding: 5px;
-        & img {
+        img {
           width: 100%;
           height: 100%;
           display: block;

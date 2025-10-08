@@ -112,30 +112,27 @@
           What happens when you use a web browser to navigate to a web page ?
         </h3>
         <p>
-          Computers connected to the internet are called <u>clients</u> and
+          Computers connected to the internet are called <u>clients</u> or
           <u>servers</u>. A simplified diagram of how they interact might look
           like this:
         </p>
-        <div class="notes">
-
-          <div class="div-img">
-            <img src="./img/browser.png" alt="browser" />
-            <img src="./img/user.png" alt="user" />
-            <img src="./img/client.webp" alt="client" />
-            <img src="./img/requests-responses.png" alt="rr" />
-            <img src="./img/server.png" alt="server" />
-            <img src="./img/websit-folders.png" alt="wf" />
-          </div>
+        <div class="div-img">
+          <img src="./img/browser.png" alt="browser" />
+          <img src="./img/user.png" alt="user" />
+          <img src="./img/client.webp" alt="client" />
+          <img src="./img/requests-responses.png" alt="rr" />
+          <img src="./img/server.png" alt="server" />
+          <img src="./img/websit-folders.png" alt="wf" />
         </div>
         <h3>There are some important terms :</h3>
         <ul>
           <li>
-            <span>Clients:</span> are the typical web user's internet-connected
-            devices like (your PC , phone)
+            <span>Clients:</span> are the computers (like your laptop or phone)
+            that request information.
           </li>
           <li>
-            <span>Servers:</span> are computers that store webpages, sites, or
-            apps.
+            <span>Servers:</span> are the computers that store and send that
+            information back to the clients.
           </li>
           <li>
             <span>Browser:</span> another name "User-Agent" it's app for browes
@@ -172,7 +169,7 @@
           </li>
         </ul>
         <h3>You must know that</h3>
-        <p>Domain name = IP</p>
+        <p><span><strong>Domain name = IP</strong></span></p>
         <p>
           Every device on the internet is identified by an IP address, and you
           can use IP instead of a domain name
@@ -229,7 +226,6 @@
           businesses, and social network services.
         </p>
         <h3>For creating website</h3>
-        <br />
         <ul>
           <li>Design (UI/UX):Figma, Adobe XD</li>
           <li>
@@ -244,8 +240,8 @@
     <section id="session1-htmlIntor">
       <div class="container">
         <h2>HTML5 Intoduction</h2>
-        <h3><span>HTML5 (HyperText Markup Language)</span></h3>
-        <h4><u>History of HTML</u></h4>
+        <h2>HyperText Markup Language</h2>
+        <h3><u>History of HTML</u></h3>
         <table>
           <thead>
             <tr>
@@ -293,7 +289,8 @@
           <li>
             Download Editor
             <a href="https://code.visualstudio.com/download" target="_blank">Vs
-              code </a><img src="./img/VScode.png" alt="VScode" width="15" />
+              code </a><img src="./img/VScode.png" alt="VScode" width="15"
+              style="vertical-align: middle;" />
           </li>
           <li>
             Download Google chrome
@@ -301,7 +298,8 @@
               href="https://www.google.com/intl/en_uk/chrome/dr/download/"
               target="_blank">Google chrome
             </a>
-            <img src="./img/Chrome.png" alt="VScode" width="25" />
+            <img src="./img/Chrome.png" alt="VScode" width="25"
+              style="vertical-align: middle;" />
           </li>
         </ul>
         <div class="notes">
@@ -335,6 +333,8 @@
             VS code to build structure html page or <span>doc + tab </span>or
             <span>html:5 + tab .</span>
           </li>
+          <li>After you finished your html code save and open your page on your
+            browser .</li>
         </ul>
         <h3>HTML DOM Tree & Page structure</h3>
         <p>
@@ -356,7 +356,8 @@
         </div>
         <div class="info">
           <ul>
-            <li><span>&lt;!DOCTYPE html&gt; :</span> tells the browser</li>
+            <li><span>&lt;!DOCTYPE html&gt; :</span> tells the browser what type
+              of document it’s reading</li>
             <li>
               <span>&lt;html lang="en"&gt; &lt;/html&gt; : </span>is the root of
               the HTML document and tells the browser the content is in English.
@@ -382,27 +383,27 @@
               <span>&lt;title&gt;Document&lt;/title&gt; :</span>defines the
               title of the web page
             </li>
+            <li>
+              HTML depends primarily on
+              <span>tags</span> to structure content on the web.
+            </li>
+            <li>
+              Indentation in HTML means adding spaces (usually 2 or 4) at the
+              beginning of lines to show the nested structure of elements. This
+              doesn’t affect how the page looks but makes the code easier to
+              read
+              and maintain.
+            </li>
           </ul>
+          <div class="div-img">
+            <img src="./img/vs-structure.png" alt>
+          </div>
         </div>
         <ul>
-          <li>
-            HTML (HyperText Markup Language) depends primarily on
-            <span>tags</span> to structure content on the web.
-          </li>
-          <li>
-            Indentation in HTML means adding spaces (usually 2 or 4) at the
-            beginning of lines to show the nested structure of elements. This
-            doesn’t affect how the page looks but makes the code easier to read
-            and maintain.
-          </li>
         </ul>
         <hr />
         <h2>HTML Validation</h2>
         <h3>HTML and Errors</h3>
-        <p>
-          Note : HTML is not strict like a programming language, but syntax
-          errors can still cause problems.
-        </p>
         <p>
           If you type <span>&lt;h7&gt;text&lt;/h7&gt;</span> HTML don't tell you
           syntax errors and <span>text</span> will appear on browser
@@ -421,10 +422,13 @@
         </div>
         <div class="notes">
           <h3>Note :</h3>
-          <p>
-            If you want syntax error detection/fixing, you’ll need other
-            extensions in VScode like <span>HTMLHint</span> finds HTML mistakes
-          </p>
+          <ul>
+            <li>HTML is not strict like a programming language, but syntax
+              errors can still cause problems.</li>
+            <li>If you want syntax error detection/fixing, you’ll need other
+              extensions in VScode like <span>HTMLHint</span> finds HTML
+              mistakes</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -489,8 +493,8 @@
     <section id="session1-heading-p-pre">
       <div class="container">
         <h2>Heading - P - Pre</h2>
-        <div class="part-heading">
-          <div class="col1">
+        <div class="containt">
+          <div class="part1">
             <h3>Heading</h3>
             <p>
               Six levels : (h1 , h2 , h3 , h4 , h5 , h6) for title inside page
@@ -506,34 +510,35 @@
               <li>it's block element and has style .</li>
             </ul>
           </div>
-          <div class="col2">
+          <div class="part2">
             <div class="div-img">
-              <img src="./img/Heading.png" alt="heading" loading="lazy" />
+              <img id = "h-img" src="./img/h-tag.png" alt="heading" loading="lazy" />
             </div>
           </div>
         </div>
         <hr />
         <h3>Paragraph</h3>
         <p>HTML stands for paragraph. It's used to define blocks of text.</p>
-        <ul>
-          <li>Block element</li>
-          <li>
-            It creates space before and after the paragraph automatically.
-          </li>
-          <li>
-            Can contain inline elements like &lt;span&gt;, &lt;a&gt;,
-            &lt;strong&gt; , etc.
-          </li>
-        </ul>
-
         <p style="font-size: 15px"><span>&lt;p&gt;&lt;/p&gt;</span></p>
-        <p>
-          <span>&lt;p&gt;</span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita
-          necessitatibus asperiores officiis, voluptas modi beatae id ut, nihil
-          fugit saepe nulla unde sit earum doloremque cupiditate totam optio
-          laborum ipsum.<span>&lt;/p&gt;</span>
-        </p>
+        <div class="containt">
+          <div class="part1">
+            <ul>
+              <li>Block element</li>
+              <li>
+                It creates space before and after the paragraph automatically.
+              </li>
+              <li>
+                Can contain inline elements like &lt;span&gt;, &lt;a&gt;,
+                &lt;strong&gt; , etc.
+              </li>
+            </ul>
+          </div>
+          <div class="part2" id = "part2">
+            <div class="div-img">
+              <img id = "p-img" src="./img/p-tag.png" alt="paragraph" loading="lazy">
+            </div>
+          </div>
+        </div>
         <hr />
         <h3>Preformatted text</h3>
         <p>HTML stands for "preformatted text". It tells the browser to:</p>
@@ -542,14 +547,23 @@
           <li>Preserve tabs</li>
           <li>Preserve line breaks</li>
         </ul>
-        <p><span>&lt;pre&gt;&lt;/pre&gt;</span></p>
-        <pre>
-              <span> &lt;pre&gt;</span> 
-              This      is
-                          exactly       as
-                      you      typed.             
-              <span>&lt;/pre&gt;</span>
-        </pre>
+        <div class="containt" >
+          <div class="part1">
+            <p><span>&lt;pre&gt;&lt;/pre&gt;</span></p>
+            <pre>
+                  <span> &lt;pre&gt;</span> 
+                  This      is
+                              exactly       as
+                          you      typed.             
+                  <span>&lt;/pre&gt;</span>
+            </pre>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img id = "pre-img" src="./img/pre-tag.png" alt="preformat tag image" loading="lazy">
+            </div>
+          </div>
+        </div>
 
         <div class="notes">
           <h3>Notes:</h3>
