@@ -87,6 +87,7 @@
         justify-content: center;
         padding: 5px;
         width: 100%;
+
         .div-img {
           width: 100%;
           height: 180px;
@@ -105,15 +106,25 @@
         height: 100px;
         margin: auto;
         img {
+          display: block;
           width: 100%;
           height: 100%;
-          display: block;
           border-radius: 5px;
           box-shadow: 0 0 5px 5px gray;
         }
         #Dom-Structure {
           height: 300px;
           margin-bottom: 20px;
+        }
+      }
+      .div-img {
+        width: 100%;
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 5px;
+          box-shadow: 0 0 5px 5px gray;
         }
       }
     }
@@ -173,80 +184,38 @@
   #session1-heading-p-pre {
     .container {
       .containt {
-        flex-direction: column;
-        img {
-          width: 45%;
-          height: 340px;
-          border-radius: 10px;
-          box-shadow: 0 0 5px 5px gray;
-        }
-      }
-      .part-heading {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .col1 {
+        .part1 {
           width: 100%;
         }
-        .col2 {
-          width: 70%;
+        .part2 {
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
           .div-img {
-            padding: 10px;
-            margin: auto;
             width: 100%;
-            img {
-              width: 100%;
-              height: 150px;
+            #h-img,
+            #p-img,
+            #pre-img {
               display: block;
+              width: 50%;
+              /* height: 200px; */
               border-radius: 10px;
               box-shadow: 0 0 5px 5px gray;
             }
+            #p-img {
+              width: 90%;
+              /* height: 150px; */
+            }
+            #pre-photo {
+              width: 80%;
+            }
+            #pre-img {
+              width: 80%;
+            }
           }
-        }
-      }
-      table {
-        margin: auto;
-        margin-top: 10px;
-        border: 1px solid rgb(161, 158, 158);
-        background-color: #eee;
-        border-radius: 10px;
-        padding: 5px;
-        thead tr td {
-          text-align: center;
-          font-size: 12px;
-          font-weight: 300;
-          background-color: #ddd;
-          border-radius: 10px;
-        }
-        tr:nth-child(odd) {
-          background-color: #f1a5a5;
-        }
-        tr td {
-          border-bottom: 1px solid black;
-          padding: 10px;
-          font-size: 10px;
-        }
-      }
-      .div-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        width: 70%;
-        margin: auto;
-        img {
-          width: 100%;
-          display: block;
-          border-radius: 10px;
-          box-shadow: 0 0 5px 5px gray;
-        }
-        #Dom-Structure {
-          height: 200px;
         }
       }
     }
@@ -499,8 +468,8 @@
           justify-content: center;
           .div-img {
             width: 100%;
-            #h-img ,
-            #p-img ,
+            #h-img,
+            #p-img,
             #pre-img {
               display: block;
               width: 50%;
@@ -772,15 +741,15 @@
         display: flex;
         justify-content: space-between;
         .part1 {
-          width: 50%;      
+          width: 50%;
         }
         .part2 {
           width: 50%;
           .div-img {
             width: fit-content;
             width: 100%;
-            #h-img ,
-            #p-img ,
+            #h-img,
+            #p-img,
             #pre-img {
               margin-left: auto;
               display: block;
