@@ -13,9 +13,9 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-    <div class="overlay" id="overlay">
+    <!-- <div class="overlay" id="overlay">
       <img id="overlay-img" src alt="Large view" />
-    </div>
+    </div> -->
     <aside id="css-aside">
       <header>
         <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
@@ -130,33 +130,22 @@
         </ul>
         <p>Extention file <span>.css</span> like main.css</p>
         <h3>Where can I create CSS Code ?</h3>
-        <div class="containt" style = "border:1px solid red ">
-          <!-- <ol>
-            <li>External file</li>
-            <li>
-              internal
-              <ul>
-                <li>
-                  in file inside &lt;head&gt;
-                  <span>&lt;style&gt;&lt;/style&gt;</span> &lt;/head&gt;
-                </li>
-                <li>
-                  inline inside the <span>opening tage</span> what you want
-                  style it like &lt;p&gt; tage
-                </li>
-              </ul>
-            </li>
-          </ol> -->
-          <div class="div-img" >
-            <h2>Inline CSS</h2>
-            <p>Written directly inside an HTML element using the style attribute.</p>
-            <img src="./img/inline.png" alt="Css-places" loading="lazy" />
+        <div class="containt">
+          <div class="col1">
+            <h4>Inline CSS (inside the HTML tag)</h4>
+            <p>You can write CSS directly inside an element using the style
+              attribute.</p>
+            <img src="./img/css-places-1.png" alt>
           </div>
-          <div class="div-img" >
-            <img src="./img/css-places.png" alt="Css-places" loading="lazy" />
+          <div class="col2">
+            <h4>Internal CSS (inside the &lt;style&gt; tag)</h4>
+            <p>You can put CSS inside your HTML file, inside the &lt;head&gt; section.</p>
+            <img src="./img/css-places-2.png" alt>
           </div>
-          <div class="div-img" >
-            <img src="./img/css-places.png" alt="Css-places" loading="lazy" />
+          <div class="col3">
+            <h4>External CSS (in a .css file)</h4>
+            <p>You can create a separate CSS file, like style.css, and link it to your HTML.</p>
+            <img src="./img/css-places-3.png" alt>
           </div>
         </div>
         <h3>Priority Order (Simplified)</h3>
@@ -188,7 +177,8 @@
             <img src="./img/comment.png" alt="commant" loading="lazy" />
           </div>
         </div>
-        <h3 style="text-align: center; margin-bottom: 20px;">Some Types of Selector :</h3>
+        <h3 style="text-align: center; margin-bottom: 20px;">Some Types of
+          Selector :</h3>
         <table>
           <thead>
             <th>Selector</th>
@@ -248,9 +238,11 @@
                   <h3>Note :</h3>
                   <ul>
                     <li>(.class-name.class-name) mean element has two class like
-                    this <span>&lt;p class="<u>highlight</u> <u>big</u>"&gt;This
-                      text is red&lt;/p&gt;</span></li>
-                    <li>the class selector has higher priority than the element (name) selector.</li>
+                      this <span>&lt;p class="<u>highlight</u>
+                        <u>big</u>"&gt;This
+                        text is red&lt;/p&gt;</span></li>
+                    <li>the class selector has higher priority than the element
+                      (name) selector.</li>
                   </ul>
                 </div>
               </td>
@@ -272,7 +264,8 @@
                 <div class="notes">
                   <h3>Note :</h3>
                   <ul>
-                    <li>the ID selector has higher priority than the class selector.</li>
+                    <li>the ID selector has higher priority than the class
+                      selector.</li>
                   </ul>
                 </div>
               </td>
@@ -437,7 +430,8 @@
               </td>
               <td>
                 <h3><u>only child</u></h3>
-                <p>selects an element if it is the <span><b>only</b></span> child of its parent.</p>
+                <p>selects an element if it is the <span><b>only</b></span>
+                  child of its parent.</p>
               </td>
               <td>
                 <img

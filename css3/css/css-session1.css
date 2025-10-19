@@ -340,29 +340,35 @@
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   }
   #session1-introduction {
-    & .container {
-      & .containt {
-        all: unset;
-        height: fit-content;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 250px;
-        & .div-img {
-          width: 30%;
-          border: 1px solid red;
+    .container {
+      .containt {
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        background-color: var(--odd-td);
+        box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+        padding: 20px;
+        align-items: start;
+        .col1,
+        .col2,
+        .col3 {
           display: flex;
           flex-direction: column;
-          height: 100%;
-
-          h2 {
-            margin-top: 10px;
+          align-items: center;
+          width: 30%;
+          /* border: 1px solid red; */
+          h4 {
+            margin-bottom: 10px;
           }
-          & img:nth-of-type(1) {
+          p {
+            text-align: center;
+          }
+          img {
             display: block;
             width: 100%;
+            margin-block: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+            
           }
         }
       }

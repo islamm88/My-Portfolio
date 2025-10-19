@@ -111,15 +111,15 @@
         <h2>Flexbox</h2>
         <h2>display - flex-direction - flex-wrap</h2>
         <h3>Parent :</h3>
+        <p><span>display: flex</span>(When you apply it to a container, all
+          its direct children become <span>flex items</span> , which you can
+          easily control)</p>
         <ul>
-          <li>display: <span>flex</span>(When you apply it to a container, all
-            its direct children become flex items, which you can easily control)
-          <ul>
-            <li>width : auto</li>
-            <li>height : stretch</li>
-          </ul></li>
-          <li>flex-direction: <span>[ row "default" - row-reverse - column -
-              column-reverse ]</span></li>
+          <li>width : auto</li>
+          <li>height : stretch</li>
+          <li><span>flex-direction:</span>[ row "default" - row-reverse - column
+            -
+            column-reverse ]</li>
         </ul>
         <div class="containt">
           <div class="part1 reverse">
@@ -141,12 +141,12 @@
             </div>
           </div>
         </div>
+        <p><span>flex-wrap :</span> is used with display: flex to control
+          whether flex
+          items should stay in one line or wrap onto multiple lines when they
+          don’t fit in the container.</p>
         <ul>
-          <li>flex-wrap : is used with display: flex to control whether flex
-            items should stay in one line or wrap onto multiple lines when they
-            don’t fit in the container.</li>
-          <li>flex-wrap: <span>[ nowrap "default" - wrap - wrap-reverse ]
-            </span></li>
+          <li>flex-wrap value [ nowrap "default" - wrap - wrap-reverse ]</li>
         </ul>
         <div class="containt">
           <div class="part1 flex-wrap">
@@ -171,17 +171,16 @@
                 loading="lazy">
             </div>
           </div>
-
         </div>
-        <hr>
         <h2>justify-content - align-item - align-content </h2>
         <p>justify-content is a Flexbox property that controls the horizontal
           alignment of flex items inside a flex container <span>(if the
             direction is
             row).</span></p>
         <ul>
-          <li>justify-content : [ flex-start "default" - flex-end - center -
-            space-between - space-around - space-evenly ]</li>
+          <li>justify-content : <span> [ start "default" - end -
+              center -
+              space-between - space-around - space-evenly ]</span></li>
         </ul>
         <div class="containt">
           <div class="part1 justify-content">
@@ -200,7 +199,7 @@
         </div>
         <p>align-items It controls how flex items are aligned vertically </p>
         <ul>
-          <li>align-items: [stretch - flex-start - flex-end - center]</li>
+          <li>align-items: [stretch - start - end - center]</li>
         </ul>
         <div class="containt">
           <div class="part1 align-item">
@@ -211,20 +210,126 @@
               <div class="ch4"><h2>4</h2></div>
               <div class="ch5"><h2>5</h2></div>
               <div class="ch6"><h2>6</h2></div>
-    
-          
-            
             </div>
           </div>
-            <div class="part2 align-item-code">
+          <div class="part2 align-item-code">
             <div class="div-img">
               <img src="./img/align-item-code.png"
                 alt="justify content photo code" loading="lazy">
             </div>
           </div>
         </div>
+        <p>align-content : controls the spacing and alignment between multiple
+          flex lines (rows or columns) along the cross axis. </p>
+        <ul>
+          <li>align-content: <span>[stretch - start - end - center -
+              space-between - space-around - space-evenly]</span></li>
+        </ul>
+        <div class="containt">
+          <div class="part1 align-content">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+              <div class="ch4"><h2>4</h2></div>
+              <div class="ch5"><h2>5</h2></div>
+              <div class="ch6"><h2>6</h2></div>
+            </div>
+          </div>
+          <div class="part2 align-content-code">
+            <div class="div-img">
+              <img src="./img/align-content-code.png"
+                alt="align content photo code " loading="lazy">
+            </div>
+          </div>
+        </div>
+        <div class="notes">
+          <h3>Note :</h3>
+          <ul>
+            <li>align-items : aligns items inside one flex line (works with
+              single row).</li>
+            <li>align-content : aligns multiple flex lines (only works if
+              flex-wrap: wrap creates more than one row).</li>
+          </ul>
+        </div>
+        <hr>
+        <h3>children :</h3>
+        <h2>grow - shrink - order</h2>
+        <p><span>flex-grow :</span> property in CSS defines how much a flex item
+          should grow
+          relative to the rest of the items inside the same flex container when
+          there is extra space available.</p>
+        <ul>
+          <li>0 (default) : The item will not grow; it keeps its base size.</li>
+          <li>Positive number (1, 2, 3, etc.) : The item will grow to fill the
+            remaining space proportionally compared to other items.</li>
+        </ul>
+        <div class="containt">
+          <div class="part1 flex-grow">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+            </div>
+          </div>
+          <div class="part2 flex-grow-code">
+            <div class="div-img">
+              <img src="./img/flex-grow-code.png"
+                alt="align content photo code " loading="lazy">
+            </div>
+          </div>
+        </div>
+        <p><span>flex-shrink :</span> property in CSS defines how much a flex
+          item will
+          shrink relative to the rest of the flex items when there isn’t enough
+          space in the flex container.</p>
+        <ul>
+          <li>0 : The item will not shrink even if there’s not enough
+            space.</li>
+          <li>Positive number (1, 2, 3, etc.) : The item will shrink relative to
+            other items when space is tight. The higher the number, the more it
+            shrinks.</li>
+        </ul>
+        <div class="containt">
+          <div class="part1 flex-shrink">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+            </div>
+          </div>
+          <div class="part2 flex-grow-code">
+            <div class="div-img">
+              <img src="./img/flex-shrink-code.png"
+                alt="align content photo code " loading="lazy">
+            </div>
+          </div>
+        </div>
+        <p><span>order :</span> property controls the visual order of flex items
+          inside a flex container — without changing the actual order of the
+          HTML elements in the code.</p>
+        <ul>
+          <li>Default value: 0</li>
+          <li>Type: integer (can be positive, negative, or zero)</li>
+        </ul>
+        <div class="containt">
+          <div class="part1 order">
+            <div class="parent1 ">
+              <div class="ch1"><h2>1</h2></div>
+              <div class="ch2"><h2>2</h2></div>
+              <div class="ch3"><h2>3</h2></div>
+              <div class="ch4"><h2>4</h2></div>
+              <div class="ch5"><h2>5</h2></div>
+            </div>
+          </div>
+          <div class="part2 flex-grow-code">
+            <div class="div-img">
+              <img src="./img/order-code.png"
+                alt="align content photo code " loading="lazy">
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-
   </body>
 </html>
