@@ -313,6 +313,67 @@ body {
 }
 
 @media (min-width: 391px) and (max-width: 767px) {
+  .nav-page {
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 5px;
+    position: sticky;
+    top: 5px;
+    list-style: none;
+    border: 1px solid #fff;
+    background-color: #f16529ec;
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    height: 30px;
+    & li {
+      display: flex;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: 400;
+        color: rgb(252, 252, 252);
+      }
+      & a:hover {
+        color: black;
+      }
+    }
+  }
+  .nav-site {
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-block: 5px; */
+    list-style: none;
+    border: 1px solid var(--color1);
+    box-shadow: 0 0 1px 1px #fff;
+    background-color: rgba(144, 47, 23, 0.916);
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+    height: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      & a {
+        display: inline-block;
+        margin-top: 0px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      & a:hover {
+        color: black;
+      }
+    }
+  }
   .container {
     width: 95%;
     margin: auto;
@@ -330,7 +391,7 @@ body {
     & h2 {
       text-align: center;
       margin-top: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       font-size: 20px;
       font-family: "Roboto Slab", serif;
     }
@@ -443,61 +504,7 @@ body {
       font-weight: 600;
     }
   }
-   .nav-page {
-    z-index: 100;
-    display: flex;
-    position: sticky;
-    top: 5px;
-    justify-content: space-around;
-    list-style: none;
-    border: 1px solid #fff;
-    background-color: #f16529ec;
-    border-radius: 10px;
-    padding-block: 10px;
-    margin-top: 5px;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    & li {
-      & a {
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: capitalize;
-        color: rgb(252, 252, 252);
-      }
-      & a:hover {
-        color: black;
-      }
-    }
-  }
-   .nav-site {
-    top: 5px;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    border: 1px solid var(--color1);
-    box-shadow: 0 0 1px 1px #fff;
-    background-color: rgba(144, 47, 23, 0.916);
-    border-radius: 10px;
-    padding-block: 10px;
-    width: 95%;
-    margin: auto;
-
-    & li {
-      & a {
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
-        color: #fff;
-      }
-      & a:hover {
-        color: black;
-      }
-    }
-  }
-   aside {
+  aside {
     display: none;
   }
   header {
@@ -605,42 +612,46 @@ body {
     ul {
       margin-top: 20px;
       li {
-      font-size: 10px;
+        font-size: 10px;
+      }
     }
-  }
   }
 }
 
 @media (min-width: 768px) {
-   .nav-page {
+  .nav-page {
     display: flex;
     position: sticky;
     z-index: 100;
     top: 5px;
     justify-content: space-around;
     list-style: none;
-    border: 1px solid #fff;
+    align-items: center;
     background-color: rgba(241, 101, 41, 0.8);
+    box-shadow: 0 0 1px 1px #fff;
+    border: 1px solid #fff;
     border-radius: 10px;
     padding-block: 10px;
-    margin-top: 5px;
     width: 95%;
     margin: auto;
     margin-top: 10px;
-     li {
-       a {
+    height: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      a {
         text-decoration: none;
         font-size: 15px;
         font-weight: 600;
         text-transform: capitalize;
         color: rgb(252, 252, 252);
       }
-       a:hover {
+      a:hover {
         color: black;
       }
     }
   }
-   .nav-site {
+  .nav-site {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -649,18 +660,21 @@ body {
     background-color: rgba(144, 47, 23, 0.916);
     border-radius: 10px;
     padding-block: 10px;
+    align-items: center;
     width: 95%;
     margin: auto;
-
-     li {
-       a {
+    height: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      a {
         text-decoration: none;
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
         color: #fff;
       }
-       a:hover {
+      a:hover {
         color: black;
       }
     }
@@ -673,50 +687,50 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(241, 101, 41, 0.3);
-     .containt {
+    .containt {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-     h2 {
+    h2 {
       text-align: center;
-      margin-top: 15px;
+      margin-top: 5px;
       margin-bottom: 50px;
       font-size: 30px;
       font-family: "Roboto Slab", serif;
     }
-     h3 {
+    h3 {
       margin: 10px;
       font-size: 25px;
       font-weight: 400;
     }
-     p {
+    p {
       margin: 5px;
       font-size: 15px;
       padding-left: 10px;
       font-weight: 400;
     }
-     pre {
+    pre {
       font-size: 15px;
       font-weight: 400;
     }
-     ul,
-     ol,
-     dl {
+    ul,
+    ol,
+    dl {
       margin-left: 40px;
-       li,
-       dt {
+      li,
+      dt {
         font-size: 15px;
         font-weight: 400;
       }
     }
-     span {
+    span {
       font-weight: 400;
       color: var(--color5);
       font-size: 15px;
     }
-     a {
+    a {
       text-decoration: none;
     }
     hr {
@@ -732,10 +746,10 @@ body {
       background-color: #eee;
       border-radius: 10px;
       padding: 5px;
-       thead {
+      thead {
         tr {
           th {
-            text-align: start;
+            text-align: center;
             font-size: 15px;
             font-weight: 500;
             background-color: var(--color4);
@@ -744,25 +758,25 @@ body {
           }
         }
       }
-       tbody {
-         tr {
-           td {
+      tbody {
+        tr {
+          td {
             text-align: start;
             font-size: 12px;
             font-weight: 500;
           }
         }
 
-         tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
 
-         tr:nth-child(even) {
+        tr:nth-child(even) {
           background-color: var(--bgcolor);
         }
       }
 
-       tfoot {
+      tfoot {
         tr {
           td {
             text-align: center;
@@ -774,41 +788,40 @@ body {
         }
       }
 
-       tr {
-         td {
+      tr {
+        td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
       }
     }
-     .div-img {
+    .div-img {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-     .iden {
+    .iden {
       color: var(--color5);
       font-weight: 600;
     }
   }
-   aside {
+  aside {
     display: none;
   }
   header {
-     .container {
+    .container {
       padding: 0px;
       box-shadow: none;
       background-color: var(--bgcolor);
-       h1 {
+      h1 {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 5px;
         font-size: 2.5rem;
-        color: rgb(69, 70, 69);
         color: #fff;
         text-shadow: 2px 2px 4px black;
       }
-       h2 {
+      h2 {
         text-align: center;
         margin-bottom: 55px;
         font-size: 1.7rem;
@@ -819,23 +832,23 @@ body {
         align-items: center;
         justify-content: center;
 
-         .fa-file-pdf {
+        .fa-file-pdf {
           color: #f16529;
           margin-left: 10px;
           transition: all 0.5s ease;
         }
-         .fa-file-pdf:hover {
+        .fa-file-pdf:hover {
           transform: scale(1.09);
           text-shadow: 2px 2px 4px black;
         }
       }
-       #logo {
+      #logo {
         position: relative;
         margin-top: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
-         img {
+        img {
           display: block;
           position: absolute;
           top: 25px;
@@ -843,13 +856,13 @@ body {
           width: 80px;
           height: 80px;
         }
-         .fa-bars {
+        .fa-bars {
           display: none;
         }
       }
     }
   }
-   #up {
+  #up {
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -860,7 +873,7 @@ body {
     margin-bottom: 10px;
     border-radius: 50%;
 
-     a {
+    a {
       text-decoration: none;
       color: white;
       font-size: 25px;
@@ -868,18 +881,18 @@ body {
       top: 4px;
       left: 7.5px;
     }
-     a:hover {
+    a:hover {
       color: black;
     }
   }
-   .notes {
+  .notes {
     margin-top: 20px;
     padding: 5px;
     background-color: var(--color3);
     border: 1px solid var(--color5);
     border-radius: 10px;
     box-shadow: 0 0 1px 2px rgb(241, 101, 41, 0.3);
-     h3 {
+    h3 {
       margin-block: 2px;
       font-size: 15px;
       display: inline-block;

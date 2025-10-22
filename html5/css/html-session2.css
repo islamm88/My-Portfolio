@@ -3,28 +3,60 @@
     & .containt {
       margin-block: 20px;
       flex-direction: column;
-      & .ol-ul-dl {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        & #ol,
-        & #ul,
-        & #dl {
-          width: 95%;
-          background-color: #fff;
-          border-radius: 10px;
-          padding: 5px;
-          margin-block: 5px;
+        & .ol-ul-dl {
+          width: 100%;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
-          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-          height: 300px;
+          & #ol,
+          & #ul,
+          & #dl {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            div {
+              width: 45%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              & h3 {
+                text-align: center;
+                margin-block: 10px;
+                font-weight: 400;
+              }
+              & p {
+                margin: 5px;
+                font-size: 10px;
+                font-weight: 300;
+                & span {
+                  color: var(--color5);
+                  font-size: 10px;
+                  font-weight: 300;
+                }
+                &:last-child {
+                  display: none;
+                }
+              }
+            }
+            & .div-img {
+              width: 200px;
+              margin-block: 0px;
+              & img {
+                border-radius: 10px;
+                box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
         }
-      }
     }
     & #div-img {
       margin: auto;
@@ -36,34 +68,39 @@
         box-shadow: 0 0 3px 3px rgb(172, 170, 170);
       }
     }
-    & .containt-sublist {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 20px;
-      background-color: #eee;
-      border-radius: 10px;
-      padding: 20px;
-
-      & .col1,
-      & .col2 {
-        width: 25%;
+      & .containt-sublist {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 10px;
+        margin-top: 20px;
+        background-color: #eee;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
 
-        min-height: 100%;
-        & ul {
-          margin-left: 20px;
+        & .col1,
+        & .col2 {
+          width: 45%;
+          padding: 5px;
+          min-height: 100%;
+        }
+
+        .col1 {
+          img {
+            display: block;
+            width: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            border-radius: 10px;
+          }
+        }
+        & .col2 {
+          background-color: var(--color3);
+          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          border-radius: 10px;
+          width: fit-content;
+          padding: 20px;
         }
       }
-
-      & .col2 {
-        background-color: var(--color3);
-        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-        border-radius: 10px;
-        width: fit-content;
-        padding: 20px;
-      }
-    }
   }
   #session2-image {
     & .container {
@@ -87,25 +124,23 @@
     }
   }
   #session2-table {
-    & .container {
-      padding: 10px;
+      & .container {
       .containt {
-        padding: 10px;
         border-radius: 22px;
-        background-color: #eee;
         justify-content: space-between;
-
+        margin: 10px;
         & .con1 {
-          width: 45%;
-          & pre {
-            margin-top: 5px;
-            font-size: 10px;
-            font-weight: 300;
+          width: 30%;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
         }
         & .con2 {
-          align-items: center;
-          margin-top: 20px;
+          margin-left: 30px;
         }
       }
     }
@@ -116,21 +151,34 @@
       & .containt {
         margin-block: 10px;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-between;
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        
         & .div-contain1,
         & .div-contain2 {
-          width: 50%;
+          width: 45%;
           padding: 5px;
           background-color: var(--color3);
           border-radius: 10px;
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           & ul {
+            margin-left: 25px;
             margin-bottom: 5px;
+          }
+        }
+        .div-img {
+          margin-block: 10px;
+          width: 45%;
+          img {
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
         }
         & .div-contain1 {
@@ -194,7 +242,6 @@
   }
   #session2-list {
     & .container {
-      padding: 10px;
       & #type-list {
         margin-left: 30px;
         margin-bottom: 10px;
@@ -203,46 +250,58 @@
         }
       }
       & .containt {
-        margin-block: 20px;
         flex-direction: column;
         & .ol-ul-dl {
           width: 100%;
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: space-between;
           & #ol,
           & #ul,
           & #dl {
-            width: 32%;
+            width: 100%;
             background-color: #fff;
             border-radius: 10px;
-            padding: 3px;
+            padding: 15px;
             margin: 5px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-            height: 300px;
-            & h3 {
-              text-align: center;
-              margin-block: 10px;
-              font-weight: 400;
-            }
-            & p {
-              margin: 5px;
-              font-size: 10px;
-              font-weight: 300;
-              & span {
-                color: var(--color5);
+            div {
+              width: 45%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              & h3 {
+                text-align: center;
+                margin-block: 10px;
+                font-weight: 400;
+              }
+              & p {
+                margin: 5px;
                 font-size: 10px;
                 font-weight: 300;
+                & span {
+                  color: var(--color5);
+                  font-size: 10px;
+                  font-weight: 300;
+                }
+                &:last-child {
+                  display: none;
+                }
               }
             }
-            & pre {
-              margin-top: 5px;
-              font-size: 10px;
-              font-weight: 300;
+            & .div-img {
+              width: 200px;
+              margin-block: 0px;
+              & img {
+                border-radius: 10px;
+                box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+                display: block;
+                width: 100%;
+                height: 100%;
+              }
             }
           }
         }
@@ -250,22 +309,28 @@
       & .containt-sublist {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 10px;
         margin-top: 20px;
         background-color: #eee;
         border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
 
         & .col1,
         & .col2 {
-          width: 25%;
-          padding: 10px;
-
+          width: 45%;
+          padding: 5px;
           min-height: 100%;
-          & ul {
-            margin-left: 20px;
-          }
         }
 
+        .col1 {
+          img {
+            display: block;
+            width: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            border-radius: 10px;
+          }
+        }
         & .col2 {
           background-color: var(--color3);
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
@@ -274,36 +339,22 @@
           padding: 20px;
         }
       }
-      & #div-img {
-        margin: auto;
-        padding: 5px;
-        & img {
-          display: block;
-          width: 80%;
-          margin: auto;
-          box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-        }
-      }
     }
   }
   #session2-image {
     & .container {
-      padding: 10px;
       & .containt {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         & .con1 {
           width: 45%;
           display: flex;
-          padding-top: 30px;
-          margin-left: 20px;
-          & li {
-            font-size: 10px;
-          }
         }
         & .con2 {
-          width: 40%;
+          width: fit-content;
           & img {
-            width: 100%;
-            height: 100%;
+            width: 300px;
             border-radius: 22px;
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
@@ -313,22 +364,22 @@
   }
   #session2-table {
     & .container {
-      padding: 10px;
       .containt {
-        padding-top: 15px;
         border-radius: 22px;
-        background-color: #eee;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: 10px;
         & .con1 {
-          width: 45%;
-          & pre {
-            margin-top: 5px;
-            font-size: 10px;
-            font-weight: 300;
+          width: 30%;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
         }
         & .con2 {
-          align-items: center;
+          margin-left: 30px;
         }
       }
     }
@@ -339,22 +390,34 @@
       & .containt {
         margin-block: 10px;
         display: flex;
+        flex-direction: row;
         align-items: center;
-        justify-content: space-around;
         background-color: #eee;
         border-radius: 10px;
         padding: 10px;
-
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        
         & .div-contain1,
         & .div-contain2 {
           width: 45%;
-          padding: 15px;
+          padding: 5px;
           background-color: var(--color3);
-          border-radius: 22px;
+          border-radius: 10px;
           box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           & ul {
             margin-left: 25px;
             margin-bottom: 5px;
+          }
+        }
+        .div-img {
+          margin-block: 10px;
+          width: 45%;
+          img {
+            border-radius: 10px;
+            display: block;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
           }
         }
         & .div-contain1 {
@@ -409,7 +472,6 @@
       & #type-list {
         margin-left: 40px;
         margin-bottom: 10px;
-
         & li {
           font-size: 15px;
         }
@@ -426,7 +488,7 @@
           & #ul,
           & #dl {
             width: 33%;
-            height: 450px;
+            max-height: 450px;
             background-color: #fff;
             border-radius: 10px;
             padding: 10px;
@@ -436,22 +498,32 @@
             align-items: center;
             box-shadow: 0 0 3px 3px rgb(172, 170, 170);
             & p {
+              text-align: center;
+              font-size: 0.7rem;
               margin: 2px;
             }
             & h3 {
+              text-align: center;
               margin: 3px;
+        
             }
             & .div-img {
-              width: 350px;
-              height: 300px;
+              max-width: 350px;
+              max-height: 300px;
               & img {
+                display: block;
                 border-radius: 10px;
                 box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-                display: block;
                 width: 100%;
                 height: 100%;
               }
             }
+
+            :nth-child(5) {
+              margin-top: 10px;
+              text-align: center;
+            }
+            
           }
         }
       }

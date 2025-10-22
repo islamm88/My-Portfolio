@@ -1,4 +1,106 @@
 @media (max-width: 390px) {
+  #session3-attributes {
+    & .container {
+      & .containt {
+        justify-content: space-between;
+        margin-block: 20px;
+      }
+    }
+  }
+  #session3-entitie {
+    .container {
+      .containt {
+        display: flex;
+        margin-block: 5px;
+        table {
+          width: 90%;
+          margin: auto;
+        }
+      }
+    }
+  }
+  #session3-Semantic {
+    .container {
+      .containt {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 5px;
+        table {
+          width: 90%;
+          margin: auto;
+        }
+        .div-img {
+          width: 90%;
+          height: 100%;
+          img {
+            border-radius: 10px;
+            width: 100%;
+            display: inline-block;
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+          }
+        }
+      }
+    }
+  }
+  #session3-AudioVideo {
+    & .container {
+      & .containet {
+        & .audio,
+        & .video {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          & .col2 {
+            width: 45%;
+            & .div-img {
+              & img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              }
+            }
+          }
+          & .col1 {
+            width: 45%;
+            & video {
+              width: 100%;
+              height: fit-content;
+            }
+            & audio {
+              width: 100%;
+              height: 30px;
+            }
+          }
+        }
+        & .compair {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          & h3 {
+            & span {
+              font-size: inherit;
+            }
+          }
+          & table {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+  #session3-assignment {
+    & p {
+      background-color: black;
+      color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    }
+  }
 }
 @media (min-width: 391px) and (max-width: 767px) {
   #session3-attributes {
@@ -45,15 +147,31 @@
       & .containet {
         & .audio,
         & .video {
+          width: 100%;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          width: 100%;
           & .col2 {
-            width: 50%;
-            & audio,
+            width: 45%;
+            & .div-img {
+              & img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+                box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              }
+            }
+          }
+          & .col1 {
+            width: 45%;
             & video {
               width: 100%;
+              height: fit-content;
+            }
+            & audio {
+              width: 100%;
+              height: 30px;
             }
           }
         }
@@ -81,11 +199,6 @@
       border-radius: 10px;
       box-shadow: 0 0 3px 3px rgb(172, 170, 170);
     }
-  }
-  & aduio,
-  & video {
-    border-radius: 10px;
-    width: 50%;
   }
 }
 @media (min-width: 768px) {
@@ -187,7 +300,6 @@
     & audio,
     & video {
       border-radius: 10px;
-
     }
 
     & video {
