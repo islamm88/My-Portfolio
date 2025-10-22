@@ -348,7 +348,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* padding-block: 5px; */
     list-style: none;
     border: 1px solid var(--color1);
     box-shadow: 0 0 1px 1px #fff;

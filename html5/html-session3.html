@@ -12,12 +12,78 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico">
   </head>
   <body>
+      <aside id="html-aside">
+      <header>
+        <a href="./html-session1.html"><img src="../imge/html.png" alt="my logo"
+            loading="lazy" /></a>
+        <h1>HTML5</h1>
+        <bottom
+          onclick="document.getElementById('html-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#session3-attributes"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Attributes</a>
+          </li>
+          <li>
+            <a
+              href="#session3-entitie"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Entities & Symbols & Emojis</a>
+          </li>
+          <li>
+            <a
+              href="#session3-Semantic"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Semantic Elements</a>
+          </li>
+          <li>
+            <a
+              href="#session3-AudioVideo"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Audio & Video</a>
+          </li>
+          <li>
+            <a
+              href="#session3-name-convetion"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Naming Conventions</a>
+          </li>
+          <li>
+            <a
+              href="#session3-assignment"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a>
+          </li>
+        </ul>
+      </details>
+    </aside>
     <header id="header">
       <div class="container">
         <div id="logo">
           <a href="./html-session1.html"><img src="../imge/html.png"
               alt="my logo" loading="lazy" /></a>
           <h1>HTML5</h1>
+          <bottom
+            onclick="document.getElementById('html-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
         </div>
         <h2>
           SESSION 3
@@ -354,5 +420,6 @@
     <div id="up">
       <a href="#"><i class="fa-solid fa-sort-up"></i></a>
     </div>
+    <script src="./js/html-global-js.js"></script>
   </body>
 </html>
