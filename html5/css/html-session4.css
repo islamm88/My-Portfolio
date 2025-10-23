@@ -1,37 +1,22 @@
 @media (max-width: 390px) {
-}
-@media (min-width: 390px) and (max-width: 767px) {
   #session4-form {
     & .container {
       & .containt {
-        & .div-img {
-          width: 25%;
-          height: 200px;
+        display: flex;
+        flex-direction: column;
+        div {
+          width: 100%;
+        }
+        .div-img {
+          width: 100%;
+          height: 150px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
           & img {
+            display: block;
             width: 100%;
             height: 100%;
             border-radius: 10px;
-          }
-        }
-        & #part1,
-        & #part2 {
-          width: 45%;
-          margin-block: 20px;
-        }
-        & #part2 {
-          width: fit-content;
-          width: 30%;
-          & form {
-            border-radius: 10px;
-            box-shadow: 0 0 5px 5px gray;
-            padding: 30px;
-            width: 100%;
-          }
-          & .div-img {
-            width: 100%;
-            margin-top: 20px;
           }
         }
       }
@@ -41,45 +26,64 @@
   #session4-input-attributes {
     .container {
       .containt {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .part1,
+        .part2 {
+          width: 100%;
+        }
         & .details,
         & table {
-          width: 45%;
+          width: 100%;
         }
       }
     }
   }
 
   #session4-Input-Label {
-    & .container {
-      & .containt {
-        & .div-img {
-          width: 25%;
+    .container {
+      .containt {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .div-img {
+          width: 100%;
           height: 200px;
           border-radius: 10px;
           box-shadow: 0 0 5px 5px gray;
-          & img {
+          img {
             width: 100%;
-            height: 100%;
+            height: 200px;
             border-radius: 10px;
           }
         }
-        & #part1,
-        & #part2 {
-          width: 45%;
-          margin-block: 20px;
+        .part1,
+        .part2 {
+          width: 100%;
+          table {
+            width: 100%;
+            margin: auto;
+          }
         }
-        & #part2 {
-          width: fit-content;
-          width: 30%;
-          & form {
+        #part2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          form {
             border-radius: 10px;
             box-shadow: 0 0 5px 5px gray;
-            padding: 30px;
             width: 100%;
+            height: fit-content;
+            padding: 20px;
           }
-          & .div-img {
+          .div-img {
+            margin-block: 10px;
             width: 100%;
-            margin-top: 20px;
+            img {
+              display: block;
+              width: 100%;
+            }
           }
         }
       }
@@ -91,6 +95,170 @@
       & .containt {
         & .div-img {
           width: 100%;
+          img {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-example {
+    & .container {
+      & .containt {
+        flex-direction: column;
+        & .part1,
+        & .part2 {
+          width: 100%;
+        }
+        .part1 {
+          & .div-img {
+            width: 100%;
+            margin-block: 0;
+            img {
+              display: block;
+              width: 100%;
+              border-radius: 10px;
+              box-shadow: 0 0 5px 5px gray;
+              height: 200px;
+            }
+          }
+        }
+        .part2 {
+          margin-block: 10px;
+          form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            width: 100%;
+            padding: 20px;
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-assignment {
+    & .container {
+      & .containt {
+        background-color: black;
+        border-radius: 10px;
+        padding: 10px;
+
+        & img {
+          display: block;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 390px) and (max-width: 767px) {
+  #session4-form {
+    & .container {
+      & .containt {
+        display: flex;
+        div {
+          width: 45%;
+        }
+        .div-img {
+          width: 45%;
+          height: 150px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-input-attributes {
+    .container {
+      .containt {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .part1,
+        .part2 {
+          width: 100%;
+        }
+        & .details,
+        & table {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  #session4-Input-Label {
+    .container {
+      .containt {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        .div-img {
+          width: 100%;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+          }
+        }
+        .part1,
+        .part2 {
+          width: 100%;
+          table {
+            width: 70%;
+            margin: auto;
+          }
+        }
+        #part2 {
+          display: flex;
+          justify-content: space-between;
+          align-items: start;
+          form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            width: 45%;
+            height: fit-content;
+            padding: 20px;
+            height: 200px;
+          }
+          .div-img {
+            margin-block: 0;
+            width: 50%;
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #session4-hidding-disabel {
+    & .container {
+      & .containt {
+        & .div-img {
+          width: 100%;
+          img {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+          }
         }
       }
     }
@@ -102,29 +270,27 @@
         & .part1,
         & .part2 {
           width: 45%;
-          margin-block: 20px;
         }
-        & .part1 {
-          font-size: 15px;
-          padding: 10px;
-          & img {
-            display: block;
-            width: 100%;
-            height: 100%;
-          }
-        }
-        & .part2 {
-          width: fit-content;
-          width: 30%;
-          & form {
-            border-radius: 10px;
-            box-shadow: 0 0 5px 5px gray;
-            padding: 30px;
-            width: 100%;
-          }
+        .part1 {
           & .div-img {
             width: 100%;
-            margin-top: 20px;
+            margin-block: 0;
+            img {
+              display: block;
+              width: 100%;
+              border-radius: 10px;
+              box-shadow: 0 0 5px 5px gray;
+              height: 200px;
+            }
+          }
+        }
+        .part2 {
+          form {
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px gray;
+            width: 100%;
+            padding: 20px;
+            height: 200px;
           }
         }
       }
@@ -215,17 +381,19 @@
           margin-block: 20px;
         }
         & #part2 {
-          width: fit-content;
-          width: 31%;
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
           & form {
             border-radius: 10px;
             box-shadow: 0 0 5px 5px gray;
             padding: 30px;
-            width: 100%;
+            width: 25%;
+            height: 200px;
           }
           & .div-img {
-            width: 100%;
-            margin-top: 20px;
+            width: 30%;
+            height: 200px;
           }
         }
       }
@@ -289,7 +457,7 @@
         background-color: black;
         border-radius: 10px;
         padding: 20px;
-        width: fit-content;
+        width: 100%;
         margin: auto;
 
         & img {
