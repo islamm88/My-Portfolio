@@ -193,6 +193,10 @@
         & .details,
         & table {
           width: 100%;
+          tr td form {
+            margin-left: 0;
+          }
+
         }
       }
     }
@@ -389,7 +393,8 @@
             box-shadow: 0 0 5px 5px gray;
             padding: 30px;
             width: 25%;
-            height: 200px;
+            height: fit-content;
+            align-self: center;
           }
           & .div-img {
             width: 30%;

@@ -184,7 +184,6 @@ body {
       & tbody {
         & tr {
           & td {
-            text-align: center;
             font-size: 10px;
             font-weight: 400;
           }
@@ -460,7 +459,6 @@ body {
       & tbody {
         & tr {
           & td {
-            text-align: center;
             font-size: 10px;
             font-weight: 400;
           }
