@@ -176,6 +176,9 @@
             }
           }
         }
+        .video .col2 {
+          margin-bottom: 100px;
+        }
         & .compair {
           display: flex;
           flex-direction: column;
@@ -251,6 +254,7 @@
           justify-content: space-between;
           & .col2 {
             width: 45%;
+            margin-bottom: 60px;
             & .div-img {
               & img {
                 width: 100%;
@@ -293,17 +297,6 @@
       background-color: black;
       color: #fff;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    }
-  }
-  #session3-AudioVideo {
-    & audio,
-    & video {
-      border-radius: 10px;
-    }
-
-    & video {
       border-radius: 10px;
       box-shadow: 0 0 3px 3px rgb(172, 170, 170);
     }
