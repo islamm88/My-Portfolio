@@ -1,42 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Oleo+Script:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 :root {
-  --color3: #f1e4e4;
   --color1: #e9dbdb;
-  --color2: #e870ed;
+  --color2: rgba(242, 193, 33);
+  --color3: rgba(243, 225, 164, 0.778);
   --color4: black;
   --color5: rgb(139, 12, 12);
+  --color6: #d1a21a;
   --bgcolor: rgb(199, 198, 191);
 }
 body {
   background-color: var(--bgcolor);
 }
 
+.border {
+  border: 1px solid red;
+}
+
 @media (max-width: 390px) {
-  & .nav-page {
+  /* & .nav-page {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     position: sticky;
     top: 55px;
-    justify-content: space-around;
     list-style: none;
     border: 1px solid #fff;
     background-color: #f16529ec;
     border-radius: 10px;
     padding-block: 10px;
-    margin-top: 5px;
     width: 95%;
     margin: auto;
     margin-top: 10px;
     display: none;
+    height: 30px;
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 12px;
@@ -50,10 +58,11 @@ body {
     }
   }
   & .nav-site {
-    position: sticky;
-    top: 5px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 5px;
     list-style: none;
     border: 1px solid var(--color1);
     box-shadow: 0 0 1px 1px #fff;
@@ -63,8 +72,11 @@ body {
     width: 95%;
     margin: auto;
     display: none;
+    height: 30px;
 
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 12px;
@@ -76,7 +88,7 @@ body {
         color: black;
       }
     }
-  }
+  } */
   & header {
     display: none;
   }
@@ -118,7 +130,6 @@ body {
       margin-top: 10px;
       margin-bottom: 10px;
       font-size: 20px;
-      font-family: "Oleo Script", system-ui;
     }
     & h3 {
       margin: 10px;
@@ -309,56 +320,59 @@ body {
   & .nav-page {
     z-index: 100;
     display: flex;
-    position: sticky;
-    top: 55px;
+    align-items: center;
     justify-content: space-around;
+    position: sticky;
+    top: 5px;
     list-style: none;
     border: 1px solid #fff;
-    background-color: #f16529ec;
+    background-color: #f2c021;
     border-radius: 10px;
-    padding-block: 10px;
-    margin-top: 5px;
     width: 95%;
     margin: auto;
     margin-top: 10px;
+    height: 30px;
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 12px;
         font-weight: 400;
         text-transform: capitalize;
-        color: rgb(252, 252, 252);
+        color: rgb(53, 52, 52);
       }
       & a:hover {
-        color: black;
+        color: #fff;
       }
     }
   }
   & .nav-site {
-    z-index: 100;
-    position: sticky;
-    top: 5px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     list-style: none;
     border: 1px solid var(--color1);
     box-shadow: 0 0 1px 1px #fff;
-    background-color: rgba(144, 47, 23, 0.916);
+    background-color: #e6a429db;
     border-radius: 10px;
     padding-block: 10px;
     width: 95%;
     margin: auto;
+    height: 30px;
 
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 12px;
         font-weight: 400;
         text-transform: uppercase;
-        color: #fff;
+        color: rgb(53, 52, 52);
       }
       & a:hover {
-        color: black;
+        color: #fff;
       }
     }
   }
@@ -384,7 +398,6 @@ body {
       margin-top: 10px;
       margin-bottom: 30px;
       font-size: 20px;
-      font-family: "Oleo Script", system-ui;
     }
     & h3 {
       margin: 10px;
@@ -517,13 +530,12 @@ body {
         font-size: 1.2rem;
         color: #fff;
         text-shadow: 2px 2px 4px black;
-        font-family: "Roboto", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
 
         & .fa-file-pdf {
-          color: #f16529;
+          color: #f2c021;
           margin-left: 10px;
           transition: all 0.5s ease;
         }
@@ -552,21 +564,23 @@ body {
 
 @media (min-width: 767px) {
   & .nav-page {
-    display: flex;
     position: sticky;
-    z-index: 100;
-    top: 55px;
+    top: 5px;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style: none;
     border: 1px solid #fff;
     background-color: #f2c021;
     border-radius: 10px;
     padding-block: 10px;
-    margin-top: 5px;
     width: 95%;
     margin: auto;
     margin-top: 10px;
+    height: 30px;
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 15px;
@@ -580,9 +594,6 @@ body {
     }
   }
   & .nav-site {
-    position: sticky;
-    z-index: 100;
-    top: 5px;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -593,8 +604,10 @@ body {
     padding-block: 10px;
     width: 95%;
     margin: auto;
-
+    height: 30px;
     & li {
+      display: flex;
+      align-items: center;
       & a {
         text-decoration: none;
         font-size: 15px;
@@ -618,7 +631,7 @@ body {
     & .containt {
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
     & h2 {
@@ -626,12 +639,14 @@ body {
       margin-top: 10px;
       margin-bottom: 50px;
       font-size: 30px;
-      font-family: "Oleo Script", system-ui;
     }
     & h3 {
       margin: 15px;
       font-size: 25px;
       font-weight: 400;
+      span {
+        font-size: inherit;
+      }
     }
     & p {
       margin: 10px;
@@ -757,7 +772,6 @@ body {
         font-size: 1.7rem;
         color: #fff;
         text-shadow: 2px 2px 4px black;
-        font-family: "Roboto", sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -786,6 +800,27 @@ body {
           height: 80px;
         }
       }
+    }
+  }
+  .notes {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: var(--color3);
+    border: 1px solid var(--color5);
+    border-radius: 10px;
+    box-shadow: 0 0 1px 2px var(--color6);
+    h3 {
+      margin-block: 2px;
+      font-size: 15px;
+      display: inline-block;
+    }
+    p {
+      font-size: 12px;
+      display: inline-block;
+    }
+    ul li {
+      font-size: 12px;
     }
   }
 }
