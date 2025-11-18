@@ -1,0 +1,118 @@
+header {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 10%;
+  padding-block: 15px;
+
+  nav {
+    /* border: solid; */
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    .sign-in,
+    .rigister {
+      display: inline-block;
+      border: 1px solid var(--body-Font);
+      padding: 7px 10px;
+      border-radius: 55px;
+      font-size: 13px;
+      font-weight: 500;
+      background-color: #ddd;
+
+      i {
+        color: inherit;
+      }
+    }
+
+    .sign-in:hover,
+    .rigister:hover {
+      background-color: var(--body-Font);
+      color: var(--blue);
+      i {
+        color: inherit;
+      }
+    }
+
+    .cart {
+      display: inline-block;
+      background-color: var(--body-Font);
+      color: var(--blue);
+      padding: 7px 10px;
+      border-radius: 55px;
+      font-size: 13px;
+      font-weight: 500;
+      position: relative;
+      .fa-solid {
+        color: var(--blue);
+      }
+
+      .products-number {
+        display: block;
+        padding: 3px;
+        position: absolute;
+        font-size: 10px;
+        background-color: red;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: 400;
+        top: 0;
+        right: 0;
+        transform: translate(40%, -20%);
+      }
+    }
+  }
+
+  .logo {
+    padding: 10px;
+    font-size: 20px;
+    .fa-bag-shopping {
+      font-size: 25px;
+      color: var(--icon-color);
+      margin-right: 0px;
+    }
+    .logo-title {
+      font-weight: 600;
+    }
+    .shopping {
+      display: block;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (width < 930px) {
+  header {
+    justify-content: center;
+    nav {
+      width: 50%;
+      .sign-in,
+      .rigister {
+        font-size: 10px;
+      }
+      .cart {
+        font-size: 10px;
+        .products-number {
+          font-size: 10px;
+          padding: 2px;
+        }
+      }
+    }
+
+    .logo {
+      display: none;
+    }
+  }
+}
+
+@media (width < 400px) {
+  header {
+    nav {
+      width: 100%;
+    }
+  }
+}
