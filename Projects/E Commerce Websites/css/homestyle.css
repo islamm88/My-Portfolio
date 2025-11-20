@@ -81,15 +81,16 @@ main {
         width: 100%;
         height: 50%;
         background-color: #fff;
-        img {
+        a {
           display: block;
-          width: 100%;
           height: 100%;
-          transition: all 0.5s ease;
-          cursor: pointer;
-        }
-        img:hover {
-          transform: scale(1.05);
+          img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            transition: all 0.5s ease;
+            cursor: pointer;
+          }
         }
       }
 
@@ -122,11 +123,11 @@ main {
         }
 
         button {
-          background-color: #9fc5ef;
+          background-color: var(--blue);
           padding: 10px;
           border-radius: 5px;
           font-weight: bold;
-          color: #333;
+          color: var(--btn-card-color);
           text-transform: capitalize;
           font-size: 13px;
         }
@@ -136,7 +137,7 @@ main {
         }
 
         button:hover {
-          color: #fff;
+          color: var(--btn-card-color-hover);
           i {
             color: inherit;
           }

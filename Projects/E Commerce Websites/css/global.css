@@ -22,10 +22,13 @@ html {
 :root {
   --body-bg: #f6f6f6;
   --body-Font: #2b3445;
-  --blue: #9fc5ef;
+  --blue: #71adf2;
   --icon-color:#40464d;
   --btn-bg:#000;
   --btn-color:#fff;
+  --btn-card-color:#333;
+  --form-card-color:#6b6565;
+  --btn-card-color-hover:#eee;
 }
 
 .dark {
@@ -49,7 +52,7 @@ body {
 a,
 button {
   all: unset;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
   /* to be in the same line  */
   display: inline-block;  
 
@@ -61,7 +64,7 @@ a:active , button:active {
 
 a:hover , button:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 ul li {
