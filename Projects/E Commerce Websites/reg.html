@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/reg.css" />
+    <link rel="stylesheet" href="./css/footer.css">
+    <script
+      src="https://kit.fontawesome.com/db1b558ffc.js"
+      crossorigin="anonymous"></script>
+    <link
+      rel="shortcut icon"
+      href="bag-shopping-solid-full.svg"
+      type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header class="flex">
+        <div class="logo">
+          <a href="./index.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="logo-title">AWU</span>
+            <span class="shopping">Shopping</span>
+          </a>
+        </div>
+        <nav class="flex">
+          <a class="cart" href="cart.html"><i
+              class="fa-solid fa-cart-shopping"></i> $0.00
+            <span class="products-number">9+</span></a>
+          <a class="sign-in border" href><i
+              class="fa-solid fa-right-to-bracket"></i> Sign in</a>
+          <a class="rigister border" href = "reg.html"><i class="fa-solid fa-user-plus"></i>
+            Register</a>
+        </nav>
+      </header>
+      <form action="">
+        <div class = "inputs">
+          <label for="userName">User Name :</label>
+          <input id = "userName" type="text" maxlength="70" min="1">
+        </div>
+        <div class = "inputs">
+          <label for="emailAdd">Email Address :</label>
+          <input id = "emailAdd" type="email" maxlength="70" min="1">
+        </div>
+        <div class = "inputs">
+          <label for="password">Password :</label>
+          <input id = "password" type="password" maxlength="70" min="1">
+        </div>
+        <div class = "inputs">
+          <input type="checkbox" id = "checkout"><label id ="lab-checkout" for="checkout"> Check me out</label>
+        </div>
+
+        <button>Create Account</button>
+      </form>
+
+      <footer>
+        High copy &copy; by Div <span>Islam Mustafa</span>
+      </footer>
+    </main>
+  </body>
+</html>
