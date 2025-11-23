@@ -170,3 +170,57 @@ main {
     }
   }
 }
+
+@media (width < 400px) {
+
+  main {
+    .containt {
+      left: 10%;
+      flex-direction: column;
+      .lifestyle {
+        font-size: 3.5rem;
+        font-weight: 400;
+      }
+      .men {
+        font-size: 5.1rem;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .sale {
+        font-weight: bold;
+        margin-block: 10px;
+        font-size: 4.1rem;
+
+        span {
+          color: red;
+          margin-left: 3.8rem;
+        }
+      }
+      .free-shipping {
+        font-weight: bold;
+        margin-block: 10px;
+        font-size: 3.1rem;
+      }
+      button {
+        background-color: var(--btn-bg);
+        color: var(--btn-color);
+        width: fit-content;
+        padding: 10px 15px;
+        margin-top: 20px;
+        border-radius: 5px;
+        font-size: 3.5rem;
+      }
+    }
+  }
+  .recommended-products {
+    width: 90%;
+    margin: auto;
+    h1 {
+      width: 100%;
+      font-size: 15px;
+    }
+    .fa-check {
+      margin-left: -30px;
+    }
+  }
+}

@@ -7,7 +7,19 @@ footer {
   margin-top: 30px;
   text-align: center;
   span {
-    color: red;
+    color: var(--blue);
     font-size: 20px;
+    font-weight: 800;
   }
+}
+
+@media (width < 930px) {
+  footer {
+    font-size: 10px;
+    span {
+      font-size: 15px;
+    }
+  }
+}
+@media (width < 400) {
 }
