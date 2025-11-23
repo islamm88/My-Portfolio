@@ -8,7 +8,7 @@ main {
   justify-content: space-between;
 
   .details {
-    width: 40%;
+    width: 60%;
     height: 400px;
     box-shadow: 0 0 2px 2px rgba(180, 178, 178, 0.5);
     border-radius: 5px;
@@ -18,33 +18,36 @@ main {
     justify-content: space-between;
 
     .div-img {
-
-      width: 35%;
-      height: 200px;
+      width: 45%;
+      height: 350px;
       align-self: center;
-      
+      margin-left: 10px;
+
       img {
         display: block;
         height: 100%;
         width: 100%;
       }
     }
-    
-    .content {
-      width: 60%;
 
+    .content {
+      width: 50%;
       .head {
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-block: 10px;
+        font-size: 16px;
 
         p {
           color: red;
           font-size: 20px;
           font-weight: 600;
         }
+      }
+      .description {
+        font-size: 16px;
       }
 
       button {
@@ -66,6 +69,120 @@ main {
         color: var(--btn-card-color-hover);
         i {
           color: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 930px) {
+  main {
+    .details {
+      flex-direction: column;
+      width: 80%;
+      .div-img {
+        width: 40%;
+        height: 200px;
+        align-self: center;
+        margin-left: 10px;
+      }
+      .content {
+        width: 80%;
+        .head {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-block: 10px;
+          font-size: 13px;
+
+          p {
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .description {
+          font-size: 13px;
+        }
+
+        button {
+          background-color: var(--blue);
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: bold;
+          color: var(--btn-card-color);
+          text-transform: capitalize;
+          font-size: 13px;
+          margin-block: 10px;
+        }
+
+        .fa-solid {
+          color: inherit;
+        }
+
+        button:hover {
+          color: var(--btn-card-color-hover);
+          i {
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (width < 400px) {
+  main {
+    .details {
+      flex-direction: column;
+      width: 80%;
+      .div-img {
+        width: 50%;
+        height: 150px;
+        align-self: center;
+        margin-left: 10px;
+      }
+      .content {
+        width: 80%;
+        .head {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-block: 10px;
+          font-size: 10px;
+
+          p {
+            color: red;
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+        .description {
+          font-size: 10px;
+        }
+
+        button {
+          background-color: var(--blue);
+          padding: 10px;
+          border-radius: 5px;
+          font-weight: bold;
+          color: var(--btn-card-color);
+          text-transform: capitalize;
+          font-size: 13px;
+          margin-block: 10px;
+        }
+
+        .fa-solid {
+          color: inherit;
+        }
+
+        button:hover {
+          color: var(--btn-card-color-hover);
+          i {
+            color: inherit;
+          }
         }
       }
     }
