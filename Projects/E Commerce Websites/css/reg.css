@@ -13,12 +13,12 @@ main {
     align-items: center;
     justify-content: center;
     .fa-user-plus {
-      font-size: 40px;
+      font-size: 25px;
       margin-bottom: 5px;
       border: 1px solid rgba(16, 12, 236, 0.387);
       box-shadow: 0 0 5px 3px var(--blue);
-      width: 100px;
-      height: 100px;
+      width: 60px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -27,7 +27,7 @@ main {
     }
     h2 {
       color: var(--blue);
-      font-size: 30px;
+      font-size: 20px;
       margin-bottom: 10px;
       text-shadow: 0 0 1px black;
     }
@@ -48,17 +48,17 @@ main {
       background-color: var(--body-bg);
       color: var(--body-Font);
       .inputs {
-        padding: 15px 10px ;
+        padding: 10px;
+        margin-block: 5px;
         display: flex;
         border-top: 2px solid var(--blue);
         border-radius: 10px;
         flex-direction: column;
         width: 100%;
-        margin-block: 10px;
         input[type="text"],
         input[type="email"],
         input[type="password"] {
-          padding: 10px;
+          padding: 5px;
           width: 98%;
           border: none;
           outline: none;
@@ -66,21 +66,19 @@ main {
           margin-block: 5px;
           box-shadow: 0 0 2px 2px rgba(180, 178, 178, 0.5);
         }
-
         input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="password"]:focus {
           box-shadow: 0 0 2px 2px var(--blue);
         }
-
         label {
-          font-weight: 700;
+          font-weight: 600;
+          font-size: 15px;
           .fa-solid {
             color: var(--blue);
           }
         }
       }
-
       .inputs:nth-of-type(4) {
         border: none;
       }
@@ -90,7 +88,6 @@ main {
       :nth-of-type(4) {
         flex-direction: row;
       }
-
       button {
         background-color: var(--blue);
         color: var(--body-bg);
@@ -98,6 +95,50 @@ main {
         border-radius: 5px;
         align-self: center;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+@media (width < 930px) {
+  main {
+    .container {
+      height: fit-content;
+      .fa-user-plus {
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
+      }
+      h2 {
+        font-size: 15px;
+      }
+      form {
+        width: 70%;
+        .inputs {
+          padding: 10px;
+          margin-block: 5px;
+          label {
+            font-weight: 400;
+            font-size: 12px;
+            .fa-solid {
+              color: var(--blue);
+            }
+          }
+        }
+        button {
+          font-weight: 600;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (width < 400px) {
+  main {
+    .container {
+      form {
+        width: 90%;
       }
     }
   }
