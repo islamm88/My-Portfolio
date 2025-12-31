@@ -1,0 +1,23 @@
+@media (max-width: 390px)  {
+
+}
+
+@media (min-width: 391px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    h4 {
+      margin-left: 25px ;
+      margin-block: 20px;
+    }
+
+    .containt {
+      .col1,
+      .col2 {
+        width: 40%;
+      }
+    }
+  }
+}
