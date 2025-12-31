@@ -1,28 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/bootstarp-session1.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/bootstarp-session1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
     <title>Bootstarp-Session1</title>
   </head>
   <body>
     <aside id="html-aside">
       <header>
-        <a href="./html-session1.html"><img src="../imge/html.png" alt="my logo"
-            loading="lazy" /></a>
+        <a href="./html-session1.html"
+          ><img src="../imge/html.png" alt="my logo" loading="lazy"
+        /></a>
         <h1>HTML5</h1>
         <bottom
-          onclick="document.getElementById('html-aside').style.left = '100%'"><i
-            class="fa-solid fa-circle-xmark"></i></bottom>
+          onclick="document.getElementById('html-aside').style.left = '100%'"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></bottom>
       </header>
       <details>
         <summary onclick="collapses_nav_site()">
-          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
-            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+          <i class="fa-solid fa-chevron-down down-nav-site"></i
+          ><i class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
         </summary>
         <ul class="nav-site-asid">
           <li><a href="./html-session1.html">Session 1</a></li>
@@ -35,38 +40,45 @@
       </details>
       <details>
         <summary onclick="collapses_nav_page()">
-          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
-            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          <i class="fa-solid fa-chevron-down down-nav_page"></i
+          ><i class="fa-solid fa-chevron-right right-nav_page"></i> Page
           Navigation
         </summary>
         <ul class="nav-page-asid">
           <li>
             <a
               href="#session1-webintro"
-              onclick="document.getElementById('html-aside').style.left = '100%'">Web
-              Introduction</a>
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Web Introduction</a
+            >
           </li>
           <li>
             <a
               href="#session1-htmlIntor"
-              onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Introduction</a>
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >HTML Introduction</a
+            >
           </li>
           <li>
             <a
               href="#session1-htmltagelement"
-              onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Tag&Element</a>
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >HTML Tag&Element</a
+            >
           </li>
           <li>
             <a
               href="#session1-heading-p-pre"
-              onclick="document.getElementById('html-aside').style.left = '100%'">heading_p_pre</a>
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >heading_p_pre</a
+            >
           </li>
           <li>
             <a
               href="#session1-assignment"
-              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a>
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Assignment</a
+            >
           </li>
         </ul>
       </details>
@@ -74,17 +86,18 @@
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./bootstarp-session1.html"><img src="../imge/bootstrap.png"
-              alt="my logo" loading="lazy" /></a>
+          <a href="./bootstarp-session1.html"
+            ><img src="../imge/bootstrap.png" alt="my logo" loading="lazy"
+          /></a>
           <h1>Bootstrap 5.3.8</h1>
           <bottom
-            onclick="document.getElementById('html-aside').style.left = '0'"><i
-              class="fa-solid fa-bars"></i></bottom>
+            onclick="document.getElementById('html-aside').style.left = '0'"
+            ><i class="fa-solid fa-bars"></i
+          ></bottom>
         </div>
         <h2>
           SESSION 1
-          <a href target="_blank"><i
-              class="fa-solid fa-file-pdf"></i></a>
+          <a href target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
         </h2>
       </div>
     </header>
@@ -97,8 +110,8 @@
     </ul>
     <ul class="nav-page">
       <li><a href="#session1-introduction">Introduction</a></li>
-      <li><a href="#session1-Breakpoints">Breakpoints</a></li>
-      <li><a href="#"></a></li>
+      <li><a href="#session1-Start">Getting started</a></li>
+      <li><a href="#session1-Breakpoints">Breakpoints & M & P</a></li>
       <li><a href="#"></a></li>
       <li><a href="#"></a></li>
     </ul>
@@ -112,58 +125,173 @@
           <li>Build fast .</li>
           <li>responsive sites .</li>
           <li>Currently v5.3.8</li>
+          <li>Build and customize with Sass</li>
         </ul>
-        <h4><span>A Frontend Toolkit is a set of tools or libraries that help
-            you build website and application interfaces quickly and
-            efficiently.</span></h4>
-
-        <h3>Quick start</h3>
-        <ol>
-          <li>Create a new index.html file in your project root. Include the
-            <span>&lt;meta name="viewport"&gt;</span> tag as well for proper responsive behavior in
-            mobile devices.</li>
-          <li>Include Bootstrap’s CSS and JS.
-            <ul>
-              <li><small><span>&lt;link
-                  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-                  rel="stylesheet"
-                  integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-                  crossorigin="anonymous"&gt;</span></small></li>
-              <li><small><span>&lt;script
-                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                  crossorigin="anonymous" &gt;&lt;/script &gt;</span></small></li>
-            </ul>
-          </li>
-        </ol>
+        <h4>
+          <span
+            >A Frontend Toolkit is a set of tools or libraries that help you
+            build website and application interfaces quickly and
+            efficiently.</span
+          >
+        </h4>
 
         <h3>Important globals</h3>
         <ul>
-          <li>Bootstrap requires the use of the HTML5 doctype <span>&lt;!DOCTYPE
-            html&gt;</span> . Without it, you’ll see some funky and incomplete
-            styling.</li>
-          <li>Bootstrap is developed mobile first so necessary using CSS media
-            queries
-            <ul><li> <span>&lt;meta name="viewport"
-                content="width=device-width, initial-scale=1"&gt;</span></li></ul>
-          </li>
-          <li> you need to override box-sizing if you find prblem with third
-            party
-            like Google Maps and Google Custom Search Engine.
-            <span>.selector-for-some-widget {
-            box-sizing: content-box;
-            }</span></li>
           <li>
-            Bootstrap Reboot For improved cross-browser rendering .
+            Bootstrap requires the use of the HTML5 doctype
+            <span>&lt;!DOCTYPE html&gt;</span> . Without it, you’ll see some
+            funky and incomplete styling.
           </li>
+          <li>
+            Bootstrap is developed mobile first so necessary using CSS media
+            queries
+          </li>
+          <li>
+            you need to override box-sizing if you find problem with third party
+            like Google Maps and Google Custom Search Engine.
+            <span>.selector-for-some-widget { box-sizing: content-box; }</span>
+          </li>
+          <li>Bootstrap Reboot For improved cross-browser rendering .</li>
         </ul>
+        <h3>What is Reboot in Bootstrap?</h3>
+        <p>
+          <span>Bootstrap Reboot </span>is a small CSS file included in
+          Bootstrap.
+        </p>
+        <p>
+          Its job is to
+          <span
+            >normalize and clean up the default styles of HTML elements across
+            all browsers.</span
+          >
+        </p>
+        <p>
+          <span>Reboot works automatically when you include Bootstrap.</span>
+        </p>
       </div>
     </section>
-    <section id = "session1-Breakpoints">
-      <div class = "container">
+    <section id="session1-Start">
+      <div class="container">
+        <h2>Getting started</h2>
+        <h3>Quick start</h3>
+        <ol>
+          <li>
+            Create a new index.html file in your project root. Include the
+            <span>&lt;meta name="viewport"&gt;</span> tag as well for proper
+            responsive behavior in mobile devices.
+            <ul>
+              <li class="next-ul">
+                <span
+                  >&lt;meta name="viewport" content="width=device-width,
+                  initial-scale=1"&gt;</span
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            Include Bootstrap’s CSS and JS.
+            <ul>
+              <li class="next-ul">
+                <small
+                  ><span style="color: blue"
+                    >&lt;link
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+                    rel="stylesheet"
+                    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+                    crossorigin="anonymous"&gt;</span
+                  ></small
+                >
+              </li>
+              <li class="next-ul">
+                <small
+                  ><span style="color: blue"
+                    >&lt;script
+                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                    crossorigin="anonymous" &gt;&lt;/script &gt;</span
+                  ></small
+                >
+              </li>
+            </ul>
+          </li>
+        </ol>
+        <h3>Download Bootstrap</h3>
+        <div class="containt">
+          <div class="col1">
+            <p>Download Bootstrap (Local Files)</p>
+            <ol>
+              <li>
+                Go to the official Bootstrap website
+                <span style="color: blue">https://getbootstrap.com</span>
+              </li>
+              <li>Click Download</li>
+              <li>Choose Compiled CSS and JS</li>
+              <li>Download the ZIP file</li>
+              <li>Extract it into your project folder</li>
+            </ol>
+            <h4>File References</h4>
+            <p>
+              In your project, you will need to reference the following
+              Bootstrap files:
+            </p>
+            <ul>
+              <li>
+                From CSS: <code>bootstrap.css</code> and
+                <code>bootstrap.min.css</code>
+              </li>
+              <li>
+                From JS: <code>bootstrap.js</code> and
+                <code>bootstrap.min.js</code>
+              </li>
+            </ul>
+            <p>
+              you can include bootstrap.min.css & bootstrap.min.js in your HTML
+              file like this:
+            </p>
+            <ul>
+              <li class="next-ul">
+                <span style="color: blue"
+                  >&lt;link href="path/to/bootstrap.min.css"
+                  rel="stylesheet"&gt;</span
+                >
+              </li>
+              <li class="next-ul">
+                <span style="color: blue"
+                  >&lt;script
+                  src="path/to/bootstrap.min.js"&gt;&lt;/script&gt;</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <div class="img">
+                <img src="./img/download-bootstrap-files.png" alt="" />
+              </div>
+              <div class="img-sub">
+                <img
+                  class="css-bootstrap"
+                  src="./img/css-bootstrap.png"
+                  alt=""
+                />
+                <img class="js-bootstrap" src="./img/js-bootstrap.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="session1-Breakpoints">
+      <div class="container">
         <h2>Breakpoints & Margin & Padding</h2>
         <h3>Breakpoints</h3>
-        <table class = "table">
+        <h4>What are Breakpoints in Bootstrap?</h4>
+        <p>
+          Breakpoints are screen width points where the layout changes to fit
+          different devices.
+        </p>
+        <p>Bootstrap uses breakpoints to make your website responsive.</p>
+        <table class="table">
           <thead>
             <tr>
               <th>Breakpoint</th>
@@ -205,65 +333,174 @@
           </tbody>
         </table>
         <h3>Padding & Margin</h3>
-        <div class="containt ">
-          <div class="col1 ">      
+        <div class="containt">
+          <div class="col1">
             <h4>Padding and (Paddding Responsive)</h4>
             <p>p{direction}-{size}</p>
             <ul>
-              <li>(( Direction ))
+              <li>
+                (( Direction ))
                 <ul>
-                  <li>p     Padding</li>
-                  <li>pt    padding-top</li>
-                  <li>pb    padding-bottom</li>
-                  <li>ps    padding-start</li>
-                  <li>pe    padding-end</li>
-                  <li>px    padding (left & Right)</li>
-                  <li>py    padding (up & Down)</li>
+                  <li>.p Padding</li>
+                  <li>.pt padding-top</li>
+                  <li>.pb padding-bottom</li>
+                  <li>.ps padding-start</li>
+                  <li>.pe padding-end</li>
+                  <li>.px padding (left & Right)</li>
+                  <li>.py padding (up & Down)</li>
                 </ul>
               </li>
-              <li> (( Size ))
+              <li>
+                (( Size ))
                 <ul>
-                  <li>0 =  0</li>
-                  <li>1 =  0.25rem</li>
-                  <li>2 =  0.5rem</li>
-                  <li>3 =  1rem</li>
-                  <li>4 =  1.5rem</li>
-                  <li>5 =  3rem</li>
+                  <li>0 = 0</li>
+                  <li>1 = 0.25rem</li>
+                  <li>2 = 0.5rem</li>
+                  <li>3 = 1rem</li>
+                  <li>4 = 1.5rem</li>
+                  <li>5 = 3rem</li>
                 </ul>
               </li>
             </ul>
           </div>
-          <div class="col2 ">      
+          <div class="col2">
             <h4>Margin and (Margin Responsive)</h4>
             <p>m{direction}-{size}</p>
             <ul>
-              <li>(( Direction ))
+              <li>
+                (( Direction ))
                 <ul>
-                  <li>m     Margin</li>
-                  <li>mt    Margin-top</li>
-                  <li>mb    Margin-bottom</li>
-                  <li>ms    Margin-start</li>
-                  <li>me    Margin-end</li>
-                  <li>mx    Margin (left & Right)</li>
-                  <li>my    Margin (up & Down)</li>
+                  <li>.m Margin</li>
+                  <li>.mt Margin-top</li>
+                  <li>.mb Margin-bottom</li>
+                  <li>.ms Margin-start</li>
+                  <li>.me Margin-end</li>
+                  <li>.mx Margin (left & Right)</li>
+                  <li>.my Margin (up & Down)</li>
                 </ul>
               </li>
-              <li> (( Size ))
+              <li>
+                (( Size ))
                 <ul>
-                  <li>0 =  0</li>
-                  <li>1 =  0.25rem</li>
-                  <li>2 =  0.5rem</li>
-                  <li>3 =  1rem</li>
-                  <li>4 =  1.5rem</li>
-                  <li>5 =  3rem</li>
+                  <li>0 = 0</li>
+                  <li>1 = 0.25rem</li>
+                  <li>2 = 0.5rem</li>
+                  <li>3 = 1rem</li>
+                  <li>4 = 1.5rem</li>
+                  <li>5 = 3rem</li>
                 </ul>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
 
+    <section id="background">
+      <div class="container">
+        <h2>Background Color - texe color</h2>
+        <h3>Background Color</h3>
+        <div class="containt">
+          <div class="col1">
+            <p>.bg-primary</p>
+            <p>.bg-primary-subtle</p>
+            <p>.bg-secondary</p>
+            <p>.bg-secondary-subtle</p>
+            <p>.bg-success</p>
+            <p>.bg-success-subtle</p>
+            <p>.bg-danger</p>
+            <p>.bg-danger-subtle</p>
+            <p>.bg-warning</p>
+            <p>.bg-warning-subtle</p>
+            <p>.bg-info</p>
+            <p>.bg-info-subtle</p>
+            <p>.bg-light</p>
+            <p>.bg-light-subtle</p>
+            <p>.bg-dark</p>
+            <p>.bg-dark-subtle</p>
+            <p>.bg-body-secondary</p>
+            <p>.bg-body-tertiary</p>
+            <p>.bg-body</p>
+            <p>.bg-black</p>
+            <p>.bg-white</p>
+            <p>.bg-transparent</p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/Bootstrap-bg.png" alt="" />
+            </div>
+          </div>
         </div>
-  
+        <h3>Background Color Opacity</h3>
+        <div class="containt">
+          <div class="col1">
+            <p>.bg-opacity-75</p>
+            <p>.bg-opacity-50</p>
+            <p>.bg-opacity-25</p>
+            <p>.bg-opacity-10</p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/Bootstrap-opacity.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <h3>Text Color</h3>
+        <div class="containt">
+          <div class="col1">
+            <p>.text-primary</p>
+            <p>.text-primary-emphasis</p>
+            <p>.text-secondary</p>
+            <p>.text-secondary-emphasis</p>
+            <p>.text-success</p>
+            <p>.text-success-emphasis</p>
+            <p>.text-danger</p>
+            <p>.text-danger-emphasis</p>
+            <p>.text-warning bg-dark</p>
+            <p>.text-warning-emphasis</p>
+            <p>.text-info bg-dark</p>
+            <p>.text-info-emphasis</p>
+            <p>.text-light</p>
+            <p>.text-light-emphasis</p>
+            <p>.text-dark bg-white</p>
+            <p>.text-dark-emphasis</p>
+            <br />
+            <p>.text-body</p>
+            <p>.text-body-emphasis</p>
+            <p>.text-body-secondary</p>
+            <p>.text-body-tertiary</p>
+            <br />
+            <p>.text-black bg-white</p>
+            <p>.text-white bg-dark</p>
+            <p>.text-black-50 bg-white</p>
+            <p>.text-white-50 bg-dark</p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/Bootstrap-text-color.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <h3>Text Color Opacity</h3>
+        <div class="containt">
+          <div class="col1">
+            <p>.text-opacity-75</p>
+            <p>.text-opacity-50</p>
+            <p>.text-opacity-25</p>
+            <p>.text-opacity-10</p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/Bootstrap-text-opacity.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="session1-emphasis">
+      <div class="container">
+        <h2>Emphasis</h2>
+      </div>
     </section>
   </body>
 </html>

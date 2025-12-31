@@ -1,22 +1,69 @@
-@media (max-width: 390px)  {
-
+@media (max-width: 390px) {
 }
 
 @media (min-width: 391px) and (max-width: 767px) {
-
 }
 
 @media (min-width: 768px) {
-  .container {
-    h4 {
-      margin-left: 25px ;
-      margin-block: 20px;
-    }
+  #session1-introduction {
+    .container {
+      h4 {
+        margin-left: 25px;
+        margin-block: 20px;
+      }
 
-    .containt {
-      .col1,
-      .col2 {
-        width: 40%;
+      .containt {
+        .col1,
+        .col2 {
+          width: 40%;
+        }
+      }
+    }
+  }
+
+  #session1-Start {
+    .container {
+      .containt {
+        .col1,
+        .col2 {
+          width: 50%;
+        }
+        .col1 {
+          align-self: flex-start;
+        }
+        .col2 {
+          .div-img {
+            display: flex;
+            flex-direction: column;
+            .img {
+              width: 100%;
+              margin-block: 10px;
+              img {
+                margin-left: auto;
+              }
+
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+            }
+            .img-sub {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .css-bootstrap,
+              .js-bootstrap {
+                width: 48%;
+              }
+              .js-bootstrap{
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+      .next-ul {
+        margin-left: 25px;
+        margin-block: 10px;
       }
     }
   }
