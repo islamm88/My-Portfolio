@@ -1,0 +1,25 @@
+@media (max-width: 390px) {
+}
+
+@media (min-width: 391px) and (max-width: 767px) {
+}
+
+@media (min-width: 767px) {
+  #session2-arithmetic-operators {
+    .container {
+      .containte {
+        .col1,
+        .col2 {
+          width: 45%;
+          padding: 10px;
+        }
+        .col2 {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+      }
+    }
+  }
+
+}

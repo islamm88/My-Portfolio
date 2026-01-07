@@ -15,7 +15,7 @@
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"><img src="../imge/js.png" alt="my logo"
+          <a href="./js-session1.html"><img src="../imge/js.png" alt="my logo"
               loading="lazy" /></a>
           <h1>JavaScript</h1>
         </div>
@@ -26,8 +26,8 @@
       </div>
     </header>
     <ul class="nav-site">
-      <li><a href="./html-session1.html">Session 1</a></li>
-      <li><a href="./html-session2.html">Session 2</a></li>
+      <li><a href="./js-session1.html">Session 1</a></li>
+      <li><a href="./js-session2.html">Session 2</a></li>
       <li><a href="./html-session3.html">Session 3</a></li>
       <li><a href="./html-session4.html">Session 4</a></li>
       <li><a href="./html-session5.html">Session 5</a></li>
@@ -44,14 +44,26 @@
       <div class="container">
         <h2>Introduction</h2>
         <h3>what is JavaScript ?</h3>
-        <div class="containt">
+        <div class="containte">
           <div class="col1">
             <ul>
               <li>
-                JavaScript (often abbreviated as JS) is a high-level,
-                interpreted programming language that is most commonly used to
+                JavaScript (often abbreviated as <span>J S</span>) is a
+                <span>High-level</span> ,
+                <span>interpreted</span> programming language
+                <span>"runs line-by-line"</span> that is most commonly used to
                 make web pages <span>interactive</span> and <span>dynamic</span>
                 .
+              </li>
+              <li>
+                In JavaScript, the interpreter is the <span>JavaScript Engine
+                  inside the browser </span>.
+                How the interpreter works.
+                <ul>
+                  <li>Reads your code</li>
+                  <li>Compiles it just-in-time (JIT) into machine code</li>
+                  <li>Executes it</li>
+                </ul>
               </li>
               <li>
                 <span>Client-side</span> scripting language: Runs directly in
@@ -89,16 +101,69 @@
             </div>
           </div>
         </div>
+        <h3>High-level language</h3>
+        <p>A high-level programming language is a language designed to be easy
+          for humans to read, write, and understand, without worrying about
+          hardware details.</p>
+        <div class="containte">
+          <div class="col1" id="col1">
+            <p>Code by C Language</p>
+            <div class="div-img">
+              <img src="./img/c-code.png" alt>
+            </div>
+          </div>
+          <div class="col">
+            <h3>Translate</h3>
+          </div>
+          <div class="col2" id="col2">
+            <p>Code by machin language</p>
+            <div class="div-img">
+              <img src="./img/binary-code.png" alt>
+            </div>
+          </div>
+        </div>
+        <h3>Translate</h3>
+        <div class="containte">
+          <div class="col1">
+            <table>
+              <thead>
+                <tr>
+                  <th>Compiler</th>
+                  <th>Interpreter</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Translates all code first</td>
+                  <td>Executes code line by line</td>
+                </tr>
+                <tr>
+                  <td>Faster execution</td>
+                  <td>Slower execution</td>
+                </tr>
+                <tr>
+                  <td>Errors shown before running</td>
+                  <td>Errors shown while running</td>
+                </tr>
+                <tr>
+                  <td>Creates a binary file</td>
+                  <td>No binary file</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
+
     <section id="session1-where-to-type">
       <div class="container">
         <h2>Where we can type JavaScript ?</h2>
-        <div class="containt">
+        <div class="containte">
           <div class="col1">
             <p>You can type and run JavaScript in many different places.
               Here are the most common places</p>
-            <h3>console</h3>
+            <h3>1- console</h3>
             <ol>
               <li>In Your Web Browser (The Easiest Way to Start)
                 Browsers like Chrome, Firefox, and Edge have built-in JavaScript
@@ -112,7 +177,7 @@
                 (Windows)
               </li>
             </ol>
-            <h3>In HTML File</h3>
+            <h3>2- In HTML File</h3>
             <p>This is how JavaScript is used to make web pages interactive.
               Create an HTML file (e.g., index.html) and use the
               <span>&lt;script&gt;</span>
@@ -129,17 +194,19 @@
                 onclick="alert('Hello, Islam!')"&gt;Click me&lt;/a&gt; </span>
             </p>
             <a class="ex" onclick="alert('Hello, Islam!')">Click me</a>
-            <h3>External file</h3>
+            <h3>3- External file</h3>
             <p>You can also link to an <span>external .js</span> file in html
               file .</p>
+
             <p><span>&lt;script src="myscripts.js"&gt;&lt;/script&gt;</span></p>
+            <a class="ex" onclick="greeting()">Click me</a>
             <a class="ex" href="./assets/session1-ex/where to type.rar">Example
             </a>
           </div>
           <div class="col2">
             <div class="div-img">
               <img src="./img/console-img.png" alt="console photo code"
-                loading="lazy">
+                loading="lazy" height="250">
             </div>
             <div class="div-img">
               <img src="./img/console-photo-code.png" alt="console photo code"
@@ -160,12 +227,11 @@
           </div>
         </div>
         <hr>
-        <h2 style="font-size: 20px;">Comments</h2>
+        <h2>Comments</h2>
         <p>In JavaScript, comments are used to explain your code — they are
           ignored by the browser (not executed).
           There are two main types of comments</p>
-
-        <div class="containt">
+        <div class="containte">
           <div class="col1">
             <ul>
               <li>Single line comments start with <span>//</span>.</li>
@@ -183,16 +249,27 @@
         </div>
       </div>
     </section>
+
     <section id="session1-Variables">
       <div class="container">
-        <h3><span><u>"use strict"</u></span> </h3>
+        <h2>use strict</h2>
+        <h3><u>What is "use strict"?</u></h3>
+        <div class="containte">
+          <div class="col1">
+            <p>"use strict" is a directive that tells JavaScript to run the code
+              in <span>“strict mode.”</span></p>
+            <p>Strict mode makes JavaScript more <span>secure and less
+                error-prone</span>
+              by enforcing stricter rules for writing code.</p>
+            <p> You activate it by putting this line at the top script</p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img id="stric-mode" src="./img/stric-mode.png" alt>
+            </div>
+          </div>
+        </div>
 
-        <p>What is "use strict"?</p>
-        <p>"use strict" is a directive that tells JavaScript to run the code
-          in <span>“strict mode.”</span></p>
-        <p>Strict mode makes JavaScript more <span>secure and less error-prone</span>
-          by enforcing stricter rules for writing code.</p>
-        <p> You activate it by putting this line at the top script</p>
         <h2>Variables</h2>
         <h3>Variables = Data Containers</h3>
         <p>In JavaScript, variables are <span>containers</span> used to store
@@ -207,7 +284,7 @@
           <span>value</span>.</p>
         <p> Example : <span>let age = 47;</span> age → variable that holds the
           number 47. </p>
-        <div class="containt">
+        <div class="containte">
           <div class="col1">
 
             <h3>How can I name a variable (<span>Rules</span> and
@@ -240,13 +317,11 @@
             </div>
           </div>
         </div>
-        <div class="containt">
+        <div class="containte">
           <div class="col1">
             <p>In JavaScript, <span>var</span> , <span>let</span> , and
               <span>const</span> are all used to declare variables, but they
               behave differently .</p>
-
-            <a href>Session</a>
           </div>
           <div class="col2">
             <div class="div-img">
@@ -255,7 +330,6 @@
           </div>
 
         </div>
-
         <h3> What Is Scope? </h3>
         <p>Scope means the area in your code where a variable is accessible.
           In simple words: it defines where you can use a variable in your
@@ -268,12 +342,14 @@
           <li>Function Scope</li>
           <li>Block Scope</li>
         </ul>
+        <a class="ex" href="./assets/session1-ex/Variable-Scope.rar">Example
+        </a>
         <table>
           <thead>
             <tr>
-              <td>Type</td>
-              <td>Description</td>
-              <td>Declared With </td>
+              <th>Type</th>
+              <th>Description</th>
+              <th>Declared With </th>
             </tr>
           </thead>
           <tbody>
@@ -290,18 +366,119 @@
             <tr>
               <tr>
                 <td>Block Scope</td>
-                <td>Accessible **only inside `{ }`** (like in `if`, `for`, etc.)</td>
+                <td>Accessible **only inside `{ }`** (like in `if`, `for`,
+                  etc.)</td>
                 <td>created by `let` or `const`</td>
               </tr>
             </tr>
           </tbody>
         </table>
+        <h2>DataType</h2>
+        <div class="containt">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Data Type</th>
+                <th>Example</th>
+                <th>typeof Result</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Primitive</td>
+                <td>Number</td>
+                <td>10, 3.14</td>
+                <td>number</td>
+                <td>No int or float in JS</td>
+              </tr>
+              <tr>
+                <td>Primitive</td>
+                <td>String</td>
+                <td>Hello</td>
+                <td>string</td>
+                <td>Text</td>
+              </tr>
+              <tr>
+                <td>Primitive</td>
+                <td>Boolean</td>
+                <td>true, false</td>
+                <td>boolean</td>
+                <td>True / False</td>
+              </tr>
+              <tr>
+                <td>Primitive</td>
+                <td>Undefined</td>
+                <td>let x;</td>
+                <td>undefined</td>
+                <td>Declared, not assigned</td>
+              </tr>
+              <tr>
+                <td>Primitive</td>
+                <td>Null</td>
+                <td>null</td>
+                <td>object</td>
+                <td>Historical JS bug</td>
+              </tr>
+              <tr>
+                <td>Reference</td>
+                <td>Object</td>
+                <td>{}</td>
+                <td>object</td>
+                <td>Key–value pairs</td>
+              </tr>
+              <tr>
+                <td>Reference</td>
+                <td>Array</td>
+                <td>[]</td>
+                <td>object</td>
+                <td>Indexed collection</td>
+              </tr>
+              <tr>
+                <td>Reference</td>
+                <td>Function</td>
+                <td>function(){}</td>
+                <td>function</td>
+                <td>Callable object</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
 
+    </section>
 
+    <section id="session1-Output">
+      <div class="container">
+        <h2>JavaScript Output</h2>
+        <h3>JavaScript can "display" data in different ways:</h3>
+        <ul>
+          <li>Writing into an HTML element, using <span>innerHTML or
+              innerText</span> .</li>
+          <li>Writing into the HTML output using <span>document.write()</span>
+            .</li>
+          <li>Writing into an alert box, using <span>window.alert()</span>
+            .</li>
+          <li>Writing into the browser console, using <span>console.log()</span>
+            .</li>
+        </ul>
 
-
-
+        <div class="div-img">
+          <img src="./img/output.png" alt>
+        </div>
       </div>
     </section>
+
+    <script src="js/external .js"></script>
   </body>
 </html>
+
+<!--
+
+1- high-level
+2- interpreted 
+
+
+
+-->

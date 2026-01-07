@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/js-global-css.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="./css/js-session2-css.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./js-session1.html"><img src="../imge/js.png" alt="my logo"
+              loading="lazy" /></a>
+          <h1>JavaScript</h1>
+        </div>
+        <h2>
+          SESSION 2
+          <a href target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./js-session1.html">Session 1</a></li>
+      <li><a href="./js-session2.html">Session 2</a></li>
+      <li><a href="./html-session3.html">Session 3</a></li>
+      <li><a href="./html-session4.html">Session 4</a></li>
+      <li><a href="./html-session5.html">Session 5</a></li>
+      <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session1-introduction">Introduction</a></li>
+      <li><a href="#session1-where-to-type">where to type</a></li>
+      <li><a href="#session1-Syntax">Syntax</a></li>
+      <li><a href="#session1-------"></a></li>
+      <li><a href="#session1-------"></a></li>
+    </ul>
+    <section id="session2-arithmetic-operators">
+      <div class="container">
+        <h2>Arithmetic Operators</h2>
+        <div class="containte">
+          <div class="col1 ">
+
+            <h3>Arithmetic Operations in JavaScript</h3>
+            <p>Arithmetic operations are the basic math operations you can use
+              in JS such as:</p>
+            <ul>
+              <li>Addition : <span>let x = a + b;</span> </li>
+              <li>Subtraction : <span>let z = x - y;</span></li>
+              <li>Multiplication : <span>let z = x * y;</span></li>
+              <li>Division : <span>let z = x / y;</span></li>
+              <li>Modulus : <span>let z = x % y;</span></li>
+              <li>Exponent : <span>let z = x ** 2;</span></li>
+              <li>Increment : <span>x++;</span></li>
+              <li>Decrement : <span>x--;</span></li>
+            </ul>
+            <p>Operation Priority (Order of execution)</p>
+            <ol>
+              <li>Parentheses ()</li>
+              <li>Exponents **</li>
+              <li>Multiplication / Division * /</li>
+              <li>Addition / Subtraction + -</li>
+            </ol>
+            <p> <a
+                href="https://www.w3schools.com/js/exercise.asp?x=xrcise_arithmetic2">Traning
+                on Arithmetic Operations in JavaScript</a></p>
+          </div>
+          <div class="col2">
+            <table>
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> + </td>
+                  <td>Addition</td>
+                </tr>
+                <tr>
+                  <td> - </td>
+                  <td>Subtraction</td>
+                </tr>
+                <tr>
+                  <td> * </td>
+                  <td>Multiplication</td>
+                </tr>
+                <tr>
+                  <td> ** </td>
+                  <td>Exponentiation (ES2016)</td>
+                </tr>
+                <tr>
+                  <td> / </td>
+                  <td>Division</td>
+                </tr>
+                <tr>
+                  <td> % </td>
+                  <td>Modulus (Remainder)</td>
+                </tr>
+                <tr>
+                  <td> ++ </td>
+                  <td>Increment</td>
+                </tr>
+                <tr>
+                  <td> -- </td>
+                  <td>Decrement</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr>
+        <h2>Assignment & Logical Operators</h2>
+        <div class="containte">
+          <div class="col1" style="flex-direction: column;">
+            <h3>Truthy & Falsy</h3>
+            <p> <span>In JavaScript, every value is either truthy or
+                falsy</span> </p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Truthy</th>
+                  <th>Falsy</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>0 , -0</td>
+                </tr>
+                <tr>
+                  <td>true</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>"hello"</td>
+                  <td>""</td>
+                </tr>
+                <tr>
+                  <td>any number accept 0</td>
+                  <td>null</td>
+                </tr>
+                <tr>
+                  <td>any string accept ""</td>
+                  <td>NaN , undefined</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="col2" style="flex-direction: column;">
+            <h3>Assignment</h3>
+            <p><span>Given that x = 10 and y = 5, the table below explains the
+                assignment operators:</span></p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Example</th>
+                  <th>Same As </th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td> = </td>
+                  <td> x = y </td>
+                  <td> x = y </td>
+                  <td> x = 5 </td>
+                </tr>
+                <tr>
+                  <td> += </td>
+                  <td> x += y </td>
+                  <td> x = x + y </td>
+                  <td> x = 15 </td>
+                </tr>
+                <tr>
+                  <td> -= </td>
+                  <td> x -= y </td>
+                  <td> x = x - y </td>
+                  <td> x = 5 </td>
+                </tr>
+                <tr>
+                  <td> *= </td>
+                  <td> x *= y </td>
+                  <td> x = x * y </td>
+                  <td> x = 50 </td>
+                </tr>
+                <tr>
+                  <td> **= </td>
+                  <td> x **= y </td>
+                  <td> x = x ** y </td>
+                  <td> x = 100000 </td>
+                </tr>
+                <tr>
+                  <td> /=</td>
+                  <td> x /= y </td>
+                  <td> x = x / y </td>
+                  <td> x = 2 </td>
+                </tr>
+                <tr>
+                  <td> %=</td>
+                  <td> x %= y </td>
+                  <td> x = x % y </td>
+                  <td> x = 0 </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr>
+        <h2>Comparison Operators</h2>
+        <div class="containte">
+          <div class="col1">
+
+          </div>
+          <div class="col2" style="flex-direction: column;">
+            <p>Given that x = 5, the table below explains the comparison operators:</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Operator</th>
+                  <th>Description</th>
+                  <th>Comparing</th>
+                  <th>Returns</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>==</td>
+                  <td>equal to</td>
+                  <td>x == 8</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>x == 5</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>x == "5"</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>===</td>
+                  <td>equal value and equal type</td>
+                  <td>x === 5</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>x === "5"</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>not equal</td>
+                  <td>x != 8</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>!==</td>
+                  <td>not equal value or not equal type</td>
+                  <td>x !== 5</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>x !== "5"</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td>x !== 8</td>
+                  <td>true</td>
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>greater than</td>
+                  <td>x &gt; 8</td>
+                  <td>false</td>
+                </tr>
+                <tr>
+                  <td>&lt;</td>
+                  <td>less than</td>
+                  <td>x &lt; 8</td>
+                  <td>false</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

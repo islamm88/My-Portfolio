@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <script>
+    // Global Scope
+    // ==================== 
+    let x = 10 ;
+    function G(){
+      console.log(x);
+    }
+    G();
+    console.log(x);
+
+
+   // Function Scope
+  //  ==================== 
+    function s() {
+    let y = 20;  
+    var z = 30;  
+    console.log(y); 
+    console.log(z);
+    }
+    s();
+    // console.log(y); 
+    // console.log(z);
+
+    // Block Scope 
+    // ==================== 
+    {
+    let a = 5;      // Block Scope
+    const b = 7;    // Block Scope
+    var c = 9;      // NOT block scope! (var escapes)
+    }
+
+    // console.log(a); 
+    // console.log(b); 
+    console.log(c);
+  </script>
+
+  </body>
+</html>

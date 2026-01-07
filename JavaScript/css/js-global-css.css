@@ -115,7 +115,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(241, 101, 41, 0.3);
-    & .containt {
+    & .containte {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -387,7 +387,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(241, 101, 41, 0.3);
-    & .containt {
+    & .containte {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -628,7 +628,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgba(242, 193, 33, 0.5);
-    & .containt {
+    & .containte {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -690,7 +690,7 @@ body {
       background-color: #eee;
       border-radius: 10px;
       padding: 5px;
-      & thead {
+      thead {
         tr {
           th {
             text-align: center;

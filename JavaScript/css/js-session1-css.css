@@ -7,12 +7,13 @@
 @media (min-width: 767px) {
   #session1-introduction {
     .container {
-      .containt {
+      .containte {
         .col1,
         .col2 {
           width: 45%;
         }
-        .col2 {
+        .col2,
+        .col1 {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -53,12 +54,23 @@
             box-shadow: 0 0 3px 3px #aaa;
           }
         }
+
+        #col1 , #col2 {
+          flex-direction: column;
+          width: fit-content;
+          .div-img {
+            img {
+              width: 420px;
+              height: 220px;
+            }
+          }
+        }
       }
     }
   }
   #session1-where-to-type {
     .container {
-      .containt {
+      .containte {
         .col1,
         .col2 {
           width: 45%;
@@ -121,10 +133,14 @@
   }
   #session1-Variables {
     .container {
-      .containt {
+      .containte {
         .col1,
         .col2 {
           width: 50%;
+        }
+
+        .col1 {
+          align-self: start;
         }
         .col2 {
           width: 45%;
@@ -136,10 +152,15 @@
               border-radius: 10px;
               box-shadow: 0 0 3px 3px #aaa;
             }
+            #stric-mode {
+              width: 30%;
+              height: 200px;
+              margin-left: auto;
+            }
           }
         }
       }
-      .col1 a {
+       a {
         display: inline-block;
         margin-block: 10px;
         padding: 5px 15px;
@@ -155,6 +176,15 @@
         &:hover {
           background-color: #d1a21a;
           box-shadow: 0 0 5px 5px rgba(242, 193, 33, 0.7);
+        }
+      }
+    }
+  }
+  #session1-Output {
+    .container {
+      .div-img {
+        img {
+          width: 45%;
         }
       }
     }
