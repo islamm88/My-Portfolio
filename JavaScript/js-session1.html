@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="./css/js-session1-css.css">
-    <title>Document</title>
+    <title>JavaScript Session 1</title>
   </head>
   <body>
     <header id="header">
@@ -43,12 +43,12 @@
     <section id="session1-introduction">
       <div class="container">
         <h2>Introduction</h2>
-        <h3>what is JavaScript ?</h3>
-        <div class="containte">
+        <h3>What is JavaScript ?</h3>
+        <div class="content">
           <div class="col1">
             <ul>
               <li>
-                JavaScript (often abbreviated as <span>J S</span>) is a
+                JavaScript (often abbreviated as <span>JS</span>) is a
                 <span>High-level</span> ,
                 <span>interpreted</span> programming language
                 <span>"runs line-by-line"</span> that is most commonly used to
@@ -71,7 +71,7 @@
                 browser without needing to be compiled.
               </li>
               <li>
-                <span>Core web technology:</span>Core web technology: Alongside
+                <span>Core web technology:</span> Alongside
                 HTML (structure) and CSS (style),
                 JavaScript adds behavior to web pages.
               </li>
@@ -89,6 +89,7 @@
               <li>JavaScript : can update and change both HTML and CSS.</li>
             </ul>
           </div>
+
           <div class="col2">
             <div class="par1">
               <button
@@ -100,20 +101,21 @@
               <img id="face" src="./img/smile.png" alt="smile face">
             </div>
           </div>
+          <h4>Note : <span>JavaScript is a hybrid language</span></h4>
         </div>
         <h3>High-level language</h3>
         <p>A high-level programming language is a language designed to be easy
           for humans to read, write, and understand, without worrying about
           hardware details.</p>
-        <div class="containte">
+        <div class="content">
           <div class="col1" id="col1">
             <p>Code by C Language</p>
             <div class="div-img">
-              <img src="./img/c-code.png" alt>
+              <img id="imgcode" src="./img/c-code.png" alt>
             </div>
           </div>
           <div class="col">
-            <h3>Translate</h3>
+            <h3>Translator</h3>
           </div>
           <div class="col2" id="col2">
             <p>Code by machin language</p>
@@ -122,8 +124,8 @@
             </div>
           </div>
         </div>
-        <h3>Translate</h3>
-        <div class="containte">
+        <h3>Translator</h3>
+        <div class="content">
           <div class="col1">
             <table>
               <thead>
@@ -159,7 +161,7 @@
     <section id="session1-where-to-type">
       <div class="container">
         <h2>Where we can type JavaScript ?</h2>
-        <div class="containte">
+        <div class="content">
           <div class="col1">
             <p>You can type and run JavaScript in many different places.
               Here are the most common places</p>
@@ -231,7 +233,7 @@
         <p>In JavaScript, comments are used to explain your code — they are
           ignored by the browser (not executed).
           There are two main types of comments</p>
-        <div class="containte">
+        <div class="content">
           <div class="col1">
             <ul>
               <li>Single line comments start with <span>//</span>.</li>
@@ -240,7 +242,7 @@
               </li>
             </ul>
           </div>
-          <div class="col2" id="col2">
+          <div class="col2">
             <div class="div-img">
               <img src="./img/comment-inline.png" alt>
               <img src="./img/comment-multyline.png" alt>
@@ -254,7 +256,7 @@
       <div class="container">
         <h2>use strict</h2>
         <h3><u>What is "use strict"?</u></h3>
-        <div class="containte">
+        <div class="content">
           <div class="col1">
             <p>"use strict" is a directive that tells JavaScript to run the code
               in <span>“strict mode.”</span></p>
@@ -284,7 +286,7 @@
           <span>value</span>.</p>
         <p> Example : <span>let age = 47;</span> age → variable that holds the
           number 47. </p>
-        <div class="containte">
+        <div class="content">
           <div class="col1">
 
             <h3>How can I name a variable (<span>Rules</span> and
@@ -317,7 +319,7 @@
             </div>
           </div>
         </div>
-        <div class="containte">
+        <div class="content">
           <div class="col1">
             <p>In JavaScript, <span>var</span> , <span>let</span> , and
               <span>const</span> are all used to declare variables, but they
@@ -364,18 +366,23 @@
               <td>created by `var`, `let`, or `const` inside a function</td>
             </tr>
             <tr>
-              <tr>
-                <td>Block Scope</td>
-                <td>Accessible **only inside `{ }`** (like in `if`, `for`,
-                  etc.)</td>
-                <td>created by `let` or `const`</td>
-              </tr>
+              <td>Block Scope</td>
+              <td>Accessible **only inside `{ }`** (like in `if`, `for`,
+                etc.)</td>
+              <td>created by `let` or `const`</td>
             </tr>
           </tbody>
         </table>
+      </div>
+
+    </section>
+
+    <section id = "session1-Datatype">
+      <div class="container">
         <h2>DataType</h2>
-        <div class="containt">
-          <table>
+        <div class="content">
+          <div class="col1">
+                  <table>
             <thead>
               <tr>
                 <th>Category</th>
@@ -444,9 +451,17 @@
               </tr>
             </tbody>
           </table>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img id = "datatypeCode"  src="./img/datatype-code.png" alt="">
+              <img id = "consoleResalt" src="./img/console-resalt.png" alt="">
+            </div>
+          </div>  
         </div>
-      </div>
 
+        <h4></h4>
+      </div>
     </section>
 
     <section id="session1-Output">
@@ -470,15 +485,6 @@
       </div>
     </section>
 
-    <script src="js/external .js"></script>
+    <script src="js/external.js"></script>
   </body>
 </html>
-
-<!--
-
-1- high-level
-2- interpreted 
-
-
-
--->

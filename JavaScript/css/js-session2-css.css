@@ -7,19 +7,49 @@
 @media (min-width: 767px) {
   #session2-arithmetic-operators {
     .container {
-      .containte {
-        .col1,
-        .col2 {
-          width: 45%;
-          padding: 10px;
-        }
-        .col2 {
+      .content {
+        #truth_table {
           display: flex;
           align-items: center;
-          justify-content: end;
+          justify-content: space-between;
+          width: 100%;
+        }
+        .div-img {
+          width: 100%;
+          img {
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px #aaa;
+          }
         }
       }
     }
   }
+  #session2-Conditional {
+    .container {
+      .content {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: start;
+        .col1,
+        .col2 {
+          padding: 10px;
+          width: 45%;
 
+          width: fit-content;
+          .div-img {
+            width: fit-content;
+
+            img {
+              display: block;
+              border-radius: 10px;
+              box-shadow: 0 0 3px 3px #aaa;
+
+            }
+          }
+        }
+      }
+    }
+  }
 }

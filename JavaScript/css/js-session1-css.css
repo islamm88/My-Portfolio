@@ -7,7 +7,8 @@
 @media (min-width: 767px) {
   #session1-introduction {
     .container {
-      .containte {
+      .content {
+        display: flex;
         .col1,
         .col2 {
           width: 45%;
@@ -61,16 +62,21 @@
           .div-img {
             img {
               width: 420px;
-              height: 220px;
+              height: 150px;
             }
+
           }
+        }
+
+        .col1 .div-img #imgcode {
+          width: 250px;
         }
       }
     }
   }
   #session1-where-to-type {
     .container {
-      .containte {
+      .content {
         .col1,
         .col2 {
           width: 45%;
@@ -133,7 +139,7 @@
   }
   #session1-Variables {
     .container {
-      .containte {
+      .content {
         .col1,
         .col2 {
           width: 50%;
@@ -180,6 +186,40 @@
       }
     }
   }
+  #session1-Datatype {
+      .container {
+      .content {
+        .col1,
+        .col2 {
+          width: 50%;
+        }
+      }
+
+        .col2 {
+          width: 45%;
+          .div-img {
+            img {
+              display: block;
+              margin-block: 10px;
+              width: 100%;
+              border-radius: 10px;
+              box-shadow: 0 0 3px 3px #aaa;
+            }
+            #datatypeCode {
+              width: 60%;
+              height: 400px;
+              margin-left: auto;
+            }
+            #consoleResalt {
+              width: 30%;
+              height: 300px;
+              margin-left: auto;
+            }
+          }
+        }
+      }
+  }
+
   #session1-Output {
     .container {
       .div-img {

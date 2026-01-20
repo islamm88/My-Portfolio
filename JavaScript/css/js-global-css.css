@@ -115,7 +115,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(241, 101, 41, 0.3);
-    & .containte {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -387,7 +387,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(241, 101, 41, 0.3);
-    & .containte {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -628,19 +628,19 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgba(242, 193, 33, 0.5);
-    & .containte {
+    .content {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    & h2 {
+    h2 {
       text-align: center;
       margin-top: 10px;
       margin-bottom: 50px;
       font-size: 30px;
     }
-    & h3 {
+    h3 {
       margin: 15px;
       font-size: 25px;
       font-weight: 400;
@@ -648,33 +648,33 @@ body {
         font-size: inherit;
       }
     }
-    & p {
+    p {
       margin: 10px;
       font-size: 15px;
       padding-left: 10px;
       font-weight: 400;
     }
-    & pre {
+    pre {
       font-size: 15px;
       font-weight: 400;
     }
-    & ul,
-    & ol,
-    & dl {
+    ul,
+    ol,
+    dl {
       margin: 10px;
       margin-left: 40px;
-      & li,
-      & dt {
+      li,
+      dt {
         font-size: 15px;
         font-weight: 400;
       }
     }
-    & span {
+    span {
       font-weight: 400;
       color: var(--color5);
       font-size: 15px;
     }
-    & a {
+    a {
       text-decoration: none;
     }
     hr {
@@ -702,25 +702,25 @@ body {
           }
         }
       }
-      & tbody {
-        & tr {
-          & td {
+      tbody {
+        tr {
+          td {
             text-align: center;
             font-size: 12px;
             font-weight: 500;
           }
         }
 
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--color1);
         }
 
-        & tr:nth-child(even) {
+        tr:nth-child(even) {
           background-color: var(--bgcolor);
         }
       }
 
-      & tfoot {
+      tfoot {
         tr {
           td {
             text-align: center;
@@ -732,32 +732,32 @@ body {
         }
       }
 
-      & tr {
-        & td {
+      tr {
+        td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
       }
     }
-    & .div-img {
+    .div-img {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    & .iden {
+    .iden {
       color: var(--color5);
       font-weight: 600;
     }
   }
-  & aside {
+  aside {
     display: none;
   }
   header {
-    & .container {
+    .container {
       padding: 0px;
       box-shadow: none;
       background-color: var(--bgcolor);
-      & h1 {
+      h1 {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 5px;
@@ -766,7 +766,7 @@ body {
         color: #fff;
         text-shadow: 2px 2px 4px black;
       }
-      & h2 {
+      h2 {
         text-align: center;
         margin-bottom: 55px;
         font-size: 1.7rem;
@@ -776,17 +776,17 @@ body {
         align-items: center;
         justify-content: center;
 
-        & .fa-file-pdf {
+        .fa-file-pdf {
           color: #f2c021;
           margin-left: 10px;
           transition: all 0.5s ease;
         }
-        & .fa-file-pdf:hover {
+        .fa-file-pdf:hover {
           transform: scale(1.09);
           text-shadow: 2px 2px 4px black;
         }
       }
-      & #logo {
+      #logo {
         position: relative;
         margin-top: 5px;
         display: flex;

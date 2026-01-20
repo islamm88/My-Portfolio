@@ -8,8 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link rel="stylesheet" href="./css/js-session2-css.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/js-session2-css.css" />
+    <title>JavaScript Session 2</title>
   </head>
   <body>
     <header id="header">
@@ -43,14 +43,15 @@
     <section id="session2-arithmetic-operators">
       <div class="container">
         <h2>Arithmetic Operators</h2>
-        <div class="containte">
-          <div class="col1 ">
-
+        <div class="content">
+          <div class="col1">
             <h3>Arithmetic Operations in JavaScript</h3>
-            <p>Arithmetic operations are the basic math operations you can use
-              in JS such as:</p>
+            <p>
+              Arithmetic operations are the basic math operations you can use in
+              JS such as:
+            </p>
             <ul>
-              <li>Addition : <span>let x = a + b;</span> </li>
+              <li>Addition : <span>let x = a + b;</span></li>
               <li>Subtraction : <span>let z = x - y;</span></li>
               <li>Multiplication : <span>let z = x * y;</span></li>
               <li>Division : <span>let z = x / y;</span></li>
@@ -66,9 +67,11 @@
               <li>Multiplication / Division * /</li>
               <li>Addition / Subtraction + -</li>
             </ol>
-            <p> <a
+            <p>
+              <a
                 href="https://www.w3schools.com/js/exercise.asp?x=xrcise_arithmetic2">Traning
-                on Arithmetic Operations in JavaScript</a></p>
+                on Arithmetic Operations in JavaScript</a>
+            </p>
           </div>
           <div class="col2">
             <table>
@@ -80,228 +83,317 @@
               </thead>
               <tbody>
                 <tr>
-                  <td> + </td>
+                  <td>+</td>
                   <td>Addition</td>
                 </tr>
                 <tr>
-                  <td> - </td>
+                  <td>-</td>
                   <td>Subtraction</td>
                 </tr>
                 <tr>
-                  <td> * </td>
+                  <td>*</td>
                   <td>Multiplication</td>
                 </tr>
                 <tr>
-                  <td> ** </td>
+                  <td>**</td>
                   <td>Exponentiation (ES2016)</td>
                 </tr>
                 <tr>
-                  <td> / </td>
+                  <td>/</td>
                   <td>Division</td>
                 </tr>
                 <tr>
-                  <td> % </td>
+                  <td>%</td>
                   <td>Modulus (Remainder)</td>
                 </tr>
                 <tr>
-                  <td> ++ </td>
+                  <td>++</td>
                   <td>Increment</td>
                 </tr>
                 <tr>
-                  <td> -- </td>
+                  <td>--</td>
                   <td>Decrement</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-        <hr>
-        <h2>Assignment & Logical Operators</h2>
-        <div class="containte">
-          <div class="col1" style="flex-direction: column;">
-            <h3>Truthy & Falsy</h3>
-            <p> <span>In JavaScript, every value is either truthy or
-                falsy</span> </p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Truthy</th>
-                  <th>Falsy</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td>0 , -0</td>
-                </tr>
-                <tr>
-                  <td>true</td>
-                  <td>false</td>
-                </tr>
-                <tr>
-                  <td>"hello"</td>
-                  <td>""</td>
-                </tr>
-                <tr>
-                  <td>any number accept 0</td>
-                  <td>null</td>
-                </tr>
-                <tr>
-                  <td>any string accept ""</td>
-                  <td>NaN , undefined</td>
-                </tr>
-              </tbody>
-            </table>
+        <hr />
+        <h2>Logical Operators</h2>
+        <h3>
+          Truth Table for JavaScript Logical Operators
+          <span>(&& - || - !)</span>
+        </h3>
+        <div class="content">
+          <div id="truth_table">
+            <div id="and_table">
+              <h3><span>AND &&</span></h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A && B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>true</td>
+                    <td>true</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>true</td>
+                    <td>false</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>true</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>false</td>
+                    <td>false</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="or_table">
+              <h3><span>OR &&</span></h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>A || B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>true</td>
+                    <td>true</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>true</td>
+                    <td>false</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>true</td>
+                    <td>true</td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>false</td>
+                    <td>false</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="not_table">
+              <h3><span>NOT !</span></h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>A</th>
+                    <th>!A</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>true</td>
+                    <td>false</td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>true</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div id="comping_table">
+              <h3><span>Combined Example</span></h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>A</th>
+                    <th>B</th>
+                    <th>!A</th>
+                    <th>A&&B</th>
+                    <th>A||B</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>true</td>
+                    <td>true</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>true</td>
+                    <td>false</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>true</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>false</td>
+                    <td>false</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
 
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div class="col2" style="flex-direction: column;">
-            <h3>Assignment</h3>
-            <p><span>Given that x = 10 and y = 5, the table below explains the
-                assignment operators:</span></p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Operator</th>
-                  <th>Example</th>
-                  <th>Same As </th>
-                  <th>Result</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td> = </td>
-                  <td> x = y </td>
-                  <td> x = y </td>
-                  <td> x = 5 </td>
-                </tr>
-                <tr>
-                  <td> += </td>
-                  <td> x += y </td>
-                  <td> x = x + y </td>
-                  <td> x = 15 </td>
-                </tr>
-                <tr>
-                  <td> -= </td>
-                  <td> x -= y </td>
-                  <td> x = x - y </td>
-                  <td> x = 5 </td>
-                </tr>
-                <tr>
-                  <td> *= </td>
-                  <td> x *= y </td>
-                  <td> x = x * y </td>
-                  <td> x = 50 </td>
-                </tr>
-                <tr>
-                  <td> **= </td>
-                  <td> x **= y </td>
-                  <td> x = x ** y </td>
-                  <td> x = 100000 </td>
-                </tr>
-                <tr>
-                  <td> /=</td>
-                  <td> x /= y </td>
-                  <td> x = x / y </td>
-                  <td> x = 2 </td>
-                </tr>
-                <tr>
-                  <td> %=</td>
-                  <td> x %= y </td>
-                  <td> x = x % y </td>
-                  <td> x = 0 </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+
         </div>
-        <hr>
+        <hr />
         <h2>Comparison Operators</h2>
-        <div class="containte">
-          <div class="col1">
-
-          </div>
-          <div class="col2" style="flex-direction: column;">
-            <p>Given that x = 5, the table below explains the comparison operators:</p>
-            <table>
-              <thead>
-                <tr>
-                  <th>Operator</th>
-                  <th>Description</th>
-                  <th>Comparing</th>
-                  <th>Returns</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>==</td>
-                  <td>equal to</td>
-                  <td>x == 8</td>
-                  <td>false</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>x == 5</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>x == "5"</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td>===</td>
-                  <td>equal value and equal type</td>
-                  <td>x === 5</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>x === "5"</td>
-                  <td>false</td>
-                </tr>
-                <tr>
-                  <td>!=</td>
-                  <td>not equal</td>
-                  <td>x != 8</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td>!==</td>
-                  <td>not equal value or not equal type</td>
-                  <td>x !== 5</td>
-                  <td>false</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>x !== "5"</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td>x !== 8</td>
-                  <td>true</td>
-                </tr>
-                <tr>
-                  <td>&gt;</td>
-                  <td>greater than</td>
-                  <td>x &gt; 8</td>
-                  <td>false</td>
-                </tr>
-                <tr>
-                  <td>&lt;</td>
-                  <td>less than</td>
-                  <td>x &lt; 8</td>
-                  <td>false</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="content">
+          <div class="div-img">
+            <img src="./img/Comparison-operators.png" alt>
           </div>
         </div>
+        <hr>
+        <div class="col2" style=" margin: auto;">
+          <h2>Assignment</h2>
+          <h4>
+            <span>Given that x = 10 and y = 5, the table below explains the
+              assignment operators:</span>
+          </h4>
+          <table style="margin: 40px auto;">
+            <thead>
+              <tr>
+                <th>Operator</th>
+                <th>Example</th>
+                <th>Same As</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>=</td>
+                <td>x = y</td>
+                <td>x = y</td>
+                <td>x = 5</td>
+              </tr>
+              <tr>
+                <td>+=</td>
+                <td>x += y</td>
+                <td>x = x + y</td>
+                <td>x = 15</td>
+              </tr>
+              <tr>
+                <td>-=</td>
+                <td>x -= y</td>
+                <td>x = x - y</td>
+                <td>x = 5</td>
+              </tr>
+              <tr>
+                <td>*=</td>
+                <td>x *= y</td>
+                <td>x = x * y</td>
+                <td>x = 50</td>
+              </tr>
+              <tr>
+                <td>**=</td>
+                <td>x **= y</td>
+                <td>x = x ** y</td>
+                <td>x = 100000</td>
+              </tr>
+              <tr>
+                <td>/=</td>
+                <td>x /= y</td>
+                <td>x = x / y</td>
+                <td>x = 2</td>
+              </tr>
+              <tr>
+                <td>%=</td>
+                <td>x %= y</td>
+                <td>x = x % y</td>
+                <td>x = 0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section id="session2-Conditional">
+      <div class="container">
+        <h2>Conditional Statements</h2>
+        <h3>Conditional Statements</h3>
+        <ul>
+          <li>Conditional Statements allow us to perform different actions for
+            different conditions.</li>
+          <li>Conditional statements run different code depending on true or
+            false
+            conditions.</li>
+          <li>Conditional statements include:
+            <ul>
+              <li>if</li>
+              <li>if...else</li>
+              <li>if...else if...else</li>
+              <li>switch</li>
+              <li>ternary (? :)</li>
+            </ul>
+          </li>
+        </ul>
+        <p>if statement in JavaScript</p>
+        <p>The if statement is used to make a decision in your program.</p>
+        <p>It checks a condition.</p>
+        <ul>
+          <li>If the condition is <span>true</span> , the code inside runs</li>
+          <li>If it’s <span>false</span>, the code is skipped</li>
+        </ul>
+        <h3><span>if</span></h3>
+        <h4><span>The condition must return true or false.</span></h4>
+        <div class="content">
+          <div class="col1">
+            <div class="div-img">
+              <img src="./img/if-basic.png" alt>
+            </div>
+          </div>
+          <div class="col2">
+            <h3><span>if ... else</span></h3>
+            <p>How it works (step by step)</p>
+            <ul>
+              <li>JavaScript checks the condition inside if</li>
+              <li>JavaScript checks the condition inside if</li>
+              <li>If it’s true → runs if block</li>
+              <li>If it’s false → runs else block</li>
+              <li>Only one block runs</li>
+            </ul>
+            <div class="div-img">
+              <img src="./img/if-else-basic.png" alt>
+            </div>
+          </div>
+        </div>
+        <div class="containt">
+          <div class="col1">
+            <h3><span>if ... else if ... else in JavaScript</span></h3>
+            <h4>Used when you need to check more than one condition.</h4>
+            <div class="div-img">
+              <img src="./img/if-else if-basic.png" alt="">
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </body>
