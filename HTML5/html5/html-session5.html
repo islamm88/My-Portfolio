@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5-Session5</title>
+    <link rel="stylesheet" href="./css/html-global-css.css" />
+    <link rel="stylesheet" href="./css/html-session5.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./html-session1.html"><img src="../imge/html.png"
+              alt="my logo" loading="lazy" /></a>
+          <h1>HTML5</h1>
+        </div>
+        <h2>
+          SESSION 5
+          <a href="../assets/HTML5-Session5.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./html-session1.html">Session 1</a></li>
+      <li><a href="./html-session2.html">Session 2</a></li>
+      <li><a href="./html-session3.html">Session 3</a></li>
+      <li><a href="./html-session4.html">Session 4</a></li>
+      <li><a href="./html-session5.html">Session 5</a></li>
+      <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session5-che-rad">Checkbox&Radio</a></li>
+      <li><a href="#session5-sel-txt">Select&Textarea</a></li>
+      <li><a href="#session5-Another-Inputs">Another inputs</a></li>
+      <li><a href="#session5-Assignment">Assignment</a></li>
+    </ul>
+
+
+    <section id="session5-che-rad">
+      <div class="container">
+        <h2>Checkbox & Radio</h2>
+        <h3>Checkbox :</h3>
+        <ul>
+          <li>Inline element</li>
+          <li>Self Closing Tag</li>
+          <li>label after input</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <p>Frontend Corses :</p>
+            <form action method="post">
+              <input type="checkbox" name="feCorse[]" id="html" value="html" checked />
+              <label for="html"> HTML</label>
+              <input type="checkbox" name="feCorse[]" id="css" value="css" />
+                <label for="css"> CSS</label>
+              <input type="checkbox" name="feCorse[]" id="js" value="js"/>
+                <label for="js"> JS </label>
+            </form>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/check-code.png" alt>
+            </div>
+          </div>
+        </div>
+        <h3>Radio :</h3>
+        <ul>
+          <li>Inline element</li>
+          <li>Self Closing Tag</li>
+          <li>label after input</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <form action>
+              <p>your birthday :</p>
+              <input
+                type="radio"
+                name="birthday"
+                id="1999"
+                value="1999" /><label for="1999"> 1999</label>
+              <input
+                type="radio"
+                name="birthday"
+                id="2020"
+                value="2020" /><label for="2020"> 2020</label>
+              <input
+                type="radio"
+                name="birthday"
+                id="2002"
+                value="2002"
+                checked /><label for="2002"> 2002</label>
+            </form>
+            <form action>
+              <p>your gender :</p>
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+                checked /><label for="male"> Male</label>
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                value="female" /><label for="female"> Female</label>
+            </form>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/rad1-code.png" alt="readio photo code">
+              <img src="./img/rad2-code.png" alt="readio photo code">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="session5-sel-txt">
+      <div class="container">
+        <h2>Select & Textarea</h2>
+        <h3>Select :</h3>
+        <ul>
+          <li>Inline Element</li>
+          <li>Openinig and Closing</li>
+        </ul>
+        <div class="containt">
+          <div class="part1">
+            <label for="book">Choose Book :</label>
+            <select name="book" id="book">
+              <optgroup label="Frontend">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JS">JS</option>
+              </optgroup>
+              <optgroup label="Backend">
+                <option value="PHP" selected>PHP</option>
+                <option value="MySQL">MySQL</option>
+                <option value="Laravel">Laravel</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="part2">
+            <pre>
+            &lt;label for="book"&gt;Choose Book&lt;/label&gt; 
+            &lt;select name="book" id="book"&gt; 
+            &lt;optgroup label="Frontend"&gt;
+            &lt;option value="HTML"&gt;HTML&lt;/option&gt; 
+            &lt;option value="CSS"&gt;CSS&lt;/option&gt; 
+            &lt;option value="JS"&gt;JS&lt;/option&gt; 
+            &lt;/optgroup&gt; 
+            &lt;optgroup label="Backend"&gt; 
+            &lt;option value="PHP" selected&gt;PHP&lt;/option&gt; 
+            &lt;option value="MySQL"&gt;MySQL&lt;/option&gt; 
+            &lt;option value="Laravel"&gt;Laravel&lt;/option&gt; 
+            &lt;/optgroup&gt;
+            &lt;/select&gt;
+            </pre>
+          </div>
+        </div>
+        <div>
+          <h3>Textarea :</h3>
+          <ul>
+            <li>Inline Element</li>
+            <li>Openinig and Closing</li>
+          </ul>
+          <div class="containt">
+            <div class="part1">
+              <label for="info">Information :</label>
+              <br />
+              <textarea
+                name="info"
+                id="info"
+                cols="50"
+                rows="15"
+                placeholder=" Insert your information "></textarea>
+            </div>
+            <div class="part2">
+              &lt;textarea name="info" id="info" cols="50"
+              rows="15"&gt;&lt;/textarea&gt;
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="session5-Another-Inputs">
+      <div class="container">
+        <h2>Another inputs</h2>
+        <h2>Time & URL & SEARCH & FILE</h2>
+        <div class="containt">
+          <table>
+            <tr>
+              <td>Time</td>
+              <td>used to represent times</td>
+              <td><input type="time" name id /></td>
+              <td>&lt;input type="time"&gt;</td>
+            </tr>
+            <tr>
+              <td>url</td>
+              <td>used to add URLs.</td>
+              <td>
+                <form action>
+                  <input type="url" name id /><input type="submit" />
+                </form>
+              </td>
+              <td>&lt;input type="url"&gt;</td>
+            </tr>
+            <tr>
+              <td>search</td>
+              <td>it’s used for search .</td>
+              <td><input type="search" name id /></td>
+              <td>&lt;input type="search"&gt;</td>
+            </tr>
+            <tr>
+              <td>readonly</td>
+              <td>
+                used to let the user select file from their device so they can
+                be uploaded.
+              </td>
+              <td><input type="file" name id /></td>
+              <td>&lt;input type="file"&gt;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="session5-summary">
+      <div class="container">
+        <h2>summary</h2>
+        <div class="containt">
+          <p>The &lt;summary&gt; tag in HTML is used inside a &lt;details&gt;
+            element to provide a summary, caption, or heading for the content
+            that can be expanded/collapsed.</p>
+        </div>
+        <div class="containt">
+          <div class="part1">
+            <details>
+              <summary>Click here to learn more</summary>
+              <p>This is the hidden content that appears when you expand the
+                summary.</p>
+              <p>You can put text, images, or even other elements inside.</p>
+            </details>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/summary-tag.png" alt></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="session5-Assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <div class="containt">
+          <img src="./img/reg2-form.png" alt />
+        </div>
+      </div>
+    </section>
+
+
+    <div id="up">
+      <a href="#"><i class="fa-solid fa-sort-up"></i></a>
+    </div>
+  </body>
+</html>

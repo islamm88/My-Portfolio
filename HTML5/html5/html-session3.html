@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5-Session3</title>
+    <link rel="stylesheet" href="./css/html-global-css.css">
+    <link rel="stylesheet" href="./css/html-session3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+  </head>
+  <body>
+    <aside id="html-aside">
+      <header>
+        <a href="./html-session1.html"><img src="../imge/html.png" alt="my logo"
+            loading="lazy" /></a>
+        <h1>HTML5</h1>
+        <bottom
+          onclick="document.getElementById('html-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#session3-attributes"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Attributes</a>
+          </li>
+          <li>
+            <a
+              href="#session3-entitie"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Entities
+              & Symbols & Emojis</a>
+          </li>
+          <li>
+            <a
+              href="#session3-Semantic"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Semantic
+              Elements</a>
+          </li>
+          <li>
+            <a
+              href="#session3-AudioVideo"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Audio
+              & Video</a>
+          </li>
+          <li>
+            <a
+              href="#session3-name-convetion"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Naming
+              Conventions</a>
+          </li>
+          <li>
+            <a
+              href="#session3-assignment"
+              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a>
+          </li>
+        </ul>
+      </details>
+    </aside>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./html-session1.html"><img src="../imge/html.png"
+              alt="my logo" loading="lazy" /></a>
+          <h1>HTML5</h1>
+          <bottom
+            onclick="document.getElementById('html-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
+        </div>
+        <h2>
+          SESSION 3
+          <a href="../assets/HTML5-Session3.pdf" target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./html-session1.html">Session 1</a></li>
+      <li><a href="./html-session2.html">Session 2</a></li>
+      <li><a href="./html-session3.html">Session 3</a></li>
+      <li><a href="./html-session4.html">Session 4</a></li>
+      <li><a href="./html-session5.html">Session 5</a></li>
+      <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#session3-attributes">Attributes</a></li>
+      <li><a href="#session3-entitie">Entities & Symbols & Emojis</a></li>
+      <li><a href="#session3-Semantic">Semantic Elements</a></li>
+      <li><a href="#session3-AudioVideo">Audio & Video</a></li>
+      <li><a href="#session3-name-convetion">Naming Conventions</a></li>
+      <li><a href="#session3-assignment">Assignment</a></li>
+    </ul>
+    <section id="session3-attributes">
+      <div class="container">
+        <h2>Attributes</h2>
+        <p>
+          In HTML, attributes are used to provide additional information about
+          HTML elements. <u><b>There are two main types of attributes:</b></u>
+        </p>
+        <ul>
+          <li>Specific Attributes</li>
+          <li>Global Attributes</li>
+        </ul>
+        <h3>Element-Specific Attributes</h3>
+        <p>
+          These attributes are specific to certain elements. You can’t use
+          them
+          on just any tag — only where they are allowed.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Element</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>href</td>
+              <td>&lt;a&gt;</td>
+              <td>Specifies the link URL</td>
+            </tr>
+            <tr>
+              <td>src</td>
+              <td>&lt;img&gt;</td>
+              <td>Specifies the source of an image</td>
+            </tr>
+            <tr>
+              <td>alt</td>
+              <td>&lt;img&gt;</td>
+              <td>Provides alternate text for an image</td>
+            </tr>
+          </tbody>
+          <tr></tr>
+        </table>
+        <h3>Global Attributes</h3>
+        <p>These attributes can be used on any HTML element. They are shared
+          across all tags.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              <th>Symbol</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>#</td>
+              <td>Specifies a unique ID for the element</td>
+            </tr>
+            <tr>
+              <td>class</td>
+              <td>.</td>
+              <td>Assigns one or more class names for styling or JS</td>
+            </tr>
+          </tbody>
+          <tr></tr>
+        </table>
+        <h3>The different Between Id and class</h3>
+        <ul>
+          <li><u>(id attribute)</u> is used to uniquely identify a <span>single
+              element</span> on a page</li>
+          <li><u>(class attribute)</u> is used to <span>group multiple
+              elements</span>group multiple elements together</li>
+        </ul>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>If you use the same id on multiple elements, the HTML is invalid
+            and may lead to <span>unexpected behavior</span>.</p>
+        </div>
+      </div>
+
+    </section>
+    <section id="session-detailsSummary">
+      <div class="container">
+        <h2>Details & Summary</h2>
+        <div class="containt">
+          <div class="col1">
+            <div class="div-img">
+              <img src="./img/detailsSummary.png" alt>
+            </div>
+
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/D&S.png" alt width="500">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="session3-entitie">
+      <div class="container">
+        <h2>Entities & Symbols & Emojis </h2>
+        <div class="containt">
+          <div id="describe-entities">
+            <p>HTML entities are special codes used in HTML to display
+              characters that are reserved in HTML or not available on a
+              keyboard like -&gt; &copy;. </p>
+            <p>Emojis are letters (characters) from the UTF-8 (Unicode)
+              character set &#128522</p>
+            <div class="entities">
+              <h3>Reference</h3>
+              <ul>
+                <li><a href="https://www.htmlsymbols.xyz/games-symbols"
+                    class="entitie" target="_blank">HTML Symbols</a></li>
+                <li><a href="https://www.w3schools.com/html/html_entities.asp"
+                    class="entitie " target="_blank">HTML Entities
+                    W3School</a></li>
+                <li><a href="https://www.freeformatter.com/html-entities.html"
+                    class="entitie" target="_blank">Free Formatter</a></li>
+                <li><a href="https://www.w3schools.com/html/html_emojis.asp"
+                    class="entitie" target="_blank">W3school emojis</a></li>
+              </ul>
+            </div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Result</th>
+                <th>Number</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>&lt;</td>
+                <td>&amp;lt;</td>
+              </tr>
+              <tr>
+                <td>&gt;</td>
+                <td>&amp;gt;</td>
+              </tr>
+              <tr>
+                <td>&copy;</td>
+                <td>&amp;copy;</td>
+              </tr>
+              <tr>
+                <td>&#9813;</td>
+                <td>&amp;#9813;</td>
+              </tr>
+              <tr>
+                <td>&#128516;</td>
+                <td>&amp;#128516;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <h2>Font Awesome</h2>
+        <div class="containt">
+          <div class="col1">
+            <a href="https://fontawesome.com/">Font Awesome</a>
+            <a href="https://cdnjs.com/libraries/font-awesome">Font Awesome
+              CDN</a>
+              <h3>Add in head</h3>
+            <p> &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" &gt; </p>
+          </div>
+          <div class="col2">
+            <div class="div-img">
+              <img src="./img/FA_CDN.png" alt>
+              <img src="./img/FA.png" alt>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="session3-Semantic">
+      <div class="container">
+        <h2>Semantic Elements</h2>
+        <p>Semantic elements are HTML tags that clearly describe their meaning
+          —
+          both to the browser and to developers.
+          They improve readability, accessibility, and SEO.</p>
+        <div class="containt">
+          <table>
+            <tr><th>Tags</th></tr>
+            <tr><td>&lt;header&gt;&lt;/header&gt; </td></tr>
+            <tr><td>&lt;main&gt;&lt;/main&gt; </td></tr>
+            <tr><td>&lt;footer&gt;&lt;/footer&gt; </td></tr>
+            <tr><td>&lt;aside&gt;&lt;/aside&gt; </td></tr>
+            <tr><td>&lt;nav&gt;&lt;/nav&gt; </td></tr>
+            <tr><td>&lt;section&gt;&lt;/section&gt; </td></tr>
+            <tr><td>&lt;article&gt;&lt;/article&gt; </td></tr>
+            <tr><td>&lt;summary&gt;&lt;/summary&gt; </td></tr>
+          </table>
+          <div class="div-img">
+            <img src="./img/Sementic-Elements.png" alt="Semantic"
+              loading="lazy" />
+          </div>
+
+        </div>
+        <h3>They tell you what the element is for, rather than how it looks.
+          This improves:</h3>
+        <ul>
+          <li>Accessibility (screen readers, assistive tech)</li>
+          <li>SEO (search engines understand your layout better)</li>
+          <li>Maintainability (code is easier to read and structure)</li>
+        </ul>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>Most semantic elements in HTML5 are block-level elements by
+            default.</p>
+        </div>
+      </div>
+    </section>
+    <section id="session3-AudioVideo">
+      <div class="container">
+        <h2>Audio & Video</h2>
+        <div class="containet">
+          <div class="audio">
+            <div class="col1">
+              <h3>Audio</h3>
+              <p> <span>&lt;audio&gt;&lt;/audio&gt;</span></p>
+              <p>Two different way to type </p>
+              <audio controls src="./assets/Audio1.mp3"
+                type="audio/mpeg"></audio>
+
+              <p>Properties : </p>
+              <ul>
+                <li><span>inline-block</span></li>
+                <li>Opening and Closing Tag</li>
+                <li>controls : displays the audio player</li>
+                <li>src : allows you to specify the audio file and its type.
+                </li>
+                <li>type : Helps the browser decide whether it can play the
+                  file
+                  before downloading it.</li>
+              </ul>
+            </div>
+            <div class="col2">
+              <div class="div-img">
+                <img src="./img/audio-code.png" alt="audio photo code "
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="video">
+            <div class="col1">
+              <h3>Video</h3>
+              <p><span>&lt;video&gt;&lt;/viedo&gt;</span></p>
+              <p>Two different way to type </p>
+              <video controls src="./assets/Video1.mp4" type="video/mp4"
+                width="500" height="300"
+                poster="./assets/poster.jpg"></video>
+              <p>Properties : </p>
+              <ul>
+                <li><span>inline-block</span></li>
+                <li>Opening and Closing Tag</li>
+                <li>controls : displays the audio player</li>
+                <li>src : allows you to specify the video file and its
+                  type.</li>
+                <li>type : Helps the browser decide whether it can play the
+                  file
+                  before downloading it.</li>
+                <li>width : Sets the width of the video player in pixels.</li>
+                <li>poster : Defines an image to show before the video
+                  plays.</li>
+              </ul>
+              <ul>
+              </ul>
+            </div>
+            <div class="col2">
+              <div class="div-img">
+                <img src="./img/video-code.png" alt="video photo code"
+                  loading="lazy">
+              </div>
+            </div>
+          </div>
+          <div class="compair">
+            <h3>Comparison between <span>Inline</span> , <span>Block</span>
+              and
+              <span>Inline Block</span></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>display</th>
+                  <th>Starts on New Line?</th>
+                  <th>Can Set Width/Height?</th>
+                  <th>Behaves Like</th>
+                  <th>Common Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>inline</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>Like text</td>
+                  <td>&lt;span&gt;, &lt;a&gt;&lt;/a&gt;</td>
+                </tr>
+                <tr>
+                  <td>block</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Like a box</td>
+                  <td>&lt;div&gt;, &lt;p&gt;&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                  <td>inline-block</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Mix of both</td>
+                  <td>&lt;img&gt; &lt;button&gt; &lt;/button&gt;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="session3-name-convetion">
+      <div class="container">
+        <h2>Naming Conventions</h2>
+        <h3>General Best Practices:</h3>
+        <ul>
+          <li>HTML is not case-sensitive</li>
+          <li>Use lowercase</li>
+          <li>Use hyphens - for multi-word names</li>
+          <li>Avoid spaces and special characters</li>
+          <li>Be semantic and descriptive</li>
+        </ul>
+        <h3>Avoid:</h3>
+        <ul>
+          <li>Special characters: @, $, #, %, etc.</li>
+          <li>Starting names with numbers: 1header</li>
+        </ul>
+      </div>
+    </section>
+    <section id="session3-assignment">
+      <div class="container">
+        <h2>Assignment</h2>
+        <div class="containt">
+          <p>Write a code of a real website as a blog which contains a header
+            and nav links, two sections each one includes 3 articles,
+            don't forget the aside and finally the footer including copyright
+            symbol and add audio & Video</p>
+        </div>
+      </div>
+    </section>
+    <div id="up">
+      <a href="#"><i class="fa-solid fa-sort-up"></i></a>
+    </div>
+    <script src="./js/html-global-js.js"></script>
+  </body>
+</html>
