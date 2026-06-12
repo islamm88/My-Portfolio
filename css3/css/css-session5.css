@@ -1,0 +1,106 @@
+@media (max-width: 390px) {
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
+}
+
+@media (min-width: 767px) {
+  #section5-pseudoclasses-pseudoelements {
+    .container {
+      .content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .part1,
+        .part2 {
+          width: 25%;
+          padding: 10px;
+          box-shadow: 0 0 2px 2px gray;
+          background-color: var(--color6);
+          border-radius: 5px;
+          margin-top: 20px;
+        }
+        .part1 {
+          width: 35%;
+          height: 150px;
+          padding: 10px;
+          box-shadow: 0 0 2px 2px gray;
+          background-color: var(--color6);
+          border-radius: 5px;
+          form {
+            hr {
+              margin-block: 10px;
+            }
+            .link {
+              font-size: 20px;
+              font-weight: 600;
+              color: blue;
+            }
+            .link:visited {
+              color: purple;
+            }
+            .link:hover {
+              color: rgb(216, 143, 33);
+            }
+            .tx:focus {
+              outline: none;
+              border: 2px solid lightgreen;
+            }
+            .ch:checked + label {
+              text-decoration: line-through;
+            }
+          }
+        }
+        .part2 {
+          .div-img {
+            display: flex;
+            justify-content: center;
+            img:nth-of-type(1) {
+              width: 250px;
+            }
+            img:nth-of-type(2) {
+              width: 250px;
+            }
+          }
+        }
+      }
+      .content:nth-of-type(2) {
+        .part1 {
+          height: 250px;
+          p {
+            margin-block: 10px;
+          }
+          .one::first-letter {
+            font-size: 25px;
+            color: red;
+            font-weight: 800;
+          }
+          .two::first-line {
+            font-size: 25px;
+            color: red;
+            font-weight: 800;
+          }
+          .three::selection {
+            background-color: black;
+            color: yellow;
+          }
+        }
+      }
+    }
+  }
+}
+
+.one::first-letter {
+  font-size: 25px;
+  color: red;
+  font-weight: 800;
+}
+.two::first-line {
+  font-size: 25px;
+  color: red;
+  font-weight: 800;
+}
+.three::selection {
+  background-color: black;
+  color: yellow;
+}

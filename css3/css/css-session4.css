@@ -4,7 +4,7 @@
 @media (min-width: 390px) and (max-width: 767px) {
   #session4-flexbox {
     & .container {
-      & .containt {
+      & .content {
         padding: 10px;
 
         & .reverse,
@@ -16,6 +16,7 @@
           justify-content: space-between;
           width: 25%;
           flex-wrap: nowrap;
+
           .parent1,
           .parent2 {
             box-shadow: 0 0 2px 2px gray;
@@ -114,7 +115,7 @@
 @media (min-width: 767px) {
   #session4-flexbox {
     .container {
-      .containt {
+      .content {
         padding: 10px;
         .reverse,
         .flex-wrap,
@@ -123,7 +124,8 @@
         .align-content,
         .flex-grow,
         .flex-shrink,
-        .order {
+        .order,
+        .basis {
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -163,7 +165,10 @@
         .justify-content-code,
         .align-item-code,
         .align-content-code,
-        .flex-grow-code {
+        .flex-grow-code,
+        .flex-shrink-code,
+        .order-code,
+        .flex-basis-code {
           width: 200px;
         }
         .flex-wrap {
@@ -208,7 +213,6 @@
             justify-content: space-evenly;
             align-items: center;
             align-content: stretch;
-
             .ch1,
             .ch2,
             .ch3,
@@ -311,6 +315,134 @@
             .ch1 {
               order: 2;
             }
+          }
+        }
+        .basis {
+          width: 50%;
+          flex-direction: column;
+          align-items: start;
+          .div-img {
+            height: 100px;
+            img {
+              border-radius: 0px;
+            }
+          }
+          .nots {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  #session4-position {
+    .container {
+      .content {
+        margin-block: 10px;
+        .part1,
+        .part2 {
+          width: 45%;
+          height: 250px;
+          padding: 10px;
+        }
+        .part1 {
+          box-shadow: 0 0 2px 2px gray;
+          background-color: var(--odd-td);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          .static {
+            border: 1px dashed gray;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            div:nth-child(1) {
+              position: sticky;
+              bottom: 0px;
+              background-color: red;
+              width: 50px;
+              height: 50px;
+            }
+            div:nth-child(2) {
+              background-color: blue;
+              width: 70px;
+              height: 70px;
+            }
+          }
+          .relative {
+            border: 1px dashed gray;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            div:nth-child(1) {
+              background-color: red;
+              width: 50px;
+              height: 50px;
+              position: relative;
+              top: 10px;
+              left: 10px;
+            }
+            div:nth-child(2) {
+              background-color: blue;
+              width: 70px;
+              height: 70px;
+            }
+          }
+          .absolute {
+            border: 1px dashed gray;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            div:nth-child(1) {
+              background-color: red;
+              width: 50px;
+              height: 50px;
+              position: absolute;
+              top: 15px;
+              left: 15px;
+              z-index: 10;
+            }
+            div:nth-child(2) {
+              background-color: blue;
+              width: 70px;
+              height: 70px;
+            }
+          }
+
+          .one,.two,.three {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            position: absolute;
+          }
+          .one {
+            background-color: lightblue;
+            top: 30px;
+            left: 30px;
+            z-index: 10;
+          }
+          .two {
+            background-color: lightcoral;
+            top: 40px;
+            left: 2=40px;
+            z-index: 11;
+          }
+          .three {
+            background-color: lightgreen;
+            top: 50px;
+            left: 50px;
+            z-index: 9;
+          }
+
+        }
+
+        .part2 {
+          .div-img {
+            width: 40%;
+            height: 100%;
+            margin-left: auto;
           }
         }
       }

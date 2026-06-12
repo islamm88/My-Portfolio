@@ -8,6 +8,10 @@
   scroll-behavior: smooth;
   font-family: "Roboto Slab", serif;
 }
+
+.border {
+  border: 1px solid red;
+}
 :root {
   --color3: #f1e4e4;
   --color1: #e9dbdb;
@@ -33,7 +37,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    & .containt {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -254,7 +258,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
-    & .containt {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -512,7 +516,7 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
-    & .containt {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-between;

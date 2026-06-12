@@ -7,7 +7,7 @@
     background-color: #ddd;
     border-radius: 5px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    & .containt {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -102,7 +102,7 @@
   }
   #session1-webintro {
     & .container {
-      & .containt {
+      & .content {
         & img {
           width: 45%;
           height: 340px;
@@ -187,7 +187,7 @@
   }
   #session1-htmlIntor {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -304,7 +304,7 @@
   }
   #session1-htmltagelement {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -399,7 +399,7 @@
   }
   #session1-heading-p-pre {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -525,7 +525,7 @@
   }
   #session1-assignment {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -632,7 +632,7 @@
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    & .containt {
+    & .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
@@ -722,7 +722,7 @@
   }
   #session1-webintro {
     & .container {
-      & .containt {
+      & .content {
         & img {
           width: 45%;
           height: 340px;
@@ -807,7 +807,7 @@
   }
   #session1-htmlIntor {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -929,7 +929,7 @@
   }
   #session1-htmltagelement {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -1023,7 +1023,7 @@
   }
   #session1-heading-p-pre {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -1129,7 +1129,7 @@
   }
   #session1-assignment {
     & .container {
-      & .containt {
+      & .content {
         flex-direction: column;
         & img {
           width: 45%;
@@ -1228,7 +1228,7 @@
 @media (min-width: 768px) {
   #session3-text {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1254,7 +1254,7 @@
   }
   #session3-dimensions {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1295,7 +1295,7 @@
   }
   #session1-background {
     & .container {
-      & .containt {
+      & .content {
         padding: 10px;
         margin-bottom: 30px;
         display: flex;
@@ -1379,7 +1379,7 @@
   }
   #session1-font-icon {
     & .container {
-      & .containt {
+      & .content {
         & .div-img {
           width: 25%;
           height: 200px;
@@ -1459,7 +1459,7 @@
   }
   #session1-assignment {
     & .container {
-      & .containt {
+      & .content {
         & .div-img {
           width: 25%;
           height: 300px;

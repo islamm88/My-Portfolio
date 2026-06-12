@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3-Session5</title>
+    <link rel="stylesheet" href="./css/css-global-css.css" />
+    <link rel="stylesheet" href="./css/css-session5.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <aside id="css-aside">
+      <header>
+        <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+            loading="lazy" /></a>
+        <h1>CSS3</h1>
+        <bottom
+          onclick="document.getElementById('css-aside').style.left = '100%'"><i
+            class="fa-solid fa-circle-xmark"></i></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
+            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href> </a></li>
+          <li><a href> </a></li>
+          <li><a href> </a></li>
+          <li><a href> </a></li>
+          <li><a href> </a></li>
+          <li><a href>Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
+            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#"
+              onclick="document.getElementById('css-aside').style.left = '100%'"></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="document.getElementById('css-aside').style.left = '100%'"></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="document.getElementById('css-aside').style.left = '100%'"></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="document.getElementById('css-aside').style.left = '100%'"></a>
+          </li>
+          <li>
+            <a
+              href="#"
+              onclick="document.getElementById('css-aside').style.left = '100%'"></a>
+          </li>
+        </ul>
+      </details>
+    </aside>
+    <header id="header">
+      <div class="container">
+        <div id="logo">
+          <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
+              loading="lazy" /></a>
+          <h1>CSS 3</h1>
+          <bottom
+            onclick="document.getElementById('css-aside').style.left = '0'"><i
+              class="fa-solid fa-bars"></i></bottom>
+        </div>
+        <h2>
+          SESSION 5
+          <a href target="_blank"><i
+              class="fa-solid fa-file-pdf"></i></a>
+        </h2>
+      </div>
+    </header>
+    <ul class="nav-site">
+      <li><a href="./css-session1.html">Session 1</a></li>
+      <li><a href="./css-session2.html">Session 2</a></li>
+      <li><a href="./css-session3.html">Session 3</a></li>
+      <li><a href="./css-session4.html">Session 4</a></li>
+      <li><a href="./css-session5.html">Session 5</a></li>
+      <li><a href>Test yourself</a></li>
+    </ul>
+    <ul class="nav-page">
+      <li><a href="#section5-pseudoclasses-pseudoelements">pseudo
+          classes&elements</a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul>
+    <section id="section5-pseudoclasses-pseudoelements">
+      <div class="container">
+        <h2>Pseudo Classes</h2>
+        <h2 style="font-size:15px"> <span> hover - active - focus - visited -
+            first child - last-child - nth-child(n) - not(selector) - checked
+          </span></h2>
+        <p><span>Pseudo Classes : </span> super useful for styling elements
+          based on their state, position, or user interaction.</p>
+        <p>They start with a colon (:), like this:</p>
+        <div class="content">
+          <div class="part1">
+            <form action>
+              <a href class="link">link1</a>
+              <a href class="link">link2</a>
+              <hr>
+              <input class="tx" type="text">
+              <hr>
+              <input class="ch" type="checkbox" name id>
+              <label for>old Price 1000 $</label>
+            </form>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/PseudoClasses.png" alt>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2>Pseudo Elements</h2>
+        <h2 style="font-size: 15px;"><span>First Letter, First Line,
+            Selection</span></h2>
+        <p>Pseudo-elements in CSS are used to style specific parts of an element
+          — not the whole element.
+          They let you insert or style content that isn’t in the HTML
+          directly.</p>
+        <div class="content">
+          <div class="part1">
+            <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Corporis nulla praesentium fugit doloribus corrupti,
+              voluptas quasi itaque explicabo iure eveniet!</p>
+            <p class="two">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Nam recusandae culpa pariatur, eos id natus earum in
+              impedit? Assumenda, qui!</p>
+            <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Sint veniam expedita reprehenderit officia minima unde
+              possimus, blanditiis cum tenetur dolores!</p>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/pseudo-elements1.png" alt>
+            </div>
+          </div>
+        </div>
+        <h2 style="font-size: 15px;"><span>Before, After, Content</span></h2>
+        <div class="part1">
+          <h3>::before</h3>
+          <ul>
+            <li>Inserts content before the actual content of an element.</li>
+            <li>Must include the content property (even if empty).</li>
+          </ul>
+          <h3>::after</h3>
+          <ul>
+            <li>Inserts content after the actual content of an element.</li>
+            <li>Also requires the content property.</li>
+          </ul>
+          <h3>content property</h3>
+          <p>The content property defines what to display inside the pseudo-element.</p>
+        </div>
+        <div class="part2"></div>
+      </div>
+    </section>
+  </body>
+</html>

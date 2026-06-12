@@ -95,8 +95,8 @@
       <li><a href="./css-session1.html">Session 1</a></li>
       <li><a href="./css-session2.html">Session 2</a></li>
       <li><a href="./css-session3.html">Session 3</a></li>
-      <li><a href>Session 4</a></li>
-      <li><a href>Session 5</a></li>
+      <li><a href="./css-session4.html">Session 4</a></li>
+      <li><a href="./css-session5.html">Session 5</a></li>
       <li><a href>Test yourself</a></li>
     </ul>
     <ul class="nav-page">
@@ -121,7 +121,7 @@
             -
             column-reverse ]</li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 reverse">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -148,7 +148,7 @@
         <ul>
           <li>flex-wrap value [ nowrap "default" - wrap - wrap-reverse ]</li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 flex-wrap">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -182,7 +182,7 @@
               center -
               space-between - space-around - space-evenly ]</span></li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 justify-content">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -201,7 +201,7 @@
         <ul>
           <li>align-items: [stretch - start - end - center]</li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 align-item">
             <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
@@ -225,7 +225,7 @@
           <li>align-content: <span>[stretch - start - end - center -
               space-between - space-around - space-evenly]</span></li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 align-content">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -264,7 +264,7 @@
           <li>Positive number (1, 2, 3, etc.) : The item will grow to fill the
             remaining space proportionally compared to other items.</li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 flex-grow">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -290,7 +290,7 @@
             other items when space is tight. The higher the number, the more it
             shrinks.</li>
         </ul>
-        <div class="containt">
+        <div class="content">
           <div class="part1 flex-shrink">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -298,7 +298,7 @@
               <div class="ch3"><h2>3</h2></div>
             </div>
           </div>
-          <div class="part2 flex-grow-code">
+          <div class="part2 flex-shrink-code">
             <div class="div-img">
               <img src="./img/flex-shrink-code.png"
                 alt="align content photo code " loading="lazy">
@@ -312,7 +312,7 @@
           <li>Default value: 0</li>
           <li>Type: integer (can be positive, negative, or zero)</li>
         </ul>
-        <div class="containt">
+        <div class="content ">
           <div class="part1 order">
             <div class="parent1 ">
               <div class="ch1"><h2>1</h2></div>
@@ -322,14 +322,130 @@
               <div class="ch5"><h2>5</h2></div>
             </div>
           </div>
-          <div class="part2 flex-grow-code">
+          <div class="part2 order-code">
             <div class="div-img">
               <img src="./img/order-code.png"
                 alt="align content photo code " loading="lazy">
+
             </div>
+          </div>
+        </div>
+        <hr>
+        <h2>basis - flex - inline-flex</h2>
+        <p><span>flex-basis :</span>the initial main size (width or height) of a
+          flex item before the remaining space is distributed using flex-grow or
+          flex-shrink.</p>
+        <ul>
+          <li>as a width with <span>flex-direction : row </span></li>
+          <li>as a height with <span>flex-direction : column</span> </li>
+          <li>value : auto - length - percentage - content</li>
+          <li>flex-basis is super useful for <span>responsive design</span> —
+            because it lets
+            you control the starting size of flex items relative to the
+            container, not fixed pixels only. </li>
+        </ul>
+        <div class="content ">
+          <div class="part1 basis ">
+            <div class="div-img ">
+              <img src="./img/flex-basis-row-grow.png" alt>
+            </div>
+            <div class="notes">
+              <h3>Note :</h3>
+              <p>flex-basis : auto with flex-grow : 1 </p>
+              <ul>
+                <li>Start at natural (auto) size → then grow equally to fill
+                  extra space.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="part2 flex-basis-code">
+            <div class="div-img">
+              <img src="./img/basis-row-direction.png" alt>
+            </div>
+
           </div>
         </div>
       </div>
     </section>
+    <section id="session4-position">
+
+      <div class="container">
+        <h2>Position</h2>
+        <h2 style="font-size: 20px;">Static - Fixed - Absolute - Relative -
+          Sticky</h2>
+        <h2 style="font-size: 20px;">top - bottom - left - right</h2>
+        <p><span>Position : Static</span> is a default value using for reset</p>
+        <p><span>position: relative</span> property in CSS means the element is
+          positioned relative to its normal position in the page and you can use
+          negative value.</p>
+        <p><span>position: absolute</span> property in CSS means the element is
+          completely removed from the normal document flow and is positioned
+          relative to the nearest ancestor that has a position value other than
+          static (for example relative, absolute, fixed, or sticky).</p>
+        <p><span>position: fixed</span> property in CSS means the element is
+          positioned relative to the browser window (viewport) — not to any
+          parent element — and it does not move when you scroll the
+          page.</p>
+        <p><span>position: sticky</span> property in CSS means the element acts
+          like
+          relative at first, but becomes fixed once you scroll past a
+          certain point — usually defined by top, bottom, left, or
+          right.</p>
+
+        <div class="content">
+          <div class="part1">
+            <div class="static">
+              <div>one</div>
+              <div>two</div>
+            </div>
+            <div class="relative">
+              <div>one</div>
+              <div>two</div>
+            </div>
+            <div class="absolute">
+              <div>one</div>
+              <div>two</div>
+            </div>
+          </div>
+          <div class="part2">
+            <p><span> position: static; top: 10px; left: 10px;</span>directional
+              properties not work </p>
+            <p><span> position: relative; top: 10px; left: 10px;</span></p>
+            <p><span> position: absolute; top: 15px; left: 15px;</span> give the
+              parent position: relative to move inside it </p>
+
+          </div>
+        </div>
+        <div class="notes">
+          <h3>Note:</h3>
+          <p>when you give div one margin-top 20px that make div two move down
+            20px </p>
+        </div>
+        <hr>
+        <h2>Z-Index</h2>
+        <p>The z-index property in CSS controls the stacking order of elements
+          that overlap each other.
+          In simple terms — it decides which element appears on top and which
+          one appears below.</p>
+        <div class="content">
+          <div class="part1">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <div class="part2">
+            <div class="div-img">
+              <img src="./img/z-inedx-code.png" alt>
+            </div>
+          </div>
+        </div>
+        <div class="notes">
+          <h3>Note :</h3>
+          <p>The z-index property won’t work unless the element has a position
+            value other than static.</p>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>

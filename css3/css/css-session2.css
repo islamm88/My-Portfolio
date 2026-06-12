@@ -1,7 +1,7 @@
 @media (max-width: 390px) {
   #session2-margin {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -146,7 +146,7 @@
   }
   #session2-padding {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -291,7 +291,7 @@
   }
   #session2-border {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -448,7 +448,7 @@
   }
   #session2-boxsizeing {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -605,7 +605,7 @@
   }
   #session2-boxshadow {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -742,7 +742,7 @@
   }
   #session2-dispaly {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -819,7 +819,7 @@
   }
   #session2-assignment {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -854,7 +854,7 @@
 @media (min-width: 391px) and (max-width: 767px) {
   #session2-margin {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -999,7 +999,7 @@
   }
   #session2-padding {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1144,7 +1144,7 @@
   }
   #session2-border {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1301,7 +1301,7 @@
   }
   #session2-boxsizeing {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1458,7 +1458,7 @@
   }
   #session2-boxshadow {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1595,7 +1595,7 @@
   }
   #session2-dispaly {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1672,7 +1672,7 @@
   }
   #session2-assignment {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1707,7 +1707,7 @@
 @media (min-width: 768px) {
   #session2-border {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1849,7 +1849,7 @@
   }
   #session2-margin {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1977,7 +1977,7 @@
   }
   #session2-padding {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2106,7 +2106,7 @@
   }
   #session2-boxsizeing {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2170,7 +2170,7 @@
   }
   #session2-boxshadow {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2295,7 +2295,7 @@
   }
   #session2-dispaly {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -2371,7 +2371,7 @@
   }
   #session2-assignment {
     & .container {
-      & .containt {
+      & .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
