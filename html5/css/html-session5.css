@@ -1,7 +1,260 @@
 @media (max-width: 390px) {
+  #session5-che-rad {
+    .container {
+      .containt {
+        justify-content: space-between;
+        .part1,
+        .part2 {
+          width: 48%;
+          .div-img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              border-radius: 10px;
+            }
+          }
+          form {
+            margin-block: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: var(--color3);
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            width: 100%;
+            p {
+              font-size: 0.4rem;
+            }
+            label {
+              font-size: 0.4rem;
+            }
+            input[type="checkbox"],
+            input[type="radio"] {
+              transform: scale(0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #session5-sel-txt {
+    .container {
+      .containt {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        .part1,
+        .part2 {
+          padding: 10px;
+          width: 100%;
+          & .div-img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            & img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              border-radius: 10px;
+            }
+          }
+          textarea {
+            width: 100%;
+            height: 170px;
+          }
+        }
+        #textarea {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  #session5-Another-Inputs {
+    .containt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      table {
+        width: 10%;
+        tr td {
+          font-size: 11px;
+          input {
+            width: 100px;
+            margin-block: 5px;
+          }
+        }
+
+        input[type="file"] {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+
+  #session5-summary {
+    & .container {
+      & .containt {
+        display: flex;
+        flex-direction: column;
+        .div-img {
+          width: 100%;
+          height: 150px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #session5-Assignment {
+    & .containt {
+      background-color: black;
+      padding: 20px;
+      width: 100%;
+      border-radius: 10px;
+      margin: auto;
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 391px) and (max-width: 767px) {
+  #session5-che-rad {
+    .container {
+      .containt {
+        justify-content: space-between;
+        .part1,
+        .part2 {
+          width: 48%;
+          .div-img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+              border-radius: 10px;
+            }
+          }
+          form {
+            margin-block: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: var(--color3);
+            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+            width: 100%;
+            p {
+              font-size: 0.4rem;
+            }
+            label {
+              font-size: 0.4rem;
+            }
+            input[type="checkbox"],
+            input[type="radio"] {
+              transform: scale(0.5);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #session5-sel-txt {
+    .container {
+      .containt {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        .part1,
+        .part2 {
+          padding: 10px;
+          width: 100%;
+          textarea {
+            width: 60%;
+            height: 170px;
+          }
+        }
+        #textarea {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+
+  #session5-Another-Inputs {
+    .containt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  #session5-summary {
+    & .container {
+      & .containt {
+        display: flex;
+        div {
+          width: 50%;
+        }
+        .div-img {
+          width: 100%;
+          height: 170px;
+          border-radius: 10px;
+          box-shadow: 0 0 5px 5px gray;
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #session5-Assignment {
+    & .containt {
+      background-color: black;
+      padding: 20px;
+      width: 100%;
+      border-radius: 10px;
+      margin: auto;
+      & img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -38,6 +291,31 @@
     }
   }
 
+  #session5-sel-txt {
+    .container {
+      .containt {
+        justify-content: space-between;
+        .part1,
+        .part2 {
+          width: 40%;
+          .div-img {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #session5-Another-Inputs {
+    .containt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   #session5-summary {
     .containt {
       & .par1 {
@@ -46,7 +324,7 @@
       & .part2 {
         width: 45%;
         & .div-img {
-          margin-block:20px ;
+          margin-block: 20px;
           & img {
             width: 100%;
             height: 100%;
@@ -61,7 +339,6 @@
 
   #session5-Assignment {
     & .containt {
-
       background-color: black;
       padding: 20px;
       width: fit-content;
