@@ -5,25 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML5-Session5</title>
     <link rel="stylesheet" href="./css/html-global-css.css" />
-    <link rel="stylesheet" href="./css/html-session5.css">
+    <link rel="stylesheet" href="./css/html-session5.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
+    <aside id="html-aside">
+      <header>
+        <a href="./html-session1.html"
+          ><img src="../imge/html.png" alt="my logo" loading="lazy"
+        /></a>
+        <h1>HTML5</h1>
+        <bottom
+          onclick="document.getElementById('html-aside').style.left = '100%'"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></bottom>
+      </header>
+      <details>
+        <summary onclick="collapses_nav_site()">
+          <i class="fa-solid fa-chevron-down down-nav-site"></i
+          ><i class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+        </summary>
+        <ul class="nav-site-asid">
+          <li><a href="./html-session1.html">Session 1</a></li>
+          <li><a href="./html-session2.html">Session 2</a></li>
+          <li><a href="./html-session3.html">Session 3</a></li>
+          <li><a href="./html-session4.html">Session 4</a></li>
+          <li><a href="./html-session5.html">Session 5</a></li>
+          <li><a href="./html-test.html" target="_blank">Test yourself</a></li>
+        </ul>
+      </details>
+      <details>
+        <summary onclick="collapses_nav_page()">
+          <i class="fa-solid fa-chevron-down down-nav_page"></i
+          ><i class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          Navigation
+        </summary>
+        <ul class="nav-page-asid">
+          <li>
+            <a
+              href="#ession5-che-rad"
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Checkbox&Radio</a
+            >
+          </li>
+          <li>
+            <a
+              href="#session5-sel-txt"
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Select&Textarea</a
+            >
+          </li>
+          <li>
+            <a
+              href="#session5-Another-Inputs"
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Another inputs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#session5-Assignment"
+              onclick="document.getElementById('html-aside').style.left = '100%'"
+              >Assignment</a
+            >
+          </li>
+        </ul>
+      </details>
+    </aside>
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"><img src="../imge/html.png"
-              alt="my logo" loading="lazy" /></a>
+          <a href="./html-session1.html"
+            ><img src="../imge/html.png" alt="my logo" loading="lazy"
+          /></a>
           <h1>HTML5</h1>
+          <bottom
+            onclick="document.getElementById('html-aside').style.left = '0'"
+            ><i class="fa-solid fa-bars"></i
+          ></bottom>
         </div>
         <h2>
           SESSION 5
-          <a href="../assets/HTML5-Session5.pdf" target="_blank"><i
-              class="fa-solid fa-file-pdf"></i></a>
+          <a href="../assets/HTML5-Session4.pdf" target="_blank"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
         </h2>
       </div>
     </header>
@@ -42,7 +112,6 @@
       <li><a href="#session5-Assignment">Assignment</a></li>
     </ul>
 
-
     <section id="session5-che-rad">
       <div class="container">
         <h2>Checkbox & Radio</h2>
@@ -56,17 +125,23 @@
           <div class="part1">
             <p>Frontend Corses :</p>
             <form action method="post">
-              <input type="checkbox" name="feCorse[]" id="html" value="html" checked />
+              <input
+                type="checkbox"
+                name="feCorse[]"
+                id="html"
+                value="html"
+                checked
+              />
               <label for="html"> HTML</label>
               <input type="checkbox" name="feCorse[]" id="css" value="css" />
-                <label for="css"> CSS</label>
-              <input type="checkbox" name="feCorse[]" id="js" value="js"/>
-                <label for="js"> JS </label>
+              <label for="css"> CSS</label>
+              <input type="checkbox" name="feCorse[]" id="js" value="js" />
+              <label for="js"> JS </label>
             </form>
           </div>
           <div class="part2">
             <div class="div-img">
-              <img src="./img/check-code.png" alt>
+              <img src="./img/check-code.png" alt />
             </div>
           </div>
         </div>
@@ -84,18 +159,21 @@
                 type="radio"
                 name="birthday"
                 id="1999"
-                value="1999" /><label for="1999"> 1999</label>
+                value="1999"
+              /><label for="1999"> 1999</label>
               <input
                 type="radio"
                 name="birthday"
                 id="2020"
-                value="2020" /><label for="2020"> 2020</label>
+                value="2020"
+              /><label for="2020"> 2020</label>
               <input
                 type="radio"
                 name="birthday"
                 id="2002"
                 value="2002"
-                checked /><label for="2002"> 2002</label>
+                checked
+              /><label for="2002"> 2002</label>
             </form>
             <form action>
               <p>your gender :</p>
@@ -104,24 +182,25 @@
                 name="gender"
                 id="male"
                 value="male"
-                checked /><label for="male"> Male</label>
+                checked
+              /><label for="male"> Male</label>
               <input
                 type="radio"
                 name="gender"
                 id="female"
-                value="female" /><label for="female"> Female</label>
+                value="female"
+              /><label for="female"> Female</label>
             </form>
           </div>
           <div class="part2">
             <div class="div-img">
-              <img src="./img/rad1-code.png" alt="readio photo code">
-              <img src="./img/rad2-code.png" alt="readio photo code">
+              <img src="./img/rad1-code.png" alt="readio photo code" />
+              <img src="./img/rad2-code.png" alt="readio photo code" />
             </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <section id="session5-sel-txt">
       <div class="container">
@@ -172,14 +251,15 @@
             <li>Openinig and Closing</li>
           </ul>
           <div class="containt">
-            <div class="part1" id = "textarea">
+            <div class="part1" id="textarea">
               <label for="info">Information :</label>
               <textarea
                 name="info"
                 id="info"
                 cols="50"
                 rows="15"
-                placeholder=" Insert your information "></textarea>
+                placeholder=" Insert your information "
+              ></textarea>
             </div>
             <div class="part2">
               <p>
@@ -191,7 +271,6 @@
         </div>
       </div>
     </section>
-
 
     <section id="session5-Another-Inputs">
       <div class="container">
@@ -235,32 +314,35 @@
       </div>
     </section>
 
-
     <section id="session5-summary">
       <div class="container">
         <h2>summary</h2>
         <div class="containt">
-          <p>The &lt;summary&gt; tag in HTML is used inside a &lt;details&gt;
+          <p>
+            The &lt;summary&gt; tag in HTML is used inside a &lt;details&gt;
             element to provide a summary, caption, or heading for the content
-            that can be expanded/collapsed.</p>
+            that can be expanded/collapsed.
+          </p>
         </div>
-        <div class="containt" >
+        <div class="containt">
           <div class="part1">
             <details>
               <summary>Click here to learn more</summary>
-              <p>This is the hidden content that appears when you expand the
-                summary.</p>
+              <p>
+                This is the hidden content that appears when you expand the
+                summary.
+              </p>
               <p>You can put text, images, or even other elements inside.</p>
             </details>
           </div>
-          <div class="part2" >
+          <div class="part2">
             <div class="div-img">
-              <img src="./img/summary-tag.png" alt></div>
+              <img src="./img/summary-tag.png" alt />
+            </div>
           </div>
         </div>
       </div>
     </section>
-
 
     <section id="session5-Assignment">
       <div class="container">
@@ -270,7 +352,6 @@
         </div>
       </div>
     </section>
-
 
     <div id="up">
       <a href="#"><i class="fa-solid fa-sort-up"></i></a>
