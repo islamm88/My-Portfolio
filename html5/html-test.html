@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,9 +6,67 @@
     <title>HTML-Test</title>
     <link rel="stylesheet" href="./Test.css" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <style>
+      #projects {
+        background-color: lightgray;
+        border: 1px solid rgb(235, 227, 227);
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 5px gray;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        #pro1 ,#pro2 , #pro3 , #pro4 , #pro5 , #pro6 {
+          border: 1px solid rgb(219, 217, 217);
+          background-color: rgb(247, 245, 245);
+          border-radius: 15px;
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s ease;
+          a {
+            text-decoration: none;
+          }
+        }
+        #pro1:hover ,
+        #pro2:hover ,
+        #pro3:hover ,
+        #pro4:hover ,
+        #pro5:hover ,
+        #pro6:hover {
+          transform: scale(1.05);
+          background-color: rgb(238, 232, 232);
+          box-shadow: 2px 2px 5px gray;
+          cursor: pointer;
+        }
+      }
+    </style>
   </head>
   <body>
     <section>
+      <h2>Projects :</h2>
+      <div id="projects">
+        <div id="pro1">
+          <p><a href="../Projects/HTML-Pro/pro1/index.html" target="_blank">P1</a></p>
+        </div>
+        <div id="pro2">
+          <p><a href="">P2</a></p>
+        </div>
+        <div id="pro3">
+          <p><a href="">P3</a></p>
+        </div>
+        <div id="pro4">
+          <p><a href="">P4</a></p>
+        </div>
+        <div id="pro5">
+          <p><a href="">P5</a></p>
+        </div>
+        <div id="pro6">
+          <p><a href="">P6</a></p>
+        </div>
+      </div>
       <h2>Test yourself</h2>
       <p>
         A set of 50 HTML questions helps learners cover everything from the
@@ -339,6 +397,206 @@
               <summary>Show answer</summary>
               <div class="qu-ans">
                 <p class="ans-1">c - type="password"</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>13- Which tag is used to create a hyperlink?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a13" />
+              <label for="a8">a - &lt;link&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b13" />
+              <label for="b8">b - &lt;a&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c13" />
+              <label for="c8">c - &lt;href&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d13" />
+              <label for="d8">d - &lt;url&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;a&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>14- Which attribute specifies the URL of a link?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a14" />
+              <label for="a8">a - src </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b14" />
+              <label for="b8">b - link</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c14" />
+              <label for="c8">c - href</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d14" />
+              <label for="d8">d - url</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - href</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>15- Which tag inserts an image?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a15" />
+              <label for="a8">a - &lt;picture&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b15" />
+              <label for="b8">b - &lt;img&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c15" />
+              <label for="c8">c - &lt;image&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d15" />
+              <label for="d8">d - &lt;photo&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;img&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>16- Which tag creates an unordered list?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a16" />
+              <label for="a8">a - &lt;ol&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b16" />
+              <label for="b8">b - &lt;ul&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c16" />
+              <label for="c8">c - &lt;li&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d16" />
+              <label for="d8">d - &lt;list&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;ul&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>17- Which tag creates an ordered list?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a17" />
+              <label for="a8">a - &lt;order&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b17" />
+              <label for="b8">b - &lt;ul&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c17" />
+              <label for="c8">c - &lt;ol&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d17" />
+              <label for="d8">d - &lt;li&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;ol&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>18- Which tag defines a list item?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a18" />
+              <label for="a8">a - &lt;item&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b18" />
+              <label for="b8">b - &lt;li&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c18" />
+              <label for="c8">c - &lt;list&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d18" />
+              <label for="d8">d - &lt;ul&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;li&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>19- Which tag creates a table row?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a19" />
+              <label for="a8">a - &lt;td&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b19" />
+              <label for="b8">b - &lt;th&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c19" />
+              <label for="c8">c - &lt;tr&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d19" />
+              <label for="d8">d - &lt;row&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;tr&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>20- Which tag creates a table cell?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a20" />
+              <label for="a8">a - &lt;td&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b20" />
+              <label for="b8">b - &lt;td&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c20" />
+              <label for="c8">c - &lt;cell&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d20" />
+              <label for="d8">d - &lt;tr&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;td&gt;</p>
               </div>
             </details>
           </div>
