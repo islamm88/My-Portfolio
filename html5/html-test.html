@@ -16,7 +16,8 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        #pro1 ,#pro2 , #pro3 , #pro4 , #pro5 , #pro6 {
+        a {
+          display: inline-block;
           border: 1px solid rgb(219, 217, 217);
           background-color: rgb(247, 245, 245);
           border-radius: 15px;
@@ -26,20 +27,14 @@
           justify-content: center;
           align-items: center;
           transition: all 0.3s ease;
-          a {
-            text-decoration: none;
-          }
+          text-decoration: none;
         }
-        #pro1:hover ,
-        #pro2:hover ,
-        #pro3:hover ,
-        #pro4:hover ,
-        #pro5:hover ,
-        #pro6:hover {
+        a:hover {
           transform: scale(1.05);
           background-color: rgb(238, 232, 232);
           box-shadow: 2px 2px 5px gray;
           cursor: pointer;
+          text-decoration: none;
         }
       }
     </style>
@@ -48,26 +43,29 @@
     <section>
       <h2>Projects :</h2>
       <div id="projects">
-        <div id="pro1">
-          <p><a href="../Projects/HTML-Pro/pro1/index.html" target="_blank">P1</a></p>
-        </div>
-        <div id="pro2">
-          <p><a href="">P2</a></p>
-        </div>
-        <div id="pro3">
-          <p><a href="">P3</a></p>
-        </div>
-        <div id="pro4">
-          <p><a href="">P4</a></p>
-        </div>
-        <div id="pro5">
-          <p><a href="">P5</a></p>
-        </div>
-        <div id="pro6">
-          <p><a href="">P6</a></p>
-        </div>
+        <a
+          id=" pro1"
+          href="../Projects/HTML-Pro/pro1/index.html"
+          target="_blank"
+          >P1</a
+        >
+
+        <a
+          id=" pro2"
+          href="../Projects/HTML-Pro/pro2/index.html"
+          target="_blank"
+          >P2</a
+        >
+
+        <a id=" pro3" href="">P3</a>
+
+        <a id=" pro4" href="">P4</a>
+
+        <a id=" pro5" href="">P5</a>
+
+        <a id=" pro6" href="">P6</a>
       </div>
-      <h2>Test yourself</h2>
+      <h2>Multiple Choice Questions :</h2>
       <p>
         A set of 50 HTML questions helps learners cover everything from the
         basics to advanced concepts in web development. These questions usually
@@ -597,6 +595,259 @@
               <summary>Show answer</summary>
               <div class="qu-ans">
                 <p class="ans-1">b - &lt;td&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>21- Which tag creates a line break?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a21" />
+              <label for="a8">a - &lt;break&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b21" />
+              <label for="b8">b - &lt;br&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c21" />
+              <label for="c8">c - &lt;lb&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d21" />
+              <label for="d8">d - &lt;newline&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;br&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>22- Which tag is used to create the largest heading?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a22" />
+              <label for="a8">a - &lt;heading&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b22" />
+              <label for="b8">b - &lt;h6&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c22" />
+              <label for="c8">c - &lt;h1&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d22" />
+              <label for="d8">d - &lt;head&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;h1&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>23- Which tag is used to create a paragraph?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a23" />
+              <label for="a8">a - &lt;para&gt; </label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b23" />
+              <label for="b8">b - &lt;text&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c23" />
+              <label for="c8">c - &lt;p&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d23" />
+              <label for="d8">d - &lt;paragraph&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;p&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>24- Which attribute specifies the image source?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a24" />
+              <label for="a8">a - alt</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b24" />
+              <label for="b8">b - href</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c24" />
+              <label for="c8">c - src</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d24" />
+              <label for="d8">d - path</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - src</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>25- Which tag is used to create a checkbox?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a25" />
+              <label for="a8">a - &lt;check&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b25" />
+              <label for="b8">b - &lt;box&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c25" />
+              <label for="c8">c - &lt;input type="checkbox"&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d25" />
+              <label for="d8">d - &lt;checkbox&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;input type="checkbox"&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>26- Which tag is used to create a drop-down list?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a26" />
+              <label for="a8">a - &lt;option&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b26" />
+              <label for="b8">b - &lt;list&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c26" />
+              <label for="c8">c - &lt;select&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d26" />
+              <label for="d8">d - &lt;dropdown&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;select&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>27- Which tag defines an option inside a drop-down list?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a27" />
+              <label for="a8">a - &lt;choice&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b27" />
+              <label for="b8">b - &lt;item&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c27" />
+              <label for="c8">c - &lt;select&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d27" />
+              <label for="d8">d - &lt;option&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">d - &lt;option&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>28- Which tag is used to insert an audio file?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a28" />
+              <label for="a8">a - &lt;sound&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b28" />
+              <label for="b8">b - &lt;music&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c28" />
+              <label for="c8">c - &lt;audio&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d28" />
+              <label for="d8">d - &lt;media&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;audio&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>
+              29- Which HTML element is used to define the main content of a
+              page?
+            </h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a29" />
+              <label for="a8">a - &lt;content&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b29" />
+              <label for="b8">b - &lt;main&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c29" />
+              <label for="c8">c - &lt;body&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d29" />
+              <label for="d8">d - &lt;section&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">b - &lt;main&gt;</p>
+              </div>
+            </details>
+          </div>
+          <div class="qu-set">
+            <h3>30- Which tag is used to create a button?</h3>
+            <div class="qu-ans-row ch1">
+              <input type="radio" name="num8" id="a30" />
+              <label for="a8">a - &lt;click&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="b30" />
+              <label for="b8">b - &lt;input&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="c30" />
+              <label for="c8">c - &lt;button&gt;</label>
+            </div>
+            <div class="qu-ans-row">
+              <input type="radio" name="num8" id="d30" />
+              <label for="d8">d - &lt;submit&gt;</label>
+            </div>
+            <details>
+              <summary>Show answer</summary>
+              <div class="qu-ans">
+                <p class="ans-1">c - &lt;button&gt;</p>
               </div>
             </details>
           </div>
