@@ -1,38 +1,51 @@
 @media (max-width: 390px) {
   #session1-introduction {
-    & .container {
-      & .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        & .div-img {
-          width: 35%;
-          height: 100px;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 10px;
-            box-shadow: 0 0 2px 2px gray;
+    .container {
+      padding: 10px;
+      .content {
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: var(--odd-td);
+        box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+        padding: 20px;
+        align-items: start;
+        margin-top: 10px;
+        .col1,
+        .col2,
+        .col3 {
+          /* border: 1px solid red; */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* border: 1px solid red; */
+          h4 {
+            margin-bottom: 10px;
           }
-        }
-        & ol,
-        & ul {
-          width: 45%;
+          p {
+            text-align: center;
+          }
+          img {
+            display: block;
+            width: 100%;
+            margin-block: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+          }
         }
       }
     }
   }
   #session1-CommentSelector {
-    & .container {
-      & .content {
+    .container {
+      padding: 10px;
+      .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        & .div-img {
-          width: 35%;
-          height: 100px;
-          & img {
+        .div-img {
+          width: 60%;
+          height: 200px;
+          img {
             width: 100%;
             height: 100%;
             display: block;
@@ -40,15 +53,42 @@
             box-shadow: 0 0 2px 2px gray;
           }
         }
-        & ol,
-        & ul {
-          width: 45%;
+      }
+      table {
+        margin: auto;
+        width: 70%;
+        tbody tr td {
+          padding: 2px;
+          border: 1px solid gray;
+          img {
+            width: 80px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+          }
+
+          img:hover {
+            transform: scale(1.05);
+          }
+          .notes {
+            text-align: left;
+            h3 {
+              font-size: 8px;
+              font-weight: 400;
+              margin-bottom: 2px;
+            }
+            p {
+              font-size: 8px;
+              font-weight: 400;
+            }
+          }
         }
       }
     }
   }
   #session1-background {
     & .container {
+      padding: 10px;
       & .content {
         padding: 10px;
         margin-bottom: 30px;
@@ -89,62 +129,68 @@
     }
   }
   #session1-font-icon {
-    & .container {
-      & .content {
-        & .div-img {
-          width: 25%;
-          height: 200px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-          }
-        }
+    .container {
+      padding: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        margin-block: 10px;
       }
-      & a {
+      a {
         text-decoration: none;
         font-size: 10px;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: uppercase;
         color: rgb(255, 255, 255);
         background-color: black;
-        padding: 10px;
+        padding: 5px;
         border-radius: 10px;
         box-shadow: 0 0 2px 2px gray;
         margin-inline: 10px;
+        transition: all 0.7s ease;
       }
-      & a:hover {
+      a:hover {
         color: #7a85e9;
+        transform: scale(1.02);
       }
     }
   }
   #session1-assignment {
-    & .container {
-      & .content {
-        & .div-img {
-          width: 25%;
-          height: 300px;
+    .container {
+      padding: 10px;
+      h3 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .content {
+        pre {
+          font-size: 10px;
+        }
+        .div-img {
+          display: flex;
+          width: 100%;
+          height: 200px;
           display: flex;
           align-items: center;
           justify-content: center;
-          & img {
-            width: 100%;
-            height: 100%;
+          img {
+            width: 35%;
+            height: 70%;
             display: block;
             margin: 10px;
           }
-          & a {
+          a {
             background-color: var(--color4);
             text-decoration: none;
             color: #fff;
-            padding: 10px;
+            padding: 5px;
             border-radius: 10px;
             transition: all 0.3s ease;
           }
-          & a:hover {
+          a:hover {
             background-color: rgb(76, 74, 74);
             transform: scale(1.05);
           }
@@ -155,39 +201,50 @@
 }
 @media (min-width: 391px) and (max-width: 767px) {
   #session1-introduction {
-    & .container {
-      & .content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        & .div-img {
-          width: 35%;
-          height: 100px;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 10px;
-            box-shadow: 0 0 2px 2px gray;
+    .container {
+      .content {
+        /* border: 1px solid red; */
+        border-radius: 10px;
+        background-color: var(--odd-td);
+        box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+        padding: 20px;
+        align-items: start;
+        margin-top: 10px;
+        .col1,
+        .col2,
+        .col3 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 30%;
+          /* border: 1px solid red; */
+          h4 {
+            margin-bottom: 10px;
           }
-        }
-        & ol,
-        & ul {
-          width: 45%;
+          p {
+            text-align: center;
+          }
+          img {
+            display: block;
+            width: 100%;
+            margin-block: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
+          }
         }
       }
     }
   }
   #session1-CommentSelector {
-    & .container {
-      & .content {
+    .container {
+      .content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        & .div-img {
-          width: 35%;
-          height: 100px;
-          & img {
+        .div-img {
+          width: 60%;
+          height: 200px;
+          img {
             width: 100%;
             height: 100%;
             display: block;
@@ -195,9 +252,33 @@
             box-shadow: 0 0 2px 2px gray;
           }
         }
-        & ol,
-        & ul {
-          width: 45%;
+      }
+      table {
+        margin: auto;
+        width: 95%;
+        tbody tr td {
+          img {
+            width: 120px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: transform 0.3s;
+          }
+
+          img:hover {
+            transform: scale(1.05);
+          }
+          .notes {
+            text-align: left;
+            h3 {
+              font-size: 10px;
+              font-weight: 400;
+              margin-bottom: 2px;
+            }
+            p {
+              font-size: 10px;
+              font-weight: 400;
+            }
+          }
         }
       }
     }
@@ -245,31 +326,16 @@
     }
   }
   #session1-font-icon {
-    & .container {
-      & .content {
-        padding: 10px;
-        margin-bottom: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        background-color: #eee;
-        border-radius: 10px;
-        & .div-img {
-          width: 20%;
-          height: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          & img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            border-radius: 5px;
-            box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-          }
-        }
+    .container {
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 5px;
+        box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+        margin-block: 10px;
       }
-      & a {
+      a {
         text-decoration: none;
         font-size: 10px;
         font-weight: 400;
@@ -282,28 +348,35 @@
         margin-inline: 10px;
         transition: all 0.7s ease;
       }
-      & a:hover {
+      a:hover {
         color: #7a85e9;
         transform: scale(1.02);
       }
     }
   }
   #session1-assignment {
-    & .container {
-      & .content {
-        & .div-img {
-          width: 25%;
-          height: 300px;
+    .container {
+      h3 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+      .content {
+        pre {
+          font-size: 12px;
+        }
+        .div-img {
+          width: 100%;
+          height: 200px;
           display: flex;
           align-items: center;
           justify-content: center;
-          & img {
+          img {
             width: 100%;
-            height: 100%;
+            height: 70%;
             display: block;
             margin: 10px;
           }
-          & a {
+          a {
             background-color: var(--color4);
             text-decoration: none;
             color: #fff;
@@ -311,7 +384,7 @@
             border-radius: 10px;
             transition: all 0.3s ease;
           }
-          & a:hover {
+          a:hover {
             background-color: rgb(76, 74, 74);
             transform: scale(1.05);
           }
@@ -368,7 +441,6 @@
             margin-block: 20px;
             border-radius: 10px;
             box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
-            
           }
         }
       }

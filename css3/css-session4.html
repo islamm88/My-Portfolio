@@ -9,7 +9,8 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
@@ -18,17 +19,19 @@
     </div> -->
     <aside id="css-aside">
       <header>
-        <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
-            loading="lazy" /></a>
+        <a href="./css-session1.html"
+          ><img src="../imge/css.png" alt="my logo" loading="lazy"
+        /></a>
         <h1>CSS3</h1>
         <bottom
-          onclick="document.getElementById('css-aside').style.left = '100%'"><i
-            class="fa-solid fa-circle-xmark"></i></bottom>
+          onclick="document.getElementById('css-aside').style.left = '100%'"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></bottom>
       </header>
       <details>
         <summary onclick="collapses_nav_site()">
-          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
-            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+          <i class="fa-solid fa-chevron-down down-nav-site"></i
+          ><i class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
         </summary>
         <ul class="nav-site-asid">
           <li><a href="./css-session1.html">Session 1</a></li>
@@ -41,35 +44,45 @@
       </details>
       <details>
         <summary onclick="collapses_nav_page()">
-          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
-            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          <i class="fa-solid fa-chevron-down down-nav_page"></i
+          ><i class="fa-solid fa-chevron-right right-nav_page"></i> Page
           Navigation
         </summary>
         <ul class="nav-page-asid">
           <li>
             <a
               href="#session1-introduction"
-              onclick="document.getElementById('css-aside').style.left = '100%'">Introduction</a>
+              onclick="document.getElementById('css-aside').style.left = '100%'"
+              >Introduction</a
+            >
           </li>
           <li>
             <a
               href="#session1-CommentSelector"
-              onclick="document.getElementById('css-aside').style.left = '100%'">Selector&Comment</a>
+              onclick="document.getElementById('css-aside').style.left = '100%'"
+              >Selector&Comment</a
+            >
           </li>
           <li>
             <a
               href="#session1-background"
-              onclick="document.getElementById('css-aside').style.left = '100%'">Background</a>
+              onclick="document.getElementById('css-aside').style.left = '100%'"
+              >Background</a
+            >
           </li>
           <li>
             <a
               href="#session1-font-icon"
-              onclick="document.getElementById('css-aside').style.left = '100%'">Font&Icon</a>
+              onclick="document.getElementById('css-aside').style.left = '100%'"
+              >Font&Icon</a
+            >
           </li>
           <li>
             <a
               href="#session1-assignment"
-              onclick="document.getElementById('css-aside').style.left = '100%'">Assignment</a>
+              onclick="document.getElementById('css-aside').style.left = '100%'"
+              >Assignment</a
+            >
           </li>
         </ul>
       </details>
@@ -77,17 +90,20 @@
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./css-session1.html"><img src="../imge/css.png" alt="my logo"
-              loading="lazy" /></a>
+          <a href="./css-session1.html"
+            ><img src="../imge/css.png" alt="my logo" loading="lazy"
+          /></a>
           <h1>CSS 3</h1>
           <bottom
-            onclick="document.getElementById('css-aside').style.left = '0'"><i
-              class="fa-solid fa-bars"></i></bottom>
+            onclick="document.getElementById('css-aside').style.left = '0'"
+            ><i class="fa-solid fa-bars"></i
+          ></bottom>
         </div>
         <h2>
           SESSION 4
-          <a href="./assets/CSS3-Session1.pdf" target="_blank"><i
-              class="fa-solid fa-file-pdf"></i></a>
+          <a href="./assets/CSS3-Session4.pdf" target="_blank"
+            ><i class="fa-solid fa-file-pdf"></i
+          ></a>
         </h2>
       </div>
     </header>
@@ -100,30 +116,30 @@
       <li><a href>Test yourself</a></li>
     </ul>
     <ul class="nav-page">
-      <li><a href="#session1-introduction">Introduction </a></li>
-      <li><a href="#session1-CommentSelector">Selector&Comment</a></li>
-      <li><a href="#session1-background">Background</a></li>
-      <li><a href="#session1-font-icon">Font&Icon</a></li>
-      <li><a href="#session1-assignment">Assignment</a></li>
+      <li><a href="#session4-flexbox">Flexbox </a></li>
+      <li><a href="#session4-position">Position </a></li>
     </ul>
     <section id="session4-flexbox">
       <div class="container">
         <h2>Flexbox</h2>
         <h2>display - flex-direction - flex-wrap</h2>
         <h3>Parent :</h3>
-        <p><span>display: flex</span>(When you apply it to a container, all
-          its direct children become <span>flex items</span> , which you can
-          easily control)</p>
+        <p>
+          <span>display: flex</span>(When you apply it to a container, all its
+          direct children become <span>flex items</span> , which you can easily
+          control)
+        </p>
         <ul>
           <li>width : auto</li>
           <li>height : stretch</li>
-          <li><span>flex-direction:</span>[ row "default" - row-reverse - column
-            -
-            column-reverse ]</li>
+          <li>
+            <span>flex-direction:</span>[ row "default" - row-reverse - column -
+            column-reverse ]
+          </li>
         </ul>
         <div class="content">
           <div class="part1 reverse">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -136,28 +152,32 @@
           </div>
           <div class="part2 revers-code">
             <div class="div-img">
-              <img src="./img/diplay-flex-code.png"
-                alt="display flex photo code" loading="lazy">
+              <img
+                src="./img/diplay-flex-code.png"
+                alt="display flex photo code"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <p><span>flex-wrap :</span> is used with display: flex to control
-          whether flex
-          items should stay in one line or wrap onto multiple lines when they
-          don’t fit in the container.</p>
+        <p>
+          <span>flex-wrap :</span> is used with display: flex to control whether
+          flex items should stay in one line or wrap onto multiple lines when
+          they don’t fit in the container.
+        </p>
         <ul>
           <li>flex-wrap value [ nowrap "default" - wrap - wrap-reverse ]</li>
         </ul>
         <div class="content">
           <div class="part1 flex-wrap">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
               <div class="ch3"><h2>4</h2></div>
               <div class="ch3"><h2>5</h2></div>
             </div>
-            <div class="parent2 ">
+            <div class="parent2">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -167,24 +187,32 @@
           </div>
           <div class="part2 flex-wrap-code">
             <div class="div-img">
-              <img src="./img/flex-wrap-code.png" alt="flex wrap photo code"
-                loading="lazy">
+              <img
+                src="./img/flex-wrap-code.png"
+                alt="flex wrap photo code"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <h2>justify-content - align-item - align-content </h2>
-        <p>justify-content is a Flexbox property that controls the horizontal
-          alignment of flex items inside a flex container <span>(if the
-            direction is
-            row).</span></p>
+        <h2>justify-content - align-item - align-content</h2>
+        <p>
+          justify-content is a Flexbox property that controls the horizontal
+          alignment of flex items inside a flex container
+          <span>(if the direction is row).</span>
+        </p>
         <ul>
-          <li>justify-content : <span> [ start "default" - end -
-              center -
-              space-between - space-around - space-evenly ]</span></li>
+          <li>
+            justify-content :
+            <span>
+              [ start "default" - end - center - space-between - space-around -
+              space-evenly ]</span
+            >
+          </li>
         </ul>
         <div class="content">
           <div class="part1 justify-content">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -192,12 +220,15 @@
           </div>
           <div class="part2 justify-content-code">
             <div class="div-img">
-              <img src="./img/justify-content-code.png"
-                alt="justify content photo code" loading="lazy">
+              <img
+                src="./img/justify-content-code.png"
+                alt="justify content photo code"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <p>align-items It controls how flex items are aligned vertically </p>
+        <p>align-items It controls how flex items are aligned vertically</p>
         <ul>
           <li>align-items: [stretch - start - end - center]</li>
         </ul>
@@ -214,20 +245,30 @@
           </div>
           <div class="part2 align-item-code">
             <div class="div-img">
-              <img src="./img/align-item-code.png"
-                alt="justify content photo code" loading="lazy">
+              <img
+                src="./img/align-item-code.png"
+                alt="justify content photo code"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <p>align-content : controls the spacing and alignment between multiple
-          flex lines (rows or columns) along the cross axis. </p>
+        <p>
+          align-content : controls the spacing and alignment between multiple
+          flex lines (rows or columns) along the cross axis.
+        </p>
         <ul>
-          <li>align-content: <span>[stretch - start - end - center -
-              space-between - space-around - space-evenly]</span></li>
+          <li>
+            align-content:
+            <span
+              >[stretch - start - end - center - space-between - space-around -
+              space-evenly]</span
+            >
+          </li>
         </ul>
         <div class="content">
           <div class="part1 align-content">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -238,35 +279,45 @@
           </div>
           <div class="part2 align-content-code">
             <div class="div-img">
-              <img src="./img/align-content-code.png"
-                alt="align content photo code " loading="lazy">
+              <img
+                src="./img/align-content-code.png"
+                alt="align content photo code "
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
         <div class="notes">
           <h3>Note :</h3>
           <ul>
-            <li>align-items : aligns items inside one flex line (works with
-              single row).</li>
-            <li>align-content : aligns multiple flex lines (only works if
-              flex-wrap: wrap creates more than one row).</li>
+            <li>
+              align-items : aligns items inside one flex line (works with single
+              row).
+            </li>
+            <li>
+              align-content : aligns multiple flex lines (only works if
+              flex-wrap: wrap creates more than one row).
+            </li>
           </ul>
         </div>
-        <hr>
+        <hr />
         <h3>children :</h3>
         <h2>grow - shrink - order</h2>
-        <p><span>flex-grow :</span> property in CSS defines how much a flex item
-          should grow
-          relative to the rest of the items inside the same flex container when
-          there is extra space available.</p>
+        <p>
+          <span>flex-grow :</span> property in CSS defines how much a flex item
+          should grow relative to the rest of the items inside the same flex
+          container when there is extra space available.
+        </p>
         <ul>
           <li>0 (default) : The item will not grow; it keeps its base size.</li>
-          <li>Positive number (1, 2, 3, etc.) : The item will grow to fill the
-            remaining space proportionally compared to other items.</li>
+          <li>
+            Positive number (1, 2, 3, etc.) : The item will grow to fill the
+            remaining space proportionally compared to other items.
+          </li>
         </ul>
         <div class="content">
           <div class="part1 flex-grow">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -274,25 +325,32 @@
           </div>
           <div class="part2 flex-grow-code">
             <div class="div-img">
-              <img src="./img/flex-grow-code.png"
-                alt="align content photo code " loading="lazy">
+              <img
+                src="./img/flex-grow-code.png"
+                alt="align content photo code "
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <p><span>flex-shrink :</span> property in CSS defines how much a flex
-          item will
-          shrink relative to the rest of the flex items when there isn’t enough
-          space in the flex container.</p>
+        <p>
+          <span>flex-shrink :</span> property in CSS defines how much a flex
+          item will shrink relative to the rest of the flex items when there
+          isn’t enough space in the flex container.
+        </p>
         <ul>
-          <li>0 : The item will not shrink even if there’s not enough
-            space.</li>
-          <li>Positive number (1, 2, 3, etc.) : The item will shrink relative to
+          <li>
+            0 : The item will not shrink even if there’s not enough space.
+          </li>
+          <li>
+            Positive number (1, 2, 3, etc.) : The item will shrink relative to
             other items when space is tight. The higher the number, the more it
-            shrinks.</li>
+            shrinks.
+          </li>
         </ul>
         <div class="content">
           <div class="part1 flex-shrink">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -300,21 +358,26 @@
           </div>
           <div class="part2 flex-shrink-code">
             <div class="div-img">
-              <img src="./img/flex-shrink-code.png"
-                alt="align content photo code " loading="lazy">
+              <img
+                src="./img/flex-shrink-code.png"
+                alt="align content photo code "
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <p><span>order :</span> property controls the visual order of flex items
+        <p>
+          <span>order :</span> property controls the visual order of flex items
           inside a flex container — without changing the actual order of the
-          HTML elements in the code.</p>
+          HTML elements in the code.
+        </p>
         <ul>
           <li>Default value: 0</li>
           <li>Type: integer (can be positive, negative, or zero)</li>
         </ul>
-        <div class="content ">
+        <div class="content">
           <div class="part1 order">
-            <div class="parent1 ">
+            <div class="parent1">
               <div class="ch1"><h2>1</h2></div>
               <div class="ch2"><h2>2</h2></div>
               <div class="ch3"><h2>3</h2></div>
@@ -324,73 +387,84 @@
           </div>
           <div class="part2 order-code">
             <div class="div-img">
-              <img src="./img/order-code.png"
-                alt="align content photo code " loading="lazy">
-
+              <img
+                src="./img/order-code.png"
+                alt="align content photo code "
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
-        <hr>
+        <hr />
         <h2>basis - flex - inline-flex</h2>
-        <p><span>flex-basis :</span>the initial main size (width or height) of a
+        <p>
+          <span>flex-basis :</span>the initial main size (width or height) of a
           flex item before the remaining space is distributed using flex-grow or
-          flex-shrink.</p>
+          flex-shrink.
+        </p>
         <ul>
           <li>as a width with <span>flex-direction : row </span></li>
-          <li>as a height with <span>flex-direction : column</span> </li>
+          <li>as a height with <span>flex-direction : column</span></li>
           <li>value : auto - length - percentage - content</li>
-          <li>flex-basis is super useful for <span>responsive design</span> —
-            because it lets
-            you control the starting size of flex items relative to the
-            container, not fixed pixels only. </li>
+          <li>
+            flex-basis is super useful for <span>responsive design</span> —
+            because it lets you control the starting size of flex items relative
+            to the container, not fixed pixels only.
+          </li>
         </ul>
-        <div class="content ">
-          <div class="part1 basis ">
-            <div class="div-img ">
-              <img src="./img/flex-basis-row-grow.png" alt>
+        <div class="content">
+          <div class="part1 basis">
+            <div class="div-img">
+              <img src="./img/flex-basis-row-grow.png" alt />
             </div>
             <div class="notes">
               <h3>Note :</h3>
-              <p>flex-basis : auto with flex-grow : 1 </p>
+              <p>flex-basis : auto with flex-grow : 1</p>
               <ul>
-                <li>Start at natural (auto) size → then grow equally to fill
-                  extra space.</li>
+                <li>
+                  Start at natural (auto) size → then grow equally to fill extra
+                  space.
+                </li>
               </ul>
             </div>
           </div>
           <div class="part2 flex-basis-code">
             <div class="div-img">
-              <img src="./img/basis-row-direction.png" alt>
+              <img src="./img/basis-row-direction.png" alt />
             </div>
-
           </div>
         </div>
       </div>
     </section>
     <section id="session4-position">
-
       <div class="container">
         <h2>Position</h2>
-        <h2 style="font-size: 20px;">Static - Fixed - Absolute - Relative -
-          Sticky</h2>
-        <h2 style="font-size: 20px;">top - bottom - left - right</h2>
+        <h2 style="font-size: 20px">
+          Static - Fixed - Absolute - Relative - Sticky
+        </h2>
+        <h2 style="font-size: 20px">top - bottom - left - right</h2>
         <p><span>Position : Static</span> is a default value using for reset</p>
-        <p><span>position: relative</span> property in CSS means the element is
+        <p>
+          <span>position: relative</span> property in CSS means the element is
           positioned relative to its normal position in the page and you can use
-          negative value.</p>
-        <p><span>position: absolute</span> property in CSS means the element is
+          negative value.
+        </p>
+        <p>
+          <span>position: absolute</span> property in CSS means the element is
           completely removed from the normal document flow and is positioned
           relative to the nearest ancestor that has a position value other than
-          static (for example relative, absolute, fixed, or sticky).</p>
-        <p><span>position: fixed</span> property in CSS means the element is
+          static (for example relative, absolute, fixed, or sticky).
+        </p>
+        <p>
+          <span>position: fixed</span> property in CSS means the element is
           positioned relative to the browser window (viewport) — not to any
-          parent element — and it does not move when you scroll the
-          page.</p>
-        <p><span>position: sticky</span> property in CSS means the element acts
-          like
-          relative at first, but becomes fixed once you scroll past a
-          certain point — usually defined by top, bottom, left, or
-          right.</p>
+          parent element — and it does not move when you scroll the page.
+        </p>
+        <p>
+          <span>position: sticky</span> property in CSS means the element acts
+          like relative at first, but becomes fixed once you scroll past a
+          certain point — usually defined by top, bottom, left, or right.
+        </p>
 
         <div class="content">
           <div class="part1">
@@ -408,25 +482,31 @@
             </div>
           </div>
           <div class="part2">
-            <p><span> position: static; top: 10px; left: 10px;</span>directional
-              properties not work </p>
+            <p>
+              <span> position: static; top: 10px; left: 10px;</span>directional
+              properties not work
+            </p>
             <p><span> position: relative; top: 10px; left: 10px;</span></p>
-            <p><span> position: absolute; top: 15px; left: 15px;</span> give the
-              parent position: relative to move inside it </p>
-
+            <p>
+              <span> position: absolute; top: 15px; left: 15px;</span> give the
+              parent position: relative to move inside it
+            </p>
           </div>
         </div>
         <div class="notes">
           <h3>Note:</h3>
-          <p>when you give div one margin-top 20px that make div two move down
-            20px </p>
+          <p>
+            when you give div one margin-top 20px that make div two move down
+            20px
+          </p>
         </div>
-        <hr>
+        <hr />
         <h2>Z-Index</h2>
-        <p>The z-index property in CSS controls the stacking order of elements
-          that overlap each other.
-          In simple terms — it decides which element appears on top and which
-          one appears below.</p>
+        <p>
+          The z-index property in CSS controls the stacking order of elements
+          that overlap each other. In simple terms — it decides which element
+          appears on top and which one appears below.
+        </p>
         <div class="content">
           <div class="part1">
             <div class="one"></div>
@@ -435,17 +515,18 @@
           </div>
           <div class="part2">
             <div class="div-img">
-              <img src="./img/z-inedx-code.png" alt>
+              <img src="./img/z-inedx-code.png" alt />
             </div>
           </div>
         </div>
         <div class="notes">
           <h3>Note :</h3>
-          <p>The z-index property won’t work unless the element has a position
-            value other than static.</p>
+          <p>
+            The z-index property won’t work unless the element has a position
+            value other than static.
+          </p>
         </div>
       </div>
     </section>
-
   </body>
 </html>

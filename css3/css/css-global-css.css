@@ -246,6 +246,31 @@ body {
       font-size: 10px;
     }
   }
+  #up {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(28, 136, 200);
+    margin-left: 3px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    a {
+      /* border: 1px solid red; */
+      padding: 0px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      left: 2.5px;
+    }
+    a:hover {
+      color: black;
+    }
+  }
 }
 
 @media (min-width: 390px) and (max-width: 767px) {
@@ -445,6 +470,31 @@ body {
     margin-bottom: 10px;
     & li {
       font-size: 10px;
+    }
+  }
+  #up {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(28, 136, 200);
+    margin-left: 3px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    a {
+      /* border: 1px solid red; */
+      padding: 0px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      left: 2.5px;
+    }
+    a:hover {
+      color: black;
     }
   }
 }
@@ -715,6 +765,31 @@ body {
     }
     ul li {
       font-size: 12px;
+    }
+  }
+  #up {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(28, 136, 200);
+    margin-left: 3px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+
+    a {
+      /* border: 1px solid red; */
+      padding: 0px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      position: relative;
+      top: 5px;
+      left: 2.5px;
+    }
+    a:hover {
+      color: black;
     }
   }
 }
