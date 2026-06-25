@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <form action="#">
+      <div>
+        <label for="fullName">Full Name:</label>
+        <br />
+        <i class="fa-solid fa-user"></i>
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="birthDate">Birth Date:</label>
+        <br />
+        <i class="fa-solid fa-calendar-days"></i>
+        <input type="date" id="birthDate" name="birthDate" required />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <i class="fa-solid fa-envelope"></i>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="phone">Phone Number:</label>
+        <br />
+        <i class="fa-solid fa-phone"></i>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <i class="fa-solid fa-lock"></i>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="6"
+          maxlength="12"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label for="confirmPassword">Confirm Password:</label>
+        <br />
+        <i class="fa-solid fa-key"></i>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          minlength="6"
+          maxlength="12"
+          placeholder="Confirm your password"
+          required
+        />
+      </div>
+
+      <br />
+
+      <div>
+        <label>Gender:</label>
+        <br />
+        <input type="radio" id="male" name="gender" value="Male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female" />
+        <label for="female">Female</label>
+      </div>
+
+      <br />
+
+      <div>
+        <label for="country">Country:</label>
+        <br />
+        <select id="country" name="country">
+          <option value="">Select Country</option>
+          <option value="Egypt">Egypt</option>
+          <option value="Saudi Arabia">Saudi Arabia</option>
+          <option value="UAE">UAE</option>
+          <option value="Kuwait">Kuwait</option>
+        </select>
+      </div>
+
+      <br />
+
+      <div>
+        <input type="checkbox" id="terms" required />
+        <label for="terms"> I agree to the Terms and Conditions </label>
+      </div>
+
+      <br />
+
+      <div>
+        <input type="submit" value="Register" />
+        <input type="reset" value="Clear" />
+      </div>
+    </form>
+
+    <br />
+    <div class="footer-links">
+      <a href="terms.html">Terms</a>
+      <span>|</span>
+      <a href="login.html">Login</a>
+    </div>
+  </body>
+</html>

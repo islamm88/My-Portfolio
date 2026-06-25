@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Login</h1>
+
+    <div id="login-form">
+      <form action="#">
+        <div>
+          <label for="userName">User Name:</label>
+          <br />
+          <i class="fa-solid fa-user"></i>
+          <input
+            type="text"
+            id="userName"
+            name="userName"
+            maxlength="100"
+            placeholder="Enter your username"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <label for="password">Password:</label>
+          <br />
+          <i class="fa-solid fa-key"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="6"
+            maxlength="12"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div>
+          <input type="submit" id="btn-submit" value="Login" />
+          <input type="reset" id="btn-reset" value="Clear" />
+        </div>
+      </form>
+
+      <br />
+
+      <a href="./forgetpassword.html">Forgot your password?</a>
+      <i class="fa-solid fa-user-plus"></i>
+      <a href="./regestration.html">Sign Up</a>
+    </div>
+  </body>
+</html>
