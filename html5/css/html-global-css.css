@@ -876,12 +876,14 @@ body {
     border-radius: 50%;
 
     a {
+      border: 1px solid red ;
+      padding: 0px;
       text-decoration: none;
       color: white;
       font-size: 25px;
       position: relative;
       top: 4px;
-      left: 7.5px;
+      left: 6px;
     }
     a:hover {
       color: black;

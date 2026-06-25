@@ -3,9 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 section {
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,8 +100,6 @@ section {
           cursor: pointer;
           transition: all 0.5s ease-in-out;
         }
-
-        /* تأثير عند المرور بالماوس */
         button:hover {
           background: linear-gradient(
             45deg,
@@ -113,8 +109,6 @@ section {
           transform: scale(1.03);
           box-shadow: 0 4px 12px rgba(21, 21, 218, 0.3);
         }
-
-        /* تأثير عند الضغط */
         button:active {
           transform: scale(0.98);
           box-shadow: 0 2px 6px rgba(21, 21, 218, 0.4);
