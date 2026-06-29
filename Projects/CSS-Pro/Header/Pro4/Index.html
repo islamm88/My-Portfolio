@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pro4-Header</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <!-- Start top_header  -->
+
+      <div class="top_header">
+        <div class="container">
+          <a href="#" class="logo">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="">
+              <h1>Redio</h1>
+              <p>Tec</p>
+            </div>
+          </a>
+          <form action class="search_box">
+            <div class="select_box">
+              <select id="category" name="category" onclick>
+                <option value="All Categories">All Categories</option>
+                <option value="Electronics & Digital">
+                  Electronics & Digital
+                </option>
+                <option value="Phone & Tablet">Phone & Tablet</option>
+                <option value="Fashion & Clothings">Fashion & Clothings</option>
+                <option value="Telvision & Monitor">Telvision & Monitor</option>
+                <option value="Jewelry & Wathces">Jewelry & Wathces</option>
+                <option value="Washing Machine">Washing Machine</option>
+                <option value="Toys & Hobbies">Toys & Hobbies</option>
+              </select>
+            </div>
+            <input
+              type="text"
+              name="search"
+              id=" search"
+              placeholder="Search for Products"
+              required
+            />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <div class="header_icons">
+            <div class="icon">
+              <a href><i class="fa-regular fa-heart"></i></a>
+              <span class="count count_favourite">0</span>
+            </div>
+            <div class="icon">
+              <a href><i class="fa-solid fa-cart-shopping"></i></a>
+              <span class="count count_item_header">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End top_header  -->
+  
+
+      <div class="bottom_header">
+        <div class="container">
+          <nav class="nav">
+            <div class="category_nav">
+              <div
+                id="category_btn"
+                class="category_btn"
+              >
+                <i class="fa-solid fa-bars"></i>
+                <p>Browse Category</p>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div id="category_nav_list" class="hidden">
+              </div>
+            </div>
+            <ul class="nav_links">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Accsesories</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="login_signup btns">
+            <a href="#" class="btn"
+              >Login<i class="fa-solid fa-arrow-right-to-bracket"></i
+            ></a>
+            <a href="#" class="btn"
+              >Sign Up <i class="fa-solid fa-user-plus"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
