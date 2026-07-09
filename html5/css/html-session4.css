@@ -26,14 +26,10 @@
   #session4-input-attributes {
     .container {
       .containt {
+        border: 1px solid red;
         display: flex;
         flex-direction: column;
-        align-items: start;
-        .part1,
-        .part2 {
-          width: 100%;
-        }
-        .details,
+        align-items: start; 
 
         table {
           width: 100%;
