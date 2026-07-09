@@ -81,21 +81,22 @@
 
   #session5-Another-Inputs {
     .containt {
+      border: 1px solid red;
       display: flex;
       align-items: center;
       justify-content: center;
       table {
         width: 100%;
         tr td {
-          font-size: 11px;
+          font-size: 9px;
           input {
-            width: 100px;
-            margin-block: 5px;
+            width: 70px;
+            margin-block: 3px;
           }
         }
 
         input[type="file"] {
-          font-size: 7px;
+          font-size: 6px;
         }
       }
     }
