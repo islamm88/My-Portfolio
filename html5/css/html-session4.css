@@ -33,9 +33,13 @@
         .part2 {
           width: 100%;
         }
-        & .details,
-        & table {
+        .details,
+
+        table {
           width: 100%;
+          input {
+            width: 150px;
+          }
         }
       }
     }
