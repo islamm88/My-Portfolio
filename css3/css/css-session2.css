@@ -1,4 +1,4 @@
-@media (max-width: 390px) {
+@media (max-width: 391px)  {
   #session2-margin {
     & .container {
       & .content {
@@ -1594,7 +1594,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px){
   #session2-border {
     & .container {
       & .content {

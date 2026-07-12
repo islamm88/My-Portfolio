@@ -14,9 +14,9 @@
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
-    <!-- <div class="overlay" id="overlay">
-      <img id="overlay-img" src alt="Large view" />
-    </div> -->
+    <div class="overlay" id="overlay" onclick="disaperLayout(this)">
+      <img id="overlay-img" src="" alt="Large view" />
+    </div>
     <aside id="css-aside">
       <header>
         <a href="./css-session1.html"
@@ -39,7 +39,7 @@
           <li><a href="./css-session3.html">Session 3</a></li>
           <li><a href>Session 4</a></li>
           <li><a href>Session 5</a></li>
-          <li><a href = "./css-test.html">Test yourself</a></li>
+          <li><a href="./css-test.html">Test yourself</a></li>
         </ul>
       </details>
       <details>
@@ -113,7 +113,7 @@
       <li><a href="./css-session3.html">Session 3</a></li>
       <li><a href="./css-session4.html">Session 4</a></li>
       <li><a href="./css-session5.html">Session 5</a></li>
-      <li><a href = "./css-test.html">Test yourself</a></li>
+      <li><a href="./css-test.html">Test yourself</a></li>
     </ul>
     <ul class="nav-page">
       <li><a href="#session1-introduction">Introduction </a></li>
@@ -198,7 +198,7 @@
             <li>Multiple Line</li>
           </ul>
           <div class="div-img">
-            <img src="./img/comment.png" alt="commant" loading="lazy" />
+            <img src="./img/comment.png" alt="commant" loading="lazy"  onclick="apperLayout(this)"/>
           </div>
         </div>
         <h3 style="text-align: center; margin-bottom: 20px">
@@ -212,9 +212,9 @@
           </thead>
           <tbody>
             <tr>
-              <td><h3>*</h3></td>
+              <td>*</td>
               <td>
-                <h3><u>Universal Selector</u></h3>
+                <u>Universal Selector</u>
                 <p>
                   The * is called the Universal Selector in CSS. It matches
                   <span><b>all</b></span>
@@ -227,18 +227,20 @@
                   alt="universal-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im0"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
-              <td><h3>P-h1-div-span</h3></td>
+              <td>P-h1-div-span</td>
               <td>
-                <h3><u>Element Selector</u></h3>
+                <u>Element Selector</u>
                 <p>
                   Selects elements by their <span><b>tag-name</b></span> .
                 </p>
                 <div class="notes">
-                  <h3>Note :</h3>
+                  Note :
                   <p>
                     If you type it means: “select all
                     <span>&lt;p&gt;</span> elements on the page" and apply that
@@ -252,20 +254,20 @@
                   alt="element-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im1"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>.class-name</td>
               <td>
-                <h3>.class-name</h3>
-              </td>
-              <td>
-                <h3><u>Class Selector</u></h3>
+                <u>Class Selector</u>
                 <p>
                   Selects elements by <span><b>class-name </b></span> (with .).
                 </p>
                 <div class="notes">
-                  <h3>Note :</h3>
+                  Note :
                   <ul>
                     <li>
                       (.class-name.class-name) mean element has two class like
@@ -288,20 +290,20 @@
                   alt="class-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im2"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>#id-name</td>
               <td>
-                <h3>#id-name</h3>
-              </td>
-              <td>
-                <h3><u>ID Selector</u></h3>
+                <u>ID Selector</u>
                 <p>
                   Selects elements by <span><b>ID</b></span> name (with #).
                 </p>
                 <div class="notes">
-                  <h3>Note :</h3>
+                  Note :
                   <ul>
                     <li>
                       the ID selector has higher priority than the class
@@ -316,18 +318,18 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im3"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>h1, h2, p</td>
               <td>
-                <h3>h1, h2, p</h3>
-              </td>
-              <td>
-                <h3><u>Group Selector (,)</u></h3>
+                <u>Group Selector (,)</u>
                 <p>Applies the same style to multiple elements.</p>
                 <div class="notes">
-                  <h3>Note :</h3>
+                  Note :
                   <p>
                     you can make group by class and element name like
                     <span>(.class-name div , .class-name p)</span>
@@ -340,15 +342,15 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im4"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>div p</td>
               <td>
-                <h3>div p</h3>
-              </td>
-              <td>
-                <h3><u>Descendant Selector</u></h3>
+                <u>Descendant Selector</u>
                 <p>
                   Selects an element <span><b>inside</b></span> another element.
                 </p>
@@ -359,15 +361,15 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im5"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>div &gt; p</td>
               <td>
-                <h3>div &gt; p</h3>
-              </td>
-              <td>
-                <h3><u>Child Selector ( &gt; )</u></h3>
+                <u>Child Selector ( &gt; )</u>
                 <p>
                   Selects <span><b>direct</b></span> children only.
                 </p>
@@ -378,15 +380,15 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im6"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>h1 + p</td>
               <td>
-                <h3>h1 + p</h3>
-              </td>
-              <td>
-                <h3><u>Adjacent Sibling Selector ( + )</u></h3>
+                <u>Adjacent Sibling Selector ( + )</u>
                 <p>
                   Selects the element <span><b>immediately</b> </span> after
                   another.
@@ -398,15 +400,15 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im7"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>h1 ~ p</td>
               <td>
-                <h3>h1 ~ p</h3>
-              </td>
-              <td>
-                <h3><u>General Sibling Selector ( ~ )</u></h3>
+                <u>General Sibling Selector ( ~ )</u>
                 <p>
                   Selects all <span><b>siblings</b></span> that come after
                   another element.
@@ -418,22 +420,22 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im8"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
               <td>
-                <h3>
-                  input[required],<br />
-                  [title], <br />
-                  [class = "inp"], <br />
-                  [placeholder~= "name"],<br />
-                  [placeholder*= "-"],<br />
-                  [placeholder^= "U"]
-                </h3>
+                input[required],<br />
+                [title], <br />
+                [class = "inp"], <br />
+                [placeholder~= "name"],<br />
+                [placeholder*= "-"],<br />
+                [placeholder^= "U"]
               </td>
               <td>
-                <h3><u>Attribute Selector</u></h3>
+                <u>Attribute Selector</u>
                 <p>
                   Selects elements based on their <span><b>attributes</b></span
                   >.
@@ -445,18 +447,18 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im9"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
               <td>
-                <h3>
-                  :first-child, <br />
-                  :last-child
-                </h3>
+                :first-child, <br />
+                :last-child
               </td>
               <td>
-                <h3><u>first child</u></h3>
+                <u>first child</u>
                 <p>Selects the first child element inside its parent.</p>
                 <p>Selects the last child element inside its parent.</p>
               </td>
@@ -466,18 +468,18 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im10"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
               <td>
-                <h3>
-                  :first-of-type <br />
-                  :last-of-type
-                </h3>
+                :first-of-type <br />
+                :last-of-type
               </td>
               <td>
-                <h3><u>first and last type</u></h3>
+                <u>first and last type</u>
                 <p>
                   selects the <span><b>first</b></span> element of its type
                 </p>
@@ -491,15 +493,15 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im11"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
             <tr>
+              <td>:only-child</td>
               <td>
-                <h3>:only-child</h3>
-              </td>
-              <td>
-                <h3><u>only child</u></h3>
+                <u>only child</u>
                 <p>
                   selects an element if it is the <span><b>only</b></span> child
                   of its parent.
@@ -511,6 +513,8 @@
                   alt="id-selector code photo"
                   loading="lazy"
                   class="small-img"
+                  id="im12"
+                  onclick="apperLayout(this)"
                 />
               </td>
             </tr>
@@ -726,20 +730,21 @@
     </div>
     <script src="./js/css-global-js.js"></script>
     <script>
-      const thumbnails = document.querySelectorAll(".small-img");
-      const overlay = document.getElementById("overlay");
-      const overlayImg = document.getElementById("overlay-img");
-      thumbnails.forEach((img) => {
-        img.addEventListener("click", () => {
-          overlayImg.src = img.src;
-          overlay.style.display = "flex";
-        });
-      });
-      overlay.addEventListener("click", (e) => {
-        if (e.target === overlay) {
-          overlay.style.display = "none";
-        }
-      });
+      function apperLayout(img) {
+        let layout = document.getElementById("overlay");
+        let imgLayout = document.getElementById("overlay-img");
+        
+        imgLayout.src = img.src;
+        layout.classList.add("overlayShow");
+      }
+      
+      function disaperLayout(disLayout) {
+        let layout = document.getElementById("overlay");
+        let imgLayout = document.getElementById("overlay-img");
+        
+        layout.classList.remove("overlayShow");
+        imgLayout.src = "";
+      }
     </script>
   </body>
 </html>

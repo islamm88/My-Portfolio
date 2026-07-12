@@ -1,10 +1,10 @@
-@media (max-width: 390px) {
+@media (max-width: 391px){
 }
 
-@media (min-width: 390px) and (max-width: 767px) {
+@media (min-width: 391px) and (max-width: 767px) {
 }
 
-@media (min-width: 767px) {
+@media (min-width: 767px)  {
   #section5-pseudoclasses-pseudoelements {
     .container {
       .content {

@@ -1,4 +1,4 @@
-@media (max-width: 390px) {
+@media (max-width: 391px){
   .container {
     width: 95%;
     margin: auto;
@@ -622,7 +622,7 @@
     }
   }
 }
-@media (min-width: 391px) and (max-width: 767px) {
+@media (min-width: 391px) and (max-width: 767px)  {
   .container {
     width: 95%;
     margin: auto;
@@ -1225,7 +1225,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #session3-text {
     & .container {
       & .content {

@@ -7,6 +7,8 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: "Roboto Slab", serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 .border {
@@ -25,9 +27,10 @@
 }
 body {
   background-color: var(--bgcolor);
+  padding: 5px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   .container {
     width: 95%;
     margin: auto;
@@ -273,9 +276,11 @@ body {
   }
 }
 
-@media (min-width: 390px) and (max-width: 767px) {
+@media (min-width: 391px) and (max-width: 767px) {
   .container {
-    width: 95%;
+    /* border: 1px solid red; */
+    margin: auto;
+    width: 100%;
     margin: auto;
     padding: 20px;
     padding-left: 35px;
@@ -514,7 +519,8 @@ body {
     padding-block: 10px;
     width: 95%;
     margin: auto;
-    margin-top: 10px;
+    padding-inline: 20px;
+    margin-block: 20px;
     height: 30px;
     li {
       display: flex;
@@ -534,7 +540,6 @@ body {
   .nav-site {
     display: flex;
     justify-content: space-around;
-    list-style: none;
     border: 1px solid var(--color1);
     box-shadow: 0 0 1px 1px #fff;
     background-color: rgba(24, 78, 122, 0.9);
@@ -542,7 +547,9 @@ body {
     padding-block: 10px;
     width: 95%;
     margin: auto;
+    padding-inline: 20px;
     height: 30px;
+    /* border: 10px solid red; */
     li {
       display: flex;
       align-items: center;
@@ -566,37 +573,38 @@ body {
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
-    & .content {
+
+    .content {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
     }
-    & h2 {
+    h2 {
       text-align: center;
       margin: 5px;
       margin-bottom: 30px;
       font-size: 30px;
       font-family: "Roboto Slab", serif;
     }
-    & h3 {
+    h3 {
       margin-block: 10px;
       font-size: 25px;
       font-weight: 400;
     }
-    & p {
+    p {
+      margin: 5px;
       font-size: 15px;
       padding-left: 10px;
       font-weight: 400;
     }
-    & pre {
+    pre {
       font-size: 15px;
       font-weight: 400;
     }
-    & ul,
-    & ol,
-    & dl {
-      margin: 10px;
+    ul,
+    ol,
+    dl {
       margin-left: 40px;
       & li,
       & dt {
@@ -604,12 +612,12 @@ body {
         font-weight: 400;
       }
     }
-    & span {
+    span {
       font-weight: 400;
       color: var(--color5);
       font-size: 15px;
     }
-    & a {
+    a {
       text-decoration: none;
     }
     hr {
@@ -674,19 +682,19 @@ body {
         }
       }
     }
-    & .div-img {
+    .div-img {
       display: flex;
       align-items: center;
       justify-content: center;
-      & img {
+      /* img {
         display: block;
         width: 100%;
         height: 100%;
         border-radius: 10px;
         box-shadow: 0 0 2px 2px gray;
-      }
+      } */
     }
-    & .iden {
+    .iden {
       color: var(--color5);
       font-weight: 600;
     }
@@ -747,27 +755,7 @@ body {
       }
     }
   }
-  & .notes {
-    margin-top: 20px;
-    padding: 5px;
-    background-color: var(--odd-td);
-    border: 1px solid var(--odd-td);
-    border-radius: 10px;
-    box-shadow: 0 0 3px 3px var(--bgcolor);
-    & h3 {
-      margin-block: 2px;
-      font-size: 15px;
-      display: inline-block;
-    }
-    p {
-      font-size: 12px;
-      display: inline-block;
-    }
-    ul li {
-      font-size: 12px;
-    }
-  }
-  #up {
+   #up {
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -783,13 +771,33 @@ body {
       padding: 0px;
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 25px;
       position: relative;
       top: 5px;
       left: 2.5px;
     }
     a:hover {
       color: black;
+    }
+  }
+  .notes {
+    margin-top: 20px;
+    padding: 5px;
+    background-color: var(--odd-td);
+    border: 1px solid var(--odd-td);
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px var(--bgcolor);
+    & h3 {
+      margin-block: 2px;
+      font-size: 15px;
+      display: inline-block;
+    }
+    p {
+      font-size: 12px;
+      display: inline-block;
+    }
+    ul li {
+      font-size: 12px;
     }
   }
 }
