@@ -17,7 +17,7 @@
 :root {
   --color3: #f1e4e4;
   --color1: #e9dbdb;
-  --color2: #e870ed;
+  --color2: rgb(28, 136, 200);
   --color4: black;
   --color5: rgb(139, 12, 12);
   --color6: rgba(25, 136, 200, 0.227);
@@ -116,10 +116,11 @@ body {
         padding: 5px;
       }
       tr:nth-child(odd) {
-        background-color: #f1a5a5;
+        background-color: var(--odd-td);
       }
+
       tr:nth-child(even) {
-        background-color: var(--bgcolor);
+        background-color: var(--even-td);
       }
       tfoot {
         tr {
@@ -468,10 +469,11 @@ body {
         padding: 5px;
       }
       tr:nth-child(odd) {
-        background-color: #f1a5a5;
+        background-color: var(--odd-td);
       }
+
       tr:nth-child(even) {
-        background-color: var(--bgcolor);
+        background-color: var(--even-td);
       }
       tr td {
         border-bottom: 1px solid black;
@@ -733,7 +735,7 @@ body {
       background-color: #eee;
       border-radius: 10px;
       padding: 5px;
-      & thead {
+      thead {
         tr {
           th {
             text-align: center;
@@ -745,25 +747,25 @@ body {
           }
         }
       }
-      & tbody {
-        & tr {
-          & td {
+      tbody {
+        tr {
+          td {
             text-align: center;
             font-size: 12px;
             font-weight: 500;
           }
         }
 
-        & tr:nth-child(odd) {
+        tr:nth-child(odd) {
           background-color: var(--odd-td);
         }
 
-        & tr:nth-child(even) {
+        tr:nth-child(even) {
           background-color: var(--even-td);
         }
       }
 
-      & tfoot {
+      tfoot {
         tr {
           td {
             text-align: center;
@@ -775,8 +777,8 @@ body {
         }
       }
 
-      & tr {
-        & td {
+      tr {
+        td {
           border-bottom: 1px solid black;
           padding: 10px;
         }
