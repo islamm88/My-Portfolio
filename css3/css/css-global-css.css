@@ -34,45 +34,62 @@ body {
   .container {
     width: 95%;
     margin: auto;
-    padding: 20px;
-    padding-left: 35px;
+    padding: 10px;
     margin-block: 8px;
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-    & .content {
+    .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    & table {
-      margin-left: 60px;
-      border: 1px solid rgb(161, 158, 158);
-      background-color: #eee;
-      border-radius: 10px;
-      padding: 10px;
-      & thead tr td {
-        text-align: center;
-        font-size: 10px;
-        font-weight: 400;
-        background-color: #ddd;
-      }
-      & tr:nth-child(odd) {
-        background-color: #f1a5a5;
-      }
-      & tr td {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        font-size: 10px;
-        font-weight: 400;
-      }
-    }
-    & .iden {
+    .iden {
       color: blue;
       font-weight: 600;
     }
-    & hr {
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: "Roboto Slab", serif;
+    }
+    h3 {
+      margin: 10px;
+      font-size: 15px;
+      font-weight: 300;
+      margin-left: 0px;
+    }
+    p {
+      margin: 5px;
+      font-size: 10px;
+      padding-left: 5px;
+    }
+    pre {
+      font-size: 10px;
+      font-weight: 400;
+    }
+    ul,
+    ol,
+    dl {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      li,
+      dt {
+        font-size: 10px;
+      }
+    }
+    span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
+    hr {
       width: 100%;
       height: 4px;
       background: linear-gradient(
@@ -84,22 +101,56 @@ body {
       margin: auto;
       margin-block: 30px;
     }
-    & span {
-      font-weight: 400;
-      color: var(--color5);
-      font-size: 10px;
+    table {
+      border: 1px solid rgb(161, 158, 158);
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+      background-color: #eee;
+      border-radius: 10px;
+      padding: 5px;
+      thead tr td {
+        text-align: center;
+        font-size: 10px;
+        font-weight: 400;
+        background-color: #ddd;
+        color: #fff;
+        padding: 5px;
+      }
+      tr:nth-child(odd) {
+        background-color: #f1a5a5;
+      }
+      tr:nth-child(even) {
+        background-color: var(--bgcolor);
+      }
+      tfoot {
+        tr {
+          td {
+            text-align: center;
+            font-size: 10px;
+            font-weight: 400;
+            background-color: var(--color4);
+            color: #fff;
+          }
+        }
+      }
+      tr td {
+        border-bottom: 1px solid black;
+        padding: 5px;
+      }
     }
-    & a {
-      text-decoration: none;
+    .div-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block: 10px;
     }
   }
-  & .nav-page {
+  .nav-page {
     display: none;
   }
-  & .nav-site {
+  .nav-site {
     display: none;
   }
-  & aside {
+  aside {
     display: block;
     position: absolute;
     position: fixed;
@@ -224,25 +275,25 @@ body {
       }
     }
   }
-  & h2 {
+  h2 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
     font-size: 20px;
     font-family: "Roboto Slab", serif;
   }
-  & h3 {
+  h3 {
     margin-top: 15px;
     font-size: 15px;
     font-weight: 300;
   }
-  & p {
+  p {
     margin: 10px;
     font-size: 10px;
     padding-left: 10px;
   }
-  & ul,
-  & ol {
+  ul,
+  ol {
     margin-left: 20px;
     margin-bottom: 10px;
     & li {
@@ -277,50 +328,119 @@ body {
 }
 
 @media (min-width: 391px) and (max-width: 767px) {
-  .container {
-    /* border: 1px solid red; */
+  & .nav-page {
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 5px;
+    position: sticky;
+    top: 5px;
+    list-style: none;
+    border: 1px solid var(--color1);
+    background-color: rgb(28, 136, 200);
+    /* box-shadow: 0 0 1px 1px #fff; */
+    border-radius: 10px;
+    width: 95%;
     margin: auto;
-    width: 100%;
+    margin-top: 10px;
+    height: 30px;
+    & li {
+      display: flex;
+      align-items: center;
+      & a {
+        display: inline-block;
+        margin-top: 0px;
+        text-decoration: none;
+        font-size: 0.4rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      & a:hover {
+        color: black;
+      }
+    }
+  }
+  & .nav-site {
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    border: 1px solid var(--color1);
+    box-shadow: 0 0 1px 1px #fff;
+    background-color: rgba(24, 78, 122, 0.9);
+    border-radius: 10px;
+    width: 95%;
+    margin: auto;
+    height: 30px;
+    & li {
+      display: flex;
+      align-items: center;
+      & a {
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #fff;
+      }
+      & a:hover {
+        color: black;
+      }
+    }
+  }
+  .container {
+    width: 95%;
     margin: auto;
     padding: 20px;
-    padding-left: 35px;
     margin-block: 8px;
     background-color: #ddd;
     border-radius: 10px;
     box-shadow: 0 0 3px 3px rgb(28, 136, 200, 0.5);
-    & .content {
+    .content {
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-wrap: wrap;
     }
-    & table {
-      margin-left: 60px;
-      border: 1px solid rgb(161, 158, 158);
-      background-color: #eee;
-      border-radius: 10px;
-      padding: 10px;
-      & thead tr td {
-        text-align: center;
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-family: "Roboto Slab", serif;
+    }
+    h3 {
+      margin: 10px;
+      font-size: 15px;
+      font-weight: 400;
+    }
+    p {
+      margin: 10px;
+      font-size: 10px;
+      padding-left: 10px;
+    }
+    ul,
+    ol,
+    dl {
+      margin-left: 20px;
+      margin-bottom: 10px;
+      li,
+      dt {
         font-size: 10px;
-        font-weight: 400;
-        background-color: #ddd;
-      }
-      & tr:nth-child(odd) {
-        background-color: #f1a5a5;
-      }
-      & tr td {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        font-size: 10px;
-        font-weight: 400;
+        font-weight: 300;
       }
     }
-    & .iden {
-      color: blue;
-      font-weight: 600;
+    span {
+      font-weight: 400;
+      color: var(--color5);
+      font-size: 10px;
     }
-    & hr {
+    a {
+      text-decoration: none;
+    }
+    hr {
       width: 100%;
       height: 4px;
       background: linear-gradient(
@@ -332,67 +452,43 @@ body {
       margin: auto;
       margin-block: 30px;
     }
-    & span {
-      font-weight: 400;
-      color: var(--color5);
-      font-size: 10px;
-    }
-    & a {
-      text-decoration: none;
-    }
-  }
-  & .nav-page {
-    display: flex;
-    position: sticky;
-    z-index: 100;
-    top: 5px;
-    justify-content: space-around;
-    list-style: none;
-    background-color: rgb(28, 136, 200);
-    box-shadow: 0 0 1px 1px #fff;
-    border: 1px solid var(--color1);
-    border-radius: 10px;
-    padding-block: 10px;
-    margin-top: 5px;
-    width: 95%;
-    margin: auto;
-    margin-top: 10px;
-    & li {
-      & a {
-        text-decoration: none;
-        font-size: 12px;
+    table {
+      border: 1px solid rgb(161, 158, 158);
+      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+      /* margin-left: 60px; */
+      background-color: #eee;
+      border-radius: 10px;
+      padding: 10px;
+      thead tr td {
+        text-align: center;
+        font-size: 10px;
         font-weight: 400;
-        text-transform: capitalize;
-        color: rgb(252, 252, 252);
-      }
-      & a:hover {
-        color: black;
-      }
-    }
-  }
-  & .nav-site {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    border: 1px solid var(--color1);
-    box-shadow: 0 0 1px 1px #fff;
-    background-color: rgba(24, 78, 122, 0.9);
-    border-radius: 10px;
-    padding-block: 10px;
-    width: 95%;
-    margin: auto;
-
-    & li {
-      & a {
-        text-decoration: none;
-        font-size: 12px;
-        font-weight: 400;
-        text-transform: uppercase;
+        background-color: #ddd;
         color: #fff;
+        padding: 5px;
       }
-      & a:hover {
-        color: black;
+      tr:nth-child(odd) {
+        background-color: #f1a5a5;
       }
+      tr:nth-child(even) {
+        background-color: var(--bgcolor);
+      }
+      tr td {
+        border-bottom: 1px solid black;
+        padding: 10px;
+        font-size: 10px;
+        font-weight: 400;
+      }
+    }
+    .div-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-block: 30px;
+    }
+    .iden {
+      color: blue;
+      font-weight: 600;
     }
   }
   & aside {
@@ -478,6 +574,12 @@ body {
     }
   }
   #up {
+    /* border: 1px solid red ; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -490,13 +592,11 @@ body {
 
     a {
       /* border: 1px solid red; */
-      padding: 0px;
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 22px;
       position: relative;
       top: 5px;
-      left: 2.5px;
     }
     a:hover {
       color: black;
@@ -755,7 +855,13 @@ body {
       }
     }
   }
-   #up {
+  #up {
+    /* border: 1px solid red ; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: fixed;
     bottom: 0px;
     left: 0px;
@@ -768,13 +874,11 @@ body {
 
     a {
       /* border: 1px solid red; */
-      padding: 0px;
       text-decoration: none;
       color: white;
-      font-size: 25px;
+      font-size: 22px;
       position: relative;
       top: 5px;
-      left: 2.5px;
     }
     a:hover {
       color: black;

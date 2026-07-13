@@ -248,7 +248,6 @@
   }
   #session1-introduction {
     .container {
-      width: 100%;
       .content {
         border-radius: 10px;
         background-color: var(--odd-td);
