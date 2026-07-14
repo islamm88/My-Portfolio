@@ -19,7 +19,7 @@
   --color1: #e9dbdb;
   --color2: rgb(28, 136, 200);
   --color4: black;
-  --color5: rgb(139, 12, 12);
+  --color5: blue;
   --color6: rgba(25, 136, 200, 0.227);
   --bgcolor: rgb(199, 198, 191);
   --odd-td: rgba(144, 214, 241, 0.173);
@@ -62,11 +62,6 @@ body {
       font-weight: 300;
       margin-left: 0px;
     }
-    p {
-      margin: 5px;
-      font-size: 10px;
-      padding-left: 5px;
-    }
     pre {
       font-size: 10px;
       font-weight: 400;
@@ -101,20 +96,33 @@ body {
       margin: auto;
       margin-block: 30px;
     }
-    table {
-      border: 1px solid rgb(161, 158, 158);
-      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-      background-color: #eee;
-      border-radius: 10px;
-      padding: 5px;
-      thead tr td {
-        text-align: center;
-        font-size: 10px;
-        font-weight: 400;
-        background-color: #ddd;
-        color: #fff;
-        padding: 5px;
+   table {
+    border: 1px solid rgb(161, 158, 158);
+    box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 5px;
+    thead {
+      tr {
+        th {
+          text-align: center;
+          font-size: 0.5rem;
+          font-weight: 400;
+          background-color: var(--color4);
+          color: #fff;
+          padding: 5px;
+        }
       }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          font-size: 0.5rem;
+          font-weight: 400;
+        }
+      }
+
       tr:nth-child(odd) {
         background-color: var(--odd-td);
       }
@@ -122,22 +130,27 @@ body {
       tr:nth-child(even) {
         background-color: var(--even-td);
       }
-      tfoot {
-        tr {
-          td {
-            text-align: center;
-            font-size: 10px;
-            font-weight: 400;
-            background-color: var(--color4);
-            color: #fff;
-          }
+    }
+
+    tfoot {
+      tr {
+        td {
+          text-align: center;
+          font-size: 0.5rem;
+          font-weight: 400;
+          background-color: var(--color4);
+          color: #fff;
         }
       }
-      tr td {
+    }
+
+    tr {
+      td {
         border-bottom: 1px solid black;
-        padding: 5px;
+        padding: 10px;
       }
     }
+  }
     .div-img {
       display: flex;
       align-items: center;
@@ -290,7 +303,7 @@ body {
   }
   p {
     margin: 10px;
-    font-size: 10px;
+    font-size: 0.5rem;
     padding-left: 10px;
   }
   ul,
@@ -305,22 +318,24 @@ body {
     position: fixed;
     bottom: 0px;
     left: 0px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(28, 136, 200);
     margin-left: 3px;
     margin-bottom: 10px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     a {
       /* border: 1px solid red; */
       padding: 0px;
       text-decoration: none;
       color: white;
-      font-size: 20px;
+      font-size: 15px;
       position: relative;
-      top: 5px;
-      left: 2.5px;
+      top: 3px;
     }
     a:hover {
       color: black;
@@ -376,12 +391,12 @@ body {
     width: 95%;
     margin: auto;
     height: 30px;
-    & li {
+    li {
       display: flex;
       align-items: center;
-      & a {
+      a {
         text-decoration: none;
-        font-size: 12px;
+        font-size: 0.5rem;
         font-weight: 400;
         text-transform: uppercase;
         color: #fff;
@@ -394,7 +409,7 @@ body {
   .container {
     width: 95%;
     margin: auto;
-    padding: 20px;
+    padding: 10px;
     margin-block: 8px;
     background-color: #ddd;
     border-radius: 10px;
@@ -409,12 +424,12 @@ body {
       text-align: center;
       margin-top: 10px;
       margin-bottom: 10px;
-      font-size: 20px;
+      font-size: 1rem;
       font-family: "Roboto Slab", serif;
     }
     h3 {
       margin: 10px;
-      font-size: 15px;
+      font-size: 0.8rem;
       font-weight: 400;
     }
     p {
@@ -453,21 +468,34 @@ body {
       margin: auto;
       margin-block: 30px;
     }
-    table {
-      border: 1px solid rgb(161, 158, 158);
-      box-shadow: 0 0 3px 3px rgb(172, 170, 170);
-      /* margin-left: 60px; */
-      background-color: #eee;
-      border-radius: 10px;
-      padding: 10px;
-      thead tr td {
-        text-align: center;
-        font-size: 10px;
-        font-weight: 400;
-        background-color: #ddd;
-        color: #fff;
-        padding: 5px;
+
+   table {
+    border: 1px solid rgb(161, 158, 158);
+    box-shadow: 0 0 3px 3px rgb(172, 170, 170);
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 5px;
+    thead {
+      tr {
+        th {
+          text-align: center;
+          font-size: 15px;
+          font-weight: 500;
+          background-color: var(--color4);
+          color: #fff;
+          padding: 5px;
+        }
       }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+        }
+      }
+
       tr:nth-child(odd) {
         background-color: var(--odd-td);
       }
@@ -475,13 +503,28 @@ body {
       tr:nth-child(even) {
         background-color: var(--even-td);
       }
-      tr td {
-        border-bottom: 1px solid black;
-        padding: 10px;
-        font-size: 10px;
-        font-weight: 400;
+    }
+
+    tfoot {
+      tr {
+        td {
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+          background-color: var(--color4);
+          color: #fff;
+        }
       }
     }
+
+    tr {
+      td {
+        border-bottom: 1px solid black;
+        padding: 10px;
+      }
+    }
+  }
+
     .div-img {
       display: flex;
       align-items: center;
@@ -493,27 +536,27 @@ body {
       font-weight: 600;
     }
   }
-  & aside {
+  aside {
     display: none;
   }
   header {
-    & .container {
+    .container {
       padding: 0px;
       box-shadow: none;
       background-color: var(--bgcolor);
-      & h1 {
+      h1 {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 5px;
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: rgb(69, 70, 69);
         color: #fff;
         text-shadow: 2px 2px 4px black;
       }
-      & h2 {
+      h2 {
         text-align: center;
         margin-bottom: 55px;
-        font-size: 1.7rem;
+        font-size: 1.3rem;
         color: #fff;
         text-shadow: 2px 2px 4px black;
         font-family: "Roboto Slab", serif;
@@ -521,54 +564,55 @@ body {
         align-items: center;
         justify-content: center;
 
-        & .fa-file-pdf {
+        .fa-file-pdf {
           color: #1989c8;
           margin-left: 10px;
           transition: all 0.5s ease;
         }
-        & .fa-file-pdf:hover {
+        .fa-file-pdf:hover {
           transform: scale(1.09);
           text-shadow: 2px 2px 4px black;
         }
       }
-      & #logo {
+      #logo {
         position: relative;
         margin-top: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
-        & img {
+        img {
           position: absolute;
           top: 25px;
           left: 25px;
           width: 80px;
           height: 80px;
         }
-        & .fa-bars {
+        .fa-bars {
           display: none;
         }
       }
     }
   }
-  & h2 {
+ 
+  h2 {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 0.7rem;
     font-family: "Roboto Slab", serif;
   }
-  & h3 {
+  h3 {
     margin-top: 15px;
-    font-size: 15px;
+    font-size: 0.5rem;
     font-weight: 300;
   }
-  & p {
+  p {
     margin: 10px;
-    font-size: 10px;
+    font-size: 0rem;
     padding-left: 10px;
   }
-  & ul,
-  & ol {
+  ul,
+  ol {
     margin-left: 20px;
     margin-bottom: 10px;
     & li {
@@ -576,29 +620,28 @@ body {
     }
   }
   #up {
-    /* border: 1px solid red ; */
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     position: fixed;
     bottom: 0px;
     left: 0px;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(28, 136, 200);
     margin-left: 3px;
     margin-bottom: 10px;
     border-radius: 50%;
+    z-index: 10000;
+    border: 1px solid #fff;
 
     a {
-      /* border: 1px solid red; */
       text-decoration: none;
       color: white;
-      font-size: 22px;
+      font-size: 1rem;
       position: relative;
-      top: 5px;
+      top: 3px;
+      left: 0px;
     }
     a:hover {
       color: black;
@@ -670,7 +713,7 @@ body {
   .container {
     width: 95%;
     margin: auto;
-    padding: 30px;
+    padding: 10px;
     margin-block: 8px;
     background-color: #ddd;
     border-radius: 10px;
@@ -788,13 +831,13 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      /* img {
+      img {
         display: block;
         width: 100%;
         height: 100%;
         border-radius: 10px;
         box-shadow: 0 0 2px 2px gray;
-      } */
+      }
     }
     .iden {
       color: var(--color5);
