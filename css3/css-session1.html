@@ -153,7 +153,7 @@
               You can write CSS directly inside an element using the style
               attribute.
             </p>
-            <img src="./img/css-places-1.png" alt />
+            <img src="./img/css-places-1.png" alt = "" onclick="apperLayout(this)" />
           </div>
           <div class="col2">
             <h4>Internal CSS (inside the &lt;style&gt; tag)</h4>
@@ -161,7 +161,7 @@
               You can put CSS inside your HTML file, inside the &lt;head&gt;
               section.
             </p>
-            <img src="./img/css-places-2.png" alt />
+            <img src="./img/css-places-2.png" alt = "" onclick="apperLayout(this)"/>
           </div>
           <div class="col3">
             <h4>External CSS (in a .css file)</h4>
@@ -169,7 +169,7 @@
               You can create a separate CSS file, like style.css, and link it to
               your HTML.
             </p>
-            <img src="./img/css-places-3.png" alt />
+            <img src="./img/css-places-3.png" alt = "" onclick="apperLayout(this)"/>
           </div>
         </div>
         <h3>Priority Order (Simplified)</h3>
@@ -204,322 +204,324 @@
         <h3 style="text-align: center; margin-bottom: 20px">
           Some Types of Selector :
         </h3>
-        <table>
-          <thead>
-            <th>Selector</th>
-            <th>Definition</th>
-            <th>Code</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td>*</td>
-              <td>
-                <u>Universal Selector</u>
-                <p>
-                  The * is called the Universal Selector in CSS. It matches
-                  <span><b>all</b></span>
-                  elements on the page.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/universal-selector.png"
-                  alt="universal-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im0"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>P-h1-div-span</td>
-              <td>
-                <u>Element Selector</u>
-                <p>
-                  Selects elements by their <span><b>tag-name</b></span> .
-                </p>
-                <div class="notes">
-                  Note :
+        <div class="content">
+          <table>
+            <thead>
+              <th>Selector</th>
+              <th>Definition</th>
+              <th>Code</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>*</td>
+                <td>
+                  <u>Universal Selector</u>
                   <p>
-                    If you type it means: “select all
-                    <span>&lt;p&gt;</span> elements on the page" and apply that
-                    style.
+                    The * is called the Universal Selector in CSS. It matches
+                    <span><b>all</b></span>
+                    elements on the page.
                   </p>
-                </div>
-              </td>
-              <td>
-                <img
-                  src="./img/element-selector.png"
-                  alt="element-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im1"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>.class-name</td>
-              <td>
-                <u>Class Selector</u>
-                <p>
-                  Selects elements by <span><b>class-name </b></span> (with .).
-                </p>
-                <div class="notes">
-                  Note :
-                  <ul>
-                    <li>
-                      (.class-name.class-name) mean element has two class like
-                      this
-                      <span
-                        >&lt;p class="<u>highlight</u> <u>big</u>"&gt;This text
-                        is red&lt;/p&gt;</span
-                      >
-                    </li>
-                    <li>
-                      the class selector has higher priority than the element
-                      (name) selector.
-                    </li>
-                  </ul>
-                </div>
-              </td>
-              <td>
-                <img
-                  src="./img/class-selector.png"
-                  alt="class-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im2"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>#id-name</td>
-              <td>
-                <u>ID Selector</u>
-                <p>
-                  Selects elements by <span><b>ID</b></span> name (with #).
-                </p>
-                <div class="notes">
-                  Note :
-                  <ul>
-                    <li>
-                      the ID selector has higher priority than the class
-                      selector.
-                    </li>
-                  </ul>
-                </div>
-              </td>
-              <td>
-                <img
-                  src="./img/id-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im3"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>h1, h2, p</td>
-              <td>
-                <u>Group Selector (,)</u>
-                <p>Applies the same style to multiple elements.</p>
-                <div class="notes">
-                  Note :
+                </td>
+                <td>
+                  <img
+                    src="./img/universal-selector.png"
+                    alt="universal-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im0"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>P-h1-div-span</td>
+                <td>
+                  <u>Element Selector</u>
                   <p>
-                    you can make group by class and element name like
-                    <span>(.class-name div , .class-name p)</span>
+                    Selects elements by their <span><b>tag-name</b></span> .
                   </p>
-                </div>
-              </td>
-              <td>
-                <img
-                  src="./img/group-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im4"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>div p</td>
-              <td>
-                <u>Descendant Selector</u>
-                <p>
-                  Selects an element <span><b>inside</b></span> another element.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/Descendant-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im5"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>div &gt; p</td>
-              <td>
-                <u>Child Selector ( &gt; )</u>
-                <p>
-                  Selects <span><b>direct</b></span> children only.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/child-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im6"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>h1 + p</td>
-              <td>
-                <u>Adjacent Sibling Selector ( + )</u>
-                <p>
-                  Selects the element <span><b>immediately</b> </span> after
-                  another.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/Sibling-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im7"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>h1 ~ p</td>
-              <td>
-                <u>General Sibling Selector ( ~ )</u>
-                <p>
-                  Selects all <span><b>siblings</b></span> that come after
-                  another element.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/General-Sibling-Selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im8"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                input[required],<br />
-                [title], <br />
-                [class = "inp"], <br />
-                [placeholder~= "name"],<br />
-                [placeholder*= "-"],<br />
-                [placeholder^= "U"]
-              </td>
-              <td>
-                <u>Attribute Selector</u>
-                <p>
-                  Selects elements based on their <span><b>attributes</b></span
-                  >.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/attribute-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im9"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                :first-child, <br />
-                :last-child
-              </td>
-              <td>
-                <u>first child</u>
-                <p>Selects the first child element inside its parent.</p>
-                <p>Selects the last child element inside its parent.</p>
-              </td>
-              <td>
-                <img
-                  src="./img/first&last-child-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im10"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                :first-of-type <br />
-                :last-of-type
-              </td>
-              <td>
-                <u>first and last type</u>
-                <p>
-                  selects the <span><b>first</b></span> element of its type
-                </p>
-                <p>
-                  selects the <span><b>last</b></span> element of its type
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/first-type-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im11"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>:only-child</td>
-              <td>
-                <u>only child</u>
-                <p>
-                  selects an element if it is the <span><b>only</b></span> child
-                  of its parent.
-                </p>
-              </td>
-              <td>
-                <img
-                  src="./img/only-child-selector.png"
-                  alt="id-selector code photo"
-                  loading="lazy"
-                  class="small-img"
-                  id="im12"
-                  onclick="apperLayout(this)"
-                />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+                  <div class="notes">
+                    Note :
+                    <p>
+                      If you type it means: “select all
+                      <span>&lt;p&gt;</span> elements on the page" and apply that
+                      style.
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <img
+                    src="./img/element-selector.png"
+                    alt="element-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im1"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>.class-name</td>
+                <td>
+                  <u>Class Selector</u>
+                  <p>
+                    Selects elements by <span><b>class-name </b></span> (with .).
+                  </p>
+                  <div class="notes">
+                    Note :
+                    <ul>
+                      <li>
+                        (.class-name.class-name) mean element has two class like
+                        this
+                        <span
+                          >&lt;p class="<u>highlight</u> <u>big</u>"&gt;This text
+                          is red&lt;/p&gt;</span
+                        >
+                      </li>
+                      <li>
+                        the class selector has higher priority than the element
+                        (name) selector.
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <img
+                    src="./img/class-selector.png"
+                    alt="class-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im2"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>#id-name</td>
+                <td>
+                  <u>ID Selector</u>
+                  <p>
+                    Selects elements by <span><b>ID</b></span> name (with #).
+                  </p>
+                  <div class="notes">
+                    Note :
+                    <ul>
+                      <li>
+                        the ID selector has higher priority than the class
+                        selector.
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+                <td>
+                  <img
+                    src="./img/id-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im3"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>h1, h2, p</td>
+                <td>
+                  <u>Group Selector (,)</u>
+                  <p>Applies the same style to multiple elements.</p>
+                  <div class="notes">
+                    Note :
+                    <p>
+                      you can make group by class and element name like
+                      <span>(.class-name div , .class-name p)</span>
+                    </p>
+                  </div>
+                </td>
+                <td>
+                  <img
+                    src="./img/group-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im4"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>div p</td>
+                <td>
+                  <u>Descendant Selector</u>
+                  <p>
+                    Selects an element <span><b>inside</b></span> another element.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/Descendant-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im5"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>div &gt; p</td>
+                <td>
+                  <u>Child Selector ( &gt; )</u>
+                  <p>
+                    Selects <span><b>direct</b></span> children only.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/child-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im6"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>h1 + p</td>
+                <td>
+                  <u>Adjacent Sibling Selector ( + )</u>
+                  <p>
+                    Selects the element <span><b>immediately</b> </span> after
+                    another.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/Sibling-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im7"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>h1 ~ p</td>
+                <td>
+                  <u>General Sibling Selector ( ~ )</u>
+                  <p>
+                    Selects all <span><b>siblings</b></span> that come after
+                    another element.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/General-Sibling-Selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im8"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  input[required],<br />
+                  [title], <br />
+                  [class = "inp"], <br />
+                  [placeholder~= "name"],<br />
+                  [placeholder*= "-"],<br />
+                  [placeholder^= "U"]
+                </td>
+                <td>
+                  <u>Attribute Selector</u>
+                  <p>
+                    Selects elements based on their <span><b>attributes</b></span
+                    >.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/attribute-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im9"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  :first-child, <br />
+                  :last-child
+                </td>
+                <td>
+                  <u>first child</u>
+                  <p>Selects the first child element inside its parent.</p>
+                  <p>Selects the last child element inside its parent.</p>
+                </td>
+                <td>
+                  <img
+                    src="./img/first&last-child-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im10"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  :first-of-type <br />
+                  :last-of-type
+                </td>
+                <td>
+                  <u>first and last type</u>
+                  <p>
+                    selects the <span><b>first</b></span> element of its type
+                  </p>
+                  <p>
+                    selects the <span><b>last</b></span> element of its type
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/first-type-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im11"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>:only-child</td>
+                <td>
+                  <u>only child</u>
+                  <p>
+                    selects an element if it is the <span><b>only</b></span> child
+                    of its parent.
+                  </p>
+                </td>
+                <td>
+                  <img
+                    src="./img/only-child-selector.png"
+                    alt="id-selector code photo"
+                    loading="lazy"
+                    class="small-img"
+                    id="im12"
+                    onclick="apperLayout(this)"
+                  />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
     <section id="session1-background">
