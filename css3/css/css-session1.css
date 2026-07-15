@@ -186,19 +186,21 @@
         font-weight: normal;
       }
       .content {
-        pre {
+        p {
           font-size: 10px;
+          width: 100%;
         }
         .div-img {
+
           display: flex;
           width: 100%;
-          height: 200px;
+          height: 150px;
           display: flex;
           align-items: center;
           justify-content: center;
           img {
             width: 40%;
-            height: 70%;
+            height: 60%;
             display: block;
             margin: 10px;
           }
