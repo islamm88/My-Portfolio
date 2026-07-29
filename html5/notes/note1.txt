@@ -1,0 +1,10 @@
+1- HTML
+========
+1- Extentions VS
+2- Structure head  ( <link> <meta> <!doctype html> <style> )
+3- <br> <hr> validation
+4- Font Awesome
+5- Inspect
+6- google font
+7- attributes   global specific
+8- table

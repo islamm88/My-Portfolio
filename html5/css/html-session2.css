@@ -1,4 +1,4 @@
-@media (max-width: 390px) {
+@media (max-width: 391px) {
   #session2-list {
     & .containt {
       margin-block: 20px;
@@ -499,7 +499,7 @@
     }
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   #session2-list {
     & .container {
       & #type-list {
