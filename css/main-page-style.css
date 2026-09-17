@@ -1,6 +1,5 @@
-
 @media (max-width: 390px) {
-    #section-home {
+  #section-home {
     background-color: var(--bg-primary);
     height: 100vh;
 
@@ -257,14 +256,13 @@
             color: var(--secondary-color);
           }
         }
-      
-          width: 100%;
-          & img {
-            display: inline-block;
-            max-width: 25px;
-            margin-right: 10px;
-          }
-        
+
+        width: 100%;
+        & img {
+          display: inline-block;
+          max-width: 25px;
+          margin-right: 10px;
+        }
       }
 
       & hr {
@@ -293,7 +291,6 @@
           transition: all 0.5s ease;
           background-color: #fff;
           border: 1px solid rgba(128, 128, 128, 0.253);
-    
 
           & img {
             max-width: 80px;
@@ -381,6 +378,12 @@
           display: flex;
           flex-direction: column;
           align-items: center;
+
+          p {
+            text-align: center;
+            margin-block: 5px;
+            font-weight: 600;
+          }
 
           & h3 {
             margin-block: 10px;
@@ -476,7 +479,7 @@
     background-color: var(--bg-primary);
     height: 100vh;
 
-      & header {
+    & header {
       position: fixed;
       z-index: 999;
       width: 100%;
@@ -730,13 +733,12 @@
           color: var(--secondary-color);
         }
       }
-        width: 100%;
-        & img {
-          display: block;
-          max-width: 35px;
-          margin-right: 10px;
-        }
-      
+      width: 100%;
+      & img {
+        display: block;
+        max-width: 35px;
+        margin-right: 10px;
+      }
     }
 
     & hr {
@@ -865,6 +867,12 @@
             color: var(--secondary-color);
             font-weight: 500;
           }
+
+          p {
+            text-align: center;
+            margin-block: 5px;
+            font-weight: 600;
+          }
         }
       }
       & .item:hover {
@@ -944,7 +952,7 @@
     background-color: var(--bg-primary);
     height: 100vh;
 
-      & header {
+    & header {
       position: fixed;
       z-index: 999;
       width: 100%;
@@ -997,11 +1005,11 @@
         margin-bottom: 0.5rem;
         & .text-primary {
           color: var(--secondary-color);
-          font-size: 2.0rem;
+          font-size: 2rem;
           font-weight: 700;
         }
         & h1 {
-          font-size: 3.0rem;
+          font-size: 3rem;
           color: var(--primary-color);
           text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
           margin-top: 10px;
@@ -1042,7 +1050,6 @@
           border-radius: 5px;
           transition: all 0.3s ease;
           margin: 5px 0px;
-
         }
         & .btn-about:hover {
           background-color: #15a076;
@@ -1058,7 +1065,6 @@
       }
     }
   }
-
   #section-about {
     padding-block: 6rem;
 
@@ -1116,11 +1122,10 @@
       }
     }
   }
-
   #section-skills {
     background-color: var(--primary-color);
     padding-block: 2rem;
-    & h2 {
+    h2 {
       text-align: center;
       font-size: 28px;
       color: #fff;
@@ -1130,16 +1135,14 @@
         color: var(--secondary-color);
       }
     }
-
-    & hr {
+    hr {
       width: 100px;
       height: 3px;
       background-color: var(--secondary-color);
       border: none;
       margin: 5px auto;
     }
-
-    & .sekills-content {
+    .sekills-content {
       width: 100%;
       margin-top: 1rem;
       padding: 1rem;
@@ -1147,41 +1150,55 @@
       background-color: #0f272d;
       display: flex;
       flex-wrap: wrap;
-    
-  
-
-      & .item {
+      a {
+        background-color: #000;
         width: 30%;
+        padding: 20px 0px;
         margin: auto;
-        margin-block:10px ;
-        padding: 1.5rem 0.5rem;
+        margin-block: 10px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: #000;
         border-radius: 10px;
         transition: all 0.7s ease;
+        .item {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          border-radius: 10px;
+          transition: all 0.7s ease;
 
-        & img {
-          max-width: 40px;
-        }
+          img {
+            width: 40px;
+            height: 40px;
+            display: block;
+          }
 
-        & p {
-          color: #fff;
-          font-size: 10px;
-          font-weight: 400;
-          margin-top: 10px;
+          p {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 400;
+            margin-top: 10px;
+          }
+
+          p {
+            text-align: center;
+            margin-block: 5px;
+            font-weight: 600;
+          }
         }
       }
-
-      & .item:hover {
+      a:hover {
         transform: scale(1.05);
         box-shadow: 5px 5px 5px green;
+        cursor: pointer;
       }
     }
   }
-
   #section-services {
     padding-block: 4rem;
     background-color: #15a07615;
@@ -1200,13 +1217,12 @@
           color: var(--secondary-color);
         }
       }
-        width: 100%;
-        & img {
-          display: block;
-          max-width: 35px;
-          margin-right: 10px;
-        }
-      
+      width: 100%;
+      & img {
+        display: block;
+        max-width: 35px;
+        margin-right: 10px;
+      }
     }
 
     & hr {
@@ -1264,7 +1280,6 @@
       }
     }
   }
-
   #section-portfollo {
     background-color: var(--primary-color);
     padding-block: 5rem;
@@ -1333,6 +1348,13 @@
             color: var(--secondary-color);
             font-weight: 500;
           }
+
+          p {
+            text-align: center;
+            margin-block: 5px;
+            font-weight: 600;
+            font-size: 13px;
+          }
         }
       }
       & .item:hover {
@@ -1340,7 +1362,6 @@
       }
     }
   }
-
   #contact-us {
     background-color: #15a07615;
     padding-block: 2rem;
@@ -1371,7 +1392,6 @@
         }
       }
       & form {
-  
         height: 100%;
         width: 50%;
         margin-inline: 10px;
@@ -1403,7 +1423,6 @@
       }
     }
   }
-
   #footer {
     background-color: #222;
     color: #fff;
