@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,23 +8,26 @@
     <link rel="stylesheet" href="./css/html-session1.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
   <body>
     <aside id="html-aside">
       <header>
-        <a href="./html-session1.html"><img src="../imge/html.png" alt="my logo"
-            loading="lazy" /></a>
+        <a href="./html-session1.html"
+          ><img src="../imge/html.png" alt="my logo" loading="lazy"
+        /></a>
         <h1>HTML5</h1>
         <bottom
-          onclick="document.getElementById('html-aside').style.left = '100%'"><i
-            class="fa-solid fa-circle-xmark"></i></bottom>
+          onclick="document.getElementById('html-aside').style.left = '100%'"
+          ><i class="fa-solid fa-circle-xmark"></i
+        ></bottom>
       </header>
       <details>
         <summary onclick="collapses_nav_site()">
-          <i class="fa-solid fa-chevron-down down-nav-site"></i><i
-            class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
+          <i class="fa-solid fa-chevron-down down-nav-site"></i
+          ><i class="fa-solid fa-chevron-right right-nav-site"></i> Sessions
         </summary>
         <ul class="nav-site-asid">
           <li><a href="./html-session1.html">Session 1</a></li>
@@ -37,38 +40,55 @@
       </details>
       <details>
         <summary onclick="collapses_nav_page()">
-          <i class="fa-solid fa-chevron-down down-nav_page"></i><i
-            class="fa-solid fa-chevron-right right-nav_page"></i> Page
+          <i class="fa-solid fa-chevron-down down-nav_page"></i
+          ><i class="fa-solid fa-chevron-right right-nav_page"></i> Page
           Navigation
         </summary>
         <ul class="nav-page-asid">
           <li>
             <a
               href="#session1-webintro"
-              onclick="document.getElementById('html-aside').style.left = '100%'">Web
-              Introduction</a>
+              onclick="
+                document.getElementById('html-aside').style.left = '100%'
+              "
+              >Web Introduction</a
+            >
           </li>
           <li>
             <a
-              href="#session1-htmlIntor"
-              onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Introduction</a>
+              href="#session1-htmlIntro"
+              onclick="
+                document.getElementById('html-aside').style.left = '100%'
+              "
+              >HTML Introduction</a
+            >
           </li>
           <li>
             <a
               href="#session1-htmltagelement"
-              onclick="document.getElementById('html-aside').style.left = '100%'">HTML
-              Tag&Element</a>
+              onclick="
+                document.getElementById('html-aside').style.left = '100%'
+              "
+              >HTML Tag&Element</a
+            >
           </li>
           <li>
             <a
               href="#session1-heading-p-pre"
-              onclick="document.getElementById('html-aside').style.left = '100%'">heading_p_pre</a>
+              onclick="
+                document.getElementById('html-aside').style.left = '100%'
+              "
+              >heading_p_pre</a
+            >
           </li>
           <li>
             <a
               href="#session1-assignment"
-              onclick="document.getElementById('html-aside').style.left = '100%'">Assignment</a>
+              onclick="
+                document.getElementById('html-aside').style.left = '100%'
+              "
+              >Assignment</a
+            >
           </li>
         </ul>
       </details>
@@ -76,17 +96,18 @@
     <header id="header">
       <div class="container">
         <div id="logo">
-          <a href="./html-session1.html"><img src="../imge/html.png"
-              alt="my logo" loading="lazy" /></a>
+          <a href="./html-session1.html"
+            ><img src="../imge/html.png" alt="my logo" loading="lazy"
+          /></a>
           <h1>HTML5</h1>
           <bottom
-            onclick="document.getElementById('html-aside').style.left = '0'"><i
-              class="fa-solid fa-bars"></i></bottom>
+            onclick="document.getElementById('html-aside').style.left = '0'"
+            ><i class="fa-solid fa-bars"></i
+          ></bottom>
         </div>
-        <h2>
-          SESSION 1
-          <a href="../assets/HTML5-Session1.pdf" target="_blank"><i
-              class="fa-solid fa-file-pdf"></i></a>
+        <h2>SESSION 1 <a href="../assets/HTML5-Session1.pdf" target="_blank"
+            > <span> Download</span><i class="fa-solid fa-file-pdf"></i
+          ></a>
         </h2>
       </div>
     </header>
@@ -107,7 +128,7 @@
     </ul>
     <section id="session1-webintro">
       <div class="container">
-        <h2>WEB Intoduction</h2>
+        <h2>WEB Introduction</h2>
         <h3>
           What happens when you use a web browser to navigate to a web page ?
         </h3>
@@ -135,7 +156,7 @@
             information back to the clients.
           </li>
           <li>
-            <span>Browser:</span> another name "User-Agent" it's app for browes
+            <span>Browser:</span> another name "User-Agent" it's app for browse
             websites on internet
           </li>
           <li>
@@ -169,21 +190,29 @@
           </li>
         </ul>
         <h3>You must know that</h3>
-        <p><span><strong>Domain name = IP</strong></span></p>
+        <p>
+          <span><strong>Domain name = IP</strong></span>
+        </p>
         <p>
           Every device on the internet is identified by an IP address, and you
           can use IP instead of a domain name
         </p>
         <p>
-          <u><a href="https://www.google.com"
-              target="_blank">https://www.google.com</a></u>=
-          <u><a href="https://142.250.187.196"
-              target="_blank">https://142.250.187.196</a></u>
+          <u
+            ><a href="https://www.google.com" target="_blank"
+              >https://www.google.com</a
+            ></u
+          >=
+          <u
+            ><a href="https://142.250.187.196" target="_blank"
+              >https://142.250.187.196</a
+            ></u
+          >
         </p>
         <table>
           <thead>
             <tr>
-              <th>Doamin name</th>
+              <th>Domain name</th>
               <th>IP Address</th>
             </tr>
           </thead>
@@ -283,28 +312,39 @@
             </tr>
           </tbody>
         </table>
-        <h3>Waht we need ?</h3>
+        <h3>What do we need ?</h3>
         <ul>
           <li>HTML Prerequisites : Basic Computer & Internet Familiarity</li>
           <li>
             Download Editor
-            <a href="https://code.visualstudio.com/download" target="_blank">Vs
-              code </a><img src="./img/VScode.png" alt="VScode" width="15"
-              style="vertical-align: middle;" />
+            <a href="https://code.visualstudio.com/download" target="_blank"
+              >Vs code </a
+            ><img
+              src="./img/VScode.png"
+              alt="VScode"
+              width="15"
+              style="vertical-align: middle"
+            />
           </li>
           <li>
             Download Google chrome
             <a
               href="https://www.google.com/intl/en_uk/chrome/dr/download/"
-              target="_blank">Google chrome
+              target="_blank"
+              >Google chrome
             </a>
-            <img src="./img/Chrome.png" alt="VScode" width="25"
-              style="vertical-align: middle;" />
+            <img
+              src="./img/Chrome.png"
+              alt="Chrome"
+              width="25"
+              style="vertical-align: middle"
+            />
           </li>
         </ul>
         <div class="notes">
           <h3>Note :</h3>
-          <p> you can use VS Code online
+          <p>
+            you can use VS Code online
             <a href="https://vscode.dev/" target="_blank"> VS Code</a>
           </p>
         </div>
@@ -318,11 +358,11 @@
             The first page of a website is typically named:
             <span>index.html</span> [ index.html - home.html - default.html -
             main.html ... ] index.html is mostly used <br />
-            becouse it is the default file that web servers look for when
+            because it is the default file that web servers look for when
             opening a folder or domain.
           </li>
           <li>
-            Opent file with extention .html by VS code and build structure HTML
+            Open file with extension .html by VS code and build structure HTML
             page.
           </li>
           <li>
@@ -333,8 +373,10 @@
             VS code to build structure html page or <span>doc + tab </span>or
             <span>html:5 + tab .</span>
           </li>
-          <li>After you finished your html code save and open your page on your
-            browser .</li>
+          <li>
+            After you finished your html code save and open your page on your
+            browser .
+          </li>
         </ul>
         <h3>HTML DOM Tree & Page structure</h3>
         <p>
@@ -351,13 +393,16 @@
             <img
               id="Dom-Structure"
               src="./img/page-structur.png"
-              alt="Dom Structure" />
+              alt="Dom Structure"
+            />
           </div>
         </div>
         <div class="info">
           <ul>
-            <li><span>&lt;!DOCTYPE html&gt; :</span> tells the browser what type
-              of document it’s reading</li>
+            <li>
+              <span>&lt;!DOCTYPE html&gt; :</span> tells the browser what type
+              of document it’s reading
+            </li>
             <li>
               <span>&lt;html lang="en"&gt; &lt;/html&gt; : </span>is the root of
               the HTML document and tells the browser the content is in English.
@@ -375,9 +420,10 @@
               which character encoding to use when displaying the web page.
             </li>
             <li>
-              <span>&lt;meta name="viewport" content="width=device-width,
-                initial-scale=1.0" /&gt; :</span>This tag is essential for
-              responsive web design
+              <span
+                >&lt;meta name="viewport" content="width=device-width,
+                initial-scale=1.0" /&gt; :</span
+              >This tag is essential for responsive web design
             </li>
             <li>
               <span>&lt;title&gt;Document&lt;/title&gt; :</span>defines the
@@ -391,30 +437,32 @@
               Indentation in HTML means adding spaces (usually 2 or 4) at the
               beginning of lines to show the nested structure of elements. This
               doesn’t affect how the page looks but makes the code easier to
-              read
-              and maintain.
+              read and maintain.
             </li>
           </ul>
           <div class="div-img">
-            <img src="./img/vs-structure.png" alt = "vs structure image" loading="lazy">
+            <img
+              src="./img/vs-structure.png"
+              alt="vs structure image"
+              loading="lazy"
+            />
           </div>
         </div>
-        <ul>
-        </ul>
+        <ul></ul>
         <hr />
         <h2>HTML Validation</h2>
         <h3>HTML and Errors</h3>
         <p>
-          If you type <span>&lt;h7&gt;text&lt;/h7&gt;</span> HTML don't tell you
-          syntax errors and <span>text</span> will appear on browser
+          If you type <span>&lt;h7&gt;text&lt;/h7&gt;</span> HTML doesn’t tell
+          you syntax errors and <span>text</span> will appear on browser
         </p>
         <p>
           You must use proper HTML5 , CSS3 syntax to ensure that browsers
           process your documents properly.
         </p>
         <p>
-          Use : <span>http://validator.w3.org/</span>
-          <a href="http://validator.w3.org/"><span>W3C</span></a> to validate
+          Use : <span>https://validator.w3.org/</span>
+          <a href="https://validator.w3.org/"><span>W3C</span></a> to validate
           your HTML5 & CSS3 code
         </p>
         <div class="div-img2">
@@ -423,11 +471,15 @@
         <div class="notes">
           <h3>Note :</h3>
           <ul>
-            <li>HTML is not strict like a programming language, but syntax
-              errors can still cause problems.</li>
-            <li>If you want syntax error detection/fixing, you’ll need other
+            <li>
+              HTML is not strict like a programming language, but syntax errors
+              can still cause problems.
+            </li>
+            <li>
+              If you want syntax error detection/fixing, you’ll need other
               extensions in VScode like <span>HTMLHint</span> finds HTML
-              mistakes</li>
+              mistakes
+            </li>
           </ul>
         </div>
       </div>
@@ -482,12 +534,14 @@
         </ul>
         <div class="notes">
           <h3>Note :</h3>
-          <p> HTML
-            <span><u><i>automatically</i></u></span>
-            collapses multiple spaces and line breaks into a single
-            space.</p>
+          <p>
+            HTML
+            <span
+              ><u><i>automatically</i></u></span
+            >
+            collapses multiple spaces and line breaks into a single space.
+          </p>
         </div>
-
       </div>
     </section>
     <section id="session1-heading-p-pre">
@@ -512,13 +566,21 @@
           </div>
           <div class="part2">
             <div class="div-img">
-              <img id = "h-img" src="./img/h-tag.png" alt="heading" loading="lazy" />
+              <img
+                id="h-img"
+                src="./img/h-tag.png"
+                alt="heading"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
         <hr />
         <h3>Paragraph</h3>
-        <p>HTML stands for paragraph. It's used to define blocks of text.</p>
+        <p>
+          <span>&lt;p&gt;</span> stands for paragraph. It's used to define
+          blocks of text.
+        </p>
         <p style="font-size: 15px"><span>&lt;p&gt;&lt;/p&gt;</span></p>
         <div class="containt">
           <div class="part1">
@@ -533,21 +595,29 @@
               </li>
             </ul>
           </div>
-          <div class="part2" id = "part2">
+          <div class="part2" id="part2">
             <div class="div-img">
-              <img id = "p-img" src="./img/p-tag.png" alt="paragraph" loading="lazy">
+              <img
+                id="p-img"
+                src="./img/p-tag.png"
+                alt="paragraph"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
         <hr />
         <h3>Preformatted text</h3>
-        <p>HTML stands for "preformatted text". It tells the browser to:</p>
+        <p>
+          <span>&lt;pre&gt;</span> stands for "preformatted text". It tells the
+          browser to:
+        </p>
         <ul>
           <li>Preserve spaces</li>
           <li>Preserve tabs</li>
           <li>Preserve line breaks</li>
         </ul>
-        <div class="containt" >
+        <div class="containt">
           <div class="part1">
             <p><span>&lt;pre&gt;&lt;/pre&gt;</span></p>
             <pre>
@@ -560,7 +630,12 @@
           </div>
           <div class="part2">
             <div class="div-img">
-              <img id = "pre-img" src="./img/pre-tag.png" alt="preformat tag image" loading="lazy">
+              <img
+                id="pre-img"
+                src="./img/pre-tag.png"
+                alt="preformat tag image"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
