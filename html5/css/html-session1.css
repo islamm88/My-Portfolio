@@ -46,7 +46,7 @@
       }
     }
   }
-  #session1-htmlIntor {
+  #session1-htmlIntro {
     .container {
       .containt {
         flex-direction: column;
@@ -314,7 +314,7 @@
       }
     }
   }
-  #session1-htmlIntor {
+  #session1-htmlIntro {
     .container {
       h2:nth-child(1) {
         margin-block: 2px;
@@ -607,7 +607,7 @@
       }
     }
   }
-  #session1-htmlIntor {
+  #session1-htmlIntro {
     .container {
       h2:nth-child(1) {
         margin-block: 2px;
