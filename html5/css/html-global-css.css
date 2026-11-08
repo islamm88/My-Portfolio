@@ -830,13 +830,17 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+        
+        span {
+          margin-left: 5px;
+        }
 
-        .fa-file-pdf {
+        .fa-download {
           color: #f16529;
           margin-left: 10px;
           transition: all 0.5s ease;
         }
-        .fa-file-pdf:hover {
+        .fa-download:hover {
           transform: scale(1.09);
           text-shadow: 2px 2px 4px black;
         }
